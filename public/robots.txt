@@ -1,0 +1,34 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://universaltelecom.com/sitemap.xml
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /private/
+
+# Allow specific important pages
+Allow: /
+Allow: /en/
+Allow: /fr/
+Allow: /centralita-virtual
+Allow: /whatsapp-api
+Allow: /agente-ia-chatbot
+Allow: /analisis-llamadas-ia
+Allow: /numeracion-global
+Allow: /en/virtual-pbx
+Allow: /en/whatsapp-business-api
+Allow: /en/ai-agents
+Allow: /en/call-analytics
+Allow: /en/global-numbers
+Allow: /fr/centralita-virtual
+Allow: /fr/whatsapp-business-api
+Allow: /fr/agents-ia
+Allow: /fr/analyse-appels
+Allow: /fr/numeros-globaux
+
+# Crawl delay
+Crawl-delay: 1

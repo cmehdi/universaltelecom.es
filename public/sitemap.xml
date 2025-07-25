@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- Spanish (Default) -->
+  <url>
+    <loc>https://universaltelecom.com/</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.com/en/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.com/fr/" />
+  </url>
+  
+  <!-- English -->
+  <url>
+    <loc>https://universaltelecom.com/en/</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.com/en/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.com/fr/" />
+  </url>
+  
+  <!-- French -->
+  <url>
+    <loc>https://universaltelecom.com/fr/</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.com/en/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.com/fr/" />
+  </url>
+
+  <!-- Service Pages - Spanish -->
+  <url>
+    <loc>https://universaltelecom.com/centralita-virtual</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.com/centralita-virtual" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.com/en/virtual-pbx" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.com/fr/centralita-virtual" />
+  </url>
+  
+  <url>
+    <loc>https://universaltelecom.com/whatsapp-api</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.com/whatsapp-api" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.com/en/whatsapp-business-api" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.com/fr/whatsapp-business-api" />
+  </url>
+  
+  <url>
+    <loc>https://universaltelecom.com/agente-ia-chatbot</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.com/agente-ia-chatbot" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.com/en/ai-agents" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.com/fr/agents-ia" />
+  </url>
+  
+  <url>
+    <loc>https://universaltelecom.com/analisis-llamadas-ia</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.com/analisis-llamadas-ia" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.com/en/call-analytics" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.com/fr/analyse-appels" />
+  </url>
+  
+  <url>
+    <loc>https://universaltelecom.com/numeracion-global</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.com/numeracion-global" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.com/en/global-numbers" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.com/fr/numeros-globaux" />
+  </url>
+
+  <!-- Service Pages - English -->
+  <url>
+    <loc>https://universaltelecom.com/en/virtual-pbx</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.com/centralita-virtual" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.com/en/virtual-pbx" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.com/fr/centralita-virtual" />
+  </url>
+  
+  <url>
+    <loc>https://universaltelecom.com/en/whatsapp-business-api</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.com/whatsapp-api" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.com/en/whatsapp-business-api" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.com/fr/whatsapp-business-api" />
+  </url>
+  
+  <url>
+    <loc>https://universaltelecom.com/en/ai-agents</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.com/agente-ia-chatbot" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.com/en/ai-agents" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.com/fr/agents-ia" />
+  </url>
+  
+  <url>
+    <loc>https://universaltelecom.com/en/call-analytics</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.com/analisis-llamadas-ia" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.com/en/call-analytics" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.com/fr/analyse-appels" />
+  </url>
+  
+  <url>
+    <loc>https://universaltelecom.com/en/global-numbers</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.com/numeracion-global" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.com/en/global-numbers" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.com/fr/numeros-globaux" />
+  </url>
+
+  <!-- Service Pages - French -->
+  <url>
+    <loc>https://universaltelecom.com/fr/centralita-virtual</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.com/centralita-virtual" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.com/en/virtual-pbx" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.com/fr/centralita-virtual" />
+  </url>
+  
+  <url>
+    <loc>https://universaltelecom.com/fr/whatsapp-business-api</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.com/whatsapp-api" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.com/en/whatsapp-business-api" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.com/fr/whatsapp-business-api" />
+  </url>
+  
+  <url>
+    <loc>https://universaltelecom.com/fr/agents-ia</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.com/agente-ia-chatbot" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.com/en/ai-agents" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.com/fr/agents-ia" />
+  </url>
+  
+  <url>
+    <loc>https://universaltelecom.com/fr/analyse-appels</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.com/analisis-llamadas-ia" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.com/en/call-analytics" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.com/fr/analyse-appels" />
+  </url>
+  
+  <url>
+    <loc>https://universaltelecom.com/fr/numeros-globaux</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.com/numeracion-global" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.com/en/global-numbers" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.com/fr/numeros-globaux" />
+  </url>
+
+  <!-- Contact Pages -->
+  <url>
+    <loc>https://universaltelecom.com/contacto</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.com/contacto" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.com/en/contact" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.com/fr/contact" />
+  </url>
+  
+  <url>
+    <loc>https://universaltelecom.com/en/contact</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.com/contacto" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.com/en/contact" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.com/fr/contact" />
+  </url>
+  
+  <url>
+    <loc>https://universaltelecom.com/fr/contact</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.com/contacto" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.com/en/contact" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.com/fr/contact" />
+  </url>
+
+  <!-- API Pages -->
+  <url>
+    <loc>https://universaltelecom.com/apis</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://universaltelecom.com/api-sms</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://universaltelecom.com/en/apis</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://universaltelecom.com/en/sms-api</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://universaltelecom.com/fr/apis</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://universaltelecom.com/fr/api-sms</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Legal Pages -->
+  <url>
+    <loc>https://universaltelecom.com/politica-privacidad</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  
+  <url>
+    <loc>https://universaltelecom.com/politica-cookies</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  
+  <url>
+    <loc>https://universaltelecom.com/aviso-legal</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+</urlset>
