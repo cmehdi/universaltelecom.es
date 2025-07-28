@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Universal Telecom</title>
+    <meta name="description" content="Contacta con Universal Telecom. Teléfono +34 951 011 759, email comercial@universaltelecom.es. Oficinas en Madrid. Soporte 24/7.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body class="font-inter bg-white">
+    <!-- Navigation (simplified) -->
+    <nav class="bg-white shadow-sm border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="/" class="flex items-center">
+                        <img src="logo.png" alt="Universal Telecom" class="h-8 w-auto">
+                    </a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="/" class="text-gray-600 hover:text-gray-900">Volver al inicio</a>
+                    <a href="tel:+34951011759" class="flex items-center text-orange-600 hover:text-orange-700 font-medium">
+                        <i data-lucide="phone" class="h-4 w-4 mr-1"></i>
+                        +34 951 011 759
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-orange-50 via-white to-blue-50 py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center space-y-4 mb-12">
+                <h1 class="text-4xl lg:text-5xl font-bold text-gray-900">Contacta con Nosotros</h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Estamos aquí para ayudarte a transformar las comunicaciones de tu empresa. 
+                    Nuestro equipo de expertos está disponible para resolver todas tus dudas.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <!-- Phone -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="phone" class="w-8 h-8 text-orange-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Teléfono</h3>
+                    <p class="text-gray-600 mb-2">Llámanos directamente</p>
+                    <a href="tel:+34951011759" class="text-orange-600 hover:text-orange-700 font-semibold text-lg">
+                        +34 951 011 759
+                    </a>
+                    <p class="text-sm text-gray-500 mt-2">
+                        Lun-Jue: 09:30-19:00<br>
+                        Vie: 09:30-18:00
+                    </p>
+                </div>
+
+                <!-- Email -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="mail" class="w-8 h-8 text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Email</h3>
+                    <p class="text-gray-600 mb-2">Escríbenos un email</p>
+                    <a href="mailto:comercial@universaltelecom.es" class="text-blue-600 hover:text-blue-700 font-semibold">
+                        comercial@universaltelecom.es
+                    </a>
+                    <p class="text-sm text-gray-500 mt-2">
+                        Respuesta en menos de 2 horas
+                    </p>
+                </div>
+
+                <!-- Office -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="map-pin" class="w-8 h-8 text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Oficina</h3>
+                    <p class="text-gray-600 mb-2">Visítanos en Madrid</p>
+                    <address class="text-gray-700 not-italic">
+                        Calle Ejemplo 123<br>
+                        28001 Madrid<br>
+                        España
+                    </address>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="max-w-4xl mx-auto">
+                <div class="grid lg:grid-cols-2 gap-12">
+                    <!-- Form -->
+                    <div class="bg-white rounded-2xl shadow-xl p-8">
+                        <h2 class="text-2xl font-bold text-gray-900 mb-6">Envíanos un Mensaje</h2>
+                        
+                        <form id="contact-form" class="space-y-6">
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label for="firstName" class="form-label">Nombre *</label>
+                                    <input type="text" id="firstName" name="firstName" required class="form-input">
+                                </div>
+                                <div>
+                                    <label for="lastName" class="form-label">Apellidos *</label>
+                                    <input type="text" id="lastName" name="lastName" required class="form-input">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="email" class="form-label">Email *</label>
+                                <input type="email" id="email" name="email" required class="form-input">
+                            </div>
+
+                            <div>
+                                <label for="phone" class="form-label">Teléfono</label>
+                                <input type="tel" id="phone" name="phone" class="form-input">
+                            </div>
+
+                            <div>
+                                <label for="company" class="form-label">Empresa</label>
+                                <input type="text" id="company" name="company" class="form-input">
+                            </div>
+
+                            <div>
+                                <label for="subject" class="form-label">Asunto *</label>
+                                <select id="subject" name="subject" required class="form-input">
+                                    <option value="">Selecciona un asunto</option>
+                                    <option value="info">Información general</option>
+                                    <option value="demo">Solicitar demo</option>
+                                    <option value="pricing">Precios y planes</option>
+                                    <option value="technical">Soporte técnico</option>
+                                    <option value="partnership">Partnerships</option>
+                                    <option value="other">Otro</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="message" class="form-label">Mensaje *</label>
+                                <textarea id="message" name="message" rows="4" required class="form-input resize-none"></textarea>
+                            </div>
+
+                            <div class="flex items-start space-x-3">
+                                <input type="checkbox" id="privacy" name="privacy" required class="mt-1">
+                                <label for="privacy" class="text-sm text-gray-600">
+                                    Acepto la <a href="politica-privacidad.html" class="text-orange-600 hover:underline">política de privacidad</a> 
+                                    y el tratamiento de mis datos personales *
+                                </label>
+                            </div>
+
+                            <button type="submit" class="w-full btn-primary py-3 text-base font-semibold">
+                                <span id="submit-text">Enviar Mensaje</span>
+                                <span id="submit-loading" class="hidden">
+                                    <span class="spinner mr-2"></span>
+                                    Enviando...
+                                </span>
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Additional Info -->
+                    <div class="space-y-8">
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">¿Por qué contactarnos?</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start space-x-3">
+                                    <i data-lucide="clock" class="w-6 h-6 text-orange-500 mt-1"></i>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">Respuesta Rápida</h4>
+                                        <p class="text-gray-600">Respondemos a todos los mensajes en menos de 2 horas durante horario laboral.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-3">
+                                    <i data-lucide="users" class="w-6 h-6 text-orange-500 mt-1"></i>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">Expertos Especializados</h4>
+                                        <p class="text-gray-600">Nuestro equipo tiene más de 10 años de experiencia en comunicaciones empresariales.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-3">
+                                    <i data-lucide="shield-check" class="w-6 h-6 text-orange-500 mt-1"></i>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">Consultoría Gratuita</h4>
+                                        <p class="text-gray-600">Te ayudamos a encontrar la mejor solución para tu empresa sin coste adicional.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-50 rounded-lg p-6">
+                            <h4 class="font-semibold text-gray-900 mb-3">¿Necesitas ayuda urgente?</h4>
+                            <p class="text-gray-600 mb-4">
+                                Si tienes un problema técnico urgente, llámanos directamente para recibir soporte inmediato.
+                            </p>
+                            <a href="tel:+34951011759" class="inline-flex items-center px-4 py-2 bg-orange-600 text-white rounded-lg hover:bg-orange-700">
+                                <i data-lucide="phone" class="w-4 h-4 mr-2"></i>
+                                Llamar Ahora
+                            </a>
+                        </div>
+
+                        <div class="bg-blue-50 rounded-lg p-6">
+                            <h4 class="font-semibold text-gray-900 mb-3">¿Prefieres una demo?</h4>
+                            <p class="text-gray-600 mb-4">
+                                Agenda una demostración personalizada de 30 minutos para ver cómo Universal Telecom puede ayudar a tu empresa.
+                            </p>
+                            <a href="demo.html" class="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+                                <i data-lucide="calendar" class="w-4 h-4 mr-2"></i>
+                                Agendar Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Modal -->
+    <div id="success-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+        <div class="bg-white rounded-2xl p-8 max-w-md mx-4">
+            <div class="text-center">
+                <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i data-lucide="check" class="w-8 h-8 text-green-600"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">¡Mensaje Enviado!</h3>
+                <p class="text-gray-600 mb-6">
+                    Gracias por contactarnos. Hemos recibido tu mensaje y te responderemos en menos de 2 horas.
+                </p>
+                <button id="close-modal" class="btn-primary px-6 py-2">
+                    Entendido
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer (simplified) -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <img src="logo.png" alt="Universal Telecom" class="h-8 w-auto mx-auto mb-4">
+            <p class="text-gray-400">&copy; 2025 Universal Telecom. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    
+    <!-- Form handling -->
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const submitText = document.getElementById('submit-text');
+            const submitLoading = document.getElementById('submit-loading');
+            const successModal = document.getElementById('success-modal');
+            
+            // Show loading state
+            submitText.classList.add('hidden');
+            submitLoading.classList.remove('hidden');
+            
+            // Simulate form submission
+            setTimeout(() => {
+                // Hide loading state
+                submitText.classList.remove('hidden');
+                submitLoading.classList.add('hidden');
+                
+                // Show success modal
+                successModal.classList.remove('hidden');
+                
+                // Track contact form submission
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'form_submit', {
+                        'event_category': 'Contact',
+                        'event_label': 'Contact Form'
+                    });
+                }
+            }, 2000);
+        });
+        
+        document.getElementById('close-modal').addEventListener('click', function() {
+            document.getElementById('success-modal').classList.add('hidden');
+        });
+    </script>
+    
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
