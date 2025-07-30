@@ -20,7 +20,7 @@ function initializeNavigation() {
   // Mobile menu toggle
   const mobileMenuButton = document.getElementById("mobile-menu-button")
   const mobileMenu = document.getElementById("mobile-menu")
-  const mobileMenuIcon = mobileMenuButton.querySelector("[data-lucide]")
+  const mobileMenuIcon = mobileMenuButton?.querySelector("[data-lucide]")
 
   if (mobileMenuButton && mobileMenu) {
     mobileMenuButton.addEventListener("click", () => {
@@ -28,10 +28,10 @@ function initializeNavigation() {
 
       if (isOpen) {
         mobileMenu.classList.add("hidden")
-        mobileMenuIcon.setAttribute("data-lucide", "menu")
+        if (mobileMenuIcon) mobileMenuIcon.setAttribute("data-lucide", "menu")
       } else {
         mobileMenu.classList.remove("hidden")
-        mobileMenuIcon.setAttribute("data-lucide", "x")
+        if (mobileMenuIcon) mobileMenuIcon.setAttribute("data-lucide", "x")
       }
 
       // Reinitialize icons
@@ -49,6 +49,22 @@ function initializeNavigation() {
     languageSelector.addEventListener("click", (e) => {
       e.preventDefault()
       languageDropdown.classList.toggle("hidden")
+    })
+
+    // Handle language selection with proper navigation
+    const languageLinks = languageDropdown.querySelectorAll("a[data-lang]")
+    languageLinks.forEach((link) => {
+      link.addEventListener("click", (e) => {
+        e.preventDefault()
+        const targetLang = link.getAttribute("data-lang")
+        const currentPath = window.location.pathname
+
+        // Store language preference
+        localStorage.setItem("language-choice", targetLang)
+
+        // Navigate to correct language version
+        navigateToLanguage(targetLang, currentPath)
+      })
     })
 
     // Close dropdown when clicking outside
@@ -78,6 +94,35 @@ function initializeNavigation() {
   }
 }
 
+// Fixed language navigation function
+function navigateToLanguage(targetLang, currentPath) {
+  let newPath = "/"
+
+  // Remove existing language prefixes from current path
+  const cleanPath = currentPath.replace(/^\/(en|fr)\//, "/").replace(/^\//, "")
+
+  // Build new path based on target language
+  switch (targetLang) {
+    case "es":
+      // Spanish is the root, so just use clean path
+      newPath = cleanPath ? `/${cleanPath}` : "/"
+      break
+    case "en":
+      // English gets /en/ prefix
+      newPath = cleanPath ? `/en/${cleanPath}` : "/en/"
+      break
+    case "fr":
+      // French gets /fr/ prefix
+      newPath = cleanPath ? `/fr/${cleanPath}` : "/fr/"
+      break
+    default:
+      newPath = "/"
+  }
+
+  // Navigate to the new path
+  window.location.href = newPath
+}
+
 // Language detection and welcome banner
 function initializeLanguageDetection() {
   const languageBanner = document.getElementById("language-banner")
@@ -89,27 +134,46 @@ function initializeLanguageDetection() {
   const languageChoice = localStorage.getItem("language-choice")
   const bannerDismissed = sessionStorage.getItem("language-banner-dismissed")
 
+  // Detect current page language
+  const currentLang = detectCurrentLanguage()
+
   if (!languageChoice && !bannerDismissed) {
     // Detect browser language
     const browserLang = navigator.language || navigator.userLanguage
     const detectedLang = browserLang.substring(0, 2)
 
-    // Show banner if detected language is not Spanish
-    if (detectedLang === "en" || detectedLang === "fr") {
-      showLanguageBanner(detectedLang)
+    // Show banner if detected language is different from current page language
+    if (detectedLang !== currentLang && (detectedLang === "en" || detectedLang === "fr" || detectedLang === "es")) {
+      showLanguageBanner(detectedLang, currentLang)
     }
   }
 
-  function showLanguageBanner(lang) {
+  function detectCurrentLanguage() {
+    const path = window.location.pathname
+    if (path.startsWith("/en/")) return "en"
+    if (path.startsWith("/fr/")) return "fr"
+    return "es" // Default to Spanish
+  }
+
+  function showLanguageBanner(detectedLang, currentLang) {
     const langInfo = {
-      en: { name: "English", flag: "🇺🇸", url: "/en/" },
-      fr: { name: "Français", flag: "🇫🇷", url: "/fr/" },
+      en: { name: "English", flag: "🇺🇸" },
+      fr: { name: "Français", flag: "🇫🇷" },
+      es: { name: "Español", flag: "🇪🇸" },
     }
 
-    if (langInfo[lang] && languageBanner) {
+    if (langInfo[detectedLang] && languageBanner) {
       const detectedLanguageSpan = document.getElementById("detected-language")
       if (detectedLanguageSpan) {
-        detectedLanguageSpan.textContent = `${langInfo[lang].flag} ${langInfo[lang].name}`
+        detectedLanguageSpan.textContent = `${langInfo[detectedLang].flag} ${langInfo[detectedLang].name}`
+      }
+
+      // Update banner text based on current page language
+      const bannerText = languageBanner.querySelector("div span")
+      if (bannerText && currentLang === "fr") {
+        bannerText.textContent = `Nous avons détecté que votre navigateur est en ${langInfo[detectedLang].name}. Souhaitez-vous voir le site en ${langInfo[detectedLang].name}?`
+      } else if (bannerText && currentLang === "en") {
+        bannerText.textContent = `We detected that your browser is in ${langInfo[detectedLang].name}. Would you like to see the site in ${langInfo[detectedLang].name}?`
       }
 
       languageBanner.classList.remove("hidden")
@@ -117,15 +181,15 @@ function initializeLanguageDetection() {
       // Accept language button
       if (acceptLanguageBtn) {
         acceptLanguageBtn.addEventListener("click", () => {
-          localStorage.setItem("language-choice", lang)
-          window.location.href = langInfo[lang].url
+          localStorage.setItem("language-choice", detectedLang)
+          navigateToLanguage(detectedLang, window.location.pathname)
         })
       }
 
       // Dismiss language button
       if (dismissLanguageBtn) {
         dismissLanguageBtn.addEventListener("click", () => {
-          localStorage.setItem("language-choice", "es")
+          localStorage.setItem("language-choice", currentLang)
           languageBanner.classList.add("hidden")
         })
       }
@@ -341,7 +405,7 @@ function validateForm(form) {
 
   requiredFields.forEach((field) => {
     if (!field.value.trim()) {
-      showFieldError(field, "Este campo es obligatorio")
+      showFieldError(field, getErrorMessage("required"))
       isValid = false
     } else {
       clearFieldError(field)
@@ -351,22 +415,52 @@ function validateForm(form) {
     if (field.type === "email" && field.value.trim()) {
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
       if (!emailRegex.test(field.value)) {
-        showFieldError(field, "Por favor, introduce un email válido")
+        showFieldError(field, getErrorMessage("email"))
         isValid = false
       }
     }
 
     // Phone validation
     if (field.type === "tel" && field.value.trim()) {
-      const phoneRegex = /^[+]?[\d\s\-$$$$]{9,}$/
+      const phoneRegex = /^[+]?[\d\s\-()]{9,}$/
       if (!phoneRegex.test(field.value)) {
-        showFieldError(field, "Por favor, introduce un teléfono válido")
+        showFieldError(field, getErrorMessage("phone"))
         isValid = false
       }
     }
   })
 
   return isValid
+}
+
+function getErrorMessage(type) {
+  const currentLang = detectCurrentLanguage()
+  const messages = {
+    es: {
+      required: "Este campo es obligatorio",
+      email: "Por favor, introduce un email válido",
+      phone: "Por favor, introduce un teléfono válido",
+    },
+    en: {
+      required: "This field is required",
+      email: "Please enter a valid email",
+      phone: "Please enter a valid phone number",
+    },
+    fr: {
+      required: "Ce champ est obligatoire",
+      email: "Veuillez saisir un email valide",
+      phone: "Veuillez saisir un numéro de téléphone valide",
+    },
+  }
+
+  function detectCurrentLanguage() {
+    const path = window.location.pathname
+    if (path.startsWith("/en/")) return "en"
+    if (path.startsWith("/fr/")) return "fr"
+    return "es"
+  }
+
+  return messages[currentLang][type] || messages.es[type]
 }
 
 function showFieldError(field, message) {
@@ -445,7 +539,7 @@ function throttle(func, limit) {
   let inThrottle
   return function () {
     const args = arguments
-    
+
     if (!inThrottle) {
       func.apply(this, args)
       inThrottle = true
@@ -458,3 +552,4 @@ function throttle(func, limit) {
 window.trackButtonClick = trackButtonClick
 window.trackPhoneCall = trackPhoneCall
 window.validateForm = validateForm
+window.navigateToLanguage = navigateToLanguage
