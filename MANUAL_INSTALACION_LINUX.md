@@ -3,18 +3,11 @@
 
 ### 📋 Requisitos del Sistema
 
-#### Requisitos Mínimos:
-- **Sistema Operativo**: Ubuntu 20.04+ / CentOS 8+ / Debian 11+
-- **RAM**: 2GB mínimo (4GB recomendado)
-- **Espacio en Disco**: 1GB libre
-- **Conexión a Internet**: Para descargar dependencias
-
-#### Software Necesario:
-- **Node.js**: v18.0.0 o superior
-- **npm**: v8.0.0 o superior
-- **Git**: Para clonar el repositorio
-- **Nginx**: Para servidor web (opcional)
-- **PM2**: Para gestión de procesos (opcional)
+#### Requisitos Previos:
+- **Sistema Operativo**: Ubuntu 20.04+ / CentOS 8+ / Debian 10+
+- **Memoria RAM**: Mínimo 1GB (Recomendado 2GB+)
+- **Espacio en Disco**: Mínimo 2GB libres
+- **Acceso**: Usuario con permisos sudo
 
 ---
 
@@ -32,6 +25,7 @@ sudo dnf update -y
 \`\`\`
 
 #### 2. Instalar Node.js y npm
+
 \`\`\`bash
 # Método 1: Usando NodeSource (Recomendado)
 curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
@@ -111,16 +105,12 @@ cat > package.json << 'EOF'
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "python3 -m http.server 8000",
-    "serve": "npx http-server -p 8000 -c-1",
-    "build": "echo 'No build process needed for static site'",
-    "deploy": "rsync -avz --delete ./ user@server:/var/www/html/"
+    "dev": "node server.js"
   },
-  "keywords": ["telecom", "business", "communications"],
-  "author": "Universal Telecom",
-  "license": "MIT",
-  "devDependencies": {
-    "http-server": "^14.1.1"
+  "dependencies": {
+    "express": "^4.18.2",
+    "compression": "^1.7.4",
+    "helmet": "^7.0.0"
   }
 }
 EOF
@@ -134,51 +124,43 @@ npm install
 #### 3. Crear Servidor Simple (Opcional)
 \`\`\`bash
 cat > server.js << 'EOF'
-const http = require('http');
-const fs = require('fs');
+const express = require('express');
 const path = require('path');
+const compression = require('compression');
+const helmet = require('helmet');
 
-const port = process.env.PORT || 8000;
+const app = express();
+const PORT = process.env.PORT || 8000;
 
-const mimeTypes = {
-  '.html': 'text/html',
-  '.css': 'text/css',
-  '.js': 'text/javascript',
-  '.png': 'image/png',
-  '.jpg': 'image/jpeg',
-  '.gif': 'image/gif',
-  '.svg': 'image/svg+xml',
-  '.ico': 'image/x-icon'
-};
+// Middleware de seguridad
+app.use(helmet({
+    contentSecurityPolicy: false // Permitir inline styles de Tailwind
+}));
 
-const server = http.createServer((req, res) => {
-  let filePath = '.' + req.url;
-  
-  if (filePath === './') {
-    filePath = './index.html';
+// Compresión
+app.use(compression());
+
+// Servir archivos estáticos
+app.use(express.static('.', {
+    maxAge: '1d',
+    etag: true
+}));
+
+// Rutas para SPA
+app.get('*', (req, res) => {
+  // Si es una ruta de archivo, servir el archivo
+  if (req.path.includes('.')) {
+      res.status(404).send('Archivo no encontrado');
+      return;
   }
   
-  const extname = String(path.extname(filePath)).toLowerCase();
-  const contentType = mimeTypes[extname] || 'application/octet-stream';
-  
-  fs.readFile(filePath, (error, content) => {
-    if (error) {
-      if (error.code === 'ENOENT') {
-        res.writeHead(404);
-        res.end('Página no encontrada');
-      } else {
-        res.writeHead(500);
-        res.end('Error del servidor: ' + error.code);
-      }
-    } else {
-      res.writeHead(200, { 'Content-Type': contentType });
-      res.end(content, 'utf-8');
-    }
-  });
+  // Para rutas sin extensión, servir index.html
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-server.listen(port, () => {
-  console.log(`Servidor ejecutándose en http://localhost:${port}`);
+app.listen(PORT, () => {
+  console.log(`🚀 Servidor corriendo en http://localhost:${PORT}`);
+  console.log(`📁 Sirviendo archivos desde: ${__dirname}`);
 });
 EOF
 \`\`\`
@@ -207,7 +189,12 @@ npm start
 sudo apt install nginx -y
 
 # CentOS/RHEL
+sudo yum install epel-release -y
 sudo yum install nginx -y
+
+# Iniciar y habilitar Nginx
+sudo systemctl start nginx
+sudo systemctl enable nginx
 \`\`\`
 
 ##### Configurar Nginx:
@@ -220,45 +207,40 @@ server {
     root /var/www/universal-telecom;
     index index.html;
 
-    # Configuración de compresión
+    # Compresión
     gzip on;
     gzip_vary on;
     gzip_min_length 1024;
-    gzip_types text/plain text/css text/xml text/javascript application/javascript application/xml+rss application/atom+xml image/svg+xml;
+    gzip_types text/plain text/css application/json application/javascript text/xml application/xml application/xml+rss text/javascript;
 
-    # Configuración de caché
-    location ~* \.(js|css|png|jpg|jpeg|gif|ico|svg)$ {
+    # Caché para archivos estáticos
+    location ~* \.(jpg|jpeg|png|gif|ico|css|js|svg|woff|woff2|ttf|eot)$ {
         expires 1y;
         add_header Cache-Control "public, immutable";
     }
 
-    # Manejo de rutas para SPA
+    # Manejo de rutas SPA
     location / {
-        try_files $uri $uri/ /index.html;
+        try_files $uri $uri/ $uri.html =404;
     }
 
-    # Configuración de seguridad
+    # Seguridad
     add_header X-Frame-Options "SAMEORIGIN" always;
     add_header X-XSS-Protection "1; mode=block" always;
     add_header X-Content-Type-Options "nosniff" always;
+    add_header Referrer-Policy "no-referrer-when-downgrade" always;
+    add_header Content-Security-Policy "default-src 'self' http: https: data: blob: 'unsafe-inline'" always;
+
+    # Logs
+    access_log /var/log/nginx/universal-telecom.access.log;
+    error_log /var/log/nginx/universal-telecom.error.log;
 }
 EOF
 
 # Habilitar el sitio
 sudo ln -s /etc/nginx/sites-available/universal-telecom /etc/nginx/sites-enabled/
-sudo rm /etc/nginx/sites-enabled/default
-
-# Crear directorio web
-sudo mkdir -p /var/www/universal-telecom
-sudo chown -R $USER:$USER /var/www/universal-telecom
-
-# Copiar archivos
-cp -r ./* /var/www/universal-telecom/
-
-# Verificar configuración y reiniciar
 sudo nginx -t
-sudo systemctl restart nginx
-sudo systemctl enable nginx
+sudo systemctl reload nginx
 \`\`\`
 
 #### Método 3: PM2 (Gestión de Procesos)
@@ -385,7 +367,7 @@ sudo systemctl restart nginx
 
 #### Configurar Logs:
 \`\`\`bash
-# Crear directorio de logs
+# Crear directorio de logs personalizado
 sudo mkdir -p /var/log/universal-telecom
 
 # Configurar logrotate
@@ -402,20 +384,140 @@ sudo tee /etc/logrotate.d/universal-telecom << 'EOF'
 EOF
 \`\`\`
 
-#### Monitoreo con htop:
+#### Script de Monitoreo
+
 \`\`\`bash
-sudo apt install htop -y
-htop
+# Crear script de monitoreo
+sudo tee /usr/local/bin/monitor-universal-telecom.sh << 'EOF'
+#!/bin/bash
+
+# Verificar si el servicio está corriendo
+if ! pgrep -f "universal-telecom" > /dev/null; then
+    echo "$(date): Servicio caído, reiniciando..." >> /var/log/universal-telecom/monitor.log
+    pm2 restart universal-telecom
+fi
+
+# Verificar espacio en disco
+DISK_USAGE=$(df /var/www/universal-telecom | tail -1 | awk '{print $5}' | sed 's/%//')
+if [ $DISK_USAGE -gt 80 ]; then
+    echo "$(date): Advertencia - Uso de disco alto: ${DISK_USAGE}%" >> /var/log/universal-telecom/monitor.log
+fi
+EOF
+
+sudo chmod +x /usr/local/bin/monitor-universal-telecom.sh
+
+# Añadir a crontab
+echo "*/5 * * * * /usr/local/bin/monitor-universal-telecom.sh" | sudo crontab -
 \`\`\`
 
 ---
 
-### 🚀 Optimizaciones de Rendimiento
+### 🚀 Optimización de Rendimiento
 
-#### 1. Configurar Caché del Navegador:
-```nginx
-# En la configuración de Nginx
+#### 1. Configurar Caché
+
+\`\`\`bash
+# Para Nginx - añadir al server block
 location ~* \.(css|js|png|jpg|jpeg|gif|ico|svg)$ {
     expires 1y;
     add_header Cache-Control "public, immutable";
+    add_header Vary Accept-Encoding;
 }
+\`\`\`
+
+#### 2. Habilitar Compresión
+
+\`\`\`bash
+# Nginx - añadir a http block
+gzip on;
+gzip_vary on;
+gzip_min_length 1024;
+gzip_types text/plain text/css application/json application/javascript text/xml application/xml application/xml+rss text/javascript;
+\`\`\`
+
+#### 3. Optimizar Imágenes
+
+\`\`\`bash
+# Instalar herramientas de optimización
+sudo apt install imagemagick optipng jpegoptim -y
+
+# Optimizar imágenes
+find ./images -name "*.png" -exec optipng {} \;
+find ./images -name "*.jpg" -exec jpegoptim --max=85 {} \;
+\`\`\`
+
+---
+
+### 📱 Configuración para Móviles
+
+El sitio ya está optimizado para dispositivos móviles con:
+- Diseño responsive con Tailwind CSS
+- Meta viewport configurado
+- Imágenes adaptativas
+- Navegación móvil
+
+---
+
+### 🔧 Variables de Entorno
+
+Crear archivo `.env` (opcional):
+
+\`\`\`bash
+cat > .env << 'EOF'
+NODE_ENV=production
+PORT=8000
+DOMAIN=tu-dominio.com
+SSL_ENABLED=true
+ANALYTICS_ID=GA_MEASUREMENT_ID
+EOF
+\`\`\`
+
+---
+
+### ✅ Lista de Verificación Final
+
+- [ ] Node.js y npm instalados
+- [ ] Archivos del proyecto copiados
+- [ ] Servidor web configurado (Nginx/Node.js)
+- [ ] SSL configurado (si es producción)
+- [ ] Permisos correctos establecidos
+- [ ] Firewall configurado
+- [ ] Backup configurado
+- [ ] Monitoreo activo
+- [ ] Logs configurados
+- [ ] Dominio apuntando al servidor
+
+---
+
+## 📞 Soporte
+
+Si encuentras problemas durante la instalación:
+
+1. **Revisa los logs**: `sudo tail -f /var/log/nginx/error.log`
+2. **Verifica la configuración**: `sudo nginx -t`
+3. **Comprueba los permisos**: `ls -la /var/www/universal-telecom`
+4. **Consulta el estado del servicio**: `sudo systemctl status nginx`
+
+---
+
+**¡Instalación Completada!** 🎉
+
+Tu sitio web de Universal Telecom debería estar funcionando correctamente. Accede a `http://tu-servidor:8000` o `https://tu-dominio.com` para verificar que todo funciona correctamente.
+\`\`\`
+
+Ahora tienes un sitio web HTML completo y funcional con:
+
+✅ **Páginas HTML completas** - Todas las páginas principales generadas
+✅ **CSS personalizado** - Estilos optimizados con Tailwind CSS
+✅ **JavaScript funcional** - Navegación, formularios, analytics
+✅ **Manual de instalación** - Guía completa para Linux
+✅ **Estructura lista para producción** - Fácil de copiar al servidor
+
+**Para instalar:**
+
+1. Copia todos los archivos a tu servidor Linux
+2. Sigue el manual de instalación según tu preferencia (Node.js, Nginx o Apache)
+3. Configura el dominio y SSL
+4. ¡Listo para producción!
+
+¿Necesitas que genere alguna página adicional o modifique algo específico?
