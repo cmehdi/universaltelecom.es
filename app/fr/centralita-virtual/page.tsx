@@ -74,12 +74,90 @@ export default function VirtualPBXPage() {
             </div>
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=400&width=600"
-                alt="Interface du standard virtuel"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pbx01-iaFxSiCeGs0unly1YAoBCStrmX4ODg.png"
+                alt="Interface du standard virtuel avec statistiques d'agents, métriques d'appels et surveillance du niveau de service"
                 width={600}
                 height={400}
                 className="rounded-lg shadow-2xl"
               />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* PBX Features Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center space-y-4 mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">Gestion Complète du Standard</h2>
+            <p className="text-xl text-gray-600">
+              Outils professionnels pour gérer tout votre système téléphonique depuis une plateforme
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            {/* Extensions Management */}
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold text-gray-900">Gestion Avancée des Extensions</h3>
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pbx02-d2IU4MJVlaWfTAjSkshjt5U9Low1Ip.png"
+                alt="Panneau de gestion des extensions avec configuration détaillée des utilisateurs et permissions"
+                width={600}
+                height={400}
+                className="rounded-xl shadow-lg border border-gray-200"
+              />
+              <p className="text-gray-600">
+                Gérez toutes les extensions depuis un panneau intuitif. Configurez les permissions, enregistrements,
+                transferts d'appels et fonctionnalités spécifiques pour chaque utilisateur.
+              </p>
+            </div>
+
+            {/* Call History */}
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold text-gray-900">Historique Complet des Appels</h3>
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pbx03-ASEcvfiTZjKkXRlIRpDYwdxUT4UBuH.png"
+                alt="Historique détaillé des appels avec filtres avancés et lecture audio"
+                width={600}
+                height={400}
+                className="rounded-xl shadow-lg border border-gray-200"
+              />
+              <p className="text-gray-600">
+                Accédez à l'historique complet avec filtres avancés, durée, statut des appels et lecture directe des
+                enregistrements. Exportez les données pour analyse externe.
+              </p>
+            </div>
+
+            {/* Contact Management */}
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold text-gray-900">Base de Données de Contacts Intégrée</h3>
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pbx04-akkWSlZhUX99hw4eOW3ATyxPP4kgTG.png"
+                alt="Système de gestion de contacts avec import, export et classification automatique"
+                width={600}
+                height={400}
+                className="rounded-xl shadow-lg border border-gray-200"
+              />
+              <p className="text-gray-600">
+                Gérez plus de 900 contacts avec import en masse, classification automatique et synchronisation CRM.
+                Recherche avancée et actions rapides incluses.
+              </p>
+            </div>
+
+            {/* Real-time Dashboard */}
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold text-gray-900">Surveillance en Temps Réel</h3>
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pbx01-iaFxSiCeGs0unly1YAoBCStrmX4ODg.png"
+                alt="Tableau de bord en temps réel avec statistiques d'agents, appels actifs et niveau de service"
+                width={600}
+                height={400}
+                className="rounded-xl shadow-lg border border-gray-200"
+              />
+              <p className="text-gray-600">
+                Surveillez l'état de votre standard instantanément : agents connectés, appels en cours, statistiques de
+                service et métriques de performance.
+              </p>
             </div>
           </div>
         </div>

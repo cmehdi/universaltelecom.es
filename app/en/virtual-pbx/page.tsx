@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import {
@@ -22,46 +23,138 @@ export default function VirtualPBXPage() {
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-50 to-white py-20">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-              Professional
-              <span className="text-blue-500 block">Virtual PBX</span>
-            </h1>
-            <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-              Complete cloud phone system for modern businesses. Advanced features, unlimited extensions, and
-              enterprise-grade reliability at a fraction of traditional PBX costs.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <Link href="/en/free-trial">
-                <Button size="lg" className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 text-lg">
-                  Start Free Trial
-                  <ArrowRight className="ml-2 w-5 h-5" />
-                </Button>
-              </Link>
-              <Link href="/en/demo">
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="border-blue-500 text-blue-500 hover:bg-blue-50 px-8 py-4 text-lg bg-transparent"
-                >
-                  Request Demo
-                </Button>
-              </Link>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="space-y-8">
+              <div className="space-y-6">
+                <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+                  Professional
+                  <span className="text-blue-500 block">Virtual PBX</span>
+                </h1>
+                <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                  Complete cloud phone system for modern businesses. Advanced features, unlimited extensions, and
+                  enterprise-grade reliability at a fraction of traditional PBX costs.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                  <Link href="/en/free-trial">
+                    <Button size="lg" className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 text-lg">
+                      Start Free Trial
+                      <ArrowRight className="ml-2 w-5 h-5" />
+                    </Button>
+                  </Link>
+                  <Link href="/en/demo">
+                    <Button
+                      size="lg"
+                      variant="outline"
+                      className="border-blue-500 text-blue-500 hover:bg-blue-50 px-8 py-4 text-lg bg-transparent"
+                    >
+                      Request Demo
+                    </Button>
+                  </Link>
+                </div>
+
+                <div className="flex flex-wrap justify-center items-center gap-8 text-sm text-gray-500">
+                  <div className="flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-500" />
+                    <span>Setup in 5 minutes</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-500" />
+                    <span>No hardware required</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-500" />
+                    <span>99.9% uptime SLA</span>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <div className="flex flex-wrap justify-center items-center gap-8 text-sm text-gray-500">
-              <div className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4 text-green-500" />
-                <span>Setup in 5 minutes</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4 text-green-500" />
-                <span>No hardware required</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4 text-green-500" />
-                <span>99.9% uptime SLA</span>
-              </div>
+            <div className="relative">
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pbx01-iaFxSiCeGs0unly1YAoBCStrmX4ODg.png"
+                alt="Virtual PBX dashboard with real-time agent statistics, call metrics and service level monitoring"
+                width={600}
+                height={500}
+                className="rounded-2xl shadow-2xl"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* PBX Features Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center space-y-4 mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">Complete PBX Management</h2>
+            <p className="text-xl text-gray-600">
+              Professional tools to manage your entire phone system from one platform
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            {/* Extensions Management */}
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold text-gray-900">Advanced Extension Management</h3>
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pbx02-d2IU4MJVlaWfTAjSkshjt5U9Low1Ip.png"
+                alt="Extension management panel with detailed user configuration and permissions"
+                width={600}
+                height={400}
+                className="rounded-xl shadow-lg border border-gray-200"
+              />
+              <p className="text-gray-600">
+                Manage all extensions from an intuitive panel. Configure permissions, recordings, call forwarding and
+                specific functionalities for each user.
+              </p>
+            </div>
+
+            {/* Call History */}
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold text-gray-900">Complete Call History</h3>
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pbx03-ASEcvfiTZjKkXRlIRpDYwdxUT4UBuH.png"
+                alt="Detailed call history with advanced filters and audio playback"
+                width={600}
+                height={400}
+                className="rounded-xl shadow-lg border border-gray-200"
+              />
+              <p className="text-gray-600">
+                Access complete history with advanced filters, duration, call status and direct playback of recordings.
+                Export data for external analysis.
+              </p>
+            </div>
+
+            {/* Contact Management */}
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold text-gray-900">Integrated Contact Database</h3>
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pbx04-akkWSlZhUX99hw4eOW3ATyxPP4kgTG.png"
+                alt="Contact management system with import, export and automatic classification"
+                width={600}
+                height={400}
+                className="rounded-xl shadow-lg border border-gray-200"
+              />
+              <p className="text-gray-600">
+                Manage 900+ contacts with bulk import, automatic classification and CRM synchronization. Advanced search
+                and quick actions included.
+              </p>
+            </div>
+
+            {/* Real-time Dashboard */}
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold text-gray-900">Real-time Monitoring</h3>
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pbx01-iaFxSiCeGs0unly1YAoBCStrmX4ODg.png"
+                alt="Real-time dashboard with agent statistics, active calls and service level"
+                width={600}
+                height={400}
+                className="rounded-xl shadow-lg border border-gray-200"
+              />
+              <p className="text-gray-600">
+                Monitor your PBX status instantly: connected agents, ongoing calls, service statistics and performance
+                metrics.
+              </p>
             </div>
           </div>
         </div>

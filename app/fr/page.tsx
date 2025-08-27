@@ -83,8 +83,8 @@ export default function HomePage() {
             </div>
             <div className="relative">
               <Image
-                src="/images/dashboard-inicio.png"
-                alt="Tableau de bord Universal Telecom"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pbx01-iaFxSiCeGs0unly1YAoBCStrmX4ODg.png"
+                alt="Tableau de bord Universal Telecom avec statistiques d'agents, métriques d'appels et niveau de service"
                 width={600}
                 height={400}
                 className="rounded-lg shadow-2xl"
@@ -124,8 +124,95 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Products Section */}
+      {/* Dashboard Preview Section */}
       <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center space-y-4 mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">Plateforme de Contrôle Unifiée</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Gérez toutes vos communications depuis des tableaux de bord professionnels et intuitifs
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            {/* PBX Dashboard */}
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold text-gray-900">Tableau de Bord Standard Virtuel</h3>
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pbx01-iaFxSiCeGs0unly1YAoBCStrmX4ODg.png"
+                alt="Tableau de bord standard virtuel avec statistiques d'agents, métriques d'appels et surveillance du niveau de service en temps réel"
+                width={600}
+                height={400}
+                className="rounded-xl shadow-lg border border-gray-200"
+              />
+              <p className="text-gray-600">
+                Surveillez les agents, les appels actifs, les statistiques de service et les métriques de performance
+                depuis un panneau unifié.
+              </p>
+            </div>
+
+            {/* Analytics Dashboard */}
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold text-gray-900">Analyse Avancée des Appels</h3>
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/analitica01-bXMtUxOOLaJ1R23FhGJXBjm8ict4Qz.png"
+                alt="Tableau de bord d'analyse d'appels avec métriques, graphiques d'évolution et classifications automatiques"
+                width={600}
+                height={400}
+                className="rounded-xl shadow-lg border border-gray-200"
+              />
+              <p className="text-gray-600">
+                Analyse complète avec notation automatique, évolution temporelle et classification intelligente des
+                appels.
+              </p>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 mt-16">
+            <div className="text-center space-y-4">
+              <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mx-auto">
+                <BarChart3 className="w-8 h-8 text-blue-600" />
+              </div>
+              <h3 className="text-xl font-semibold">Métriques en Temps Réel</h3>
+              <p className="text-gray-600">
+                Visualisez l'état de votre standard, les agents actifs et les statistiques d'appels instantanément
+              </p>
+            </div>
+
+            <div className="text-center space-y-4">
+              <div className="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mx-auto">
+                <Users className="w-8 h-8 text-green-600" />
+              </div>
+              <h3 className="text-xl font-semibold">Gestion Complète</h3>
+              <p className="text-gray-600">
+                Administrez extensions, contacts, historique d'appels et configurations depuis un seul endroit
+              </p>
+            </div>
+
+            <div className="text-center space-y-4">
+              <div className="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center mx-auto">
+                <Bot className="w-8 h-8 text-purple-600" />
+              </div>
+              <h3 className="text-xl font-semibold">IA Intégrée</h3>
+              <p className="text-gray-600">
+                Analyse automatique des sentiments, transcriptions et évaluation de qualité avec intelligence
+                artificielle
+              </p>
+            </div>
+          </div>
+
+          <div className="text-center mt-12">
+            <Link href="/fr/demo">
+              <Button size="lg" className="bg-orange-600 hover:bg-orange-700 text-white px-8">
+                Voir la Démo Complète <ArrowRight className="w-4 h-4 ml-2" />
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Products Section */}
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Nos Solutions de Communication</h2>
@@ -308,7 +395,7 @@ export default function HomePage() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Pourquoi Choisir Universal Telecom ?</h2>
@@ -351,7 +438,7 @@ export default function HomePage() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Ce que disent nos clients</h2>

@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import Image from "next/image"
 import {
   Phone,
   MessageCircle,
@@ -88,8 +89,88 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Products Overview */}
+        {/* Dashboard Preview Section */}
         <section className="py-20">
+          <div className="container mx-auto px-4">
+            <div className="text-center space-y-4 mb-16">
+              <h2 className="text-4xl font-bold text-gray-900">Unified Control Platform</h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                Manage all your communications from professional and intuitive dashboards
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+              {/* PBX Dashboard */}
+              <div className="space-y-4">
+                <h3 className="text-xl font-semibold text-gray-900">Virtual PBX Dashboard</h3>
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pbx01-iaFxSiCeGs0unly1YAoBCStrmX4ODg.png"
+                  alt="Virtual PBX dashboard with real-time agent statistics, call metrics and service level monitoring"
+                  width={600}
+                  height={400}
+                  className="rounded-xl shadow-lg border border-gray-200"
+                />
+                <p className="text-gray-600">
+                  Monitor agents, active calls, service statistics and performance metrics from a unified panel.
+                </p>
+              </div>
+
+              {/* Analytics Dashboard */}
+              <div className="space-y-4">
+                <h3 className="text-xl font-semibold text-gray-900">Advanced Call Analytics</h3>
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/analitica01-bXMtUxOOLaJ1R23FhGJXBjm8ict4Qz.png"
+                  alt="Call analytics dashboard with metrics, evolution charts and automatic classifications"
+                  width={600}
+                  height={400}
+                  className="rounded-xl shadow-lg border border-gray-200"
+                />
+                <p className="text-gray-600">
+                  Complete analysis with automatic scoring, temporal evolution and intelligent call classification.
+                </p>
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8 mt-16">
+              <div className="text-center space-y-4">
+                <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mx-auto">
+                  <BarChart3 className="w-8 h-8 text-blue-600" />
+                </div>
+                <h3 className="text-xl font-semibold">Real-time Metrics</h3>
+                <p className="text-gray-600">View your PBX status, active agents and call statistics instantly</p>
+              </div>
+
+              <div className="text-center space-y-4">
+                <div className="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mx-auto">
+                  <Users className="w-8 h-8 text-green-600" />
+                </div>
+                <h3 className="text-xl font-semibold">Complete Management</h3>
+                <p className="text-gray-600">Manage extensions, contacts, call history and settings from one place</p>
+              </div>
+
+              <div className="text-center space-y-4">
+                <div className="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center mx-auto">
+                  <Bot className="w-8 h-8 text-purple-600" />
+                </div>
+                <h3 className="text-xl font-semibold">Integrated AI</h3>
+                <p className="text-gray-600">
+                  Automatic sentiment analysis, transcriptions and quality assessment with artificial intelligence
+                </p>
+              </div>
+            </div>
+
+            <div className="text-center mt-12">
+              <Link href="/en/demo">
+                <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white px-8">
+                  View Complete Demo
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* Products Overview */}
+        <section className="py-20 bg-gray-50">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-gray-900 mb-4">Complete Communication Solutions</h2>
@@ -361,7 +442,7 @@ export default function HomePage() {
         </section>
 
         {/* Why Choose Us */}
-        <section className="py-20 bg-gray-50">
+        <section className="py-20 bg-white">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Choose Universal Telecom?</h2>
@@ -416,7 +497,7 @@ export default function HomePage() {
         </section>
 
         {/* Testimonials */}
-        <section className="py-20">
+        <section className="py-20 bg-gray-50">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-gray-900 mb-4">Trusted by Industry Leaders</h2>
