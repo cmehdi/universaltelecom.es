@@ -96,8 +96,8 @@ export default function CentralitaVirtualPage() {
 
             <div className="relative">
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/utcom2-RhUECWSJZGbyx52OuMyhy4DSfGl7cM.png"
-                alt="Panel de control centralita virtual Universal Telecom con directorio telefónico y métricas en tiempo real"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pbx01-iaFxSiCeGs0unly1YAoBCStrmX4ODg.png"
+                alt="Dashboard centralita virtual Universal Telecom con estadísticas de agentes, llamadas y métricas en tiempo real"
                 width={500}
                 height={600}
                 className="rounded-2xl shadow-2xl"
@@ -107,56 +107,80 @@ export default function CentralitaVirtualPage() {
         </div>
       </section>
 
-      {/* Dashboard Preview */}
+      {/* Funcionalidades Principales */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">
-              Dashboard Completo de tu Centralita Virtual
+              Funcionalidades Completas de tu Centralita Virtual
             </h2>
             <p className="text-xl text-gray-600">
-              Controla todas las métricas y actividad de tu centralita desde un panel unificado
+              Todas las herramientas profesionales que necesitas en una sola plataforma
             </p>
           </div>
 
-          <div className="max-w-6xl mx-auto">
-            <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/utcom1-GKvosi2Bg1x6Ksw19Up6bNGuSlbX7U.png"
-              alt="Dashboard centralita virtual con estadísticas de llamadas, WhatsApp, tickets y agentes IA"
-              width={1200}
-              height={800}
-              className="rounded-2xl shadow-2xl border border-gray-200"
-            />
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8 mt-16">
-            <div className="text-center space-y-4">
-              <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mx-auto">
-                <BarChart3 className="w-8 h-8 text-blue-600" />
-              </div>
-              <h3 className="text-xl font-semibold">Métricas en Tiempo Real</h3>
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            {/* Gestión de Extensiones */}
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold text-gray-900">Gestión Avanzada de Extensiones</h3>
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pbx02-d2IU4MJVlaWfTAjSkshjt5U9Low1Ip.png"
+                alt="Panel de gestión de extensiones con configuración detallada de usuarios y permisos"
+                width={600}
+                height={400}
+                className="rounded-xl shadow-lg border border-gray-200"
+              />
               <p className="text-gray-600">
-                Visualiza llamadas, mensajes WhatsApp, tickets y actividad de agentes IA desde un dashboard unificado
+                Administra todas las extensiones desde un panel intuitivo. Configura permisos, grabaciones, desvíos y
+                funcionalidades específicas para cada usuario de tu centralita virtual.
               </p>
             </div>
 
-            <div className="text-center space-y-4">
-              <div className="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mx-auto">
-                <Users className="w-8 h-8 text-green-600" />
-              </div>
-              <h3 className="text-xl font-semibold">Gestión de Contactos</h3>
+            {/* Historial de Llamadas */}
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold text-gray-900">Historial Completo de Llamadas</h3>
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pbx03-ASEcvfiTZjKkXRlIRpDYwdxUT4UBuH.png"
+                alt="Historial detallado de llamadas con filtros avanzados y reproducción de audio"
+                width={600}
+                height={400}
+                className="rounded-xl shadow-lg border border-gray-200"
+              />
               <p className="text-gray-600">
-                Base de datos completa con historial de interacciones, clasificación automática y seguimiento de leads
+                Accede al historial completo con filtros avanzados, duración, estado de llamadas y reproducción directa
+                de grabaciones. Exporta datos para análisis externos.
               </p>
             </div>
 
-            <div className="text-center space-y-4">
-              <div className="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center mx-auto">
-                <Phone className="w-8 h-8 text-purple-600" />
-              </div>
-              <h3 className="text-xl font-semibold">Directorio Inteligente</h3>
+            {/* Gestión de Contactos */}
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold text-gray-900">Base de Datos de Contactos Integrada</h3>
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pbx04-akkWSlZhUX99hw4eOW3ATyxPP4kgTG.png"
+                alt="Sistema de gestión de contactos con importación, exportación y clasificación automática"
+                width={600}
+                height={400}
+                className="rounded-xl shadow-lg border border-gray-200"
+              />
               <p className="text-gray-600">
-                Marcador integrado, directorio de extensiones y gestión avanzada de llamadas con un solo clic
+                Gestiona más de 900 contactos con importación masiva, clasificación automática y sincronización con tu
+                CRM. Búsqueda avanzada y acciones rápidas incluidas.
+              </p>
+            </div>
+
+            {/* Dashboard en Tiempo Real */}
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold text-gray-900">Monitorización en Tiempo Real</h3>
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pbx01-iaFxSiCeGs0unly1YAoBCStrmX4ODg.png"
+                alt="Dashboard en tiempo real con estadísticas de agentes, llamadas activas y nivel de servicio"
+                width={600}
+                height={400}
+                className="rounded-xl shadow-lg border border-gray-200"
+              />
+              <p className="text-gray-600">
+                Supervisa el estado de tu centralita virtual al instante: agentes conectados, llamadas en curso,
+                estadísticas de servicio y métricas de rendimiento.
               </p>
             </div>
           </div>

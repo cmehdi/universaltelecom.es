@@ -9,8 +9,6 @@ import {
   Bot,
   Headphones,
   Star,
-  Database,
-  Activity,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -85,8 +83,8 @@ export default function HomePage() {
 
             <div className="relative">
               <Image
-                src="/images/hero-dashboard.png"
-                alt="Dashboard de comunicaciones empresariales Universal Telecom con centralita virtual, WhatsApp, IA y análisis"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pbx01-iaFxSiCeGs0unly1YAoBCStrmX4ODg.png"
+                alt="Dashboard de comunicaciones empresariales Universal Telecom con centralita virtual, métricas en tiempo real y análisis de llamadas"
                 width={600}
                 height={500}
                 className="rounded-2xl shadow-2xl"
@@ -100,158 +98,79 @@ export default function HomePage() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center space-y-4 mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">Dashboard de Control Unificado</h2>
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">Plataforma de Control Unificada</h2>
             <p className="text-xl text-gray-600">
-              Gestiona todas tus comunicaciones desde una sola plataforma intuitiva
+              Gestiona todas tus comunicaciones desde dashboards profesionales e intuitivos
             </p>
           </div>
 
-          <div className="max-w-6xl mx-auto">
-            <div className="bg-gray-800 rounded-t-2xl p-4">
-              <div className="flex space-x-2">
-                <div className="w-3 h-3 bg-green-400 rounded-full"></div>
-                <div className="w-3 h-3 bg-yellow-400 rounded-full"></div>
-                <div className="w-3 h-3 bg-red-400 rounded-full"></div>
-              </div>
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            {/* PBX Dashboard */}
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold text-gray-900">Dashboard Centralita Virtual</h3>
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pbx01-iaFxSiCeGs0unly1YAoBCStrmX4ODg.png"
+                alt="Dashboard centralita virtual con estadísticas de agentes, llamadas y nivel de servicio en tiempo real"
+                width={600}
+                height={400}
+                className="rounded-xl shadow-lg border border-gray-200"
+              />
+              <p className="text-gray-600">
+                Monitoriza agentes, llamadas activas, estadísticas de servicio y métricas de rendimiento desde un panel
+                unificado.
+              </p>
             </div>
 
-            <div className="bg-gray-100 rounded-b-2xl p-8 shadow-2xl">
-              <div className="space-y-8">
-                {/* Header */}
-                <div className="flex items-center justify-between">
-                  <h3 className="text-2xl font-bold text-gray-800">Inicio</h3>
-                  <div className="text-sm text-gray-600">24/07/2025 19:54</div>
-                </div>
+            {/* Analytics Dashboard */}
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold text-gray-900">Análisis Avanzado de Llamadas</h3>
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/analitica01-bXMtUxOOLaJ1R23FhGJXBjm8ict4Qz.png"
+                alt="Dashboard de análisis de llamadas con métricas, gráficos de evolución y clasificaciones automáticas"
+                width={600}
+                height={400}
+                className="rounded-xl shadow-lg border border-gray-200"
+              />
+              <p className="text-gray-600">
+                Análisis completo con puntuaciones automáticas, evolución temporal y clasificación inteligente de
+                llamadas.
+              </p>
+            </div>
+          </div>
 
-                {/* Main Metrics */}
-                <div className="grid md:grid-cols-3 gap-6">
-                  <Card className="bg-teal-500 text-white">
-                    <CardContent className="p-6">
-                      <div className="flex items-center space-x-4">
-                        <Users className="w-8 h-8" />
-                        <div>
-                          <div className="text-sm opacity-90">Clientes</div>
-                          <div className="text-3xl font-bold">474</div>
-                          <div className="text-sm opacity-75">● Baja</div>
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
-
-                  <Card className="bg-gray-700 text-white">
-                    <CardContent className="p-6">
-                      <div className="flex items-center justify-between">
-                        <div>
-                          <div className="text-sm opacity-90">Facturas</div>
-                          <div className="text-sm opacity-75">01/06/2025 - 30/06/2025</div>
-                          <div className="text-3xl font-bold">€18,151.71</div>
-                        </div>
-                        <BarChart3 className="w-8 h-8" />
-                      </div>
-                    </CardContent>
-                  </Card>
-
-                  <Card className="bg-gray-700 text-white">
-                    <CardContent className="p-6">
-                      <div className="flex items-center space-x-4">
-                        <Database className="w-8 h-8" />
-                        <div>
-                          <div className="text-sm opacity-90">Dids</div>
-                          <div className="text-sm opacity-75 text-teal-400">✓ asignados</div>
-                          <div className="text-3xl font-bold text-orange-400">1.239</div>
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
-                </div>
-
-                {/* Charts Row */}
-                <div className="grid md:grid-cols-5 gap-6">
-                  <div className="text-center">
-                    <h4 className="text-lg font-semibold text-gray-700 mb-4">Clientes</h4>
-                    <div className="w-24 h-24 mx-auto relative">
-                      <div className="w-24 h-24 rounded-full border-8 border-gray-300 relative">
-                        <div className="absolute inset-0 rounded-full border-8 border-transparent border-t-red-400 border-r-green-500 transform rotate-45"></div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="text-center">
-                    <h4 className="text-lg font-semibold text-gray-700 mb-4">Infor'ies</h4>
-                    <div className="w-24 h-24 mx-auto relative">
-                      <div className="w-24 h-24 rounded-full border-8 border-gray-300 relative">
-                        <div className="absolute inset-0 rounded-full border-8 border-transparent border-t-orange-400 border-r-green-500 transform rotate-90"></div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="text-center">
-                    <h4 className="text-lg font-semibold text-gray-700 mb-4">Recargas</h4>
-                    <div className="w-24 h-24 mx-auto relative">
-                      <div className="w-24 h-24 rounded-full border-8 border-gray-300 relative">
-                        <div className="absolute inset-0 rounded-full border-8 border-transparent border-t-blue-400 border-r-teal-500 transform rotate-180"></div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="text-center">
-                    <h4 className="text-lg font-semibold text-gray-700 mb-4">Recargas</h4>
-                    <div className="w-24 h-24 mx-auto relative">
-                      <div className="w-24 h-24 rounded-full border-8 border-gray-300 relative">
-                        <div className="absolute inset-0 rounded-full border-8 border-transparent border-t-orange-400 border-r-green-500 transform rotate-270"></div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="text-center">
-                    <h4 className="text-lg font-semibold text-gray-700 mb-4">Dids</h4>
-                    <div className="w-24 h-24 mx-auto relative">
-                      <div className="w-24 h-24 rounded-full border-8 border-gray-300 relative">
-                        <div className="absolute inset-0 rounded-full border-8 border-transparent border-t-orange-400 border-r-green-500"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Call Activity */}
-                <div className="space-y-4">
-                  <div className="flex items-center space-x-2">
-                    <Activity className="w-5 h-5 text-red-500" />
-                    <h4 className="text-lg font-semibold text-gray-700">Actividad Llamadas (Actual)</h4>
-                    <span className="text-sm text-gray-500">24/07/2025 19:54</span>
-                  </div>
-
-                  <div className="grid md:grid-cols-5 gap-6">
-                    <div className="text-center">
-                      <div className="text-sm text-gray-600">Totales</div>
-                      <div className="text-2xl font-bold text-green-600">€334,44</div>
-                    </div>
-                    <div className="text-center">
-                      <div className="text-sm text-gray-600">Contestadas</div>
-                      <div className="text-2xl font-bold text-gray-800">29,843</div>
-                    </div>
-                    <div className="text-center">
-                      <div className="text-sm text-gray-600">No contestadas</div>
-                      <div className="text-2xl font-bold text-gray-800">51,352</div>
-                    </div>
-                    <div className="text-center">
-                      <div className="text-sm text-gray-600">Ocupadas</div>
-                      <div className="text-2xl font-bold text-gray-800">24,122</div>
-                    </div>
-                    <div className="text-center">
-                      <div className="text-sm text-gray-600">Fallidas</div>
-                      <div className="text-2xl font-bold text-gray-800">-</div>
-                    </div>
-                  </div>
-                </div>
+          <div className="grid md:grid-cols-3 gap-8 mt-16">
+            <div className="text-center space-y-4">
+              <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mx-auto">
+                <BarChart3 className="w-8 h-8 text-blue-600" />
               </div>
+              <h3 className="text-xl font-semibold">Métricas en Tiempo Real</h3>
+              <p className="text-gray-600">
+                Visualiza el estado de tu centralita, agentes activos y estadísticas de llamadas al instante
+              </p>
+            </div>
+
+            <div className="text-center space-y-4">
+              <div className="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mx-auto">
+                <Users className="w-8 h-8 text-green-600" />
+              </div>
+              <h3 className="text-xl font-semibold">Gestión Completa</h3>
+              <p className="text-gray-600">
+                Administra extensiones, contactos, historial de llamadas y configuraciones desde un solo lugar
+              </p>
+            </div>
+
+            <div className="text-center space-y-4">
+              <div className="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center mx-auto">
+                <Bot className="w-8 h-8 text-purple-600" />
+              </div>
+              <h3 className="text-xl font-semibold">IA Integrada</h3>
+              <p className="text-gray-600">
+                Análisis automático de sentimientos, transcripciones y evaluación de calidad con inteligencia artificial
+              </p>
             </div>
           </div>
 
           <div className="text-center mt-12">
-            <p className="text-lg text-gray-600 mb-6">
-              Dashboard real de nuestros clientes - Datos en tiempo real, métricas avanzadas y control total
-            </p>
             <Link href="/demo">
               <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white px-8">
                 Ver Demo Completo <ArrowRight className="w-4 h-4 ml-2" />
