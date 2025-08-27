@@ -17,6 +17,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import Link from "next/link"
 import { Navigation } from "@/components/navigation"
+import { Footer } from "@/components/footer"
+import Image from "next/image"
 
 export default function WhatsAppAPIPage() {
   return (
@@ -82,29 +84,13 @@ export default function WhatsAppAPIPage() {
             </div>
 
             <div className="relative">
-              <div className="bg-white rounded-2xl shadow-2xl p-8">
-                <div className="space-y-6">
-                  <div className="flex items-center space-x-3">
-                    <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
-                      <MessageSquare className="w-6 h-6 text-green-600" />
-                    </div>
-                    <div>
-                      <h3 className="text-lg font-semibold">WhatsApp Business</h3>
-                      <p className="text-gray-600">API oficial verificada</p>
-                    </div>
-                  </div>
-                  <div className="grid grid-cols-2 gap-4">
-                    <div className="bg-green-50 p-4 rounded-lg">
-                      <div className="text-2xl font-bold text-green-600">98%</div>
-                      <div className="text-sm text-gray-600">Tasa apertura</div>
-                    </div>
-                    <div className="bg-blue-50 p-4 rounded-lg">
-                      <div className="text-2xl font-bold text-blue-600">24h</div>
-                      <div className="text-sm text-gray-600">Configuración</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/utcom3-16h79RzVRjHKQb1NvNDsLXzCMpnHqQ.png"
+                alt="Interface WhatsApp Business API con conversaciones, IA y templates automáticos"
+                width={500}
+                height={600}
+                className="rounded-2xl shadow-2xl"
+              />
             </div>
           </div>
         </div>
@@ -532,8 +518,8 @@ export default function WhatsAppAPIPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 mb-4">
-                  Envía ofertas personalizadas, promociones exclusivas y contenido relevante. Segmenta audiencias y
-                  mide el ROI de cada campaña.
+                  Envía ofertas personalizadas, promociones exclusivas y contenido relevante. Segmenta audiencias y mide
+                  el ROI de cada campaña.
                 </p>
                 <div className="space-y-2">
                   <div className="flex justify-between">
@@ -584,8 +570,8 @@ export default function WhatsAppAPIPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 mb-4">
-                  Comunica con candidatos, programa entrevistas y mantén informados a los empleados. Automatiza
-                  procesos de selección y onboarding.
+                  Comunica con candidatos, programa entrevistas y mantén informados a los empleados. Automatiza procesos
+                  de selección y onboarding.
                 </p>
                 <div className="space-y-2">
                   <div className="flex justify-between">
@@ -633,12 +619,33 @@ export default function WhatsAppAPIPage() {
       <section className="py-20 bg-gradient-to-r from-green-500 to-blue-500">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-3xl mx-auto space-y-8 text-white">
-            <h2 className="text-3xl lg:text-4xl font-bold">
-              ¿Listo para conectar con tus clientes por WhatsApp?
-            </h2>
+            <h2 className="text-3xl lg:text-4xl font-bold">¿Listo para conectar con tus clientes por WhatsApp?</h2>
             <p className="text-xl opacity-90">
-              Únete a más de 500 empresas que ya usan WhatsApp Business API. Prueba gratis durante 14 días y
-              experimenta el poder de la comunicación directa.
+              Únete a más de 500 empresas que ya usan WhatsApp Business API. Prueba gratis durante 14 días y experimenta
+              el poder de la comunicación directa.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/prueba-\
+              <Link href="/prueba-gratis?producto=whatsapp-api">
+                <Button size="lg" className="bg-white text-green-500 hover:bg-gray-100 px-8">
+                  Prueba 14 Días Gratis <ArrowRight className="w-4 h-4 ml-2" />
+                </Button>
+              </Link>
+              <Link href="/demo?producto=whatsapp-api">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="border-white text-white hover:bg-white hover:text-green-500 bg-transparent"
+                >
+                  Solicitar Demo
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <Footer />
+    </div>
+  )
+}

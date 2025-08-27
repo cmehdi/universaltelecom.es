@@ -67,8 +67,8 @@ export default function AgenteIAChatbotPage() {
 
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=600&width=500&text=Agente+IA+Conversacional"
-                alt="Panel control Agente IA Universal Telecom conversaciones análisis sentimiento tiempo real"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/utcom5-GfKwa8rtVOOGJgJcVA79wOiBBWojMb.png"
+                alt="Panel control Agentes IA Universal Telecom con métricas de rendimiento y automatización"
                 width={500}
                 height={600}
                 className="rounded-2xl shadow-2xl"

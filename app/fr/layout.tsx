@@ -9,44 +9,18 @@ export const metadata: Metadata = {
     template: "%s | Universal Telecom",
   },
   description:
-    "Transformez vos communications d'entreprise avec les solutions professionnelles d'Universal Telecom. PBX virtuel, API WhatsApp Business, agents IA, analyse d'appels et numéros globaux. Plus de 15,000 entreprises nous font confiance.",
-  keywords: [
-    "système téléphonique entreprise",
-    "pbx virtuel",
-    "api whatsapp business",
-    "chatbots ia",
-    "analyse appels",
-    "numéros globaux",
-    "communications entreprise",
-    "téléphonie cloud",
-    "universal telecom",
-    "téléphonie d'entreprise",
-  ],
-  authors: [{ name: "Universal Telecom", url: "https://universaltelecom.com" }],
+    "Transformez vos communications d'entreprise avec les solutions professionnelles d'Universal Telecom. PBX virtuel, API WhatsApp Business, agents IA, analyse d'appels et numéros globaux.",
+  keywords:
+    "système téléphonique entreprise, pbx virtuel, api whatsapp business, chatbots ia, analyse appels, numéros globaux, communications entreprise",
+  authors: [{ name: "Universal Telecom" }],
   creator: "Universal Telecom",
   publisher: "Universal Telecom",
-  formatDetection: {
-    email: false,
-    address: false,
-    telephone: false,
-  },
-  metadataBase: new URL("https://universaltelecom.com"),
-  alternates: {
-    canonical: "/fr",
-    languages: {
-      "es-ES": "/",
-      "en-US": "/en",
-      "fr-FR": "/fr",
-    },
-  },
   robots: {
     index: true,
     follow: true,
-    nocache: true,
     googleBot: {
       index: true,
       follow: true,
-      noimageindex: false,
       "max-video-preview": -1,
       "max-image-preview": "large",
       "max-snippet": -1,
@@ -59,7 +33,7 @@ export const metadata: Metadata = {
     siteName: "Universal Telecom",
     title: "Universal Telecom - Solutions de Communications Professionnelles",
     description:
-      "Transformez vos communications d'entreprise avec des solutions professionnelles. PBX virtuel, API WhatsApp Business, agents IA et plus. Plus de 15,000 entreprises nous font confiance.",
+      "Transformez vos communications d'entreprise avec des solutions professionnelles. PBX virtuel, API WhatsApp Business, agents IA et plus.",
     images: [
       {
         url: "/images/og-image-fr.jpg",
@@ -76,89 +50,14 @@ export const metadata: Metadata = {
       "Transformez vos communications d'entreprise avec des solutions professionnelles. PBX virtuel, API WhatsApp Business, agents IA et plus.",
     images: ["/images/twitter-image-fr.jpg"],
     creator: "@universaltelecom",
-    site: "@universaltelecom",
   },
-  verification: {
-    google: "your-google-verification-code",
-    yandex: "your-yandex-verification-code",
-    yahoo: "your-yahoo-verification-code",
-  },
-}
-
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "Universal Telecom",
-  url: "https://universaltelecom.com/fr",
-  logo: "https://universaltelecom.com/logo.png",
-  description:
-    "Fournisseur leader de solutions de communications d'entreprise incluant PBX virtuel, API WhatsApp Business, agents IA et analyse d'appels.",
-  foundingDate: "2010",
-  contactPoint: [
-    {
-      "@type": "ContactPoint",
-      telephone: "+33-1-84-88-32-81",
-      contactType: "customer service",
-      availableLanguage: ["French", "English", "Spanish"],
-      areaServed: ["FR", "BE", "CH", "CA"],
+  alternates: {
+    canonical: "https://universaltelecom.com/fr",
+    languages: {
+      es: "https://universaltelecom.com",
+      en: "https://universaltelecom.com/en",
+      fr: "https://universaltelecom.com/fr",
     },
-    {
-      "@type": "ContactPoint",
-      telephone: "+33-1-84-88-32-82",
-      contactType: "sales",
-      availableLanguage: ["French", "English", "Spanish"],
-      areaServed: ["FR", "BE", "CH", "CA"],
-    },
-  ],
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "123 Avenue des Champs-Élysées",
-    addressLocality: "Paris",
-    postalCode: "75008",
-    addressCountry: "FR",
-  },
-  sameAs: [
-    "https://www.linkedin.com/company/universal-telecom",
-    "https://twitter.com/universaltelecom",
-    "https://www.facebook.com/universaltelecom",
-  ],
-  hasOfferCatalog: {
-    "@type": "OfferCatalog",
-    name: "Services de Communications d'Entreprise",
-    itemListElement: [
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "PBX Virtuel",
-          description: "Système téléphonique d'entreprise dans le cloud avec fonctionnalités avancées",
-        },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "API WhatsApp Business",
-          description: "Intégration officielle WhatsApp pour entreprises avec automatisation",
-        },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Agents IA",
-          description: "Chatbots intelligents et assistants virtuels avec IA conversationnelle",
-        },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Analyse d'Appels",
-          description: "Analyse avancée d'appels avec intelligence artificielle",
-        },
-      },
-    ],
   },
 }
 
@@ -169,7 +68,6 @@ export default function FrenchLayout({
 }) {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Navigation />
       <main>{children}</main>
       <Footer />

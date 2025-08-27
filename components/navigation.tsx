@@ -20,9 +20,9 @@ import {
   Smartphone,
   Code,
   Send,
+  Globe,
 } from "lucide-react"
 import { useAnalytics } from "@/hooks/use-analytics"
-import { LanguageSelector } from "@/components/language-selector"
 
 export function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -109,8 +109,30 @@ export function Navigation() {
               </a>
             </div>
 
-            {/* Language selector */}
-            <LanguageSelector />
+            {/* Selector de idiomas donde estaba Portal de Clientes */}
+            <DropdownMenu>
+              <DropdownMenuTrigger className="flex items-center text-orange-600 hover:text-orange-700 font-medium">
+                <Globe className="h-4 w-4 mr-1" />
+                ES <ChevronDown className="ml-1 h-4 w-4" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end" className="w-32">
+                <DropdownMenuItem asChild>
+                  <Link href="/" className="flex items-center">
+                    🇪🇸 Español
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href="/en" className="flex items-center">
+                    🇺🇸 English
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href="/fr" className="flex items-center">
+                    🇫🇷 Français
+                  </Link>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
           </div>
         </div>
       </div>
@@ -240,6 +262,29 @@ export function Navigation() {
                     </Link>
                   )
                 })}
+              </div>
+
+              {/* Language Selector Mobile */}
+              <div className="border-t pt-2 mt-2">
+                <div className="px-3 py-2 text-xs font-semibold text-gray-500 uppercase tracking-wider">Idioma</div>
+                <Link
+                  href="/"
+                  className="flex items-center px-3 py-2 text-base font-medium text-gray-700 hover:text-orange-600 hover:bg-gray-50"
+                >
+                  🇪🇸 Español
+                </Link>
+                <Link
+                  href="/en"
+                  className="flex items-center px-3 py-2 text-base font-medium text-gray-700 hover:text-orange-600 hover:bg-gray-50"
+                >
+                  🇺🇸 English
+                </Link>
+                <Link
+                  href="/fr"
+                  className="flex items-center px-3 py-2 text-base font-medium text-gray-700 hover:text-orange-600 hover:bg-gray-50"
+                >
+                  🇫🇷 Français
+                </Link>
               </div>
 
               <div className="pt-4 pb-3 border-t border-gray-200">

@@ -12,150 +12,19 @@ export const metadata: Metadata = {
   title: "Centralita Virtual Profesional | PBX en la Nube | Universal Telecom",
   description:
     "Centralita Virtual profesional en la nube. PBX sin hardware, configuración en 15 minutos. Integración CRM, IA avanzada y soporte 24/7. Prueba gratis 14 días.",
-  keywords: [
-    "centralita virtual",
-    "pbx nube",
-    "centralita empresarial",
-    "sistema telefónico virtual",
-    "centralita ip",
-    "voip empresarial",
-    "telefonía cloud",
-    "pbx virtual",
-    "sistema telefónico empresarial",
-    "centralita telefónica virtual",
-  ],
+  keywords:
+    "centralita virtual, pbx nube, centralita empresarial, sistema telefónico virtual, centralita ip, voip empresarial",
   openGraph: {
     title: "Centralita Virtual Profesional - La PBX del Futuro",
     description:
       "Centralita Virtual sin hardware. Configuración instantánea, integración CRM y IA avanzada. Más de 2.000 empresas confían en nosotros.",
     type: "website",
-    images: [
-      {
-        url: "/images/centralita-virtual-og.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Centralita Virtual Universal Telecom",
-      },
-    ],
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "Centralita Virtual Profesional - La PBX del Futuro",
-    description: "Centralita Virtual sin hardware. Configuración instantánea, integración CRM y IA avanzada.",
-    images: ["/images/centralita-virtual-twitter.jpg"],
-  },
-  alternates: {
-    canonical: "/centralita-virtual",
-    languages: {
-      "en-US": "/en/virtual-pbx",
-      "fr-FR": "/fr/centralita-virtual",
-    },
-  },
-}
-
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Service",
-  name: "Centralita Virtual",
-  description:
-    "Sistema telefónico empresarial en la nube con funcionalidades avanzadas, sin necesidad de hardware físico.",
-  provider: {
-    "@type": "Organization",
-    name: "Universal Telecom",
-    url: "https://universaltelecom.com",
-  },
-  offers: [
-    {
-      "@type": "Offer",
-      name: "Plan Global",
-      description: "Centralita virtual perfecta para pequeñas empresas",
-      price: "45",
-      priceCurrency: "EUR",
-      priceValidUntil: "2025-12-31",
-      availability: "https://schema.org/InStock",
-      itemCondition: "https://schema.org/NewCondition",
-    },
-    {
-      "@type": "Offer",
-      name: "Plan Smart",
-      description: "Centralita virtual con IA básica para empresas en crecimiento",
-      price: "112.5",
-      priceCurrency: "EUR",
-      priceValidUntil: "2025-12-31",
-      availability: "https://schema.org/InStock",
-      itemCondition: "https://schema.org/NewCondition",
-    },
-    {
-      "@type": "Offer",
-      name: "Plan Total",
-      description: "La centralita virtual completa con IA avanzada",
-      price: "225",
-      priceCurrency: "EUR",
-      priceValidUntil: "2025-12-31",
-      availability: "https://schema.org/InStock",
-      itemCondition: "https://schema.org/NewCondition",
-    },
-  ],
-  hasOfferCatalog: {
-    "@type": "OfferCatalog",
-    name: "Funcionalidades Centralita Virtual",
-    itemListElement: [
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Usuarios ilimitados",
-          description: "Añade tantos usuarios como necesites sin límites técnicos",
-        },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Grabación de llamadas",
-          description: "Grabación automática con almacenamiento seguro en la nube",
-        },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Integración CRM",
-          description: "Integración nativa con Clientify, HubSpot, Odoo, Zoho y más",
-        },
-      },
-    ],
-  },
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.8",
-    reviewCount: "2847",
-    bestRating: "5",
-    worstRating: "1",
-  },
-  review: [
-    {
-      "@type": "Review",
-      author: {
-        "@type": "Organization",
-        name: "Empresa de consultoría",
-      },
-      reviewRating: {
-        "@type": "Rating",
-        ratingValue: "5",
-        bestRating: "5",
-      },
-      reviewBody:
-        "Migró de una centralita tradicional a nuestra centralita virtual ahorrando 1.200€/año en mantenimiento.",
-    },
-  ],
 }
 
 export default function CentralitaVirtualPage() {
   return (
     <div className="min-h-screen bg-white">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-
       {/* Header simplificado */}
       <Navigation />
 
@@ -227,8 +96,8 @@ export default function CentralitaVirtualPage() {
 
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=600&width=500&text=Dashboard+Centralita+Virtual"
-                alt="Panel de control centralita virtual Universal Telecom con métricas en tiempo real"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/utcom2-RhUECWSJZGbyx52OuMyhy4DSfGl7cM.png"
+                alt="Panel de control centralita virtual Universal Telecom con directorio telefónico y métricas en tiempo real"
                 width={500}
                 height={600}
                 className="rounded-2xl shadow-2xl"
@@ -238,8 +107,64 @@ export default function CentralitaVirtualPage() {
         </div>
       </section>
 
+      {/* Dashboard Preview */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center space-y-4 mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">
+              Dashboard Completo de tu Centralita Virtual
+            </h2>
+            <p className="text-xl text-gray-600">
+              Controla todas las métricas y actividad de tu centralita desde un panel unificado
+            </p>
+          </div>
+
+          <div className="max-w-6xl mx-auto">
+            <Image
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/utcom1-GKvosi2Bg1x6Ksw19Up6bNGuSlbX7U.png"
+              alt="Dashboard centralita virtual con estadísticas de llamadas, WhatsApp, tickets y agentes IA"
+              width={1200}
+              height={800}
+              className="rounded-2xl shadow-2xl border border-gray-200"
+            />
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 mt-16">
+            <div className="text-center space-y-4">
+              <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mx-auto">
+                <BarChart3 className="w-8 h-8 text-blue-600" />
+              </div>
+              <h3 className="text-xl font-semibold">Métricas en Tiempo Real</h3>
+              <p className="text-gray-600">
+                Visualiza llamadas, mensajes WhatsApp, tickets y actividad de agentes IA desde un dashboard unificado
+              </p>
+            </div>
+
+            <div className="text-center space-y-4">
+              <div className="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mx-auto">
+                <Users className="w-8 h-8 text-green-600" />
+              </div>
+              <h3 className="text-xl font-semibold">Gestión de Contactos</h3>
+              <p className="text-gray-600">
+                Base de datos completa con historial de interacciones, clasificación automática y seguimiento de leads
+              </p>
+            </div>
+
+            <div className="text-center space-y-4">
+              <div className="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center mx-auto">
+                <Phone className="w-8 h-8 text-purple-600" />
+              </div>
+              <h3 className="text-xl font-semibold">Directorio Inteligente</h3>
+              <p className="text-gray-600">
+                Marcador integrado, directorio de extensiones y gestión avanzada de llamadas con un solo clic
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Planes y Precios */}
-      <section className="py-20 bg-gray-50" id="planes">
+      <section className="py-20 bg-white" id="planes">
         <div className="container mx-auto px-4">
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">
@@ -437,7 +362,7 @@ export default function CentralitaVirtualPage() {
       </section>
 
       {/* Integraciones */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">
@@ -535,7 +460,7 @@ export default function CentralitaVirtualPage() {
       </section>
 
       {/* Casos de Uso */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">
@@ -583,7 +508,7 @@ export default function CentralitaVirtualPage() {
       </section>
 
       {/* Sin letra pequeña */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center space-y-4 mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">
