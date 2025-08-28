@@ -69,8 +69,8 @@ export default function NumeracionGlobalPage() {
 
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=600&width=500&text=Mapa+Mundial+Numeración+Global"
-                alt="Mapa mundial numeración global Universal Telecom presencia local internacional"
+                src="/images/global-numbers-dashboard.png"
+                alt="Dashboard numeración global Universal Telecom presencia local internacional"
                 width={500}
                 height={600}
                 className="rounded-2xl shadow-2xl"
