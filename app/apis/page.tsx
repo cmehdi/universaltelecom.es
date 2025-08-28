@@ -1,4 +1,16 @@
-import { Code, CheckCircle, ArrowRight, Zap, MessageSquare, Phone, Shield, BarChart3, Globe } from "lucide-react"
+import {
+  Code,
+  CheckCircle,
+  ArrowRight,
+  Zap,
+  MessageSquare,
+  Phone,
+  Shield,
+  BarChart3,
+  Volume2,
+  FileText,
+  Headphones,
+} from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -93,7 +105,7 @@ export default function APIsPage() {
 
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=600&width=500&text=APIs+Dashboard+Universal+Telecom"
+                src="/images/apis-dashboard.png"
                 alt="Dashboard APIs Universal Telecom documentación SDKs webhooks tiempo real"
                 width={500}
                 height={600}
@@ -108,7 +120,7 @@ export default function APIsPage() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center space-y-4 mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">Suite completa de 6 APIs</h2>
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">Suite completa de APIs</h2>
             <p className="text-xl text-gray-600">Todo lo que necesitas para integrar comunicaciones avanzadas</p>
           </div>
 
@@ -124,23 +136,16 @@ export default function APIsPage() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="space-y-3">
-                  <div className="flex justify-between items-center">
-                    <span className="text-sm text-gray-600">Envío masivo</span>
-                    <span className="font-medium">0,045€/SMS</span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-sm text-gray-600">SMS Premium</span>
-                    <span className="font-medium">0,08€/SMS</span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-sm text-gray-600">Delivery reports</span>
-                    <span className="font-medium text-green-600">Incluido</span>
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-blue-500">Desde 0,045€</div>
+                    <div className="text-sm text-gray-500">por SMS</div>
                   </div>
                 </div>
                 <ul className="space-y-2 text-sm text-gray-600">
                   <li>✓ 180+ países cubiertos</li>
                   <li>✓ Templates personalizables</li>
                   <li>✓ Programación de envíos</li>
+                  <li>✓ Delivery reports incluidos</li>
                   <li>✓ Listas negras automáticas</li>
                 </ul>
                 <Link href="/api-sms">
@@ -169,8 +174,8 @@ export default function APIsPage() {
                     <span className="font-medium">0,05€/min</span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-sm text-gray-600">TTS (Text-to-Speech)</span>
-                    <span className="font-medium text-green-600">Incluido</span>
+                    <span className="text-sm text-gray-600">TTS</span>
+                    <span className="font-medium">0,08€/min</span>
                   </div>
                 </div>
                 <ul className="space-y-2 text-sm text-gray-600">
@@ -195,23 +200,23 @@ export default function APIsPage() {
               <CardContent className="space-y-4">
                 <div className="space-y-3">
                   <div className="flex justify-between items-center">
-                    <span className="text-sm text-gray-600">Mensajes template</span>
-                    <span className="font-medium">0,055€/msg</span>
+                    <span className="text-sm text-gray-600">Cuota mensual</span>
+                    <span className="font-medium">10€/mes</span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-sm text-gray-600">Conversaciones</span>
-                    <span className="font-medium">0,09€/24h</span>
+                    <span className="text-sm text-gray-600">Por conversación</span>
+                    <span className="font-medium">Desde 0,01€</span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-sm text-gray-600">Media (imagen/audio)</span>
+                    <span className="text-sm text-gray-600">Webhook "escribiendo"</span>
                     <span className="font-medium text-green-600">Incluido</span>
                   </div>
                 </div>
                 <ul className="space-y-2 text-sm text-gray-600">
                   <li>✓ Templates pre-aprobados</li>
-                  <li>✓ Botones interactivos</li>
-                  <li>✓ Lista de productos</li>
+                  <li>✓ Media (imagen/audio/video)</li>
                   <li>✓ Webhook delivery status</li>
+                  <li>✓ Webhook "grabando audio"</li>
                 </ul>
                 <Link href="/whatsapp-api">
                   <Button className="w-full bg-emerald-500 hover:bg-emerald-600 text-white">Ver Documentación</Button>
@@ -219,107 +224,84 @@ export default function APIsPage() {
               </CardContent>
             </Card>
 
-            {/* Verification API */}
+            {/* Transcription API */}
             <Card className="border-2 border-gray-200 hover:border-purple-300 transition-colors">
               <CardHeader>
                 <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center">
-                  <Shield className="w-6 h-6 text-purple-600" />
+                  <FileText className="w-6 h-6 text-purple-600" />
                 </div>
-                <CardTitle className="text-xl">Verification API</CardTitle>
-                <CardDescription>OTP y verificación de números</CardDescription>
+                <CardTitle className="text-xl">Transcription API</CardTitle>
+                <CardDescription>Transcripción de audio a texto</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="space-y-3">
-                  <div className="flex justify-between items-center">
-                    <span className="text-sm text-gray-600">Verificación SMS</span>
-                    <span className="font-medium">0,08€/intento</span>
-                  </div>
-                  <div className="flex justify-between items-children">
-                    <span className="text-sm text-gray-600">Verificación voz</span>
-                    <span className="font-medium">0,12€/intento</span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-sm text-gray-600">WhatsApp OTP</span>
-                    <span className="font-medium">0,045€/intento</span>
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-purple-500">0,008€</div>
+                    <div className="text-sm text-gray-500">por minuto</div>
                   </div>
                 </div>
                 <ul className="space-y-2 text-sm text-gray-600">
-                  <li>✓ PIN personalizables</li>
-                  <li>✓ Templates multiidioma</li>
-                  <li>✓ Fraud detection</li>
-                  <li>✓ Retry automático</li>
+                  <li>✓ Múltiples idiomas</li>
+                  <li>✓ Identificación de hablantes</li>
+                  <li>✓ Timestamps precisos</li>
+                  <li>✓ Formato JSON/SRT</li>
+                  <li>✓ Procesamiento en tiempo real</li>
                 </ul>
                 <Button className="w-full bg-purple-500 hover:bg-purple-600 text-white">Ver Documentación</Button>
               </CardContent>
             </Card>
 
-            {/* Analytics API */}
+            {/* TTS API */}
             <Card className="border-2 border-gray-200 hover:border-orange-300 transition-colors">
               <CardHeader>
                 <div className="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center">
-                  <BarChart3 className="w-6 h-6 text-orange-600" />
+                  <Volume2 className="w-6 h-6 text-orange-600" />
+                </div>
+                <CardTitle className="text-xl">Text-to-Speech API</CardTitle>
+                <CardDescription>Síntesis de voz natural</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="space-y-3">
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-orange-500">0,08€</div>
+                    <div className="text-sm text-gray-500">por minuto</div>
+                  </div>
+                </div>
+                <ul className="space-y-2 text-sm text-gray-600">
+                  <li>✓ Voces neurales premium</li>
+                  <li>✓ Múltiples idiomas</li>
+                  <li>✓ Control de velocidad/tono</li>
+                  <li>✓ SSML compatible</li>
+                  <li>✓ Formatos MP3/WAV</li>
+                </ul>
+                <Button className="w-full bg-orange-500 hover:bg-orange-600 text-white">Ver Documentación</Button>
+              </CardContent>
+            </Card>
+
+            {/* Analytics API */}
+            <Card className="border-2 border-gray-200 hover:border-indigo-300 transition-colors">
+              <CardHeader>
+                <div className="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center">
+                  <BarChart3 className="w-6 h-6 text-indigo-600" />
                 </div>
                 <CardTitle className="text-xl">Analytics API</CardTitle>
                 <CardDescription>IA y análisis conversacional</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="space-y-3">
-                  <div className="flex justify-between items-center">
-                    <span className="text-sm text-gray-600">Transcripción IA</span>
-                    <span className="font-medium">0,15€/min</span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-sm text-gray-600">Análisis sentimiento</span>
-                    <span className="font-medium">0,05€/llamada</span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-sm text-gray-600">Keywords extraction</span>
-                    <span className="font-medium text-green-600">Incluido</span>
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-indigo-500">0,012€</div>
+                    <div className="text-sm text-gray-500">por análisis</div>
                   </div>
                 </div>
                 <ul className="space-y-2 text-sm text-gray-600">
-                  <li>✓ Speaker diarization</li>
+                  <li>✓ Transcripción incluida</li>
+                  <li>✓ Análisis de sentimiento</li>
+                  <li>✓ Keywords extraction</li>
                   <li>✓ Score de calidad automático</li>
                   <li>✓ Compliance detection</li>
-                  <li>✓ Reportes personalizables</li>
                 </ul>
                 <Link href="/analisis-llamadas-ia">
-                  <Button className="w-full bg-orange-500 hover:bg-orange-600 text-white">Ver Documentación</Button>
-                </Link>
-              </CardContent>
-            </Card>
-
-            {/* Numbers API */}
-            <Card className="border-2 border-gray-200 hover:border-indigo-300 transition-colors">
-              <CardHeader>
-                <div className="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center">
-                  <Globe className="w-6 h-6 text-indigo-600" />
-                </div>
-                <CardTitle className="text-xl">Numbers API</CardTitle>
-                <CardDescription>Numeración global programática</CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="space-y-3">
-                  <div className="flex justify-between items-center">
-                    <span className="text-sm text-gray-600">Números locales</span>
-                    <span className="font-medium">5€-25€/mes</span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-sm text-gray-600">Toll-free</span>
-                    <span className="font-medium">45€/mes</span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-sm text-gray-600">Portabilidad</span>
-                    <span className="font-medium text-green-600">Gratuita</span>
-                  </div>
-                </div>
-                <ul className="space-y-2 text-sm text-gray-600">
-                  <li>✓ 80+ países disponibles</li>
-                  <li>✓ Búsqueda por patrón</li>
-                  <li>✓ Activación instantánea</li>
-                  <li>✓ Desvíos programables</li>
-                </ul>
-                <Link href="/numeracion-global">
                   <Button className="w-full bg-indigo-500 hover:bg-indigo-600 text-white">Ver Documentación</Button>
                 </Link>
               </CardContent>
@@ -382,30 +364,49 @@ async function sendSMS() {
 
                 <Card>
                   <CardHeader>
-                    <CardTitle>Hacer llamada con Voice API</CardTitle>
+                    <CardTitle>WhatsApp con webhooks de estado</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto text-sm">
-                      {`import { UniversalTelecomVoice } from '@universaltelecom/voice-api';
+                      {`import { UniversalTelecomWhatsApp } from '@universaltelecom/whatsapp-api';
 
-const voiceClient = new UniversalTelecomVoice({
+const whatsappClient = new UniversalTelecomWhatsApp({
   apiKey: 'your-api-key'
 });
 
-async function makeCall() {
-  const call = await voiceClient.create({
+// Enviar mensaje con webhook de "escribiendo"
+async function sendWithTyping() {
+  // Activar indicador "escribiendo"
+  await whatsappClient.sendTyping({
     to: '+34666123456',
-    from: '+34951047200',
-    tts: {
-      text: 'Hola, este es un recordatorio de tu cita médica mañana a las 10:00.',
-      voice: 'es-ES-ElviraNeural',
-      speed: 1.0
-    },
-    webhook: 'https://tu-app.com/webhook/call'
+    duration: 3000 // 3 segundos
   });
   
-  console.log('Llamada iniciada:', call.sid);
-}`}
+  // Enviar mensaje
+  const result = await whatsappClient.send({
+    to: '+34666123456',
+    message: 'Hola, ¿en qué puedo ayudarte?',
+    webhook: 'https://tu-app.com/webhook/whatsapp'
+  });
+  
+  console.log('Mensaje enviado:', result.messageId);
+}
+
+// Webhook para audio grabado
+app.post('/webhook/whatsapp', (req, res) => {
+  const { type, data } = req.body;
+  
+  if (type === 'audio_recording_started') {
+    console.log('Usuario comenzó a grabar audio');
+  }
+  
+  if (type === 'audio_received') {
+    // Transcribir automáticamente
+    transcribeAudio(data.audioUrl);
+  }
+  
+  res.status(200).send('OK');
+});`}
                     </pre>
                   </CardContent>
                 </Card>
@@ -414,35 +415,42 @@ async function makeCall() {
               <TabsContent value="python" className="space-y-6">
                 <Card>
                   <CardHeader>
-                    <CardTitle>Enviar SMS con Python</CardTitle>
+                    <CardTitle>Transcripción con análisis</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto text-sm">
-                      {`# Instalar SDK: pip install universaltelecom-sms
+                      {`# Instalar SDK: pip install universaltelecom-analytics
 
-from universaltelecom.sms import SMSClient
+from universaltelecom.analytics import AnalyticsClient
 
-client = SMSClient(
+client = AnalyticsClient(
     api_key='your-api-key',
     environment='production'
 )
 
-def send_sms():
+def analyze_call_recording(audio_url):
     try:
-        response = client.send(
-            to='+34666123456',
-            sender='UniversalTC',
-            message='¡Tu pedido #12345 está en camino!',
-            webhook='https://tu-app.com/webhook/sms'
+        # Análisis completo: transcripción + sentimiento
+        response = client.analyze_audio(
+            audio_url=audio_url,
+            include_transcription=True,
+            include_sentiment=True,
+            include_keywords=True,
+            language='es-ES'
         )
         
-        print(f"SMS enviado: {response.message_id}")
+        print(f"Transcripción: {response.transcription}")
+        print(f"Sentimiento: {response.sentiment.score}")
+        print(f"Keywords: {response.keywords}")
         print(f"Coste: {response.cost}€")
+        
+        return response
         
     except Exception as e:
         print(f"Error: {e}")
 
-send_sms()`}
+# Usar con webhook de llamada finalizada
+analyze_call_recording('https://recordings.com/call123.wav')`}
                     </pre>
                   </CardContent>
                 </Card>
@@ -451,31 +459,33 @@ send_sms()`}
               <TabsContent value="php" className="space-y-6">
                 <Card>
                   <CardHeader>
-                    <CardTitle>Enviar SMS con PHP</CardTitle>
+                    <CardTitle>Text-to-Speech con PHP</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto text-sm">
                       {`<?php
-// Instalar SDK: composer require universaltelecom/sms-api
+// Instalar SDK: composer require universaltelecom/tts-api
 
 require_once 'vendor/autoload.php';
 
-use UniversalTelecom\\SMS\\SMSClient;
+use UniversalTelecom\\TTS\\TTSClient;
 
-$client = new SMSClient([
+$client = new TTSClient([
     'api_key' => 'your-api-key',
     'environment' => 'production'
 ]);
 
 try {
-    $response = $client->send([
-        'to' => '+34666123456',
-        'from' => 'UniversalTC',
-        'message' => '¡Tu pedido #12345 está en camino!',
-        'webhook' => 'https://tu-app.com/webhook/sms'
+    $response = $client->synthesize([
+        'text' => 'Hola, bienvenido a Universal Telecom. Tu llamada es importante para nosotros.',
+        'voice' => 'es-ES-ElviraNeural',
+        'speed' => 1.0,
+        'format' => 'mp3',
+        'webhook' => 'https://tu-app.com/webhook/tts'
     ]);
     
-    echo "SMS enviado: " . $response->messageId . "\\n";
+    echo "Audio generado: " . $response->audioUrl . "\\n";
+    echo "Duración: " . $response->duration . " segundos\\n";
     echo "Coste: " . $response->cost . "€\\n";
     
 } catch (Exception $e) {
@@ -490,56 +500,39 @@ try {
               <TabsContent value="curl" className="space-y-6">
                 <Card>
                   <CardHeader>
-                    <CardTitle>Enviar SMS con cURL</CardTitle>
+                    <CardTitle>Transcripción con cURL</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto text-sm">
-                      {`curl -X POST https://api.universaltelecom.es/v1/sms \\
+                      {`# Transcribir audio
+curl -X POST https://api.universaltelecom.es/v1/transcribe \\
   -H "Authorization: Bearer your-api-key" \\
   -H "Content-Type: application/json" \\
   -d '{
-    "to": "+34666123456",
-    "from": "UniversalTC",
-    "message": "¡Tu pedido #12345 está en camino!",
-    "webhook": "https://tu-app.com/webhook/sms"
+    "audio_url": "https://example.com/audio.wav",
+    "language": "es-ES",
+    "include_speakers": true,
+    "include_timestamps": true,
+    "webhook": "https://tu-app.com/webhook/transcription"
   }'
 
 # Respuesta:
 {
-  "message_id": "msg_12345abc",
-  "status": "sent",
-  "cost": 0.045,
-  "currency": "EUR",
-  "timestamp": "2024-01-15T10:30:00Z"
-}`}
-                    </pre>
-                  </CardContent>
-                </Card>
+  "transcription_id": "trans_12345abc",
+  "status": "processing",
+  "estimated_duration": "2-3 minutes",
+  "cost_estimate": "0.024€"
+}
 
-                <Card>
-                  <CardHeader>
-                    <CardTitle>Verificar número con OTP</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto text-sm">
-                      {`# Iniciar verificación
-curl -X POST https://api.universaltelecom.es/v1/verify \\
+# Análisis completo con transcripción incluida
+curl -X POST https://api.universaltelecom.es/v1/analytics/analyze \\
   -H "Authorization: Bearer your-api-key" \\
   -H "Content-Type: application/json" \\
   -d '{
-    "to": "+34666123456",
-    "brand": "TuApp",
-    "code_length": 6,
-    "channel": "sms"
-  }'
-
-# Verificar código
-curl -X POST https://api.universaltelecom.es/v1/verify/check \\
-  -H "Authorization: Bearer your-api-key" \\
-  -H "Content-Type: application/json" \\
-  -d '{
-    "request_id": "req_abc123",
-    "code": "123456"
+    "audio_url": "https://example.com/call.wav",
+    "include_transcription": true,
+    "include_sentiment": true,
+    "include_compliance": true
   }'`}
                     </pre>
                   </CardContent>
@@ -550,162 +543,194 @@ curl -X POST https://api.universaltelecom.es/v1/verify/check \\
         </div>
       </section>
 
-      {/* Precios */}
+      {/* Webhooks Avanzados */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center space-y-4 mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">Planes flexibles para desarrolladores</h2>
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">Webhooks en Tiempo Real</h2>
+            <p className="text-xl text-gray-600">Recibe notificaciones instantáneas de todos los eventos</p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {/* Plan Gratis */}
-            <Card className="border-2 border-gray-200">
-              <CardHeader className="text-center space-y-4">
-                <div className="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center mx-auto">
-                  <Code className="w-6 h-6 text-gray-600" />
-                </div>
-                <div>
-                  <CardTitle className="text-2xl">Plan Gratis</CardTitle>
-                  <CardDescription>Para desarrollo y pruebas</CardDescription>
-                </div>
-                <div className="space-y-2">
-                  <div className="text-4xl font-bold text-gray-500">0€</div>
-                  <div className="text-gray-500">/mes</div>
-                </div>
+          <div className="grid lg:grid-cols-2 gap-12">
+            <div className="space-y-6">
+              <h3 className="text-2xl font-bold text-gray-900">Eventos WhatsApp Avanzados</h3>
+              <Card>
+                <CardHeader>
+                  <CardTitle>Webhooks de Estado de Conversación</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-4">
+                    <div className="flex items-center space-x-3">
+                      <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
+                      <div>
+                        <div className="font-medium">user_typing</div>
+                        <div className="text-sm text-gray-600">Usuario está escribiendo</div>
+                      </div>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+                      <div>
+                        <div className="font-medium">user_recording_audio</div>
+                        <div className="text-sm text-gray-600">Usuario grabando nota de voz</div>
+                      </div>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <div className="w-3 h-3 bg-purple-500 rounded-full"></div>
+                      <div>
+                        <div className="font-medium">audio_transcribed</div>
+                        <div className="text-sm text-gray-600">Audio transcrito automáticamente</div>
+                      </div>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
+                      <div>
+                        <div className="font-medium">message_read</div>
+                        <div className="text-sm text-gray-600">Mensaje leído por el usuario</div>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className="space-y-6">
+              <h3 className="text-2xl font-bold text-gray-900">Ejemplo de Webhook</h3>
+              <Card>
+                <CardHeader>
+                  <CardTitle>Procesamiento Automático de Audio</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto text-sm">
+                    {`// Webhook endpoint para WhatsApp
+app.post('/webhook/whatsapp', async (req, res) => {
+  const { event, data } = req.body;
+  
+  switch(event) {
+    case 'user_recording_audio':
+      console.log('Usuario grabando audio...');
+      // Mostrar indicador en UI
+      break;
+      
+    case 'audio_received':
+      // Transcribir automáticamente
+      const transcription = await transcribeAudio({
+        audioUrl: data.audioUrl,
+        language: 'es-ES'
+      });
+      
+      // Analizar sentimiento
+      const sentiment = await analyzeSentiment({
+        text: transcription.text
+      });
+      
+      console.log('Audio transcrito:', transcription.text);
+      console.log('Sentimiento:', sentiment.score);
+      break;
+      
+    case 'message_delivered':
+      updateMessageStatus(data.messageId, 'delivered');
+      break;
+  }
+  
+  res.status(200).send('OK');
+});`}
+                  </pre>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Casos de Uso */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center space-y-4 mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">Casos de uso que impulsan resultados</h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center">
+                  <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center mr-3">
+                    <Shield className="w-4 h-4 text-blue-600" />
+                  </div>
+                  Fintech con Transcripción Automática
+                </CardTitle>
               </CardHeader>
-              <CardContent className="space-y-6">
-                <ul className="space-y-3">
-                  <li className="flex items-center space-x-3">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span className="text-sm">100 SMS/mes incluidos</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span className="text-sm">50 minutos Voice API</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span className="text-sm">Acceso completo a sandbox</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span className="text-sm">Documentación completa</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span className="text-sm">SDKs oficiales</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span className="text-sm">Soporte por email</span>
-                  </li>
-                </ul>
-                <Button className="w-full bg-gray-500 hover:bg-gray-600 text-white">Empezar Gratis</Button>
+              <CardContent className="space-y-4">
+                <p className="text-gray-600">
+                  <strong>Banco digital (10.000 llamadas/mes):</strong> Transcripción automática de llamadas de soporte
+                  con análisis de compliance. Detección automática de información sensible y cumplimiento normativo.
+                </p>
+                <div className="flex items-center space-x-2">
+                  <CheckCircle className="w-4 h-4 text-green-500" />
+                  <span className="text-sm font-medium">100% compliance automático</span>
+                </div>
               </CardContent>
             </Card>
 
-            {/* Plan Professional */}
-            <Card className="relative border-2 border-blue-300 hover:border-blue-400 transition-colors">
-              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                <Badge className="bg-blue-500 text-white">Más Popular</Badge>
-              </div>
-              <CardHeader className="text-center space-y-4">
-                <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mx-auto">
-                  <Zap className="w-6 h-6 text-blue-600" />
-                </div>
-                <div>
-                  <CardTitle className="text-2xl">Plan Professional</CardTitle>
-                  <CardDescription>Para empresas en crecimiento</CardDescription>
-                </div>
-                <div className="space-y-2">
-                  <div className="text-4xl font-bold text-blue-500">49€</div>
-                  <div className="text-gray-500">/mes</div>
-                </div>
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center">
+                  <div className="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center mr-3">
+                    <Headphones className="w-4 h-4 text-green-600" />
+                  </div>
+                  Call Center con IA Conversacional
+                </CardTitle>
               </CardHeader>
-              <CardContent className="space-y-6">
-                <ul className="space-y-3">
-                  <li className="flex items-center space-x-3">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span className="text-sm">10.000 SMS/mes incluidos</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span className="text-sm">500 minutos Voice API</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span className="text-sm">WhatsApp API incluida</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span className="text-sm">Analytics API básica</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span className="text-sm">Webhooks ilimitados</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span className="text-sm">Soporte prioritario</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span className="text-sm">SLA 99,9% uptime</span>
-                  </li>
-                </ul>
-                <Button className="w-full bg-blue-500 hover:bg-blue-600 text-white">Empezar Ahora</Button>
+              <CardContent className="space-y-4">
+                <p className="text-gray-600">
+                  <strong>Soporte técnico (50.000 llamadas/mes):</strong> TTS para respuestas automáticas, transcripción
+                  en tiempo real y análisis de sentimiento. Escalado inteligente a agentes humanos.
+                </p>
+                <div className="flex items-center space-x-2">
+                  <CheckCircle className="w-4 h-4 text-green-500" />
+                  <span className="text-sm font-medium">70% resolución automática</span>
+                </div>
               </CardContent>
             </Card>
 
-            {/* Plan Enterprise */}
-            <Card className="border-2 border-orange-300 hover:border-orange-400 transition-colors">
-              <CardHeader className="text-center space-y-4">
-                <div className="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center mx-auto">
-                  <Shield className="w-6 h-6 text-orange-600" />
-                </div>
-                <div>
-                  <CardTitle className="text-2xl">Plan Enterprise</CardTitle>
-                  <CardDescription>Solución personalizada</CardDescription>
-                </div>
-                <div className="space-y-2">
-                  <div className="text-4xl font-bold text-orange-500">A medida</div>
-                  <div className="text-gray-500">Consultar</div>
-                </div>
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center">
+                  <div className="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center mr-3">
+                    <MessageSquare className="w-4 h-4 text-purple-600" />
+                  </div>
+                  E-commerce con WhatsApp Inteligente
+                </CardTitle>
               </CardHeader>
-              <CardContent className="space-y-6">
-                <ul className="space-y-3">
-                  <li className="flex items-center space-x-3">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span className="text-sm">Volúmenes personalizados</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span className="text-sm">Todas las APIs incluidas</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span className="text-sm">IP dedicadas</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span className="text-sm">Integraciones custom</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span className="text-sm">Account Manager dedicado</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span className="text-sm">SLA personalizado</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span className="text-sm">Soporte 24/7</span>
-                  </li>
-                </ul>
-                <Link href="/contacto">
-                  <Button className="w-full bg-orange-500 hover:bg-orange-600 text-white">Contactar</Button>
-                </Link>
+              <CardContent className="space-y-4">
+                <p className="text-gray-600">
+                  <strong>Tienda online (25.000 conversaciones/mes):</strong> Webhooks de "escribiendo" para mejor UX,
+                  transcripción automática de notas de voz de clientes y respuestas TTS personalizadas.
+                </p>
+                <div className="flex items-center space-x-2">
+                  <CheckCircle className="w-4 h-4 text-green-500" />
+                  <span className="text-sm font-medium">45% más engagement</span>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center">
+                  <div className="w-8 h-8 bg-orange-100 rounded-lg flex items-center justify-center mr-3">
+                    <BarChart3 className="w-4 h-4 text-orange-600" />
+                  </div>
+                  Plataforma de Formación Online
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <p className="text-gray-600">
+                  <strong>EdTech (5.000 estudiantes):</strong> TTS para generar contenido de audio, transcripción de
+                  clases grabadas y análisis de sentimiento en feedback de estudiantes.
+                </p>
+                <div className="flex items-center space-x-2">
+                  <CheckCircle className="w-4 h-4 text-green-500" />
+                  <span className="text-sm font-medium">60% más accesibilidad</span>
+                </div>
               </CardContent>
             </Card>
           </div>
@@ -713,7 +738,7 @@ curl -X POST https://api.universaltelecom.es/v1/verify/check \\
       </section>
 
       {/* SDKs Oficiales */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">SDKs oficiales para tu stack</h2>
@@ -762,98 +787,6 @@ curl -X POST https://api.universaltelecom.es/v1/verify/check \\
                 <h3 className="font-semibold text-lg mb-2">REST API</h3>
                 <p className="text-sm text-gray-600 mb-4">Compatible con cualquier lenguaje</p>
                 <code className="text-xs bg-gray-100 px-2 py-1 rounded">curl -H "Authorization: Bearer..."</code>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Casos de Uso */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center space-y-4 mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">Casos de uso reales</h2>
-            <p className="text-xl text-gray-600">Empresas que ya integran nuestras APIs</p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center">
-                  <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center mr-3">
-                    <MessageSquare className="w-4 h-4 text-blue-600" />
-                  </div>
-                  E-commerce con 50.000 pedidos/mes
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <p className="text-gray-600">
-                  <strong>Integración completa:</strong> SMS de confirmación, WhatsApp para seguimiento, Voice API para
-                  encuestas post-venta. Redujo consultas de soporte un 60% automatizando notificaciones.
-                </p>
-                <div className="text-sm text-gray-500">
-                  <strong>APIs usadas:</strong> SMS, WhatsApp, Voice, Analytics
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center">
-                  <div className="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center mr-3">
-                    <Shield className="w-4 h-4 text-green-600" />
-                  </div>
-                  Fintech con verificación 2FA
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <p className="text-gray-600">
-                  <strong>Seguridad máxima:</strong> Verification API para onboarding de usuarios, SMS y Voice como
-                  respaldo. 99,7% de verificaciones exitosas con fraud detection integrado.
-                </p>
-                <div className="text-sm text-gray-500">
-                  <strong>APIs usadas:</strong> Verification, SMS, Voice
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center">
-                  <div className="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center mr-3">
-                    <BarChart3 className="w-4 h-4 text-purple-600" />
-                  </div>
-                  Call Center con 200 agentes
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <p className="text-gray-600">
-                  <strong>Optimización total:</strong> Voice API para llamadas automáticas, Analytics API para evaluar
-                  calidad al 100%. Números dinámicos según campañas usando Numbers API.
-                </p>
-                <div className="text-sm text-gray-500">
-                  <strong>APIs usadas:</strong> Voice, Analytics, Numbers, SMS
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center">
-                  <div className="w-8 h-8 bg-orange-100 rounded-lg flex items-center justify-center mr-3">
-                    <Globe className="w-4 h-4 text-orange-600" />
-                  </div>
-                  SaaS internacional
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <p className="text-gray-600">
-                  <strong>Escalabilidad global:</strong> Numbers API para presencia local en 15 países, WhatsApp para
-                  soporte en tiempo real. SMS transaccionales en múltiples idiomas.
-                </p>
-                <div className="text-sm text-gray-500">
-                  <strong>APIs usadas:</strong> Numbers, WhatsApp, SMS, Verification
-                </div>
               </CardContent>
             </Card>
           </div>
