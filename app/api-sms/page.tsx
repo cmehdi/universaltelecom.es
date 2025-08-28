@@ -72,7 +72,7 @@ export default function ApiSmsPage() {
 
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=600&width=500&text=API+SMS+Dashboard"
+                src="/images/api-sms-dashboard.png"
                 alt="Panel control API SMS Universal Telecom envío masivo estadísticas tiempo real"
                 width={500}
                 height={600}
