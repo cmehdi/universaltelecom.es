@@ -88,12 +88,12 @@ export function Navigation() {
               <span>📧 sales@universaltelecom.com</span>
               <span className="hidden md:block">🕒 Mon-Thu: 09:30-19:00 | Fri: 09:30-18:00</span>
               <a
-                href="tel:+1555123456"
+                href="tel:+447520640309"
                 onClick={handlePhoneCall}
                 className="flex items-center text-orange-600 hover:text-orange-700 font-medium"
               >
                 <Phone className="h-4 w-4 mr-1" />
-                +1 (555) 123-4567
+                +44 7 520 640 309
               </a>
             </div>
 

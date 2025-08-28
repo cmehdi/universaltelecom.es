@@ -100,12 +100,12 @@ export function Navigation() {
               <span>📧 comercial@universaltelecom.es</span>
               <span className="hidden md:block">🕒 Lun-Jue: 09:30-19:00 | Vie: 09:30-18:00</span>
               <a
-                href="tel:+34951011759"
+                href="tel:+34951047200"
                 onClick={handlePhoneCall}
                 className="flex items-center text-orange-600 hover:text-orange-700 font-medium"
               >
                 <Phone className="h-4 w-4 mr-1" />
-                +34 951 011 759
+                +34 951 04 72 00
               </a>
             </div>
 
