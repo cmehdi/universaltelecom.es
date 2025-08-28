@@ -136,11 +136,11 @@ export function ContactFormFr() {
                 +33 1 84 88 32 81
               </a>
               <a
-                href="mailto:commercial@universaltelecom.es"
+                href="mailto:sales@universaltelecom.eu"
                 className="flex items-center justify-center text-green-600 hover:text-green-700 font-medium"
               >
                 <Mail className="h-4 w-4 mr-1" />
-                commercial@universaltelecom.es
+                sales@universaltelecom.eu
               </a>
             </div>
           </div>

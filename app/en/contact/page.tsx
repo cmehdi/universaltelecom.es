@@ -61,10 +61,10 @@ export default function ContactPage() {
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Email Us</h3>
                 <p className="text-gray-600 mb-4">Send us your questions anytime</p>
                 <a
-                  href="mailto:sales@universaltelecom.com"
+                  href="mailto:sales@universaltelecom.eu"
                   className="text-green-600 hover:text-green-700 font-semibold block mb-2"
                 >
-                  sales@universaltelecom.com
+                  sales@universaltelecom.eu
                 </a>
                 <p className="text-sm text-gray-500">Response within 2 hours</p>
                 <p className="text-sm text-gray-500">during business hours</p>

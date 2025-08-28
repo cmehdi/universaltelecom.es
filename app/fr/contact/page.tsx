@@ -17,8 +17,8 @@ export default function ContactPageFr() {
       icon: Mail,
       title: "Email",
       description: "Réponse sous 2h en moyenne",
-      contact: "commercial@universaltelecom.es",
-      action: "mailto:commercial@universaltelecom.es",
+      contact: "sales@universaltelecom.eu",
+      action: "mailto:sales@universaltelecom.eu",
       available: "Réponse garantie sous 24h",
     },
     {

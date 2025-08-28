@@ -85,7 +85,7 @@ export function Navigation() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-10 text-sm">
             <div className="flex items-center space-x-6 text-gray-600">
-              <span>📧 sales@universaltelecom.com</span>
+              <span>📧 sales@universaltelecom.eu</span>
               <span className="hidden md:block">🕒 Lun-Jeu: 09:30-19:00 | Ven: 09:30-18:00</span>
               <a
                 href="tel:+33948458102"

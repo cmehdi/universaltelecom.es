@@ -114,7 +114,7 @@ export function Footer() {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-4 w-4 text-orange-500" />
-                <span className="text-gray-300">commercial@universaltelecom.es</span>
+                <span className="text-gray-300">sales@universaltelecom.eu</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="h-4 w-4 text-orange-500" />
