@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Universal Telecom</title>
+    <meta name="description" content="Contacta con Universal Telecom. Especialistas en comunicaciones empresariales. Respuesta en menos de 2 horas.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+     Top contact bar 
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="contact-info">
+                    <span>📧 comercial@universaltelecom.es</span>
+                    <span class="hidden-mobile">🕒 Lun-Jue: 09:30-19:00 | Vie: 09:30-18:00</span>
+                    <a href="tel:+34951047200" class="phone-link">
+                        📞 +34 951 04 72 00
+                    </a>
+                </div>
+                <div class="language-selector">
+                    <select onchange="changeLanguage(this.value)">
+                        <option value="es">🇪🇸 Español</option>
+                        <option value="en">🇺🇸 English</option>
+                        <option value="fr">🇫🇷 Français</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     Navigation 
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="logo.png" alt="Universal Telecom" width="200" height="40">
+                    </a>
+                </div>
+
+                <div class="nav-menu" id="navMenu">
+                    <a href="centralita-virtual.html" class="nav-link">🎧 Centralita Virtual</a>
+                    <a href="whatsapp-api.html" class="nav-link">💬 WhatsApp API</a>
+                    <a href="agente-ia-chatbot.html" class="nav-link">🤖 Agentes IA</a>
+                    <a href="analisis-llamadas-ia.html" class="nav-link">📊 Análisis IA</a>
+                    <div class="dropdown">
+                        <button class="dropdown-btn">Más Servicios ▼</button>
+                        <div class="dropdown-content">
+                            <a href="numeracion-global.html">🌍 Numeración Global</a>
+                            <a href="api-sms.html">📱 API SMS</a>
+                            <a href="fibra-optica.html">🌐 Fibra Óptica</a>
+                            <a href="moviles.html">📱 Móviles Utio</a>
+                            <a href="apis.html">⚡ APIs</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nav-buttons">
+                    <a href="demo.html" class="btn btn-outline">Solicitar Demo</a>
+                    <a href="prueba-gratis.html" class="btn btn-primary">Prueba Gratis 14 Días</a>
+                </div>
+
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+     Hero Section 
+    <section class="hero-simple">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Contacto: Hablemos de Tu Proyecto</h1>
+                <p>Estamos aquí para ayudarte a transformar tus comunicaciones. Nuestro equipo de especialistas está disponible para acompañarte en cada paso.</p>
+                
+                <div class="hero-buttons">
+                    <a href="https://wa.me/34951047200?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20los%20servicios%20de%20Universal%20Telecom" 
+                       class="btn btn-success btn-large" target="_blank">
+                        💬 WhatsApp Directo
+                    </a>
+                    <a href="tel:+34951047200" class="btn btn-outline btn-large">
+                        📞 Llamar Ahora
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     Contact Content 
+    <section class="contact-content">
+        <div class="container">
+            <div class="contact-grid">
+                 Contact Form 
+                <div class="contact-form-section">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2>Formulario de Contacto</h2>
+                            <p>Completa el formulario y nos pondremos en contacto contigo en menos de 2 horas (horario comercial).</p>
+                        </div>
+                        <div class="card-content">
+                            <form id="contactForm" class="contact-form">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="nombre">Nombre *</label>
+                                        <input type="text" id="nombre" name="nombre" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="empresa">Empresa *</label>
+                                        <input type="text" id="empresa" name="empresa" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="email">Email *</label>
+                                        <input type="email" id="email" name="email" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="telefono">Teléfono *</label>
+                                        <input type="tel" id="telefono" name="telefono" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="servicio">Servicio de Interés</label>
+                                    <select id="servicio" name="servicio">
+                                        <option value="">Seleccionar servicio...</option>
+                                        <option value="centralita-virtual">Centralita Virtual</option>
+                                        <option value="whatsapp-api">WhatsApp Business API</option>
+                                        <option value="agente-ia">Agente IA & Chatbot</option>
+                                        <option value="analisis-llamadas">Análisis de Llamadas IA</option>
+                                        <option value="numeracion-global">Numeración Global</option>
+                                        <option value="api-sms">API SMS</option>
+                                        <option value="fibra-optica">Fibra Óptica</option>
+                                        <option value="moviles">Móviles Utio</option>
+                                        <option value="otros">Otros servicios</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="mensaje">Mensaje</label>
+                                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos sobre tu proyecto o necesidades..."></textarea>
+                                </div>
+
+                                <div class="form-group checkbox-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" id="acepto" name="acepto" required>
+                                        <span class="checkmark"></span>
+                                        Acepto la <a href="politica-privacidad.html" target="_blank">política de privacidad</a> y el <a href="aviso-legal.html" target="_blank">aviso legal</a> *
+                                    </label>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-large btn-full">
+                                    Enviar Mensaje
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                 Contact Info 
+                <div class="contact-info-section">
+                     WhatsApp Destacado 
+                    <div class="card whatsapp-card">
+                        <div class="card-header">
+                            <h3>💬 WhatsApp Business</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>¿Prefieres WhatsApp? Habla directamente con nuestro equipo comercial:</p>
+                            <div class="phone-number">+34 951 047 200</div>
+                            <p class="schedule">Horario: L-V 8:00-20:00 | S 9:00-14:00</p>
+                            <a href="https://wa.me/34951047200?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20los%20servicios%20de%20Universal%20Telecom" 
+                               class="btn btn-success btn-full" target="_blank">
+                                💬 Abrir WhatsApp
+                            </a>
+                        </div>
+                    </div>
+
+                     Contact Info 
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Información de Contacto</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="contact-item">
+                                <div class="contact-icon">📧</div>
+                                <div>
+                                    <div class="contact-label">Email</div>
+                                    <div class="contact-value">comercial@universaltelecom.es</div>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">📞</div>
+                                <div>
+                                    <div class="contact-label">Teléfono</div>
+                                    <div class="contact-value">+34 951 047 200</div>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">📍</div>
+                                <div>
+                                    <div class="contact-label">Dirección</div>
+                                    <div class="contact-value">
+                                        Calle Compositor Lehmberg Ruiz, 13<br>
+                                        29007 Málaga, España
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">🕒</div>
+                                <div>
+                                    <div class="contact-label">Horarios de Soporte</div>
+                                    <div class="contact-value">
+                                        • 24/7 para clientes Plan Total y Empresa<br>
+                                        • L-V 8:00-20:00 para resto de planes<br>
+                                        • Emergencias críticas: Siempre disponibles
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                     Garantías 
+                    <div class="card guarantees-card">
+                        <div class="card-header">
+                            <h3>Lo que puedes esperar</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="guarantee-item">
+                                <span class="guarantee-icon">✅</span>
+                                <span>Respuesta en menos de 2 horas</span>
+                            </div>
+                            <div class="guarantee-item">
+                                <span class="guarantee-icon">✅</span>
+                                <span>Demo personalizada adaptada a tu sector</span>
+                            </div>
+                            <div class="guarantee-item">
+                                <span class="guarantee-icon">✅</span>
+                                <span>Presupuesto sin compromiso en 24 horas</span>
+                            </div>
+                            <div class="guarantee-item">
+                                <span class="guarantee-icon">✅</span>
+                                <span>Asesoramiento técnico especializado</span>
+                            </div>
+                            <div class="guarantee-item">
+                                <span class="guarantee-icon">✅</span>
+                                <span>Acompañamiento completo en la migración</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     Quick Access 
+    <section class="quick-access">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contacto Directo por Especialidad</h2>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">📞</div>
+                    <h3>Centralita Virtual</h3>
+                    <p>Consultas sobre PBX en la nube</p>
+                    <a href="https://wa.me/34951047200?text=Hola,%20me%20interesa%20información%20sobre%20Centralita%20Virtual" 
+                       class="btn btn-outline" target="_blank">WhatsApp</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">💬</div>
+                    <h3>WhatsApp API</h3>
+                    <p>Integración WhatsApp Business</p>
+                    <a href="https://wa.me/34951047200?text=Hola,%20me%20interesa%20información%20sobre%20WhatsApp%20Business%20API" 
+                       class="btn btn-outline" target="_blank">WhatsApp</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🤖</div>
+                    <h3>Agentes IA</h3>
+                    <p>Chatbots y automatización</p>
+                    <a href="https://wa.me/34951047200?text=Hola,%20me%20interesa%20información%20sobre%20Agentes%20IA%20y%20Chatbots" 
+                       class="btn btn-outline" target="_blank">WhatsApp</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🛠️</div>
+                    <h3>Soporte Técnico</h3>
+                    <p>Ayuda con servicios actuales</p>
+                    <a href="https://wa.me/34951047200?text=Hola,%20necesito%20soporte%20técnico%20con%20mis%20servicios%20actuales" 
+                       class="btn btn-outline" target="_blank">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     Location 
+    <section class="location">
+        <div class="container">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Nuestra Ubicación</h2>
+                    <p>Visítanos en nuestras oficinas en Málaga</p>
+                </div>
+                <div class="card-content">
+                    <div class="location-info">
+                        <div class="location-icon">📍</div>
+                        <div>
+                            <h3>Universal Telecom Solutions</h3>
+                            <p>
+                                Calle Compositor Lehmberg Ruiz, 13<br>
+                                29007 Málaga, España
+                            </p>
+                            <a href="https://www.google.com/maps/search/Calle+Compositor+Lehmberg+Ruiz,+13,+29007+Málaga,+España" 
+                               class="btn btn-outline" target="_blank">
+                                Ver en Google Maps
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     Footer 
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="logo.png" alt="Universal Telecom" width="180" height="36">
+                    <p>Soluciones de comunicación empresarial en la nube. Más de 2.000 empresas confían en nosotros en 9+ países.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Nuestros Servicios</h3>
+                    <div class="footer-links">
+                        <a href="centralita-virtual.html">🎧 Centralita Virtual</a>
+                        <a href="whatsapp-api.html">💬 WhatsApp Business API</a>
+                        <a href="agente-ia-chatbot.html">🤖 Agente IA & Chatbot</a>
+                        <a href="analisis-llamadas-ia.html">📊 Análisis de Llamadas IA</a>
+                        <a href="numeracion-global.html">🌍 Numeración Global</a>
+                        <a href="api-sms.html">📱 API SMS</a>
+                        <a href="fibra-optica.html">🌐 Fibra Óptica</a>
+                        <a href="moviles.html">📱 Móviles Utio</a>
+                        <a href="apis.html">⚡ APIs & Integraciones</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span>📞</span>
+                            <a href="tel:+34951047200">951 04 72 00</a>
+                        </div>
+                        <div class="contact-item">
+                            <span>📧</span>
+                            <a href="mailto:comercial@universaltelecom.es">comercial@universaltelecom.es</a>
+                        </div>
+                        <div class="contact-item">
+                            <span>📍</span>
+                            <div>
+                                <div>Calle Compositor Lehmberg Ruiz, 13</div>
+                                <div>29007 Málaga, España</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="legal-links">
+                    <a href="aviso-legal.html">Aviso Legal</a>
+                    <a href="politica-privacidad.html">Política de Privacidad</a>
+                    <a href="politica-cookies.html">Política de Cookies</a>
+                    <a href="contacto.html">Contacto</a>
+                </div>
+                <div class="copyright">© 2024 Universal Telecom. Todos los derechos reservados.</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

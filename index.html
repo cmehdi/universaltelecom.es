@@ -1,80 +1,385 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Universal Telecom - Professional Business Communications Solutions</title>
-    <meta name="description" content="Transform your business communications with Universal Telecom. Virtual PBX, WhatsApp Business API, AI agents, call analytics, and global numbers. Trusted by 50,000+ businesses worldwide.">
-    <meta name="keywords" content="business phone system, virtual pbx, whatsapp business api, ai chatbots, call analytics, global numbers, business communications, cloud phone system">
+    <title>Universal Telecom - Comunicaciones Empresariales en la Nube</title>
+    <meta name="description" content="Centralita Virtual, WhatsApp Business, Agentes IA y Análisis de Llamadas. Más de 2.000 empresas confían en nosotros. Prueba gratis 14 días.">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico">
 </head>
-
 <body>
-    <header>
-        <nav>
-            <div class="logo">Universal Telecom</div>
-            <ul class="nav-links">
-                <li><a href="virtual-pbx.html">Virtual PBX</a></li>
-                <li><a href="whatsapp-business-api.html">WhatsApp Business API</a></li>
-                <li><a href="ai-agents.html">AI Agents</a></li>
-                <li><a href="call-analytics.html">Call Analytics</a></li>
-                <li><a href="global-numbers.html">Global Numbers</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+     Top contact bar 
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="contact-info">
+                    <span>📧 comercial@universaltelecom.es</span>
+                    <span class="hidden-mobile">🕒 Lun-Jue: 09:30-19:00 | Vie: 09:30-18:00</span>
+                    <a href="tel:+34951047200" class="phone-link">
+                        📞 +34 951 04 72 00
+                    </a>
+                </div>
+                <div class="language-selector">
+                    <select onchange="changeLanguage(this.value)">
+                        <option value="es">🇪🇸 Español</option>
+                        <option value="en">🇺🇸 English</option>
+                        <option value="fr">🇫🇷 Français</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
 
+     Navigation 
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="logo.png" alt="Universal Telecom" width="200" height="40">
+                    </a>
+                </div>
+
+                <div class="nav-menu" id="navMenu">
+                    <a href="centralita-virtual.html" class="nav-link">
+                        🎧 Centralita Virtual
+                    </a>
+                    <a href="whatsapp-api.html" class="nav-link">
+                        💬 WhatsApp API
+                    </a>
+                    <a href="agente-ia-chatbot.html" class="nav-link">
+                        🤖 Agentes IA
+                    </a>
+                    <a href="analisis-llamadas-ia.html" class="nav-link">
+                        📊 Análisis IA
+                    </a>
+                    <div class="dropdown">
+                        <button class="dropdown-btn">Más Servicios ▼</button>
+                        <div class="dropdown-content">
+                            <a href="numeracion-global.html">🌍 Numeración Global</a>
+                            <a href="api-sms.html">📱 API SMS</a>
+                            <a href="fibra-optica.html">🌐 Fibra Óptica</a>
+                            <a href="moviles.html">📱 Móviles Utio</a>
+                            <a href="apis.html">⚡ APIs</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nav-buttons">
+                    <a href="demo.html" class="btn btn-outline">Solicitar Demo</a>
+                    <a href="prueba-gratis.html" class="btn btn-primary">Prueba Gratis 14 Días</a>
+                </div>
+
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+     Hero Section 
     <section class="hero">
-        <div class="hero-content">
-            <h1>Transform Your Business Communications</h1>
-            <p>Professional phone systems, AI-powered customer service, and global connectivity.</p>
-            <a href="free-trial.html" class="cta-button">Start Free Trial</a>
-        </div>
-    </section>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="badge">Comunicaciones Empresariales del Futuro</div>
+                    <h1>La Plataforma de Comunicación que Tu Empresa Necesita</h1>
+                    <p>Centralita Virtual, WhatsApp Business, Agentes IA y Análisis de Llamadas. Todo integrado en una sola plataforma. Más de 2.000 empresas ya confían en nosotros en 9+ países.</p>
+                    
+                    <div class="features-list">
+                        <h3>¿Por qué elegir Universal Telecom?</h3>
+                        <ul>
+                            <li>✅ Configuración en 15 minutos - Sin instalaciones complejas</li>
+                            <li>✅ IA integrada - Transcripción y análisis automático</li>
+                            <li>✅ Integraciones CRM - Zoho, HubSpot, Salesforce y más</li>
+                            <li>✅ Soporte 24/7 - Técnicos especialistas en español</li>
+                        </ul>
+                    </div>
 
-    <section class="stats">
-        <div class="stat">50,000+ <span>Active Businesses</span></div>
-        <div class="stat">80+ <span>Countries Served</span></div>
-        <div class="stat">99.9% <span>Uptime Guarantee</span></div>
-        <div class="stat">24/7 <span>Expert Support</span></div>
-    </section>
-
-    <section class="products">
-        <h2>Our Products</h2>
-        <div class="product-grid">
-            <div class="product-card">
-                <h3>Virtual PBX</h3>
-                <p>Cloud-based phone system with advanced features.</p>
-                <a href="virtual-pbx.html">Learn More</a>
-            </div>
-            <div class="product-card">
-                <h3>WhatsApp Business API</h3>
-                <p>Automate your WhatsApp conversations.</p>
-                <a href="whatsapp-business-api.html">Learn More</a>
-            </div>
-            <div class="product-card">
-                <h3>AI Agents</h3>
-                <p>Intelligent virtual assistants.</p>
-                <a href="ai-agents.html">Learn More</a>
-            </div>
-            <div class="product-card">
-                <h3>Call Analytics</h3>
-                <p>AI-powered insights for your calls.</p>
-                <a href="call-analytics.html">Learn More</a>
-            </div>
-            <div class="product-card">
-                <h3>Global Numbers</h3>
-                <p>Local phone numbers in 80+ countries.</p>
-                <a href="global-numbers.html">Learn More</a>
+                    <div class="hero-buttons">
+                        <a href="prueba-gratis.html" class="btn btn-primary btn-large">
+                            Prueba 14 Días Gratis →
+                        </a>
+                        <a href="demo.html" class="btn btn-outline btn-large">
+                            Solicitar Demo
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="pbx01-iaFxSiCeGs0unly1YAoBCStrmX4ODg.png" alt="Dashboard Universal Telecom" width="600" height="500">
+                </div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2025 Universal Telecom</p>
-        <p>Contact: +1 555-123-4567</p>
+     Dashboard Preview Section 
+    <section class="dashboard-preview">
+        <div class="container">
+            <div class="section-header">
+                <h2>Plataforma de Control Unificada</h2>
+                <p>Gestiona todas tus comunicaciones desde dashboards profesionales e intuitivos</p>
+            </div>
+
+            <div class="dashboard-grid">
+                <div class="dashboard-item">
+                    <h3>Dashboard Centralita Virtual</h3>
+                    <img src="pbx01-iaFxSiCeGs0unly1YAoBCStrmX4ODg.png" alt="Dashboard centralita virtual" width="600" height="400">
+                    <p>Monitoriza agentes, llamadas activas, estadísticas de servicio y métricas de rendimiento desde un panel unificado.</p>
+                </div>
+                <div class="dashboard-item">
+                    <h3>Análisis Avanzado de Llamadas</h3>
+                    <img src="analitica01-bXMtUxOOLaJ1R23FhGJXBjm8ict4Qz.png" alt="Dashboard análisis llamadas" width="600" height="400">
+                    <p>Análisis completo con puntuaciones automáticas, evolución temporal y clasificación inteligente de llamadas.</p>
+                </div>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Métricas en Tiempo Real</h3>
+                    <p>Visualiza el estado de tu centralita, agentes activos y estadísticas de llamadas al instante</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3>Gestión Completa</h3>
+                    <p>Administra extensiones, contactos, historial de llamadas y configuraciones desde un solo lugar</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>IA Integrada</h3>
+                    <p>Análisis automático de sentimientos, transcripciones y evaluación de calidad con inteligencia artificial</p>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="demo.html" class="btn btn-primary btn-large">
+                    Ver Demo Completo →
+                </a>
+            </div>
+        </div>
+    </section>
+
+     Services Section 
+    <section class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestros Servicios Principales</h2>
+                <p>Todo lo que necesitas para modernizar las comunicaciones de tu empresa</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🎧</div>
+                    <h3>Centralita Virtual</h3>
+                    <p class="service-subtitle">PBX en la nube profesional</p>
+                    <ul class="service-features">
+                        <li>✅ Desde 45€/mes</li>
+                        <li>✅ 6 usuarios incluidos</li>
+                        <li>✅ IVR personalizable</li>
+                        <li>✅ Grabación incluida</li>
+                    </ul>
+                    <a href="centralita-virtual.html" class="btn btn-primary">Ver Detalles</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">💬</div>
+                    <h3>WhatsApp Business</h3>
+                    <p class="service-subtitle">API oficial de WhatsApp</p>
+                    <ul class="service-features">
+                        <li>✅ Desde 49€/mes</li>
+                        <li>✅ 1.000 conversaciones</li>
+                        <li>✅ Plantillas personalizadas</li>
+                        <li>✅ Integración CRM</li>
+                    </ul>
+                    <a href="whatsapp-api.html" class="btn btn-primary">Ver Detalles</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🤖</div>
+                    <h3>Agentes IA</h3>
+                    <p class="service-subtitle">Chatbots inteligentes</p>
+                    <ul class="service-features">
+                        <li>✅ Desde 89€/mes</li>
+                        <li>✅ IA conversacional</li>
+                        <li>✅ Multicanal</li>
+                        <li>✅ Aprendizaje automático</li>
+                    </ul>
+                    <a href="agente-ia-chatbot.html" class="btn btn-primary">Ver Detalles</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h3>Análisis IA</h3>
+                    <p class="service-subtitle">Inteligencia de llamadas</p>
+                    <ul class="service-features">
+                        <li>✅ Desde 125€/mes</li>
+                        <li>✅ Transcripción automática</li>
+                        <li>✅ Análisis de sentimiento</li>
+                        <li>✅ Métricas avanzadas</li>
+                    </ul>
+                    <a href="analisis-llamadas-ia.html" class="btn btn-primary">Ver Detalles</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     Success Stories 
+    <section class="success-stories">
+        <div class="container">
+            <div class="section-header">
+                <h2>Casos de Éxito Reales</h2>
+                <p>Empresas que ya transformaron su comunicación</p>
+            </div>
+
+            <div class="stories-grid">
+                <div class="story-card">
+                    <div class="story-icon">👥</div>
+                    <h3>Consultora (50 empleados)</h3>
+                    <p class="story-subtitle">Servicios profesionales</p>
+                    <p>Migró de centralita tradicional ahorrando <strong>1.200€/año</strong> en mantenimiento. La integración con HubSpot automatizó el registro de 200+ contactos mensuales.</p>
+                    <div class="story-result">⭐ Ahorro: 1.200€/año</div>
+                </div>
+
+                <div class="story-card">
+                    <div class="story-icon">💬</div>
+                    <h3>E-commerce (25 empleados)</h3>
+                    <p class="story-subtitle">Comercio electrónico</p>
+                    <p>WhatsApp Business API aumentó las ventas un <strong>35%</strong>. Los agentes IA resuelven el 60% de consultas automáticamente, liberando tiempo para ventas complejas.</p>
+                    <div class="story-result">⭐ +35% ventas</div>
+                </div>
+
+                <div class="story-card">
+                    <div class="story-icon">📊</div>
+                    <h3>Clínica Dental (8 líneas)</h3>
+                    <p class="story-subtitle">Sector salud</p>
+                    <p>Redujo llamadas perdidas un <strong>40%</strong> con IVR inteligente. El análisis IA identificó patrones de cancelaciones, mejorando la planificación.</p>
+                    <div class="story-result">⭐ -40% llamadas perdidas</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     Why Choose Us 
+    <section class="why-choose-us">
+        <div class="container">
+            <div class="section-header">
+                <h2>¿Por qué más de 2.000 empresas nos eligen?</h2>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Configuración Rápida</h3>
+                    <p>Tu centralita lista en 15 minutos. Sin instalaciones complejas ni hardware.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>IA Integrada</h3>
+                    <p>Transcripción, análisis y agentes inteligentes incluidos en todos los planes.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Soporte 24/7</h3>
+                    <p>Técnicos especialistas en español. Respuesta garantizada en menos de 2 horas.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✅</div>
+                    <h3>Sin Permanencia</h3>
+                    <p>Cancela cuando quieras. Sin penalizaciones ni costes ocultos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     CTA Final 
+    <section class="cta-final">
+        <div class="container">
+            <div class="cta-content">
+                <h2>¿Listo para transformar tu comunicación empresarial?</h2>
+                <p>Únete a más de 2.000 empresas que ya disfrutan de comunicaciones sin límites. Prueba gratis durante 14 días, sin compromiso.</p>
+                <div class="cta-buttons">
+                    <a href="prueba-gratis.html" class="btn btn-white btn-large">
+                        Prueba 14 Días Gratis →
+                    </a>
+                    <a href="demo.html" class="btn btn-outline-white btn-large">
+                        Solicitar Demo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     Footer 
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="logo.png" alt="Universal Telecom" width="180" height="36">
+                    <p>Soluciones de comunicación empresarial en la nube. Más de 2.000 empresas confían en nosotros en 9+ países.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">📧</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Nuestros Servicios</h3>
+                    <div class="footer-links">
+                        <a href="centralita-virtual.html">🎧 Centralita Virtual</a>
+                        <a href="whatsapp-api.html">💬 WhatsApp Business API</a>
+                        <a href="agente-ia-chatbot.html">🤖 Agente IA & Chatbot</a>
+                        <a href="analisis-llamadas-ia.html">📊 Análisis de Llamadas IA</a>
+                        <a href="numeracion-global.html">🌍 Numeración Global</a>
+                        <a href="api-sms.html">📱 API SMS</a>
+                        <a href="fibra-optica.html">🌐 Fibra Óptica</a>
+                        <a href="moviles.html">📱 Móviles Utio</a>
+                        <a href="apis.html">⚡ APIs & Integraciones</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span>📞</span>
+                            <a href="tel:+34951047200">951 04 72 00</a>
+                        </div>
+                        <div class="contact-item">
+                            <span>📧</span>
+                            <a href="mailto:comercial@universaltelecom.es">comercial@universaltelecom.es</a>
+                        </div>
+                        <div class="contact-item">
+                            <span>📍</span>
+                            <div>
+                                <div>Calle Compositor Lehmberg Ruiz, 13</div>
+                                <div>29007 Málaga, España</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="schedule">
+                        <h4>Horario de Atención</h4>
+                        <div>Lun-Jue: 09:30-19:00</div>
+                        <div>Viernes: 09:30-18:00</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="legal-links">
+                    <a href="aviso-legal.html">Aviso Legal</a>
+                    <a href="politica-privacidad.html">Política de Privacidad</a>
+                    <a href="politica-cookies.html">Política de Cookies</a>
+                    <a href="contacto.html">Contacto</a>
+                </div>
+                <div class="copyright">© 2024 Universal Telecom. Todos los derechos reservados.</div>
+            </div>
+        </div>
     </footer>
-</body>
 
+    <script src="script.js"></script>
+</body>
 </html>
