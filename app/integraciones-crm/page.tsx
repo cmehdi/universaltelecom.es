@@ -24,7 +24,7 @@ export default function IntegracionesCrmPage() {
                   Integraciones CRM & APIs: Tu Ecosistema Conectado
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
-                  Conecta Universal Telecom con tu CRM, herramientas de productividad y aplicaciones personalizadas. 
+                  Conecta Universal Telecom con tu CRM, herramientas de productividad y aplicaciones personalizadas.
                   Integraciones nativas, webhooks avanzados y APIs completas para un ecosistema unificado.
                 </p>
               </div>
@@ -34,7 +34,9 @@ export default function IntegracionesCrmPage() {
                 <div className="space-y-3">
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="w-5 h-5 text-green-500" />
-                    <span className="text-gray-700">CRMs nativos: Clientify, Zoho, HubSpot, Odoo, VtigerCRM, Zendesk</span>
+                    <span className="text-gray-700">
+                      CRMs nativos: Clientify, Zoho, HubSpot, Odoo, VtigerCRM, Zendesk
+                    </span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="w-5 h-5 text-green-500" />
@@ -308,7 +310,9 @@ export default function IntegracionesCrmPage() {
                     <span>Plantillas aprobadas</span>
                   </li>
                 </ul>
-                <Button variant="outline" size="sm" className="w-full bg-transparent">Ver Documentación</Button>
+                <Button variant="outline" size="sm" className="w-full bg-transparent">
+                  Ver Documentación
+                </Button>
               </CardContent>
             </Card>
 
@@ -339,7 +343,9 @@ export default function IntegracionesCrmPage() {
                     <span>Personalización avanzada</span>
                   </li>
                 </ul>
-                <Button variant="outline" size="sm" className="w-full bg-transparent">Ver Documentación</Button>
+                <Button variant="outline" size="sm" className="w-full bg-transparent">
+                  Ver Documentación
+                </Button>
               </CardContent>
             </Card>
 
@@ -370,7 +376,9 @@ export default function IntegracionesCrmPage() {
                     <span>Extracción de keywords</span>
                   </li>
                 </ul>
-                <Button variant="outline" size="sm" className="w-full bg-transparent">Ver Documentación</Button>
+                <Button variant="outline" size="sm" className="w-full bg-transparent">
+                  Ver Documentación
+                </Button>
               </CardContent>
             </Card>
           </div>
@@ -436,4 +444,75 @@ export default function IntegracionesCrmPage() {
                   </li>
                   <li className="flex items-center space-x-2">
                     <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span>Transformación de datos</span>\
+                    <span>Transformación de datos</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <CheckCircle className="w-4 h-4 text-green-500" />
+                    <span>Ejecución programada</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center">
+                  <Webhook className="w-6 h-6 text-green-600" />
+                </div>
+                <CardTitle>n8n & Custom Webhooks</CardTitle>
+                <CardDescription>Automatización personalizada</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <ul className="space-y-2 text-sm text-gray-600">
+                  <li className="flex items-center space-x-2">
+                    <CheckCircle className="w-4 h-4 text-green-500" />
+                    <span>n8n: Workflows open source</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <CheckCircle className="w-4 h-4 text-green-500" />
+                    <span>Webhooks personalizados</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <CheckCircle className="w-4 h-4 text-green-500" />
+                    <span>Integración con APIs propias</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <CheckCircle className="w-4 h-4 text-green-500" />
+                    <span>Control total del flujo</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Final */}
+      <section className="py-20 bg-gradient-to-br from-purple-600 to-purple-800 text-white">
+        <div className="container mx-auto px-4 text-center">
+          <div className="max-w-3xl mx-auto space-y-8">
+            <h2 className="text-3xl lg:text-4xl font-bold">¿Listo para conectar tu ecosistema?</h2>
+            <p className="text-xl text-purple-100">
+              Nuestro equipo técnico te ayudará a configurar las integraciones que necesitas. Desde CRMs nativos hasta
+              APIs personalizadas.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link href="/contacto?producto=integraciones-crm">
+                <Button size="lg" className="bg-white text-purple-600 hover:bg-gray-100 px-8">
+                  Solicitar Consultoría Técnica <ArrowRight className="w-4 h-4 ml-2" />
+                </Button>
+              </Link>
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white text-white hover:bg-white hover:text-purple-600 bg-transparent"
+              >
+                Descargar Guía de Integraciones
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  )
+}
