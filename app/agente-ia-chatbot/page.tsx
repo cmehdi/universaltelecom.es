@@ -1,4 +1,16 @@
-import { Bot, CheckCircle, ArrowRight, Brain, Zap, Users, BarChart3, Shield, Clock, Star } from "lucide-react"
+import {
+  CheckCircle,
+  ArrowRight,
+  Brain,
+  Zap,
+  Users,
+  BarChart3,
+  Shield,
+  Clock,
+  Star,
+  Phone,
+  MessageSquare,
+} from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -6,11 +18,19 @@ import Image from "next/image"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import Link from "next/link"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Agente IA por Voz y Chat | Utio Voice AI + Chatbot Inteligente | Universal Telecom",
+  description:
+    "Agente IA completo: voz telefónica + chatbot WhatsApp integrados. Desde 29€/mes chatbot, desde 99€/mes voz+chat. Conversación natural en 26 idiomas, integración CRM. Prueba gratis.",
+  keywords:
+    "agente ia voz, utio voice ai, chatbot ia, agente conversacional, ia telefonica, whatsapp bot, asistente virtual, 26 idiomas, integracion crm",
+}
 
 export default function AgenteIAChatbotPage() {
   return (
     <div className="min-h-screen bg-white">
-      {/* Header simplificado */}
       <Navigation />
 
       {/* Hero Section */}
@@ -20,14 +40,14 @@ export default function AgenteIAChatbotPage() {
             <div className="space-y-8">
               <div className="space-y-6">
                 <Badge variant="secondary" className="bg-purple-100 text-purple-700">
-                  Inteligencia artificial conversacional
+                  Inteligencia artificial conversacional omnicanal
                 </Badge>
                 <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                  Agente IA & Chatbot: Tu Empleado Digital Que Nunca Descansa
+                  Agente IA por Voz y Chat: Tu Empleado Digital Que Nunca Descansa
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
                   Un chatbot responde preguntas predefinidas. Nuestro Agente IA entiende contexto, aprende de tu base de
-                  conocimiento y toma decisiones como un empleado experimentado.
+                  conocimiento y toma decisiones como un empleado experimentado. Por teléfono, WhatsApp, email o web.
                 </p>
               </div>
 
@@ -36,44 +56,63 @@ export default function AgenteIAChatbotPage() {
                 <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-xl border-2 border-blue-200">
                   <div className="flex items-center space-x-3 mb-3">
                     <div className="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center">
-                      <Bot className="w-6 h-6 text-white" />
+                      <Phone className="w-6 h-6 text-white" />
                     </div>
                     <h3 className="text-xl font-bold text-gray-900">Utio Voice AI + Chat: Integración Total</h3>
                   </div>
                   <p className="text-gray-700 mb-4">
                     No es solo un agente de voz o un chatbot. Es un sistema completo que unifica WhatsApp, email, web
-                    chat y llamadas telefónicas en una única inteligencia conversacional. El contexto se mantiene entre
-                    canales: una conversación por chat puede continuar por teléfono sin perder información.
+                    chat y <strong>llamadas telefónicas</strong> en una única inteligencia conversacional. El contexto
+                    se mantiene entre canales: una conversación por chat puede continuar por teléfono sin perder
+                    información.
                   </p>
                   <div className="grid md:grid-cols-3 gap-3">
                     <div className="bg-white p-3 rounded-lg">
-                      <div className="font-semibold text-blue-600 text-sm">📞 Voz</div>
-                      <div className="text-xs text-gray-600">26 idiomas, sin lag ASR</div>
+                      <div className="font-semibold text-blue-600 text-sm">📞 Voz Telefónica</div>
+                      <div className="text-xs text-gray-600">26 idiomas, sin lag ASR, conversación natural</div>
                     </div>
                     <div className="bg-white p-3 rounded-lg">
-                      <div className="font-semibold text-blue-600 text-sm">💬 Chat</div>
-                      <div className="text-xs text-gray-600">WhatsApp, Email, Web</div>
+                      <div className="font-semibold text-blue-600 text-sm">💬 Chat Multicanal</div>
+                      <div className="text-xs text-gray-600">WhatsApp, Email, Web integrados</div>
                     </div>
                     <div className="bg-white p-3 rounded-lg">
-                      <div className="font-semibold text-blue-600 text-sm">🔗 Integración</div>
-                      <div className="text-xs text-gray-600">CRM, ERP, APIs</div>
+                      <div className="font-semibold text-blue-600 text-sm">🔗 Memoria Compartida</div>
+                      <div className="text-xs text-gray-600">Contexto entre todos los canales</div>
                     </div>
                   </div>
                 </div>
               </div>
 
-              {/* Chatbot or Agent IA */}
-              <div className="space-y-4">
-                <h3 className="text-lg font-semibold text-gray-900">¿Chatbot o Agente IA? Tú decides el nivel</h3>
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div className="p-4 bg-gray-50 rounded-lg">
-                    <div className="font-medium text-gray-700 mb-2">Chatbot Básico</div>
-                    <div className="text-sm text-gray-600">Respuestas programadas y flujos lineales</div>
+              {/* Demo Numbers */}
+              <div className="bg-gradient-to-r from-green-50 to-blue-50 p-6 rounded-xl border-2 border-green-200">
+                <h3 className="text-lg font-bold text-gray-900 mb-3">📞 Prueba Utio Voice AI ahora mismo</h3>
+                <p className="text-gray-700 mb-4">Llama y habla con nuestro agente de voz en tu idioma:</p>
+                <div className="space-y-2">
+                  <div className="flex items-center space-x-3 bg-white p-3 rounded-lg">
+                    <span className="text-2xl">🇪🇸</span>
+                    <div>
+                      <div className="font-semibold text-gray-900">Español</div>
+                      <a href="tel:+34919893600" className="text-blue-600 hover:underline font-mono">
+                        +34 919 893 600
+                      </a>
+                    </div>
                   </div>
-                  <div className="p-4 bg-purple-50 rounded-lg border-2 border-purple-200">
-                    <div className="font-medium text-purple-700 mb-2">Agente IA</div>
-                    <div className="text-sm text-purple-600">
-                      Comprensión natural, aprendizaje continuo y decisiones inteligentes
+                  <div className="flex items-center space-x-3 bg-white p-3 rounded-lg">
+                    <span className="text-2xl">🇬🇧</span>
+                    <div>
+                      <div className="font-semibold text-gray-900">English</div>
+                      <a href="tel:+447520640309" className="text-blue-600 hover:underline font-mono">
+                        +44 7520 640 309
+                      </a>
+                    </div>
+                  </div>
+                  <div className="flex items-center space-x-3 bg-white p-3 rounded-lg">
+                    <span className="text-2xl">🇫🇷</span>
+                    <div>
+                      <div className="font-semibold text-gray-900">Français</div>
+                      <a href="tel:+33948458102" className="text-blue-600 hover:underline font-mono">
+                        +33 9 48 45 81 02
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -100,7 +139,7 @@ export default function AgenteIAChatbotPage() {
             <div className="relative">
               <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/utcom5-GfKwa8rtVOOGJgJcVA79wOiBBWojMb.png"
-                alt="Panel control Agentes IA Universal Telecom con métricas de rendimiento y automatización"
+                alt="Panel control Utio Voice AI y Chatbot con métricas de rendimiento y automatización omnicanal"
                 width={500}
                 height={600}
                 className="rounded-2xl shadow-2xl"
@@ -117,6 +156,7 @@ export default function AgenteIAChatbotPage() {
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">
               Funcionalidades que revolucionan tu atención
             </h2>
+            <p className="text-xl text-gray-600">Conversación natural por voz y chat con IA avanzada</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -211,44 +251,48 @@ export default function AgenteIAChatbotPage() {
             <Card className="md:col-span-3 bg-gradient-to-br from-blue-50 to-purple-50">
               <CardHeader>
                 <div className="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center">
-                  <Bot className="w-6 h-6 text-white" />
+                  <Phone className="w-6 h-6 text-white" />
                 </div>
-                <CardTitle className="text-xl">Utio Voice AI: Agente de Voz Inteligente</CardTitle>
-                <CardDescription>Conversaciones telefónicas naturales con IA avanzada</CardDescription>
+                <CardTitle className="text-xl">🚀 Utio Voice AI: Características Destacadas</CardTitle>
+                <CardDescription>Conversaciones telefónicas naturales con IA de última generación</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
                   <div className="space-y-2">
-                    <div className="font-semibold text-sm text-blue-600">🧠 Conversación Real</div>
-                    <div className="text-xs text-gray-600">Sin ASR-lag, fluidez natural en tiempo real</div>
+                    <div className="font-semibold text-sm text-blue-600">🧠 Conversación en tiempo real</div>
+                    <div className="text-xs text-gray-600">Sin ASR-lag, fluidez natural como humano</div>
                   </div>
                   <div className="space-y-2">
-                    <div className="font-semibold text-sm text-blue-600">🌍 26 Idiomas</div>
+                    <div className="font-semibold text-sm text-blue-600">🌍 Multilingüe: 26 idiomas</div>
                     <div className="text-xs text-gray-600">Español, inglés, francés, árabe, alemán y más</div>
                   </div>
                   <div className="space-y-2">
-                    <div className="font-semibold text-sm text-blue-600">🔗 Integración API</div>
-                    <div className="text-xs text-gray-600">CRM, ERP, ticketing y sistemas externos</div>
+                    <div className="font-semibold text-sm text-blue-600">🔗 Integración con sistemas externos</div>
+                    <div className="text-xs text-gray-600">API para CRM, ERP, ticketing en tiempo real</div>
                   </div>
                   <div className="space-y-2">
-                    <div className="font-semibold text-sm text-blue-600">🛠 Funciones Activas</div>
+                    <div className="font-semibold text-sm text-blue-600">🛠 Ejecución de funciones</div>
                     <div className="text-xs text-gray-600">Consulta datos, envía presupuestos, abre tickets</div>
                   </div>
                   <div className="space-y-2">
-                    <div className="font-semibold text-sm text-blue-600">🎭 Clonado de Voz</div>
-                    <div className="text-xs text-gray-600">Personaliza la voz de tu agente</div>
+                    <div className="font-semibold text-sm text-blue-600">🎭 Clonado de voz personalizado</div>
+                    <div className="text-xs text-gray-600">Tu marca, tu voz única</div>
                   </div>
                   <div className="space-y-2">
-                    <div className="font-semibold text-sm text-blue-600">🧾 Transcripciones</div>
-                    <div className="text-xs text-gray-600">Grabaciones automáticas con resúmenes</div>
+                    <div className="font-semibold text-sm text-blue-600">🧾 Transcripciones y grabaciones</div>
+                    <div className="text-xs text-gray-600">Automáticas con resúmenes inteligentes</div>
                   </div>
                   <div className="space-y-2">
-                    <div className="font-semibold text-sm text-blue-600">🔄 Memoria Contextual</div>
-                    <div className="text-xs text-gray-600">Recuerda conversaciones previas</div>
+                    <div className="font-semibold text-sm text-blue-600">🔄 Memoria conversacional</div>
+                    <div className="text-xs text-gray-600">Entre llamadas y canales</div>
                   </div>
                   <div className="space-y-2">
-                    <div className="font-semibold text-sm text-blue-600">📞 Telefonía Total</div>
-                    <div className="text-xs text-gray-600">Extensiones, SIP, WebRTC, numeraciones</div>
+                    <div className="font-semibold text-sm text-blue-600">📞 Compatible con telefonía</div>
+                    <div className="text-xs text-gray-600">Extensiones, numeraciones, SIP, WebRTC</div>
+                  </div>
+                  <div className="space-y-2">
+                    <div className="font-semibold text-sm text-blue-600">🧰 SDKs y Webhooks</div>
+                    <div className="text-xs text-gray-600">Integración total con tus sistemas</div>
                   </div>
                 </div>
               </CardContent>
@@ -262,18 +306,20 @@ export default function AgenteIAChatbotPage() {
         <div className="container mx-auto px-4">
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">Planes flexibles para cada canal</h2>
-            <p className="text-xl text-gray-600">Chatbot, Voz IA, o integración completa multicanal</p>
+            <p className="text-xl text-gray-600">Chatbot solo, Voz+Chat, o integración completa multicanal</p>
           </div>
 
           {/* Chatbot Plans */}
           <div className="mb-16">
-            <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Agente Chatbot (WhatsApp, Email, Web)</h3>
+            <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
+              💬 Agente Chatbot (WhatsApp, Email, Web)
+            </h3>
             <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
               {/* Chatbot Starter */}
               <Card className="border-2 border-gray-200 hover:border-green-300 transition-colors">
                 <CardHeader className="text-center space-y-4">
                   <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mx-auto">
-                    <Users className="w-6 h-6 text-green-600" />
+                    <MessageSquare className="w-6 h-6 text-green-600" />
                   </div>
                   <div>
                     <CardTitle className="text-2xl">Chatbot Starter</CardTitle>
@@ -292,7 +338,7 @@ export default function AgenteIAChatbotPage() {
                     </li>
                     <li className="flex items-center space-x-3">
                       <CheckCircle className="w-4 h-4 text-green-500" />
-                      <span className="text-sm">0.05€ conversación adicional</span>
+                      <span className="text-sm">0.05€ por conversación adicional</span>
                     </li>
                     <li className="flex items-center space-x-3">
                       <CheckCircle className="w-4 h-4 text-green-500" />
@@ -307,14 +353,16 @@ export default function AgenteIAChatbotPage() {
                       <span className="text-sm">Integración CRM básica</span>
                     </li>
                   </ul>
-                  <Button className="w-full bg-green-500 hover:bg-green-600 text-white">Empezar Ahora</Button>
+                  <Link href="/prueba-gratis?plan=chatbot-starter">
+                    <Button className="w-full bg-green-500 hover:bg-green-600 text-white">Empezar Ahora</Button>
+                  </Link>
                 </CardContent>
               </Card>
 
               {/* Chatbot Pro */}
               <Card className="border-2 border-green-300 hover:border-green-400 transition-colors relative">
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <Badge className="bg-green-500 text-white">Recomendado</Badge>
+                  <Badge className="bg-green-500 text-white">Chat Recomendado</Badge>
                 </div>
                 <CardHeader className="text-center space-y-4">
                   <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mx-auto">
@@ -337,7 +385,7 @@ export default function AgenteIAChatbotPage() {
                     </li>
                     <li className="flex items-center space-x-3">
                       <CheckCircle className="w-4 h-4 text-green-500" />
-                      <span className="text-sm">0.05€ conversación adicional</span>
+                      <span className="text-sm">0.05€ por conversación adicional</span>
                     </li>
                     <li className="flex items-center space-x-3">
                       <CheckCircle className="w-4 h-4 text-green-500" />
@@ -356,7 +404,9 @@ export default function AgenteIAChatbotPage() {
                       <span className="text-sm">Integraciones avanzadas CRM</span>
                     </li>
                   </ul>
-                  <Button className="w-full bg-green-500 hover:bg-green-600 text-white">Empezar Ahora</Button>
+                  <Link href="/prueba-gratis?plan=chatbot-pro">
+                    <Button className="w-full bg-green-500 hover:bg-green-600 text-white">Empezar Ahora</Button>
+                  </Link>
                 </CardContent>
               </Card>
 
@@ -364,7 +414,7 @@ export default function AgenteIAChatbotPage() {
               <Card className="border-2 border-blue-200 bg-blue-50">
                 <CardHeader className="text-center space-y-4">
                   <div className="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center mx-auto">
-                    <Bot className="w-6 h-6 text-white" />
+                    <Phone className="w-6 h-6 text-white" />
                   </div>
                   <div>
                     <CardTitle className="text-xl">¿Necesitas Voz?</CardTitle>
@@ -393,14 +443,14 @@ export default function AgenteIAChatbotPage() {
           {/* Voice AI Plans */}
           <div>
             <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
-              Utio Voice AI (Telefonía + Chatbot Incluido)
+              📞 Utio Voice AI (Telefonía + Chatbot 1.000 conversaciones incluido)
             </h3>
             <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {/* Voice AI Basic */}
               <Card className="border-2 border-blue-200 hover:border-blue-300 transition-colors">
                 <CardHeader className="text-center space-y-4">
                   <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mx-auto">
-                    <Bot className="w-6 h-6 text-blue-600" />
+                    <Phone className="w-6 h-6 text-blue-600" />
                   </div>
                   <div>
                     <CardTitle className="text-2xl">Voice AI Basic</CardTitle>
@@ -419,11 +469,11 @@ export default function AgenteIAChatbotPage() {
                     </li>
                     <li className="flex items-center space-x-3">
                       <CheckCircle className="w-4 h-4 text-green-500" />
-                      <span className="text-sm">0.15€/minuto adicional</span>
+                      <span className="text-sm">0.15€ por minuto adicional</span>
                     </li>
                     <li className="flex items-center space-x-3">
                       <CheckCircle className="w-4 h-4 text-green-500" />
-                      <span className="text-sm">Chatbot: 1.000 conversaciones</span>
+                      <span className="text-sm">Chatbot: 1.000 conversaciones incluidas</span>
                     </li>
                     <li className="flex items-center space-x-3">
                       <CheckCircle className="w-4 h-4 text-green-500" />
@@ -435,21 +485,23 @@ export default function AgenteIAChatbotPage() {
                     </li>
                     <li className="flex items-center space-x-3">
                       <CheckCircle className="w-4 h-4 text-green-500" />
-                      <span className="text-sm">Integración telefonía SIP</span>
+                      <span className="text-sm">Integración telefonía SIP, WebRTC</span>
                     </li>
                     <li className="flex items-center space-x-3">
                       <CheckCircle className="w-4 h-4 text-green-500" />
-                      <span className="text-sm">Memoria conversacional</span>
+                      <span className="text-sm">Memoria conversacional entre canales</span>
                     </li>
                   </ul>
-                  <Button className="w-full bg-blue-500 hover:bg-blue-600 text-white">Empezar Ahora</Button>
+                  <Link href="/prueba-gratis?plan=voice-basic">
+                    <Button className="w-full bg-blue-500 hover:bg-blue-600 text-white">Empezar Ahora</Button>
+                  </Link>
                 </CardContent>
               </Card>
 
               {/* Voice AI Pro */}
               <Card className="relative border-2 border-blue-400 hover:border-blue-500 transition-colors">
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <Badge className="bg-blue-500 text-white">Más Popular</Badge>
+                  <Badge className="bg-blue-500 text-white">Voz Más Popular</Badge>
                 </div>
                 <CardHeader className="text-center space-y-4">
                   <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mx-auto">
@@ -472,11 +524,11 @@ export default function AgenteIAChatbotPage() {
                     </li>
                     <li className="flex items-center space-x-3">
                       <CheckCircle className="w-4 h-4 text-green-500" />
-                      <span className="text-sm">0.15€/minuto adicional</span>
+                      <span className="text-sm">0.15€ por minuto adicional</span>
                     </li>
                     <li className="flex items-center space-x-3">
                       <CheckCircle className="w-4 h-4 text-green-500" />
-                      <span className="text-sm">Chatbot: 1.000 conversaciones</span>
+                      <span className="text-sm">Chatbot: 1.000 conversaciones incluidas</span>
                     </li>
                     <li className="flex items-center space-x-3">
                       <CheckCircle className="w-4 h-4 text-green-500" />
@@ -488,18 +540,24 @@ export default function AgenteIAChatbotPage() {
                     </li>
                     <li className="flex items-center space-x-3">
                       <CheckCircle className="w-4 h-4 text-green-500" />
-                      <span className="text-sm">Integraciones API avanzadas</span>
+                      <span className="text-sm">Integraciones API avanzadas (CRM, ERP)</span>
                     </li>
                     <li className="flex items-center space-x-3">
                       <CheckCircle className="w-4 h-4 text-green-500" />
-                      <span className="text-sm">Ejecución de funciones (CRM, ERP)</span>
+                      <span className="text-sm">Ejecución de funciones en tiempo real</span>
+                    </li>
+                    <li className="flex items-center space-x-3">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span className="text-sm">SDKs y Webhooks incluidos</span>
                     </li>
                     <li className="flex items-center space-x-3">
                       <CheckCircle className="w-4 h-4 text-green-500" />
                       <span className="text-sm">Soporte prioritario 24/7</span>
                     </li>
                   </ul>
-                  <Button className="w-full bg-blue-500 hover:bg-blue-600 text-white">Empezar Ahora</Button>
+                  <Link href="/prueba-gratis?plan=voice-pro">
+                    <Button className="w-full bg-blue-500 hover:bg-blue-600 text-white">Empezar Ahora</Button>
+                  </Link>
                 </CardContent>
               </Card>
 
@@ -549,7 +607,9 @@ export default function AgenteIAChatbotPage() {
                       <span className="text-sm">SLA personalizado</span>
                     </li>
                   </ul>
-                  <Button className="w-full bg-purple-500 hover:bg-purple-600 text-white">Contactar</Button>
+                  <Link href="/contacto">
+                    <Button className="w-full bg-purple-500 hover:bg-purple-600 text-white">Contactar</Button>
+                  </Link>
                 </CardContent>
               </Card>
             </div>
@@ -564,7 +624,7 @@ export default function AgenteIAChatbotPage() {
                   <p className="text-gray-700 text-lg">
                     Con <strong>Utio Voice AI</strong>, el contexto se mantiene entre voz, WhatsApp, email y web chat.
                     Un cliente puede iniciar una conversación por chat y continuarla por teléfono sin repetir
-                    información.
+                    información. <strong>Memoria compartida en todos los canales.</strong>
                   </p>
                   <div className="flex justify-center gap-4 pt-4">
                     <Badge variant="secondary" className="text-sm">
@@ -599,16 +659,17 @@ export default function AgenteIAChatbotPage() {
               <CardHeader>
                 <CardTitle className="flex items-center">
                   <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center mr-3">
-                    <Bot className="w-4 h-4 text-blue-600" />
+                    <Phone className="w-4 h-4 text-blue-600" />
                   </div>
-                  Soporte Multicanal 24/7
+                  Soporte Multicanal 24/7 (Voz + Chat)
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-gray-600">
                   <strong>Empresa SaaS (500 consultas/día):</strong> El cliente elige: chat para consultas rápidas,
-                  llamada para problemas complejos. El Agente IA (voz + chat) resuelve el 75% automáticamente. El
-                  contexto se mantiene: si empieza por WhatsApp y llama después, la IA recuerda todo.
+                  llamada telefónica para problemas complejos. El Agente IA (voz + chat) resuelve el 75%
+                  automáticamente. El contexto se mantiene: si empieza por WhatsApp y llama después, la IA recuerda
+                  todo.
                 </p>
                 <div className="flex items-center space-x-2">
                   <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
@@ -623,17 +684,18 @@ export default function AgenteIAChatbotPage() {
                   <div className="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center mr-3">
                     <Users className="w-4 h-4 text-green-600" />
                   </div>
-                  Cualificación de Leads 24/7
+                  Cualificación de Leads por Voz
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-gray-600">
-                  <strong>Inmobiliaria premium (50 leads/día):</strong> La IA cualifica leads preguntando presupuesto,
-                  zona preferida y urgencia. Los comerciales solo atienden leads con alta probabilidad de cierre.
+                  <strong>Inmobiliaria premium (50 leads/día):</strong> La IA telefónica cualifica leads en llamada
+                  entrante preguntando presupuesto, zona preferida y urgencia. Los comerciales solo atienden leads con
+                  alta probabilidad de cierre. Graba y transcribe todo automáticamente.
                 </p>
                 <div className="flex items-center space-x-2">
                   <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                  <span className="text-sm font-medium">50 leads cualificados/día</span>
+                  <span className="text-sm font-medium">50 leads telefónicos cualificados/día</span>
                 </div>
               </CardContent>
             </Card>
@@ -650,11 +712,12 @@ export default function AgenteIAChatbotPage() {
               <CardContent className="space-y-4">
                 <p className="text-gray-600">
                   <strong>E-commerce moda (1.000 pedidos/mes):</strong> Gestiona cambios, devoluciones y consultas de
-                  estado automáticamente. Solo escala a humano incidencias complejas.
+                  estado automáticamente por voz y chat. Solo escala a humano incidencias complejas. El cliente elige el
+                  canal más cómodo.
                 </p>
                 <div className="flex items-center space-x-2">
                   <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                  <span className="text-sm font-medium">1.000 pedidos gestionados</span>
+                  <span className="text-sm font-medium">1.000 pedidos gestionados automáticamente</span>
                 </div>
               </CardContent>
             </Card>
@@ -670,12 +733,13 @@ export default function AgenteIAChatbotPage() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-gray-600">
-                  Cada interacción genera datos valiosos: Score de satisfacción automático, detección de palabras clave
-                  de tu industria, análisis de tendencias y recomendaciones de mejora.
+                  Cada interacción (voz y chat) genera datos valiosos: Score de satisfacción automático, transcripciones
+                  de llamadas, detección de palabras clave de tu industria, análisis de tendencias y recomendaciones de
+                  mejora.
                 </p>
                 <div className="flex items-center space-x-2">
                   <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                  <span className="text-sm font-medium">Insights automáticos</span>
+                  <span className="text-sm font-medium">Insights automáticos voz + chat</span>
                 </div>
               </CardContent>
             </Card>
@@ -696,7 +760,7 @@ export default function AgenteIAChatbotPage() {
                 <Users className="w-8 h-8 text-purple-600" />
               </div>
               <h3 className="font-semibold">Ahorro en personal</h3>
-              <p className="text-sm text-gray-600">1 Agente IA = 2.5 empleados de soporte básico</p>
+              <p className="text-sm text-gray-600">1 Agente IA (voz+chat) = 3 empleados de soporte básico</p>
             </div>
 
             <div className="text-center space-y-3">
@@ -704,7 +768,7 @@ export default function AgenteIAChatbotPage() {
                 <Clock className="w-8 h-8 text-blue-600" />
               </div>
               <h3 className="font-semibold">Disponibilidad 24/7</h3>
-              <p className="text-sm text-gray-600">Sin coste adicional de guardias nocturnas</p>
+              <p className="text-sm text-gray-600">Sin coste adicional de guardias nocturnas telefónicas</p>
             </div>
 
             <div className="text-center space-y-3">
@@ -712,7 +776,7 @@ export default function AgenteIAChatbotPage() {
                 <CheckCircle className="w-8 h-8 text-green-600" />
               </div>
               <h3 className="font-semibold">Consistencia total</h3>
-              <p className="text-sm text-gray-600">Misma calidad de respuesta siempre</p>
+              <p className="text-sm text-gray-600">Misma calidad de respuesta en todos los canales</p>
             </div>
 
             <div className="text-center space-y-3">
@@ -720,7 +784,7 @@ export default function AgenteIAChatbotPage() {
                 <Zap className="w-8 h-8 text-orange-600" />
               </div>
               <h3 className="font-semibold">Escalabilidad</h3>
-              <p className="text-sm text-gray-600">Atiende 100 o 10.000 consultas sin límites</p>
+              <p className="text-sm text-gray-600">Atiende 100 o 10.000 consultas telefónicas sin límites</p>
             </div>
           </div>
         </div>
@@ -730,10 +794,10 @@ export default function AgenteIAChatbotPage() {
       <section className="py-20 bg-gradient-to-r from-purple-500 to-indigo-500">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-3xl mx-auto space-y-8 text-white">
-            <h2 className="text-3xl lg:text-4xl font-bold">La IA conversacional que tu empresa necesita</h2>
+            <h2 className="text-3xl lg:text-4xl font-bold">La IA conversacional omnicanal que tu empresa necesita</h2>
             <p className="text-xl opacity-90">
-              No es futuro. Es presente. Mientras otros contratan más personal, tú escalas con inteligencia artificial.
-              La ventaja competitiva está en actuar ahora.
+              No es futuro. Es presente. Mientras otros contratan más personal, tú escalas con inteligencia artificial
+              por voz y chat. La ventaja competitiva está en actuar ahora.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/demo?producto=agente-ia-chatbot">
@@ -751,11 +815,13 @@ export default function AgenteIAChatbotPage() {
                 </Button>
               </Link>
             </div>
+            <p className="text-sm opacity-90">
+              📞 Llama ahora y prueba: 🇪🇸 +34 919 893 600 | 🇬🇧 +44 7520 640 309 | 🇫🇷 +33 9 48 45 81 02
+            </p>
           </div>
         </div>
       </section>
 
-      {/* Footer */}
       <Footer />
     </div>
   )
