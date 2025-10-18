@@ -15,8 +15,6 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import Image from "next/image"
-import { Navigation } from "@/components/navigation-fr"
-import { Footer } from "@/components/footer-fr"
 import Link from "next/link"
 import type { Metadata } from "next"
 
@@ -31,8 +29,6 @@ export const metadata: Metadata = {
 export default function AgentsIAPage() {
   return (
     <div className="min-h-screen bg-white">
-      <Navigation />
-
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-purple-50 to-white py-20">
         <div className="container mx-auto px-4">
@@ -827,8 +823,6 @@ export default function AgentsIAPage() {
           </div>
         </div>
       </section>
-
-      <Footer />
     </div>
   )
 }
