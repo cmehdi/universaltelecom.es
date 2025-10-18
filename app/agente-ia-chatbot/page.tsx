@@ -31,6 +31,38 @@ export default function AgenteIAChatbotPage() {
                 </p>
               </div>
 
+              {/* Utio Voice AI Integration */}
+              <div className="space-y-4">
+                <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-xl border-2 border-blue-200">
+                  <div className="flex items-center space-x-3 mb-3">
+                    <div className="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center">
+                      <Bot className="w-6 h-6 text-white" />
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-900">Utio Voice AI + Chat: Integración Total</h3>
+                  </div>
+                  <p className="text-gray-700 mb-4">
+                    No es solo un agente de voz o un chatbot. Es un sistema completo que unifica WhatsApp, email, web
+                    chat y llamadas telefónicas en una única inteligencia conversacional. El contexto se mantiene entre
+                    canales: una conversación por chat puede continuar por teléfono sin perder información.
+                  </p>
+                  <div className="grid md:grid-cols-3 gap-3">
+                    <div className="bg-white p-3 rounded-lg">
+                      <div className="font-semibold text-blue-600 text-sm">📞 Voz</div>
+                      <div className="text-xs text-gray-600">26 idiomas, sin lag ASR</div>
+                    </div>
+                    <div className="bg-white p-3 rounded-lg">
+                      <div className="font-semibold text-blue-600 text-sm">💬 Chat</div>
+                      <div className="text-xs text-gray-600">WhatsApp, Email, Web</div>
+                    </div>
+                    <div className="bg-white p-3 rounded-lg">
+                      <div className="font-semibold text-blue-600 text-sm">🔗 Integración</div>
+                      <div className="text-xs text-gray-600">CRM, ERP, APIs</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Chatbot or Agent IA */}
               <div className="space-y-4">
                 <h3 className="text-lg font-semibold text-gray-900">¿Chatbot o Agente IA? Tú decides el nivel</h3>
                 <div className="grid md:grid-cols-2 gap-4">
@@ -174,6 +206,53 @@ export default function AgenteIAChatbotPage() {
                 </ul>
               </CardContent>
             </Card>
+
+            {/* Utio Voice AI Card */}
+            <Card className="md:col-span-3 bg-gradient-to-br from-blue-50 to-purple-50">
+              <CardHeader>
+                <div className="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center">
+                  <Bot className="w-6 h-6 text-white" />
+                </div>
+                <CardTitle className="text-xl">Utio Voice AI: Agente de Voz Inteligente</CardTitle>
+                <CardDescription>Conversaciones telefónicas naturales con IA avanzada</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+                  <div className="space-y-2">
+                    <div className="font-semibold text-sm text-blue-600">🧠 Conversación Real</div>
+                    <div className="text-xs text-gray-600">Sin ASR-lag, fluidez natural en tiempo real</div>
+                  </div>
+                  <div className="space-y-2">
+                    <div className="font-semibold text-sm text-blue-600">🌍 26 Idiomas</div>
+                    <div className="text-xs text-gray-600">Español, inglés, francés, árabe, alemán y más</div>
+                  </div>
+                  <div className="space-y-2">
+                    <div className="font-semibold text-sm text-blue-600">🔗 Integración API</div>
+                    <div className="text-xs text-gray-600">CRM, ERP, ticketing y sistemas externos</div>
+                  </div>
+                  <div className="space-y-2">
+                    <div className="font-semibold text-sm text-blue-600">🛠 Funciones Activas</div>
+                    <div className="text-xs text-gray-600">Consulta datos, envía presupuestos, abre tickets</div>
+                  </div>
+                  <div className="space-y-2">
+                    <div className="font-semibold text-sm text-blue-600">🎭 Clonado de Voz</div>
+                    <div className="text-xs text-gray-600">Personaliza la voz de tu agente</div>
+                  </div>
+                  <div className="space-y-2">
+                    <div className="font-semibold text-sm text-blue-600">🧾 Transcripciones</div>
+                    <div className="text-xs text-gray-600">Grabaciones automáticas con resúmenes</div>
+                  </div>
+                  <div className="space-y-2">
+                    <div className="font-semibold text-sm text-blue-600">🔄 Memoria Contextual</div>
+                    <div className="text-xs text-gray-600">Recuerda conversaciones previas</div>
+                  </div>
+                  <div className="space-y-2">
+                    <div className="font-semibold text-sm text-blue-600">📞 Telefonía Total</div>
+                    <div className="text-xs text-gray-600">Extensiones, SIP, WebRTC, numeraciones</div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
@@ -182,164 +261,326 @@ export default function AgenteIAChatbotPage() {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center space-y-4 mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">Planes diseñados para cada necesidad</h2>
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">Planes flexibles para cada canal</h2>
+            <p className="text-xl text-gray-600">Chatbot, Voz IA, o integración completa multicanal</p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {/* Plan Inicio */}
-            <Card className="border-2 border-gray-200 hover:border-purple-300 transition-colors">
-              <CardHeader className="text-center space-y-4">
-                <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mx-auto">
-                  <Users className="w-6 h-6 text-purple-600" />
-                </div>
-                <div>
-                  <CardTitle className="text-2xl">Plan Inicio</CardTitle>
-                  <CardDescription>Ideal para pequeñas empresas</CardDescription>
-                </div>
-                <div className="space-y-2">
-                  <div className="text-4xl font-bold text-purple-500">99€</div>
-                  <div className="text-gray-500">/mes</div>
-                </div>
-              </CardHeader>
-              <CardContent className="space-y-6">
-                <ul className="space-y-3">
-                  <li className="flex items-center space-x-3">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span className="text-sm">1.000 conversaciones/mes incluidas</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span className="text-sm">Base de conocimiento hasta 50 documentos</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span className="text-sm">Integración CRM básica</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span className="text-sm">Transcripción automática</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span className="text-sm">Respuestas por templates</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span className="text-sm">Panel de métricas básico</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span className="text-sm">Soporte técnico por email</span>
-                  </li>
-                </ul>
-                <Button className="w-full bg-purple-500 hover:bg-purple-600 text-white">Empezar Ahora</Button>
-              </CardContent>
-            </Card>
+          {/* Chatbot Plans */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Agente Chatbot (WhatsApp, Email, Web)</h3>
+            <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+              {/* Chatbot Starter */}
+              <Card className="border-2 border-gray-200 hover:border-green-300 transition-colors">
+                <CardHeader className="text-center space-y-4">
+                  <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mx-auto">
+                    <Users className="w-6 h-6 text-green-600" />
+                  </div>
+                  <div>
+                    <CardTitle className="text-2xl">Chatbot Starter</CardTitle>
+                    <CardDescription>Ideal para empezar con IA conversacional</CardDescription>
+                  </div>
+                  <div className="space-y-2">
+                    <div className="text-4xl font-bold text-green-500">29€</div>
+                    <div className="text-gray-500">/mes</div>
+                  </div>
+                </CardHeader>
+                <CardContent className="space-y-6">
+                  <ul className="space-y-3">
+                    <li className="flex items-center space-x-3">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span className="text-sm">1.000 conversaciones/mes incluidas</span>
+                    </li>
+                    <li className="flex items-center space-x-3">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span className="text-sm">0.05€ conversación adicional</span>
+                    </li>
+                    <li className="flex items-center space-x-3">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span className="text-sm">WhatsApp, Email, Web chat</span>
+                    </li>
+                    <li className="flex items-center space-x-3">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span className="text-sm">Base de conocimiento básica</span>
+                    </li>
+                    <li className="flex items-center space-x-3">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span className="text-sm">Integración CRM básica</span>
+                    </li>
+                  </ul>
+                  <Button className="w-full bg-green-500 hover:bg-green-600 text-white">Empezar Ahora</Button>
+                </CardContent>
+              </Card>
 
-            {/* Plan Pro */}
-            <Card className="relative border-2 border-blue-300 hover:border-blue-400 transition-colors">
-              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                <Badge className="bg-blue-500 text-white">Más Popular</Badge>
-              </div>
-              <CardHeader className="text-center space-y-4">
-                <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mx-auto">
-                  <Zap className="w-6 h-6 text-blue-600" />
+              {/* Chatbot Pro */}
+              <Card className="border-2 border-green-300 hover:border-green-400 transition-colors relative">
+                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                  <Badge className="bg-green-500 text-white">Recomendado</Badge>
                 </div>
-                <div>
-                  <CardTitle className="text-2xl">Plan Pro</CardTitle>
-                  <CardDescription>La potencia completa para empresas en crecimiento</CardDescription>
-                </div>
-                <div className="space-y-2">
-                  <div className="text-4xl font-bold text-blue-500">399€</div>
-                  <div className="text-gray-500">/mes</div>
-                </div>
-              </CardHeader>
-              <CardContent className="space-y-6">
-                <ul className="space-y-3">
-                  <li className="flex items-center space-x-3">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span className="text-sm">10.000 conversaciones/mes incluidas</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span className="text-sm">Base de conocimiento ilimitada</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span className="text-sm">IA avanzada: análisis de sentimiento</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span className="text-sm">Generación automática de presupuestos</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span className="text-sm">Integración API completa</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span className="text-sm">Múltiples canales (web, WhatsApp, email)</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span className="text-sm">Reportes avanzados y analíticas</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span className="text-sm">Soporte prioritario 24/7</span>
-                  </li>
-                </ul>
-                <Button className="w-full bg-blue-500 hover:bg-blue-600 text-white">Empezar Ahora</Button>
-              </CardContent>
-            </Card>
+                <CardHeader className="text-center space-y-4">
+                  <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mx-auto">
+                    <Zap className="w-6 h-6 text-green-600" />
+                  </div>
+                  <div>
+                    <CardTitle className="text-2xl">Chatbot Pro</CardTitle>
+                    <CardDescription>Para empresas con alto volumen</CardDescription>
+                  </div>
+                  <div className="space-y-2">
+                    <div className="text-4xl font-bold text-green-500">99€</div>
+                    <div className="text-gray-500">/mes</div>
+                  </div>
+                </CardHeader>
+                <CardContent className="space-y-6">
+                  <ul className="space-y-3">
+                    <li className="flex items-center space-x-3">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span className="text-sm">5.000 conversaciones/mes incluidas</span>
+                    </li>
+                    <li className="flex items-center space-x-3">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span className="text-sm">0.05€ conversación adicional</span>
+                    </li>
+                    <li className="flex items-center space-x-3">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span className="text-sm">Todos los canales + APIs</span>
+                    </li>
+                    <li className="flex items-center space-x-3">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span className="text-sm">Base de conocimiento ilimitada</span>
+                    </li>
+                    <li className="flex items-center space-x-3">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span className="text-sm">Análisis de sentimiento IA</span>
+                    </li>
+                    <li className="flex items-center space-x-3">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span className="text-sm">Integraciones avanzadas CRM</span>
+                    </li>
+                  </ul>
+                  <Button className="w-full bg-green-500 hover:bg-green-600 text-white">Empezar Ahora</Button>
+                </CardContent>
+              </Card>
 
-            {/* Plan Empresa */}
-            <Card className="border-2 border-orange-300 hover:border-orange-400 transition-colors">
-              <CardHeader className="text-center space-y-4">
-                <div className="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center mx-auto">
-                  <Shield className="w-6 h-6 text-orange-600" />
+              {/* Info Card */}
+              <Card className="border-2 border-blue-200 bg-blue-50">
+                <CardHeader className="text-center space-y-4">
+                  <div className="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center mx-auto">
+                    <Bot className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <CardTitle className="text-xl">¿Necesitas Voz?</CardTitle>
+                    <CardDescription>Combina chatbot + agente de voz</CardDescription>
+                  </div>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div className="text-sm text-gray-700">
+                    Los planes de <strong>Utio Voice AI</strong> incluyen automáticamente un chatbot con 1.000
+                    conversaciones integrado.
+                  </div>
+                  <div className="text-sm text-gray-700">
+                    Ideal si necesitas atención telefónica automatizada además de chat.
+                  </div>
+                  <Button
+                    variant="outline"
+                    className="w-full border-blue-500 text-blue-500 hover:bg-blue-50 bg-transparent"
+                  >
+                    Ver Planes Voice AI ↓
+                  </Button>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+
+          {/* Voice AI Plans */}
+          <div>
+            <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
+              Utio Voice AI (Telefonía + Chatbot Incluido)
+            </h3>
+            <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+              {/* Voice AI Basic */}
+              <Card className="border-2 border-blue-200 hover:border-blue-300 transition-colors">
+                <CardHeader className="text-center space-y-4">
+                  <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mx-auto">
+                    <Bot className="w-6 h-6 text-blue-600" />
+                  </div>
+                  <div>
+                    <CardTitle className="text-2xl">Voice AI Basic</CardTitle>
+                    <CardDescription>Incluye chatbot con 1.000 conversaciones</CardDescription>
+                  </div>
+                  <div className="space-y-2">
+                    <div className="text-4xl font-bold text-blue-500">99€</div>
+                    <div className="text-gray-500">/mes</div>
+                  </div>
+                </CardHeader>
+                <CardContent className="space-y-6">
+                  <ul className="space-y-3">
+                    <li className="flex items-center space-x-3">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span className="text-sm font-semibold">200 minutos de voz/mes</span>
+                    </li>
+                    <li className="flex items-center space-x-3">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span className="text-sm">0.15€/minuto adicional</span>
+                    </li>
+                    <li className="flex items-center space-x-3">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span className="text-sm">Chatbot: 1.000 conversaciones</span>
+                    </li>
+                    <li className="flex items-center space-x-3">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span className="text-sm">26 idiomas soportados</span>
+                    </li>
+                    <li className="flex items-center space-x-3">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span className="text-sm">Transcripciones automáticas</span>
+                    </li>
+                    <li className="flex items-center space-x-3">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span className="text-sm">Integración telefonía SIP</span>
+                    </li>
+                    <li className="flex items-center space-x-3">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span className="text-sm">Memoria conversacional</span>
+                    </li>
+                  </ul>
+                  <Button className="w-full bg-blue-500 hover:bg-blue-600 text-white">Empezar Ahora</Button>
+                </CardContent>
+              </Card>
+
+              {/* Voice AI Pro */}
+              <Card className="relative border-2 border-blue-400 hover:border-blue-500 transition-colors">
+                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                  <Badge className="bg-blue-500 text-white">Más Popular</Badge>
                 </div>
-                <div>
-                  <CardTitle className="text-2xl">Plan Empresa</CardTitle>
-                  <CardDescription>Solución personalizada para grandes organizaciones</CardDescription>
+                <CardHeader className="text-center space-y-4">
+                  <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mx-auto">
+                    <Zap className="w-6 h-6 text-blue-600" />
+                  </div>
+                  <div>
+                    <CardTitle className="text-2xl">Voice AI Pro</CardTitle>
+                    <CardDescription>Incluye chatbot con 1.000 conversaciones</CardDescription>
+                  </div>
+                  <div className="space-y-2">
+                    <div className="text-4xl font-bold text-blue-500">295€</div>
+                    <div className="text-gray-500">/mes</div>
+                  </div>
+                </CardHeader>
+                <CardContent className="space-y-6">
+                  <ul className="space-y-3">
+                    <li className="flex items-center space-x-3">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span className="text-sm font-semibold">2.000 minutos de voz/mes</span>
+                    </li>
+                    <li className="flex items-center space-x-3">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span className="text-sm">0.15€/minuto adicional</span>
+                    </li>
+                    <li className="flex items-center space-x-3">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span className="text-sm">Chatbot: 1.000 conversaciones</span>
+                    </li>
+                    <li className="flex items-center space-x-3">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span className="text-sm">Todo de Voice AI Basic +</span>
+                    </li>
+                    <li className="flex items-center space-x-3">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span className="text-sm">Clonado de voz personalizado</span>
+                    </li>
+                    <li className="flex items-center space-x-3">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span className="text-sm">Integraciones API avanzadas</span>
+                    </li>
+                    <li className="flex items-center space-x-3">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span className="text-sm">Ejecución de funciones (CRM, ERP)</span>
+                    </li>
+                    <li className="flex items-center space-x-3">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span className="text-sm">Soporte prioritario 24/7</span>
+                    </li>
+                  </ul>
+                  <Button className="w-full bg-blue-500 hover:bg-blue-600 text-white">Empezar Ahora</Button>
+                </CardContent>
+              </Card>
+
+              {/* Enterprise */}
+              <Card className="border-2 border-purple-300 hover:border-purple-400 transition-colors">
+                <CardHeader className="text-center space-y-4">
+                  <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mx-auto">
+                    <Shield className="w-6 h-6 text-purple-600" />
+                  </div>
+                  <div>
+                    <CardTitle className="text-2xl">Enterprise</CardTitle>
+                    <CardDescription>Solución completa personalizada</CardDescription>
+                  </div>
+                  <div className="space-y-2">
+                    <div className="text-4xl font-bold text-purple-500">A medida</div>
+                    <div className="text-gray-500">Consultar</div>
+                  </div>
+                </CardHeader>
+                <CardContent className="space-y-6">
+                  <ul className="space-y-3">
+                    <li className="flex items-center space-x-3">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span className="text-sm">Minutos de voz ilimitados</span>
+                    </li>
+                    <li className="flex items-center space-x-3">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span className="text-sm">Conversaciones chat ilimitadas</span>
+                    </li>
+                    <li className="flex items-center space-x-3">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span className="text-sm">IA personalizada con tu vocabulario</span>
+                    </li>
+                    <li className="flex items-center space-x-3">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span className="text-sm">Integraciones custom dedicadas</span>
+                    </li>
+                    <li className="flex items-center space-x-3">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span className="text-sm">Múltiples voces clonadas</span>
+                    </li>
+                    <li className="flex items-center space-x-3">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span className="text-sm">Account Manager dedicado</span>
+                    </li>
+                    <li className="flex items-center space-x-3">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span className="text-sm">SLA personalizado</span>
+                    </li>
+                  </ul>
+                  <Button className="w-full bg-purple-500 hover:bg-purple-600 text-white">Contactar</Button>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+
+          {/* Integration Info */}
+          <div className="mt-12 max-w-4xl mx-auto">
+            <Card className="bg-gradient-to-r from-blue-50 to-purple-50 border-2 border-blue-200">
+              <CardContent className="p-8">
+                <div className="text-center space-y-4">
+                  <h3 className="text-2xl font-bold text-gray-900">🔗 Integración Total Entre Canales</h3>
+                  <p className="text-gray-700 text-lg">
+                    Con <strong>Utio Voice AI</strong>, el contexto se mantiene entre voz, WhatsApp, email y web chat.
+                    Un cliente puede iniciar una conversación por chat y continuarla por teléfono sin repetir
+                    información.
+                  </p>
+                  <div className="flex justify-center gap-4 pt-4">
+                    <Badge variant="secondary" className="text-sm">
+                      📞 Voz
+                    </Badge>
+                    <Badge variant="secondary" className="text-sm">
+                      💬 WhatsApp
+                    </Badge>
+                    <Badge variant="secondary" className="text-sm">
+                      📧 Email
+                    </Badge>
+                    <Badge variant="secondary" className="text-sm">
+                      🌐 Web Chat
+                    </Badge>
+                  </div>
                 </div>
-                <div className="space-y-2">
-                  <div className="text-4xl font-bold text-orange-500">A medida</div>
-                  <div className="text-gray-500">Consultar</div>
-                </div>
-              </CardHeader>
-              <CardContent className="space-y-6">
-                <ul className="space-y-3">
-                  <li className="flex items-center space-x-3">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span className="text-sm">Conversaciones ilimitadas</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span className="text-sm">IA personalizada con tu vocabulario</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span className="text-sm">Integraciones custom vía API</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span className="text-sm">Múltiples idiomas y dialectos</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span className="text-sm">Compliance y seguridad avanzada</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span className="text-sm">Account Manager dedicado</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span className="text-sm">SLA personalizado</span>
-                  </li>
-                </ul>
-                <Button className="w-full bg-orange-500 hover:bg-orange-600 text-white">Contactar</Button>
               </CardContent>
             </Card>
           </div>
@@ -360,18 +601,18 @@ export default function AgenteIAChatbotPage() {
                   <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center mr-3">
                     <Bot className="w-4 h-4 text-blue-600" />
                   </div>
-                  Soporte Técnico Inteligente
+                  Soporte Multicanal 24/7
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-gray-600">
-                  <strong>Empresa SaaS (200 usuarios/día):</strong> El Agente IA resuelve el 70% de consultas
-                  automáticamente. Los tickets complejos llegan pre-cualificados con contexto completo, reduciendo
-                  tiempo de resolución un 50%.
+                  <strong>Empresa SaaS (500 consultas/día):</strong> El cliente elige: chat para consultas rápidas,
+                  llamada para problemas complejos. El Agente IA (voz + chat) resuelve el 75% automáticamente. El
+                  contexto se mantiene: si empieza por WhatsApp y llama después, la IA recuerda todo.
                 </p>
                 <div className="flex items-center space-x-2">
                   <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                  <span className="text-sm font-medium">70% resolución automática</span>
+                  <span className="text-sm font-medium">75% resolución automática multicanal</span>
                 </div>
               </CardContent>
             </Card>
