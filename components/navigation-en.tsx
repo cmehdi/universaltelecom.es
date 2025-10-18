@@ -111,7 +111,7 @@ export function Navigation() {
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
                   <Link href="/en" className="flex items-center">
-                    🇺🇸 English
+                    🇬🇧 English
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
@@ -265,7 +265,7 @@ export function Navigation() {
                   href="/en"
                   className="flex items-center px-3 py-2 text-base font-medium text-gray-700 hover:text-orange-600 hover:bg-gray-50"
                 >
-                  🇺🇸 English
+                  🇬🇧 English
                 </Link>
                 <Link
                   href="/fr"
