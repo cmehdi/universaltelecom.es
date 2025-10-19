@@ -298,14 +298,51 @@ export default function WhatsAppAPIPage() {
             <p className="text-xl text-gray-600">Elige el plan que mejor se adapte a tu volumen de conversaciones</p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+            {/* Plan Básico */}
+            <Card className="relative">
+              <CardHeader className="text-center">
+                <CardTitle className="text-2xl">Básico</CardTitle>
+                <div className="text-4xl font-bold text-gray-900 mt-4">25€</div>
+                <div className="text-gray-600">/mes</div>
+                <CardDescription className="mt-4">Solo WhatsApp con agentes</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <ul className="space-y-3">
+                  <li className="flex items-center space-x-3">
+                    <CheckCircle className="w-5 h-5 text-green-500" />
+                    <span>WhatsApp Business API</span>
+                  </li>
+                  <li className="flex items-center space-x-3">
+                    <CheckCircle className="w-5 h-5 text-green-500" />
+                    <span>Gestión multiagente</span>
+                  </li>
+                  <li className="flex items-center space-x-3">
+                    <CheckCircle className="w-5 h-5 text-green-500" />
+                    <span>2 agentes incluidos</span>
+                  </li>
+                  <li className="flex items-center space-x-3">
+                    <CheckCircle className="w-5 h-5 text-green-500" />
+                    <span>Plantillas básicas</span>
+                  </li>
+                  <li className="flex items-center space-x-3">
+                    <CheckCircle className="w-5 h-5 text-green-500" />
+                    <span>Soporte email</span>
+                  </li>
+                </ul>
+                <Link href="/prueba-gratis?producto=whatsapp-api&plan=basico">
+                  <Button className="w-full bg-green-500 hover:bg-green-600 text-white">Empezar Prueba</Button>
+                </Link>
+              </CardContent>
+            </Card>
+
             {/* Plan Starter */}
             <Card className="relative">
               <CardHeader className="text-center">
                 <CardTitle className="text-2xl">Starter</CardTitle>
                 <div className="text-4xl font-bold text-gray-900 mt-4">49€</div>
                 <div className="text-gray-600">/mes</div>
-                <CardDescription className="mt-4">Perfecto para pequeñas empresas</CardDescription>
+                <CardDescription className="mt-4">Con chatbot y agentes</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <ul className="space-y-3">
@@ -315,19 +352,19 @@ export default function WhatsAppAPIPage() {
                   </li>
                   <li className="flex items-center space-x-3">
                     <CheckCircle className="w-5 h-5 text-green-500" />
+                    <span>Todo del plan Básico</span>
+                  </li>
+                  <li className="flex items-center space-x-3">
+                    <CheckCircle className="w-5 h-5 text-green-500" />
+                    <span>Chatbot básico</span>
+                  </li>
+                  <li className="flex items-center space-x-3">
+                    <CheckCircle className="w-5 h-5 text-green-500" />
                     <span>3 plantillas personalizadas</span>
                   </li>
                   <li className="flex items-center space-x-3">
                     <CheckCircle className="w-5 h-5 text-green-500" />
-                    <span>2 agentes incluidos</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <CheckCircle className="w-5 h-5 text-green-500" />
                     <span>Integración CRM básica</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <CheckCircle className="w-5 h-5 text-green-500" />
-                    <span>Soporte email</span>
                   </li>
                 </ul>
                 <Link href="/prueba-gratis?producto=whatsapp-api&plan=starter">
@@ -343,7 +380,7 @@ export default function WhatsAppAPIPage() {
               </div>
               <CardHeader className="text-center">
                 <CardTitle className="text-2xl">Business</CardTitle>
-                <div className="text-4xl font-bold text-gray-900 mt-4">149€</div>
+                <div className="text-4xl font-bold text-gray-900 mt-4">99€</div>
                 <div className="text-gray-600">/mes</div>
                 <CardDescription className="mt-4">Ideal para empresas en crecimiento</CardDescription>
               </CardHeader>
@@ -351,7 +388,7 @@ export default function WhatsAppAPIPage() {
                 <ul className="space-y-3">
                   <li className="flex items-center space-x-3">
                     <CheckCircle className="w-5 h-5 text-green-500" />
-                    <span>5.000 conversaciones/mes</span>
+                    <span>3.000 conversaciones/mes</span>
                   </li>
                   <li className="flex items-center space-x-3">
                     <CheckCircle className="w-5 h-5 text-green-500" />
@@ -359,15 +396,15 @@ export default function WhatsAppAPIPage() {
                   </li>
                   <li className="flex items-center space-x-3">
                     <CheckCircle className="w-5 h-5 text-green-500" />
+                    <span>Usuarios ilimitados</span>
+                  </li>
+                  <li className="flex items-center space-x-3">
+                    <CheckCircle className="w-5 h-5 text-green-500" />
                     <span>10 plantillas personalizadas</span>
                   </li>
                   <li className="flex items-center space-x-3">
                     <CheckCircle className="w-5 h-5 text-green-500" />
-                    <span>5 agentes incluidos</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <CheckCircle className="w-5 h-5 text-green-500" />
-                    <span>Chatbots básicos</span>
+                    <span>Chatbot avanzado</span>
                   </li>
                   <li className="flex items-center space-x-3">
                     <CheckCircle className="w-5 h-5 text-green-500" />
@@ -388,15 +425,17 @@ export default function WhatsAppAPIPage() {
             <Card className="relative">
               <CardHeader className="text-center">
                 <CardTitle className="text-2xl">Enterprise</CardTitle>
-                <div className="text-4xl font-bold text-gray-900 mt-4">349€</div>
-                <div className="text-gray-600">/mes</div>
+                <div className="text-4xl font-bold text-gray-900 mt-4">
+                  <span className="text-2xl">Consultar</span>
+                </div>
+                <div className="text-gray-600">&nbsp;</div>
                 <CardDescription className="mt-4">Para grandes organizaciones</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <ul className="space-y-3">
                   <li className="flex items-center space-x-3">
                     <CheckCircle className="w-5 h-5 text-green-500" />
-                    <span>15.000 conversaciones/mes</span>
+                    <span>Conversaciones ilimitadas</span>
                   </li>
                   <li className="flex items-center space-x-3">
                     <CheckCircle className="w-5 h-5 text-green-500" />
@@ -408,11 +447,7 @@ export default function WhatsAppAPIPage() {
                   </li>
                   <li className="flex items-center space-x-3">
                     <CheckCircle className="w-5 h-5 text-green-500" />
-                    <span>Agentes ilimitados</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <CheckCircle className="w-5 h-5 text-green-500" />
-                    <span>Chatbots avanzados con IA</span>
+                    <span>Chatbots con IA avanzada</span>
                   </li>
                   <li className="flex items-center space-x-3">
                     <CheckCircle className="w-5 h-5 text-green-500" />
@@ -427,7 +462,7 @@ export default function WhatsAppAPIPage() {
                     <span>Soporte 24/7</span>
                   </li>
                 </ul>
-                <Link href="/demo?producto=whatsapp-api&plan=enterprise">
+                <Link href="/contacto?producto=whatsapp-api&plan=enterprise">
                   <Button className="w-full bg-gray-900 hover:bg-gray-800 text-white">Contactar Ventas</Button>
                 </Link>
               </CardContent>
@@ -644,7 +679,6 @@ export default function WhatsAppAPIPage() {
         </div>
       </section>
 
-      {/* Footer */}
       <Footer />
     </div>
   )
