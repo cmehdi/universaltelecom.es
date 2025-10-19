@@ -104,6 +104,7 @@ export default function MovilesPage() {
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">Planes Móviles Empresariales</h2>
             <p className="text-xl text-gray-600">Tarifas transparentes sin sorpresas ni permanencia</p>
+            <p className="text-sm text-gray-500">* Precios sin IVA</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -111,7 +112,7 @@ export default function MovilesPage() {
             <Card className="relative">
               <CardHeader className="text-center">
                 <CardTitle className="text-2xl">Básico</CardTitle>
-                <div className="text-4xl font-bold text-gray-900 mt-4">15€</div>
+                <div className="text-4xl font-bold text-gray-900 mt-4">9€</div>
                 <div className="text-gray-600">/línea/mes</div>
                 <CardDescription className="mt-4">Perfecto para uso moderado</CardDescription>
               </CardHeader>
@@ -119,7 +120,7 @@ export default function MovilesPage() {
                 <ul className="space-y-3">
                   <li className="flex items-center space-x-3">
                     <CheckCircle className="w-5 h-5 text-green-500" />
-                    <span>20 GB datos España</span>
+                    <span>40 GB datos España</span>
                   </li>
                   <li className="flex items-center space-x-3">
                     <CheckCircle className="w-5 h-5 text-green-500" />
@@ -221,6 +222,7 @@ export default function MovilesPage() {
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">Servicios Adicionales</h2>
             <p className="text-xl text-gray-600">Personaliza tu plan con servicios extra</p>
+            <p className="text-sm text-gray-500">* Precios sin IVA</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -452,7 +454,7 @@ export default function MovilesPage() {
                         className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
                       >
                         <option value="">Seleccionar...</option>
-                        <option value="basico">Básico (15€/línea)</option>
+                        <option value="basico">Básico (9€/línea)</option>
                         <option value="profesional">Profesional (25€/línea)</option>
                         <option value="enterprise">Enterprise (35€/línea)</option>
                       </select>
