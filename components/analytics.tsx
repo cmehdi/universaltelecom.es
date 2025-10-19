@@ -3,9 +3,11 @@
 import { GoogleAnalytics } from "@next/third-parties/google"
 
 export function Analytics() {
-  if (!process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID) {
+  const gaId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID
+
+  if (!gaId) {
     return null
   }
 
-  return <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID} />
+  return <GoogleAnalytics gaId={gaId} />
 }
