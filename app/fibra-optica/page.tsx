@@ -103,7 +103,7 @@ export default function FibraOpticaPage() {
                   <CardDescription>Ideal para pequeñas empresas</CardDescription>
                 </div>
                 <div className="space-y-2">
-                  <div className="text-4xl font-bold text-blue-500">29€</div>
+                  <div className="text-4xl font-bold text-blue-500">39€</div>
                   <div className="text-gray-500">/mes</div>
                 </div>
               </CardHeader>
@@ -156,7 +156,7 @@ export default function FibraOpticaPage() {
                   <CardDescription>Para empresas en crecimiento</CardDescription>
                 </div>
                 <div className="space-y-2">
-                  <div className="text-4xl font-bold text-green-500">39€</div>
+                  <div className="text-4xl font-bold text-green-500">49€</div>
                   <div className="text-gray-500">/mes</div>
                 </div>
               </CardHeader>
@@ -206,7 +206,7 @@ export default function FibraOpticaPage() {
                   <CardDescription>Máximo rendimiento</CardDescription>
                 </div>
                 <div className="space-y-2">
-                  <div className="text-4xl font-bold text-purple-500">49€</div>
+                  <div className="text-4xl font-bold text-purple-500">59€</div>
                   <div className="text-gray-500">/mes</div>
                 </div>
               </CardHeader>
