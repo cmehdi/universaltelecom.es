@@ -12,7 +12,6 @@ import {
   Bot,
   BarChart3,
   Hash,
-  Send,
   Wifi,
   Smartphone,
   Code,
@@ -48,11 +47,6 @@ export function Footer() {
       name: "Numeración Global",
       href: "/numeracion-global",
       icon: Hash,
-    },
-    {
-      name: "API SMS",
-      href: "/api-sms",
-      icon: Send,
     },
     {
       name: "Fibra Óptica",
@@ -177,7 +171,7 @@ export function Footer() {
                 Contacto
               </Link>
             </div>
-            <div className="text-sm text-gray-400">© 2024 Universal Telecom. Todos los derechos reservados.</div>
+            <div className="text-sm text-gray-400">© 2025 Universal Telecom. Todos los derechos reservados.</div>
           </div>
         </div>
       </div>

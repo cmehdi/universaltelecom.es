@@ -19,7 +19,6 @@ import {
   Wifi,
   Smartphone,
   Code,
-  Send,
   Globe,
 } from "lucide-react"
 import { useAnalytics } from "@/hooks/use-analytics"
@@ -67,11 +66,6 @@ export function Navigation() {
       name: "Numeración Global",
       href: "/numeracion-global",
       icon: Hash,
-    },
-    {
-      name: "API SMS",
-      href: "/api-sms",
-      icon: Send,
     },
     {
       name: "Fibra Óptica",

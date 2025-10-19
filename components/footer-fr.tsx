@@ -65,6 +65,11 @@ export function Footer() {
                   Numéros Globaux
                 </Link>
               </li>
+              <li>
+                <Link href="/fr/apis" className="text-gray-300 hover:text-white transition-colors">
+                  APIs & Intégrations
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -134,7 +139,7 @@ export function Footer() {
 
         <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400 text-sm">© 2024 Universal Telecom. Tous droits réservés.</p>
+            <p className="text-gray-400 text-sm">© 2025 Universal Telecom. Tous droits réservés.</p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link href="/fr/mentions-legales" className="text-gray-400 hover:text-white text-sm transition-colors">
                 Mentions Légales

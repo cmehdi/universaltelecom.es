@@ -6,20 +6,7 @@ import Image from "next/image"
 import { usePathname } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
-import {
-  Menu,
-  X,
-  Phone,
-  MessageSquare,
-  Bot,
-  BarChart3,
-  Headphones,
-  ChevronDown,
-  Hash,
-  Code,
-  Send,
-  Globe,
-} from "lucide-react"
+import { Menu, X, Phone, MessageSquare, Bot, BarChart3, Headphones, ChevronDown, Hash, Code, Globe } from "lucide-react"
 import { useAnalytics } from "@/hooks/use-analytics"
 
 export function Navigation() {
@@ -66,11 +53,6 @@ export function Navigation() {
   ]
 
   const additionalServices = [
-    {
-      name: "API SMS",
-      href: "/fr/api-sms",
-      icon: Send,
-    },
     {
       name: "APIs & Intégrations",
       href: "/fr/apis",
