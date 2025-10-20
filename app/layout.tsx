@@ -1,32 +1,38 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
+import { GeistSans } from "geist/font/sans"
+import { GeistMono } from "geist/font/mono"
+import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
-import { Analytics } from "@/components/analytics"
-import { Suspense } from "react"
 
-const inter = Inter({ subsets: ["latin"] })
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://universaltelecom.es"
 
 export const metadata: Metadata = {
-  title: "Universal Telecom - Comunicaciones Empresariales del Futuro",
-  description:
-    "Centralita Virtual, WhatsApp Business, Agentes IA y Análisis de Llamadas. Más de 2.000 empresas confían en nosotros en 9+ países.",
-  keywords: "centralita virtual, whatsapp business, agentes ia, análisis llamadas, comunicaciones empresariales",
-    generator: 'v0.app'
+  title: "v0 App",
+  description: "Created with v0",
+  generator: "v0.app",
+  siteUrl: siteUrl,
 }
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode
-}) {
+}>) {
   return (
-    <html lang="es">
-      <body className={inter.className}>
-        <Suspense fallback={null}>
-          {children}
-          <Analytics />
-        </Suspense>
+    <html lang="en">
+      <head>
+        <style>{`
+html {
+  font-family: ${GeistSans.style.fontFamily};
+  --font-sans: ${GeistSans.variable};
+  --font-mono: ${GeistMono.variable};
+}
+        `}</style>
+      </head>
+      <body>
+        {children}
+        <Analytics />
       </body>
     </html>
   )
