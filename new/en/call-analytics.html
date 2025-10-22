@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Call Analytics - Transform Your Calls into Insights | Universal Telecom</title>
+    <meta name="description" content="AI-powered call analytics. Automatic transcription, sentiment analysis, performance metrics, and actionable insights.">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" type="image/png" href="../images/logo.png">
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="../images/logo.png" alt="Universal Telecom" class="nav-logo-img">
+                Universal Telecom
+            </a>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li class="nav-dropdown">
+                    <a href="#" class="nav-dropdown-toggle">Products <span class="nav-arrow">▼</span></a>
+                    <ul class="nav-dropdown-menu">
+                        <li><a href="virtual-pbx.html">Virtual PBX</a></li>
+                        <li><a href="whatsapp-business-api.html">WhatsApp Business API</a></li>
+                        <li><a href="ai-agents.html">AI Voice Agents</a></li>
+                        <li><a href="call-analytics.html">AI Call Analytics</a></li>
+                        <li><a href="global-numbers.html">Global Numbers</a></li>
+                        <li><a href="apis.html">APIs</a></li>
+                        <li><a href="sms-api.html">SMS API</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="free-trial.html" class="nav-cta">Free Trial</a></li>
+                <li class="nav-language">
+                    <a href="#" class="nav-language-toggle">EN <span class="nav-arrow">▼</span></a>
+                    <ul class="nav-language-menu">
+                        <li><a href="../es/analisis-llamadas-ia.html">ES</a></li>
+                        <li><a href="../fr/analyse-appels.html">FR</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero hero-gradient">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">AI Call Analytics: Transform Your Conversations into Insights</h1>
+                <p class="hero-subtitle">Automatic transcription, sentiment analysis, KPI tracking, and actionable insights from every call. Make data-driven decisions.</p>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">99.5%</div>
+                        <div class="hero-stat-label">Accuracy</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">Real-time</div>
+                        <div class="hero-stat-label">Transcription</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">20+</div>
+                        <div class="hero-stat-label">Languages</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">100%</div>
+                        <div class="hero-stat-label">Call Coverage</div>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="free-trial.html" class="btn btn-primary btn-lg">Start Free Trial</a>
+                    <a href="demo.html" class="btn btn-secondary btn-lg">Request Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Advanced AI Technology</span>
+                <h2 class="section-title">Turn Every Call into Valuable Data</h2>
+                <p class="section-description">Don't miss any detail. Our AI analyzes 100% of your calls to give you actionable insights.</p>
+            </div>
+            <div class="grid grid-3">
+                <div class="feature-card">
+                    <div class="feature-icon">📝</div>
+                    <h3>Automatic Transcription</h3>
+                    <p>Convert speech to text in real-time with 99.5% accuracy. Search and analyze conversations by keywords.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">😊</div>
+                    <h3>Sentiment Analysis</h3>
+                    <p>Detect emotions and customer satisfaction in each conversation. Identify problems before they escalate.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Actionable KPIs</h3>
+                    <p>Track average talk time, response time, resolution rate, and +30 key metrics.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Topic Detection</h3>
+                    <p>Automatically identify conversation topics: complaints, sales, support, queries, etc.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Automatic Alerts</h3>
+                    <p>Receive notifications about critical calls, dissatisfied customers, or commercial opportunities.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3>Custom Reports</h3>
+                    <p>Generate detailed reports with the metrics that matter to your business. Export to Excel, PDF, or BI.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Complete Dashboard</h2>
+                <p class="section-description">All information in one place</p>
+            </div>
+            <div class="dashboard-preview">
+                <img src="../images/analytics-dashboard.png" alt="Call Analytics Dashboard" class="dashboard-image">
+            </div>
+            <div class="grid grid-2" style="margin-top: 3rem;">
+                <div class="feature-box">
+                    <h3>📞 Call Overview</h3>
+                    <ul>
+                        <li>Total calls by period</li>
+                        <li>Answered vs. missed calls</li>
+                        <li>Inbound vs. outbound calls</li>
+                        <li>Calls by time slot</li>
+                        <li>Average wait time</li>
+                    </ul>
+                </div>
+                <div class="feature-box">
+                    <h3>👥 Agent Performance</h3>
+                    <ul>
+                        <li>Individual metrics by agent</li>
+                        <li>Average talk time</li>
+                        <li>Issue resolution rate</li>
+                        <li>Customer satisfaction</li>
+                        <li>Comparative ranking</li>
+                    </ul>
+                </div>
+                <div class="feature-box">
+                    <h3>💬 Conversation Analysis</h3>
+                    <ul>
+                        <li>Complete transcriptions</li>
+                        <li>Detected keywords</li>
+                        <li>Sentiment by call segment</li>
+                        <li>Conversation summary</li>
+                        <li>Action items</li>
+                    </ul>
+                </div>
+                <div class="feature-box">
+                    <h3>🎯 Strategic Insights</h3>
+                    <ul>
+                        <li>Most frequent topics</li>
+                        <li>Recurring problems</li>
+                        <li>Improvement opportunities</li>
+                        <li>Satisfaction trends</li>
+                        <li>Predictive recommendations</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Real Use Cases</h2>
+            </div>
+            <div class="grid grid-2">
+                <div class="case-card">
+                    <div class="case-badge">Customer Support</div>
+                    <h3>Technology Company</h3>
+                    <p class="case-result">📈 40% improvement in CSAT</p>
+                    <p>"Call analysis helped us identify that 60% of queries were about the same issue. We fixed the problem and created specific guides, reducing calls by 45%."</p>
+                    <div class="case-metrics">
+                        <div class="case-metric">
+                            <strong>Resolution time</strong>
+                            <span>-35%</span>
+                        </div>
+                        <div class="case-metric">
+                            <strong>Satisfaction</strong>
+                            <span>From 3.2 to 4.5/5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="case-card">
+                    <div class="case-badge">Sales</div>
+                    <h3>Insurance Company</h3>
+                    <p class="case-result">📈 28% increase in conversions</p>
+                    <p>"Sentiment analysis identifies the most interested prospects. The sales team focuses on them and closes more deals with less effort."</p>
+                    <div class="case-metrics">
+                        <div class="case-metric">
+                            <strong>Qualified leads</strong>
+                            <span>+150%</span>
+                        </div>
+                        <div class="case-metric">
+                            <strong>Sales</strong>
+                            <span>+28%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="case-card">
+                    <div class="case-badge">Quality</div>
+                    <h3>Call Center</h3>
+                    <p class="case-result">📈 100% call evaluation</p>
+                    <p>"Before, we randomly reviewed 5% of calls. Now the AI evaluates 100%, detects quality issues, and generates automatic improvement reports."</p>
+                    <div class="case-metrics">
+                        <div class="case-metric">
+                            <strong>Coverage</strong>
+                            <span>From 5% to 100%</span>
+                        </div>
+                        <div class="case-metric">
+                            <strong>Time saved</strong>
+                            <span>50 hours/week</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="case-card">
+                    <div class="case-badge">Operations</div>
+                    <h3>Logistics Company</h3>
+                    <p class="case-result">📈 Operational costs -22%</p>
+                    <p>"Topic analysis revealed we were receiving many calls about tracking. We implemented proactive notifications and reduced those calls by 70%."</p>
+                    <div class="case-metrics">
+                        <div class="case-metric">
+                            <strong>Tracking calls</strong>
+                            <span>-70%</span>
+                        </div>
+                        <div class="case-metric">
+                            <strong>Cost savings</strong>
+                            <span>$45,000/year</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Advanced Features</h2>
+            </div>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <div class="feature-item-icon">✓</div>
+                    <div class="feature-item-content">
+                        <h3>Keyword Detection</h3>
+                        <p>Automatically identifies important words and phrases: products, competitors, objections, buying signals, etc.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-item-icon">✓</div>
+                    <div class="feature-item-content">
+                        <h3>Compliance Monitoring</h3>
+                        <p>Verifies that agents follow scripts, mention legal requirements, and comply with regulations.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-item-icon">✓</div>
+                    <div class="feature-item-content">
+                        <h3>Automatic Summaries</h3>
+                        <p>The AI generates concise summaries of each call: main topics, customer sentiment, follow-up actions.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-item-icon">✓</div>
+                    <div class="feature-item-content">
+                        <h3>CRM Integration</h3>
+                        <p>Automatically syncs transcriptions, sentiment, and notes to customer records in your CRM.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-item-icon">✓</div>
+                    <div class="feature-item-content">
+                        <h3>Trend Analysis</h3>
+                        <p>Identifies patterns and trends over time: seasonal peaks, emerging problems, improvement opportunities.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-item-icon">✓</div>
+                    <div class="feature-item-content">
+                        <h3>AI Recommendations</h3>
+                        <p>The system suggests concrete actions: training needs, process improvements, expansion opportunities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Transparent Pricing</h2>
+                <p class="section-description">Plans that scale with your business</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Basic</h3>
+                        <div class="pricing-price">
+                            <span class="pricing-currency">$</span>
+                            <span class="pricing-amount">199</span>
+                            <span class="pricing-period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ Up to 1,000 calls/month</li>
+                        <li>✓ Automatic transcription</li>
+                        <li>✓ Sentiment analysis</li>
+                        <li>✓ Basic reports</li>
+                        <li>✓ 5 languages</li>
+                        <li>✓ 90 days data retention</li>
+                        <li>✓ Email support</li>
+                    </ul>
+                    <a href="free-trial.html" class="btn btn-secondary btn-block">Start Free Trial</a>
+                </div>
+                <div class="pricing-card pricing-card-featured">
+                    <div class="pricing-badge">Recommended</div>
+                    <div class="pricing-header">
+                        <h3>Professional</h3>
+                        <div class="pricing-price">
+                            <span class="pricing-currency">$</span>
+                            <span class="pricing-amount">499</span>
+                            <span class="pricing-period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ Up to 5,000 calls/month</li>
+                        <li>✓ Everything in Basic</li>
+                        <li>✓ Topic detection</li>
+                        <li>✓ Keyword detection</li>
+                        <li>✓ Automatic alerts</li>
+                        <li>✓ Custom reports</li>
+                        <li>✓ 20+ languages</li>
+                        <li>✓ 1 year data retention</li>
+                        <li>✓ CRM integration</li>
+                        <li>✓ Priority support</li>
+                    </ul>
+                    <a href="free-trial.html" class="btn btn-primary btn-block">Start Free Trial</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Enterprise</h3>
+                        <div class="pricing-price">
+                            <span class="pricing-amount">Custom</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ Unlimited calls</li>
+                        <li>✓ Everything in Professional</li>
+                        <li>✓ Compliance monitoring</li>
+                        <li>✓ AI recommendations</li>
+                        <li>✓ Predictive analysis</li>
+                        <li>✓ All languages</li>
+                        <li>✓ Unlimited retention</li>
+                        <li>✓ Custom integrations</li>
+                        <li>✓ Dedicated support</li>
+                        <li>✓ SLA 99.9%</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-secondary btn-block">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-gradient">
+        <div class="container text-center">
+            <h2 class="section-title text-white">Start Analyzing Your Calls Today</h2>
+            <p class="section-description text-white">30-day free trial. No credit card required.</p>
+            <div class="cta-buttons">
+                <a href="free-trial.html" class="btn btn-white btn-lg">Start Free Trial</a>
+                <a href="demo.html" class="btn btn-secondary-white btn-lg">Request Demo</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+            </div>
+            <div class="faq">
+                <div class="faq-item">
+                    <h3 class="faq-question">How accurate is transcription?</h3>
+                    <div class="faq-answer">
+                        <p>Our AI achieves 99.5% accuracy in transcriptions. The system continuously improves and adapts to accents, industry-specific jargon, and technical terms. Supports 20+ languages with the same quality level.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Is real-time analysis possible?</h3>
+                    <div class="faq-answer">
+                        <p>Yes! Transcription and sentiment analysis occur in real-time. Agents can see live insights during the call, and supervisors can receive instant alerts about problematic calls.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Can it integrate with my CRM?</h3>
+                    <div class="faq-answer">
+                        <p>Yes, we have native integrations with Salesforce, HubSpot, Zoho, and 50+ CRMs. We can also integrate with any system via API. Transcriptions and analysis automatically sync to customer records.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">How long is data retained?</h3>
+                    <div class="faq-answer">
+                        <p>It depends on your plan: Basic (90 days), Professional (1 year), Enterprise (unlimited). You can download reports and transcriptions at any time before expiration.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Is it GDPR compliant?</h3>
+                    <div class="faq-answer">
+                        <p>Absolutely. Our platform fully complies with GDPR, CCPA, and other privacy regulations. All data is encrypted, stored in secure servers, and you maintain full control over your information.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="virtual-pbx.html">Virtual PBX</a></li>
+                        <li><a href="whatsapp-business-api.html">WhatsApp Business API</a></li>
+                        <li><a href="ai-agents.html">AI Voice Agents</a></li>
+                        <li><a href="call-analytics.html">Call Analytics</a></li>
+                        <li><a href="global-numbers.html">Global Numbers</a></li>
+                        <li><a href="apis.html">APIs</a></li>
+                        <li><a href="sms-api.html">SMS API</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="demo.html">Request Demo</a></li>
+                        <li><a href="free-trial.html">Free Trial</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="legal-notice.html">Legal Notice</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="cookie-policy.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>📞 +1 (555) 123-4567</li>
+                        <li>✉️ info@universaltelecom.com</li>
+                        <li>📍 123 Tech Street, San Francisco, CA 94105</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Universal Telecom. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
