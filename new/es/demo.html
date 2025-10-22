@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar Demo - Universal Telecom</title>
+    <meta name="description" content="Solicita una demostración personalizada de nuestros servicios. Te mostraremos cómo Universal Telecom puede transformar tu negocio.">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <img src="../images/logo.png" alt="Universal Telecom" height="40">
+                </a>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="nav-menu" id="navMenu">
+                    <div class="nav-links">
+                        <div class="dropdown">
+                            <a href="#" class="dropbtn">Productos</a>
+                            <div class="dropdown-content">
+                                <a href="centralita-virtual.html">Centralita Virtual</a>
+                                <a href="whatsapp-api.html">WhatsApp Business API</a>
+                                <a href="agentes-ia.html">Agentes IA</a>
+                                <a href="analisis-llamadas-ia.html">Análisis de Llamadas IA</a>
+                                <a href="numeracion-global.html">Numeración Global</a>
+                                <a href="apis.html">APIs</a>
+                                <a href="api-sms.html">API SMS</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <a href="#" class="dropbtn">Conectividad</a>
+                            <div class="dropdown-content">
+                                <a href="fibra-optica.html">Fibra Óptica</a>
+                                <a href="moviles.html">Móviles</a>
+                            </div>
+                        </div>
+                        <a href="contacto.html">Contacto</a>
+                    </div>
+
+                    <div class="nav-actions">
+                        <div class="language-selector">
+                            <button class="lang-btn">ES ▼</button>
+                            <div class="lang-dropdown">
+                                <a href="../en/demo.html">EN</a>
+                                <a href="../fr/demo.html">FR</a>
+                            </div>
+                        </div>
+                        <a href="prueba-gratis.html" class="btn btn-primary">Prueba Gratis</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-simple">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Solicita una Demo Personalizada</h1>
+                <p class="lead">Descubre cómo Universal Telecom puede transformar las comunicaciones de tu empresa. Te mostraremos todas las funcionalidades adaptadas a tus necesidades.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Form Section -->
+    <section class="section">
+        <div class="container">
+            <div class="demo-grid">
+                <!-- Form -->
+                <div class="demo-form-wrapper">
+                    <form id="demoForm" class="form">
+                        <h2>Agenda tu Demo</h2>
+                        <p>Completa el formulario y te contactaremos para agendar una sesión en el horario que mejor te convenga.</p>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nombre">Nombre *</label>
+                                <input type="text" id="nombre" name="nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="apellidos">Apellidos *</label>
+                                <input type="text" id="apellidos" name="apellidos" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Corporativo *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="telefono">Teléfono *</label>
+                                <input type="tel" id="telefono" name="telefono" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="empresa">Empresa *</label>
+                                <input type="text" id="empresa" name="empresa" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="cargo">Cargo *</label>
+                                <input type="text" id="cargo" name="cargo" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="sector">Sector *</label>
+                                <select id="sector" name="sector" required>
+                                    <option value="">Selecciona un sector</option>
+                                    <option value="ecommerce">E-commerce</option>
+                                    <option value="retail">Retail</option>
+                                    <option value="salud">Salud</option>
+                                    <option value="finanzas">Finanzas</option>
+                                    <option value="educacion">Educación</option>
+                                    <option value="tecnologia">Tecnología</option>
+                                    <option value="inmobiliaria">Inmobiliaria</option>
+                                    <option value="logistica">Logística</option>
+                                    <option value="hosteleria">Hostelería</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="empleados">Número de Empleados *</label>
+                                <select id="empleados" name="empleados" required>
+                                    <option value="">Selecciona</option>
+                                    <option value="1-10">1-10</option>
+                                    <option value="11-50">11-50</option>
+                                    <option value="51-200">51-200</option>
+                                    <option value="201-500">201-500</option>
+                                    <option value="500+">Más de 500</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Productos de Interés *</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="productos" value="centralita">
+                                    <span>Centralita Virtual</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="productos" value="whatsapp">
+                                    <span>WhatsApp Business API</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="productos" value="agentes-ia">
+                                    <span>Agentes IA</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="productos" value="analisis">
+                                    <span>Análisis de Llamadas</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="productos" value="numeracion">
+                                    <span>Numeración Global</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="productos" value="apis">
+                                    <span>APIs</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="productos" value="fibra">
+                                    <span>Fibra Óptica</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="productos" value="movil">
+                                    <span>Móviles</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="horario">Horario Preferido *</label>
+                            <select id="horario" name="horario" required>
+                                <option value="">Selecciona un horario</option>
+                                <option value="manana">Mañana (9:00 - 12:00)</option>
+                                <option value="mediodia">Mediodía (12:00 - 14:00)</option>
+                                <option value="tarde">Tarde (14:00 - 18:00)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensaje">¿Qué te gustaría ver en la demo?</label>
+                            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos más sobre tus necesidades y objetivos..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="privacidad" required>
+                                <span>He leído y acepto la <a href="politica-privacidad.html" target="_blank">política de privacidad</a> *</span>
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="newsletter">
+                                <span>Deseo recibir información comercial y novedades de Universal Telecom</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large">Solicitar Demo</button>
+                    </form>
+
+                    <div id="formMessage" class="form-message" style="display: none;"></div>
+                </div>
+
+                <!-- Benefits -->
+                <div class="demo-benefits">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🎯</div>
+                        <h3>100% Personalizada</h3>
+                        <p>Adaptamos la demo a tu sector y necesidades específicas</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">⏱️</div>
+                        <h3>30-45 Minutos</h3>
+                        <p>Duración óptima para conocer todas las funcionalidades</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">👥</div>
+                        <h3>Experto Dedicado</h3>
+                        <p>Un especialista te guiará paso a paso</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">💡</div>
+                        <h3>Casos de Uso Reales</h3>
+                        <p>Te mostramos ejemplos aplicados a tu industria</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">📊</div>
+                        <h3>ROI Estimado</h3>
+                        <p>Calculamos el retorno de inversión para tu negocio</p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🎁</div>
+                        <h3>Sin Compromiso</h3>
+                        <p>Conoce la plataforma sin ninguna obligación</p>
+                    </div>
+
+                    <div class="stats-card">
+                        <h3>Lo que verás en la demo</h3>
+                        <ul class="checklist">
+                            <li>✓ Dashboard y panel de control</li>
+                            <li>✓ Configuración de servicios</li>
+                            <li>✓ Integraciones disponibles</li>
+                            <li>✓ Analíticas y reportes</li>
+                            <li>✓ Funcionalidades avanzadas</li>
+                            <li>✓ App móvil</li>
+                            <li>✓ Soporte y recursos</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="text-center">Lo que Dicen Nuestros Clientes</h2>
+            <p class="text-center subtitle">Empresas que confiaron en nuestra demo y ahora son clientes</p>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"La demo fue muy clara y profesional. Pudimos ver exactamente cómo la centralita virtual mejoraría nuestra atención al cliente. En dos semanas ya estábamos operando."</p>
+                    <div class="testimonial-author">
+                        <strong>María González</strong>
+                        <span>Directora de Operaciones, TechStore</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Nos mostraron casos de uso específicos de nuestro sector. La integración con nuestro CRM fue clave para tomar la decisión. El ROI ha sido increíble."</p>
+                    <div class="testimonial-author">
+                        <strong>Carlos Ruiz</strong>
+                        <span>CEO, HealthCare Plus</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"La demo superó nuestras expectativas. El equipo respondió todas nuestras preguntas técnicas con profundidad. Contratamos el mismo día."</p>
+                    <div class="testimonial-author">
+                        <strong>Ana Martínez</strong>
+                        <span>CTO, FinTech Solutions</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="text-center">Preguntas Frecuentes sobre la Demo</h2>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>¿Cuánto dura la demo?</h3>
+                    <p>Entre 30 y 45 minutos, dependiendo de tus preguntas y los productos que quieras conocer en detalle.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>¿Es necesario instalar algo?</h3>
+                    <p>No, la demo se realiza a través de videollamada. Solo necesitas conexión a internet y un navegador web.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>¿Puedo grabar la demo?</h3>
+                    <p>Sí, te enviamos una grabación de la sesión para que puedas revisarla cuando quieras y compartirla con tu equipo.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>¿Puedo llevar a mi equipo?</h3>
+                    <p>¡Por supuesto! Cuantas más personas de tu equipo participen, mejor. Así todos conocerán la plataforma.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>¿Hay algún costo?</h3>
+                    <p>No, la demo es completamente gratuita y sin compromiso de contratación.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>¿Cuándo me contactarán?</h3>
+                    <p>En menos de 24 horas laborables te llamaremos para agendar la demo en el horario que prefieras.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>¿Prefieres Empezar Directamente?</h2>
+            <p>Activa tu cuenta de prueba gratis por 14 días, sin tarjeta de crédito</p>
+            <a href="prueba-gratis.html" class="btn btn-large">Prueba Gratis 14 Días</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Productos</h4>
+                    <ul>
+                        <li><a href="centralita-virtual.html">Centralita Virtual</a></li>
+                        <li><a href="whatsapp-api.html">WhatsApp Business API</a></li>
+                        <li><a href="agentes-ia.html">Agentes IA</a></li>
+                        <li><a href="analisis-llamadas-ia.html">Análisis de Llamadas</a></li>
+                        <li><a href="numeracion-global.html">Numeración Global</a></li>
+                        <li><a href="apis.html">APIs</a></li>
+                        <li><a href="api-sms.html">API SMS</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Conectividad</h4>
+                    <ul>
+                        <li><a href="fibra-optica.html">Fibra Óptica</a></li>
+                        <li><a href="moviles.html">Móviles</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="demo.html">Solicitar Demo</a></li>
+                        <li><a href="prueba-gratis.html">Prueba Gratis</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="aviso-legal.html">Aviso Legal</a></li>
+                        <li><a href="politica-privacidad.html">Política de Privacidad</a></li>
+                        <li><a href="politica-cookies.html">Política de Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Universal Telecom. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+        // Form submission handler
+        document.getElementById('demoForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData.entries());
+            
+            // Get all checked products
+            const productos = Array.from(document.querySelectorAll('input[name="productos"]:checked'))
+                .map(cb => cb.value);
+            
+            if (productos.length === 0) {
+                alert('Por favor, selecciona al menos un producto de interés');
+                return;
+            }
+            
+            data.productos = productos;
+            
+            const messageDiv = document.getElementById('formMessage');
+            const submitBtn = this.querySelector('button[type="submit"]');
+            
+            // Disable submit button
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Enviando...';
+            
+            try {
+                // Simulate API call
+                await new Promise(resolve => setTimeout(resolve, 1500));
+                
+                // Show success message
+                messageDiv.className = 'form-message success';
+                messageDiv.innerHTML = `
+                    <h3>¡Demo Solicitada Correctamente!</h3>
+                    <p>Gracias ${data.nombre}, hemos recibido tu solicitud.</p>
+                    <p>Te contactaremos en menos de 24 horas al <strong>${data.telefono}</strong> para agendar la demo en tu horario preferido.</p>
+                    <p>También te hemos enviado un email de confirmación a <strong>${data.email}</strong></p>
+                `;
+                messageDiv.style.display = 'block';
+                
+                // Reset form
+                this.reset();
+                
+                // Track event
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'demo_request', {
+                        'event_category': 'Lead',
+                        'event_label': data.sector,
+                        'value': productos.length
+                    });
+                }
+            } catch (error) {
+                // Show error message
+                messageDiv.className = 'form-message error';
+                messageDiv.textContent = 'Error al enviar la solicitud. Por favor, inténtalo de nuevo o contáctanos por teléfono.';
+                messageDiv.style.display = 'block';
+            } finally {
+                // Re-enable submit button
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Solicitar Demo';
+            }
+        });
+    </script>
+</body>
+</html>

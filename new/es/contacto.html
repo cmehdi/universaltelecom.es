@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Universal Telecom</title>
+    <meta name="description" content="Contacta con Universal Telecom. Estamos aquí para ayudarte con cualquier pregunta sobre nuestros servicios de telecomunicaciones.">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <img src="../images/logo.png" alt="Universal Telecom" height="40">
+                </a>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="nav-menu" id="navMenu">
+                    <div class="nav-links">
+                        <div class="dropdown">
+                            <a href="#" class="dropbtn">Productos</a>
+                            <div class="dropdown-content">
+                                <a href="centralita-virtual.html">Centralita Virtual</a>
+                                <a href="whatsapp-api.html">WhatsApp Business API</a>
+                                <a href="agentes-ia.html">Agentes IA</a>
+                                <a href="analisis-llamadas-ia.html">Análisis de Llamadas IA</a>
+                                <a href="numeracion-global.html">Numeración Global</a>
+                                <a href="apis.html">APIs</a>
+                                <a href="api-sms.html">API SMS</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <a href="#" class="dropbtn">Conectividad</a>
+                            <div class="dropdown-content">
+                                <a href="fibra-optica.html">Fibra Óptica</a>
+                                <a href="moviles.html">Móviles</a>
+                            </div>
+                        </div>
+                        <a href="contacto.html" class="active">Contacto</a>
+                    </div>
+
+                    <div class="nav-actions">
+                        <div class="language-selector">
+                            <button class="lang-btn">ES ▼</button>
+                            <div class="lang-dropdown">
+                                <a href="../en/contact.html">EN</a>
+                                <a href="../fr/contact.html">FR</a>
+                            </div>
+                        </div>
+                        <a href="prueba-gratis.html" class="btn btn-primary">Prueba Gratis</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-simple">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Contacta con Nosotros</h1>
+                <p class="lead">Estamos aquí para ayudarte. Completa el formulario y nos pondremos en contacto contigo lo antes posible.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <h2>Envíanos un Mensaje</h2>
+                    <form id="contactForm" class="form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nombre">Nombre *</label>
+                                <input type="text" id="nombre" name="nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="apellidos">Apellidos *</label>
+                                <input type="text" id="apellidos" name="apellidos" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="telefono">Teléfono *</label>
+                                <input type="tel" id="telefono" name="telefono" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="empresa">Empresa</label>
+                            <input type="text" id="empresa" name="empresa">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="asunto">Asunto *</label>
+                            <select id="asunto" name="asunto" required>
+                                <option value="">Selecciona un asunto</option>
+                                <option value="info-general">Información General</option>
+                                <option value="centralita">Centralita Virtual</option>
+                                <option value="whatsapp">WhatsApp Business API</option>
+                                <option value="agentes-ia">Agentes IA</option>
+                                <option value="analisis">Análisis de Llamadas</option>
+                                <option value="numeracion">Numeración Global</option>
+                                <option value="apis">APIs</option>
+                                <option value="fibra">Fibra Óptica</option>
+                                <option value="movil">Móviles</option>
+                                <option value="soporte">Soporte Técnico</option>
+                                <option value="facturacion">Facturación</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje *</label>
+                            <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="privacidad" required>
+                                <span>He leído y acepto la <a href="politica-privacidad.html" target="_blank">política de privacidad</a> *</span>
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="newsletter">
+                                <span>Deseo recibir información comercial y novedades de Universal Telecom</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large">Enviar Mensaje</button>
+                    </form>
+
+                    <div id="formMessage" class="form-message" style="display: none;"></div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">📞</div>
+                        <h3>Teléfono</h3>
+                        <p><a href="tel:+34900123456">+34 900 123 456</a></p>
+                        <p class="info-note">Lun - Vie: 9:00 - 18:00</p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">✉️</div>
+                        <h3>Email</h3>
+                        <p><a href="mailto:info@universaltelecom.es">info@universaltelecom.es</a></p>
+                        <p class="info-note">Respuesta en 24h</p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">💬</div>
+                        <h3>Chat en Vivo</h3>
+                        <p>Disponible en nuestra web</p>
+                        <button class="btn btn-outline" onclick="openChat()">Iniciar Chat</button>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">📍</div>
+                        <h3>Oficinas</h3>
+                        <p>Madrid, España</p>
+                        <p>Calle Mayor, 123</p>
+                        <p>28013 Madrid</p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">🕐</div>
+                        <h3>Horario</h3>
+                        <p><strong>Lunes - Viernes:</strong><br>9:00 - 18:00</p>
+                        <p><strong>Sábado - Domingo:</strong><br>Cerrado</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>Síguenos</h3>
+                        <div class="social-links">
+                            <a href="#" aria-label="LinkedIn">🔗</a>
+                            <a href="#" aria-label="Twitter">🐦</a>
+                            <a href="#" aria-label="Facebook">📘</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="text-center">Preguntas Frecuentes</h2>
+            <p class="text-center subtitle">Respuestas rápidas a las dudas más comunes</p>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>¿Cuánto tarda la respuesta?</h3>
+                    <p>Normalmente respondemos en menos de 24 horas laborables. Para consultas urgentes, llámanos directamente.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>¿Ofrecen soporte técnico?</h3>
+                    <p>Sí, tenemos un equipo de soporte técnico disponible de lunes a viernes de 9:00 a 18:00. Para clientes premium, ofrecemos soporte 24/7.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>¿Puedo agendar una llamada?</h3>
+                    <p>Por supuesto. Solicita una <a href="demo.html">demo personalizada</a> y te contactaremos en el horario que prefieras.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>¿Tienen oficinas físicas?</h3>
+                    <p>Nuestra sede principal está en Madrid. También trabajamos de forma remota para atender clientes en toda España y Europa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>¿Prefieres que te llamemos?</h2>
+            <p>Déjanos tu número y te contactaremos en menos de 24 horas</p>
+            <a href="demo.html" class="btn btn-large">Solicitar Llamada</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Productos</h4>
+                    <ul>
+                        <li><a href="centralita-virtual.html">Centralita Virtual</a></li>
+                        <li><a href="whatsapp-api.html">WhatsApp Business API</a></li>
+                        <li><a href="agentes-ia.html">Agentes IA</a></li>
+                        <li><a href="analisis-llamadas-ia.html">Análisis de Llamadas</a></li>
+                        <li><a href="numeracion-global.html">Numeración Global</a></li>
+                        <li><a href="apis.html">APIs</a></li>
+                        <li><a href="api-sms.html">API SMS</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Conectividad</h4>
+                    <ul>
+                        <li><a href="fibra-optica.html">Fibra Óptica</a></li>
+                        <li><a href="moviles.html">Móviles</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="demo.html">Solicitar Demo</a></li>
+                        <li><a href="prueba-gratis.html">Prueba Gratis</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="aviso-legal.html">Aviso Legal</a></li>
+                        <li><a href="politica-privacidad.html">Política de Privacidad</a></li>
+                        <li><a href="politica-cookies.html">Política de Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Universal Telecom. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+        // Form submission handler
+        document.getElementById('contactForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData.entries());
+            
+            const messageDiv = document.getElementById('formMessage');
+            const submitBtn = this.querySelector('button[type="submit"]');
+            
+            // Disable submit button
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Enviando...';
+            
+            try {
+                // Simulate API call
+                await new Promise(resolve => setTimeout(resolve, 1500));
+                
+                // Show success message
+                messageDiv.className = 'form-message success';
+                messageDiv.textContent = '¡Mensaje enviado correctamente! Te contactaremos pronto.';
+                messageDiv.style.display = 'block';
+                
+                // Reset form
+                this.reset();
+                
+                // Track event
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'form_submit', {
+                        'event_category': 'Contact',
+                        'event_label': data.asunto
+                    });
+                }
+            } catch (error) {
+                // Show error message
+                messageDiv.className = 'form-message error';
+                messageDiv.textContent = 'Error al enviar el mensaje. Por favor, inténtalo de nuevo.';
+                messageDiv.style.display = 'block';
+            } finally {
+                // Re-enable submit button
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Enviar Mensaje';
+                
+                // Hide message after 5 seconds
+                setTimeout(() => {
+                    messageDiv.style.display = 'none';
+                }, 5000);
+            }
+        });
+
+        function openChat() {
+            alert('Chat en vivo próximamente disponible');
+        }
+    </script>
+</body>
+</html>
