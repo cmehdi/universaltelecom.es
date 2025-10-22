@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Communication APIs - Voice, SMS & WhatsApp | Universal Telecom</title>
+    <meta name="description" content="Integrate voice, SMS and WhatsApp APIs into your applications. Developer-friendly documentation, competitive pricing, and 24/7 support.">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" type="image/png" href="../images/logo.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="nav-logo">
+                    <img src="../images/logo.png" alt="Universal Telecom" style="height: 40px;">
+                </a>
+                
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="nav-menu" id="navMenu">
+                    <div class="nav-links">
+                        <div class="nav-dropdown">
+                            <a href="#" class="nav-link">Solutions</a>
+                            <div class="dropdown-content">
+                                <a href="virtual-pbx.html">Virtual PBX</a>
+                                <a href="ai-agents.html">AI Voice Agents</a>
+                                <a href="whatsapp-business-api.html">WhatsApp Business API</a>
+                                <a href="call-analytics.html">Call Analytics</a>
+                                <a href="global-numbers.html">Global Numbers</a>
+                            </div>
+                        </div>
+                        
+                        <div class="nav-dropdown">
+                            <a href="#" class="nav-link">Developers</a>
+                            <div class="dropdown-content">
+                                <a href="apis.html">APIs</a>
+                                <a href="sms-api.html">SMS API</a>
+                            </div>
+                        </div>
+                        
+                        <a href="contact.html" class="nav-link">Contact</a>
+                        
+                        <div class="nav-dropdown">
+                            <a href="#" class="nav-link">EN</a>
+                            <div class="dropdown-content">
+                                <a href="../es/apis.html">Español</a>
+                                <a href="../fr/apis.html">Français</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="nav-actions">
+                        <a href="demo.html" class="btn btn-secondary">Request Demo</a>
+                        <a href="free-trial.html" class="btn btn-primary">Start Free Trial</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Communication APIs for Developers</h1>
+                    <p class="hero-subtitle">
+                        Integrate voice, SMS, and WhatsApp capabilities into your applications with our simple, powerful APIs. 
+                        Build once, scale globally.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="stat-number">99.95%</div>
+                            <div class="stat-label">Uptime SLA</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">&lt;100ms</div>
+                            <div class="stat-label">Average Latency</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">190+</div>
+                            <div class="stat-label">Countries</div>
+                        </div>
+                    </div>
+                    <div class="hero-actions">
+                        <a href="free-trial.html" class="btn btn-primary btn-lg">Start Free Trial</a>
+                        <a href="#documentation" class="btn btn-secondary btn-lg">View Documentation</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="../images/apis-dashboard.png" alt="API Dashboard" style="border-radius: 8px; box-shadow: 0 20px 60px rgba(0,0,0,0.3);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- APIs Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our APIs</h2>
+                <p>Everything you need to build world-class communication experiences</p>
+            </div>
+            
+            <div class="grid grid-3">
+                <div class="card">
+                    <div class="card-icon">📞</div>
+                    <h3>Voice API</h3>
+                    <p>Make and receive calls programmatically. Support for IVR, call recording, conferencing, and real-time call control.</p>
+                    <ul class="feature-list">
+                        <li>Programmable IVR</li>
+                        <li>Call recording and transcription</li>
+                        <li>Conference calls</li>
+                        <li>Real-time call control</li>
+                        <li>SIP trunking</li>
+                        <li>WebRTC support</li>
+                    </ul>
+                    <a href="#voice-api" class="link-arrow">Learn more →</a>
+                </div>
+
+                <div class="card card-featured">
+                    <div class="badge">Most Popular</div>
+                    <div class="card-icon">💬</div>
+                    <h3>SMS API</h3>
+                    <p>Send and receive SMS messages globally with high deliverability. Support for two-way messaging, Unicode, and scheduled sending.</p>
+                    <ul class="feature-list">
+                        <li>Global coverage (190+ countries)</li>
+                        <li>99.9% delivery rate</li>
+                        <li>Two-way messaging</li>
+                        <li>Unicode support</li>
+                        <li>Scheduled messages</li>
+                        <li>Delivery reports</li>
+                    </ul>
+                    <a href="sms-api.html" class="link-arrow">Learn more →</a>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">📱</div>
+                    <h3>WhatsApp Business API</h3>
+                    <p>Connect with customers on WhatsApp. Send notifications, provide support, and enable conversational commerce.</p>
+                    <ul class="feature-list">
+                        <li>Message templates</li>
+                        <li>Rich media support</li>
+                        <li>Interactive buttons</li>
+                        <li>Quick replies</li>
+                        <li>Catalog integration</li>
+                        <li>Green checkmark verification</li>
+                    </ul>
+                    <a href="whatsapp-business-api.html" class="link-arrow">Learn more →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section section-gray">
+        <div class="container">
+            <div class="section-header">
+                <h2>Developer-First Features</h2>
+                <p>Built by developers, for developers</p>
+            </div>
+            
+            <div class="grid grid-4">
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Enterprise Security</h3>
+                    <p>TLS encryption, OAuth 2.0, IP whitelisting, and SOC 2 Type II compliance</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Ultra-Low Latency</h3>
+                    <p>Global infrastructure with edge locations for sub-100ms API response times</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Real-Time Analytics</h3>
+                    <p>Monitor usage, performance, and costs with detailed dashboards and reports</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Automatic Failover</h3>
+                    <p>Built-in redundancy with automatic routing to ensure 99.95% uptime</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🌐</div>
+                    <h3>Global Coverage</h3>
+                    <p>190+ countries with local numbers and carrier-grade reliability</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Pay As You Go</h3>
+                    <p>No setup fees or monthly minimums. Only pay for what you use</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🔧</div>
+                    <h3>Webhooks</h3>
+                    <p>Real-time event notifications for all API actions and status updates</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🤝</div>
+                    <h3>24/7 Support</h3>
+                    <p>Technical support from our engineering team, available around the clock</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Code Examples Section -->
+    <section class="section" id="documentation">
+        <div class="container">
+            <div class="section-header">
+                <h2>Quick Start</h2>
+                <p>Get up and running in minutes with our simple APIs</p>
+            </div>
+
+            <!-- Voice API Example -->
+            <div class="code-section" id="voice-api">
+                <h3>Voice API - Make a Call</h3>
+                <div class="code-tabs">
+                    <button class="code-tab active" data-lang="javascript">JavaScript</button>
+                    <button class="code-tab" data-lang="python">Python</button>
+                    <button class="code-tab" data-lang="php">PHP</button>
+                    <button class="code-tab" data-lang="curl">cURL</button>
+                </div>
+                <div class="code-content">
+                    <pre class="code-block active" data-lang="javascript"><code>const axios = require('axios');
+
+const makeCall = async () => {
+  const response = await axios.post('https://api.universaltelecom.com/v1/calls', {
+    from: '+34900123456',
+    to: '+34612345678',
+    url: 'https://yourapp.com/voice-instructions.xml',
+    method: 'POST',
+    record: true
+  }, {
+    headers: {
+      'Authorization': 'Bearer YOUR_API_KEY',
+      'Content-Type': 'application/json'
+    }
+  });
+  
+  console.log('Call initiated:', response.data);
+  return response.data;
+};
+
+makeCall();</code></pre>
+
+                    <pre class="code-block" data-lang="python"><code>import requests
+
+def make_call():
+    url = 'https://api.universaltelecom.com/v1/calls'
+    headers = {
+        'Authorization': 'Bearer YOUR_API_KEY',
+        'Content-Type': 'application/json'
+    }
+    data = {
+        'from': '+34900123456',
+        'to': '+34612345678',
+        'url': 'https://yourapp.com/voice-instructions.xml',
+        'method': 'POST',
+        'record': True
+    }
+    
+    response = requests.post(url, json=data, headers=headers)
+    print('Call initiated:', response.json())
+    return response.json()
+
+make_call()</code></pre>
+
+                    <pre class="code-block" data-lang="php"><code>&lt;?php
+$curl = curl_init();
+
+curl_setopt_array($curl, [
+    CURLOPT_URL => 'https://api.universaltelecom.com/v1/calls',
+    CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_POST => true,
+    CURLOPT_HTTPHEADER => [
+        'Authorization: Bearer YOUR_API_KEY',
+        'Content-Type: application/json'
+    ],
+    CURLOPT_POSTFIELDS => json_encode([
+        'from' => '+34900123456',
+        'to' => '+34612345678',
+        'url' => 'https://yourapp.com/voice-instructions.xml',
+        'method' => 'POST',
+        'record' => true
+    ])
+]);
+
+$response = curl_exec($curl);
+curl_close($curl);
+
+echo 'Call initiated: ' . $response;
+?&gt;</code></pre>
+
+                    <pre class="code-block" data-lang="curl"><code>curl -X POST https://api.universaltelecom.com/v1/calls \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "from": "+34900123456",
+    "to": "+34612345678",
+    "url": "https://yourapp.com/voice-instructions.xml",
+    "method": "POST",
+    "record": true
+  }'</code></pre>
+                </div>
+            </div>
+
+            <!-- SMS API Example -->
+            <div class="code-section">
+                <h3>SMS API - Send Message</h3>
+                <div class="code-tabs">
+                    <button class="code-tab active" data-lang="javascript">JavaScript</button>
+                    <button class="code-tab" data-lang="python">Python</button>
+                    <button class="code-tab" data-lang="php">PHP</button>
+                    <button class="code-tab" data-lang="curl">cURL</button>
+                </div>
+                <div class="code-content">
+                    <pre class="code-block active" data-lang="javascript"><code>const axios = require('axios');
+
+const sendSMS = async () => {
+  const response = await axios.post('https://api.universaltelecom.com/v1/sms', {
+    from: 'YourBrand',
+    to: '+34612345678',
+    message: 'Your verification code is: 123456',
+    encoding: 'auto'
+  }, {
+    headers: {
+      'Authorization': 'Bearer YOUR_API_KEY',
+      'Content-Type': 'application/json'
+    }
+  });
+  
+  console.log('SMS sent:', response.data);
+  return response.data;
+};
+
+sendSMS();</code></pre>
+
+                    <pre class="code-block" data-lang="python"><code>import requests
+
+def send_sms():
+    url = 'https://api.universaltelecom.com/v1/sms'
+    headers = {
+        'Authorization': 'Bearer YOUR_API_KEY',
+        'Content-Type': 'application/json'
+    }
+    data = {
+        'from': 'YourBrand',
+        'to': '+34612345678',
+        'message': 'Your verification code is: 123456',
+        'encoding': 'auto'
+    }
+    
+    response = requests.post(url, json=data, headers=headers)
+    print('SMS sent:', response.json())
+    return response.json()
+
+send_sms()</code></pre>
+
+                    <pre class="code-block" data-lang="php"><code>&lt;?php
+$curl = curl_init();
+
+curl_setopt_array($curl, [
+    CURLOPT_URL => 'https://api.universaltelecom.com/v1/sms',
+    CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_POST => true,
+    CURLOPT_HTTPHEADER => [
+        'Authorization: Bearer YOUR_API_KEY',
+        'Content-Type: application/json'
+    ],
+    CURLOPT_POSTFIELDS => json_encode([
+        'from' => 'YourBrand',
+        'to' => '+34612345678',
+        'message' => 'Your verification code is: 123456',
+        'encoding' => 'auto'
+    ])
+]);
+
+$response = curl_exec($curl);
+curl_close($curl);
+
+echo 'SMS sent: ' . $response;
+?&gt;</code></pre>
+
+                    <pre class="code-block" data-lang="curl"><code>curl -X POST https://api.universaltelecom.com/v1/sms \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "from": "YourBrand",
+    "to": "+34612345678",
+    "message": "Your verification code is: 123456",
+    "encoding": "auto"
+  }'</code></pre>
+                </div>
+            </div>
+
+            <!-- WhatsApp API Example -->
+            <div class="code-section">
+                <h3>WhatsApp API - Send Template Message</h3>
+                <div class="code-tabs">
+                    <button class="code-tab active" data-lang="javascript">JavaScript</button>
+                    <button class="code-tab" data-lang="python">Python</button>
+                    <button class="code-tab" data-lang="php">PHP</button>
+                    <button class="code-tab" data-lang="curl">cURL</button>
+                </div>
+                <div class="code-content">
+                    <pre class="code-block active" data-lang="javascript"><code>const axios = require('axios');
+
+const sendWhatsApp = async () => {
+  const response = await axios.post('https://api.universaltelecom.com/v1/whatsapp', {
+    to: '+34612345678',
+    type: 'template',
+    template: {
+      name: 'order_confirmation',
+      language: 'en',
+      components: [
+        {
+          type: 'body',
+          parameters: [
+            { type: 'text', text: 'John Doe' },
+            { type: 'text', text: 'ORD-12345' }
+          ]
+        }
+      ]
+    }
+  }, {
+    headers: {
+      'Authorization': 'Bearer YOUR_API_KEY',
+      'Content-Type': 'application/json'
+    }
+  });
+  
+  console.log('WhatsApp message sent:', response.data);
+  return response.data;
+};
+
+sendWhatsApp();</code></pre>
+
+                    <pre class="code-block" data-lang="python"><code>import requests
+
+def send_whatsapp():
+    url = 'https://api.universaltelecom.com/v1/whatsapp'
+    headers = {
+        'Authorization': 'Bearer YOUR_API_KEY',
+        'Content-Type': 'application/json'
+    }
+    data = {
+        'to': '+34612345678',
+        'type': 'template',
+        'template': {
+            'name': 'order_confirmation',
+            'language': 'en',
+            'components': [
+                {
+                    'type': 'body',
+                    'parameters': [
+                        {'type': 'text', 'text': 'John Doe'},
+                        {'type': 'text', 'text': 'ORD-12345'}
+                    ]
+                }
+            ]
+        }
+    }
+    
+    response = requests.post(url, json=data, headers=headers)
+    print('WhatsApp message sent:', response.json())
+    return response.json()
+
+send_whatsapp()</code></pre>
+
+                    <pre class="code-block" data-lang="php"><code>&lt;?php
+$curl = curl_init();
+
+curl_setopt_array($curl, [
+    CURLOPT_URL => 'https://api.universaltelecom.com/v1/whatsapp',
+    CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_POST => true,
+    CURLOPT_HTTPHEADER => [
+        'Authorization: Bearer YOUR_API_KEY',
+        'Content-Type: application/json'
+    ],
+    CURLOPT_POSTFIELDS => json_encode([
+        'to' => '+34612345678',
+        'type' => 'template',
+        'template' => [
+            'name' => 'order_confirmation',
+            'language' => 'en',
+            'components' => [
+                [
+                    'type' => 'body',
+                    'parameters' => [
+                        ['type' => 'text', 'text' => 'John Doe'],
+                        ['type' => 'text', 'text' => 'ORD-12345']
+                    ]
+                ]
+            ]
+        ]
+    ])
+]);
+
+$response = curl_exec($curl);
+curl_close($curl);
+
+echo 'WhatsApp message sent: ' . $response;
+?&gt;</code></pre>
+
+                    <pre class="code-block" data-lang="curl"><code>curl -X POST https://api.universaltelecom.com/v1/whatsapp \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "to": "+34612345678",
+    "type": "template",
+    "template": {
+      "name": "order_confirmation",
+      "language": "en",
+      "components": [
+        {
+          "type": "body",
+          "parameters": [
+            {"type": "text", "text": "John Doe"},
+            {"type": "text", "text": "ORD-12345"}
+          ]
+        }
+      ]
+    }
+  }'</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section class="section section-gray">
+        <div class="container">
+            <div class="section-header">
+                <h2>Use Cases</h2>
+                <p>See how leading companies use our APIs</p>
+            </div>
+            
+            <div class="grid grid-2">
+                <div class="card">
+                    <h3>🛒 E-commerce</h3>
+                    <p><strong>Order notifications and customer support</strong></p>
+                    <ul class="feature-list">
+                        <li>Order confirmation via SMS/WhatsApp</li>
+                        <li>Shipping updates with tracking links</li>
+                        <li>Two-factor authentication</li>
+                        <li>Customer support chatbot</li>
+                        <li>Abandoned cart recovery</li>
+                    </ul>
+                    <div class="stats-inline">
+                        <span>+35% conversion rate</span>
+                        <span>-42% support tickets</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>🏥 Healthcare</h3>
+                    <p><strong>Appointment reminders and telemedicine</strong></p>
+                    <ul class="feature-list">
+                        <li>Automated appointment reminders</li>
+                        <li>Prescription notifications</li>
+                        <li>Telemedicine video calls</li>
+                        <li>Lab results delivery</li>
+                        <li>Emergency alerts</li>
+                    </ul>
+                    <div class="stats-inline">
+                        <span>-28% no-shows</span>
+                        <span>95% patient satisfaction</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>🏦 Fintech</h3>
+                    <p><strong>Security and transaction alerts</strong></p>
+                    <ul class="feature-list">
+                        <li>SMS OTP for authentication</li>
+                        <li>Transaction notifications</li>
+                        <li>Fraud alerts</li>
+                        <li>Account balance updates</li>
+                        <li>Payment confirmations</li>
+                    </ul>
+                    <div class="stats-inline">
+                        <span>99.9% delivery rate</span>
+                        <span>-67% fraud attempts</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>🚗 Transportation</h3>
+                    <p><strong>Driver and passenger coordination</strong></p>
+                    <ul class="feature-list">
+                        <li>Ride booking confirmations</li>
+                        <li>Driver location tracking</li>
+                        <li>In-app voice calls</li>
+                        <li>Trip updates and ETAs</li>
+                        <li>Safety check-ins</li>
+                    </ul>
+                    <div class="stats-inline">
+                        <span>Real-time updates</span>
+                        <span>+40% customer satisfaction</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Simple, Transparent Pricing</h2>
+                <p>Pay only for what you use. No setup fees or monthly commitments.</p>
+            </div>
+            
+            <div class="pricing-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>API</th>
+                            <th>Feature</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="3"><strong>Voice API</strong></td>
+                            <td>Inbound calls (per minute)</td>
+                            <td>€0.012</td>
+                        </tr>
+                        <tr>
+                            <td>Outbound calls (per minute)</td>
+                            <td>€0.015</td>
+                        </tr>
+                        <tr>
+                            <td>Call recording (per minute)</td>
+                            <td>€0.003</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3"><strong>SMS API</strong></td>
+                            <td>SMS Spain</td>
+                            <td>€0.045</td>
+                        </tr>
+                        <tr>
+                            <td>SMS Europe</td>
+                            <td>€0.055</td>
+                        </tr>
+                        <tr>
+                            <td>SMS International</td>
+                            <td>From €0.065</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2"><strong>WhatsApp API</strong></td>
+                            <td>Business-initiated conversations</td>
+                            <td>€0.045</td>
+                        </tr>
+                        <tr>
+                            <td>User-initiated conversations</td>
+                            <td>€0.009</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="pricing-note">
+                <p><strong>Volume discounts available:</strong></p>
+                <ul>
+                    <li>10% discount on volumes over €1,000/month</li>
+                    <li>15% discount on volumes over €5,000/month</li>
+                    <li>Custom pricing for enterprise volumes</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documentation Section -->
+    <section class="section section-gray">
+        <div class="container">
+            <div class="section-header">
+                <h2>Complete Documentation</h2>
+                <p>Everything you need to integrate our APIs</p>
+            </div>
+            
+            <div class="grid grid-3">
+                <div class="card">
+                    <h3>📚 API Reference</h3>
+                    <p>Complete documentation of all endpoints, parameters, and responses</p>
+                    <a href="#" class="link-arrow">View API docs →</a>
+                </div>
+
+                <div class="card">
+                    <h3>🎓 Guides & Tutorials</h3>
+                    <p>Step-by-step guides for common use cases and integrations</p>
+                    <a href="#" class="link-arrow">See guides →</a>
+                </div>
+
+                <div class="card">
+                    <h3>💻 SDKs & Libraries</h3>
+                    <p>Official SDKs for Node.js, Python, PHP, Ruby, Java, and more</p>
+                    <a href="#" class="link-arrow">Download SDKs →</a>
+                </div>
+
+                <div class="card">
+                    <h3>🔔 Webhooks</h3>
+                    <p>Receive real-time notifications for all events</p>
+                    <a href="#" class="link-arrow">Learn about webhooks →</a>
+                </div>
+
+                <div class="card">
+                    <h3>🛠️ Testing Tools</h3>
+                    <p>Sandbox environment and testing tools for development</p>
+                    <a href="#" class="link-arrow">Access sandbox →</a>
+                </div>
+
+                <div class="card">
+                    <h3>💬 Developer Support</h3>
+                    <p>Join our developer community and get help from our team</p>
+                    <a href="#" class="link-arrow">Get support →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integration Steps -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get Started in 3 Simple Steps</h2>
+            </div>
+            
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Create Account</h3>
+                    <p>Sign up for free and get your API credentials instantly. No credit card required for testing.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Test in Sandbox</h3>
+                    <p>Experiment with our APIs in a safe sandbox environment. All features available for testing.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Go Live</h3>
+                    <p>Switch to production with a single configuration change. Scale from 1 to millions of messages.</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="free-trial.html" class="btn btn-primary btn-lg">Start Building Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section section-gray">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>Do I need a credit card to start testing?</h3>
+                    <p>No. You can sign up for free and test all our APIs in sandbox mode without providing payment information. When you're ready to go live, you can add your billing details.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What are the rate limits?</h3>
+                    <p>Our default rate limits are 100 requests per second for SMS API, 50 requests per second for Voice API, and 20 requests per second for WhatsApp API. Higher limits are available for verified accounts and enterprise customers.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Which programming languages do you support?</h3>
+                    <p>Our APIs are REST-based and work with any programming language that can make HTTP requests. We provide official SDKs for Node.js, Python, PHP, Ruby, Java, C#, and Go.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>How do I get my API keys?</h3>
+                    <p>After signing up, you'll find your API keys in the dashboard under Settings > API Credentials. You'll get separate keys for sandbox and production environments.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What is your SLA?</h3>
+                    <p>We guarantee 99.95% uptime for all our APIs. If we don't meet this SLA, you're eligible for service credits. Full SLA details are available in your service agreement.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Can I test without sending real messages?</h3>
+                    <p>Yes! Our sandbox environment allows you to test all API functionality without sending actual SMS messages or making real phone calls. Perfect for development and testing.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>How do webhooks work?</h3>
+                    <p>Webhooks allow you to receive real-time notifications for events like message delivery, call status changes, or errors. You provide a URL, and we'll POST the event data to it.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What about data security and compliance?</h3>
+                    <p>All data is encrypted in transit and at rest. We're SOC 2 Type II certified and compliant with GDPR, HIPAA (for healthcare customers), and PCI DSS requirements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Start Building?</h2>
+            <p>Join thousands of developers using our APIs to power their applications</p>
+            <div class="cta-actions">
+                <a href="free-trial.html" class="btn btn-white btn-lg">Start Free Trial</a>
+                <a href="contact.html" class="btn btn-outline btn-lg">Talk to Sales</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Universal Telecom</h3>
+                    <p>Advanced business communication solutions.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">in</a>
+                        <a href="#" aria-label="Twitter">𝕏</a>
+                        <a href="#" aria-label="Facebook">f</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Solutions</h4>
+                    <ul>
+                        <li><a href="virtual-pbx.html">Virtual PBX</a></li>
+                        <li><a href="ai-agents.html">AI Voice Agents</a></li>
+                        <li><a href="whatsapp-business-api.html">WhatsApp Business API</a></li>
+                        <li><a href="call-analytics.html">Call Analytics</a></li>
+                        <li><a href="global-numbers.html">Global Numbers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Developers</h4>
+                    <ul>
+                        <li><a href="apis.html">APIs</a></li>
+                        <li><a href="sms-api.html">SMS API</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">SDKs</a></li>
+                        <li><a href="#">API Status</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="legal-notice.html">Legal Notice</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="cookie-policy.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Universal Telecom. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="../es/apis.html">Español</a>
+                    <a href="../fr/apis.html">Français</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+        // Code tabs functionality
+        document.querySelectorAll('.code-section').forEach(section => {
+            const tabs = section.querySelectorAll('.code-tab');
+            const blocks = section.querySelectorAll('.code-block');
+            
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    const lang = tab.dataset.lang;
+                    
+                    // Update active tab
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tab.classList.add('active');
+                    
+                    // Update active code block
+                    blocks.forEach(block => {
+                        block.classList.remove('active');
+                        if (block.dataset.lang === lang) {
+                            block.classList.add('active');
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
