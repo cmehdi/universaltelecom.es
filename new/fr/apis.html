@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APIs de Communication - Voix, SMS & WhatsApp | Universal Telecom</title>
+    <meta name="description" content="APIs puissantes pour intégrer la voix, SMS et WhatsApp dans vos applications. Documentation complète, support 24/7 et tarification transparente.">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">
+                <img src="../logo.png" alt="Universal Telecom">
+            </a>
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="#produits">Produits</a>
+                    <div class="dropdown-content">
+                        <a href="standard-virtuel.html">Standard Virtuel</a>
+                        <a href="whatsapp-business-api.html">API WhatsApp Business</a>
+                        <a href="agents-ia.html">Agents IA</a>
+                        <a href="analyse-appels.html">Analyse d'Appels IA</a>
+                        <a href="numeros-globaux.html">Numéros Globaux</a>
+                        <a href="apis.html">APIs</a>
+                        <a href="api-sms.html">API SMS</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="dropdown">
+                    <a href="#langue">FR</a>
+                    <div class="dropdown-content">
+                        <a href="../es/apis.html">ES</a>
+                        <a href="../en/apis.html">EN</a>
+                        <a href="../fr/apis.html">FR</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="nav-buttons">
+                <a href="demo.html" class="btn btn-secondary">Demander une Démo</a>
+                <a href="essai-gratuit.html" class="btn btn-primary">Essai Gratuit</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>APIs de Communication Puissantes</h1>
+                <p class="subtitle">Intégrez la voix, SMS et WhatsApp dans vos applications avec nos APIs RESTful</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-value">99,95%</div>
+                        <div class="stat-label">Disponibilité</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">&lt;100ms</div>
+                        <div class="stat-label">Latence</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">190+</div>
+                        <div class="stat-label">Pays</div>
+                    </div>
+                </div>
+                <div class="cta-buttons">
+                    <a href="essai-gratuit.html" class="btn btn-primary btn-large">Commencer Gratuitement</a>
+                    <a href="#documentation" class="btn btn-secondary btn-large">Voir la Documentation</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="apis-grid">
+            <div class="container">
+                <h2>Nos APIs de Communication</h2>
+                <div class="grid grid-3">
+                    <div class="api-card">
+                        <div class="api-icon">📞</div>
+                        <h3>API Voix</h3>
+                        <p>Passez et recevez des appels téléphoniques depuis vos applications</p>
+                        <ul class="feature-list">
+                            <li>Appels entrants et sortants</li>
+                            <li>Enregistrement d'appels</li>
+                            <li>IVR programmable</li>
+                            <li>Conférences téléphoniques</li>
+                            <li>Text-to-Speech en temps réel</li>
+                        </ul>
+                        <a href="#voice-api" class="btn btn-outline">En savoir plus</a>
+                    </div>
+                    <div class="api-card">
+                        <div class="api-icon">💬</div>
+                        <h3>API SMS</h3>
+                        <p>Envoyez et recevez des SMS dans plus de 190 pays</p>
+                        <ul class="feature-list">
+                            <li>SMS transactionnels</li>
+                            <li>SMS marketing</li>
+                            <li>SMS bidirectionnels</li>
+                            <li>Numéros courts et longs</li>
+                            <li>Rapports en temps réel</li>
+                        </ul>
+                        <a href="api-sms.html" class="btn btn-outline">En savoir plus</a>
+                    </div>
+                    <div class="api-card">
+                        <div class="api-icon">💚</div>
+                        <h3>API WhatsApp Business</h3>
+                        <p>Intégrez WhatsApp Business dans vos systèmes</p>
+                        <ul class="feature-list">
+                            <li>Messages de template</li>
+                            <li>Messages interactifs</li>
+                            <li>Médias (images, vidéos, documents)</li>
+                            <li>Webhooks en temps réel</li>
+                            <li>Badge vert vérifié</li>
+                        </ul>
+                        <a href="whatsapp-business-api.html" class="btn btn-outline">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section">
+            <div class="container">
+                <h2>Conçu pour les Développeurs</h2>
+                <div class="grid grid-4">
+                    <div class="feature-box">
+                        <div class="feature-icon">📚</div>
+                        <h3>Documentation Complète</h3>
+                        <p>Guides détaillés, exemples de code et références API</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">🔧</div>
+                        <h3>SDKs Officiels</h3>
+                        <p>Bibliothèques pour Node.js, Python, PHP, Ruby, Java et plus</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">🔐</div>
+                        <h3>Sécurité Avancée</h3>
+                        <p>OAuth 2.0, chiffrement TLS 1.3, authentification à deux facteurs</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Webhooks en Temps Réel</h3>
+                        <p>Notifications instantanées pour tous les événements</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">📊</div>
+                        <h3>Tableaux de Bord</h3>
+                        <p>Surveillance en direct de l'utilisation et des performances</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">🧪</div>
+                        <h3>Environnement de Test</h3>
+                        <p>Sandbox complet pour tester sans frais</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">🌍</div>
+                        <h3>Couverture Mondiale</h3>
+                        <p>Opérateurs dans 190+ pays avec routage intelligent</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">🆘</div>
+                        <h3>Support Expert</h3>
+                        <p>Assistance technique 24/7 par chat, email et téléphone</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="code-examples" id="voice-api">
+            <div class="container">
+                <h2>Exemples de Code - API Voix</h2>
+                <p class="section-subtitle">Passez un appel en quelques lignes de code</p>
+                
+                <div class="code-tabs">
+                    <button class="tab-button active" data-tab="voice-node">Node.js</button>
+                    <button class="tab-button" data-tab="voice-python">Python</button>
+                    <button class="tab-button" data-tab="voice-php">PHP</button>
+                    <button class="tab-button" data-tab="voice-curl">cURL</button>
+                </div>
+
+                <div class="code-content">
+                    <div class="code-panel active" id="voice-node">
+                        <pre><code>const UniversalTelecom = require('universal-telecom');
+
+const client = new UniversalTelecom({
+  apiKey: 'votre_cle_api',
+  apiSecret: 'votre_secret_api'
+});
+
+// Passer un appel
+client.calls.create({
+  from: '+34900123456',
+  to: '+34612345678',
+  url: 'https://votre-serveur.com/call-flow.xml'
+})
+.then(call => {
+  console.log('Appel initié:', call.sid);
+  console.log('Statut:', call.status);
+})
+.catch(error => {
+  console.error('Erreur:', error.message);
+});</code></pre>
+                    </div>
+
+                    <div class="code-panel" id="voice-python">
+                        <pre><code>from universal_telecom import Client
+
+client = Client(
+    api_key='votre_cle_api',
+    api_secret='votre_secret_api'
+)
+
+# Passer un appel
+call = client.calls.create(
+    from_='+34900123456',
+    to='+34612345678',
+    url='https://votre-serveur.com/call-flow.xml'
+)
+
+print(f'Appel initié: {call.sid}')
+print(f'Statut: {call.status}')</code></pre>
+                    </div>
+
+                    <div class="code-panel" id="voice-php">
+                        <pre><code>&lt;?php
+require_once 'vendor/autoload.php';
+
+use UniversalTelecom\Rest\Client;
+
+$client = new Client(
+    'votre_cle_api',
+    'votre_secret_api'
+);
+
+// Passer un appel
+$call = $client->calls->create(
+    '+34612345678',
+    '+34900123456',
+    [
+        'url' => 'https://votre-serveur.com/call-flow.xml'
+    ]
+);
+
+echo "Appel initié: " . $call->sid . "\n";
+echo "Statut: " . $call->status . "\n";
+?&gt;</code></pre>
+                    </div>
+
+                    <div class="code-panel" id="voice-curl">
+                        <pre><code>curl -X POST https://api.universaltelecom.com/v1/calls \
+  -u "votre_cle_api:votre_secret_api" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "from": "+34900123456",
+    "to": "+34612345678",
+    "url": "https://votre-serveur.com/call-flow.xml"
+  }'</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="code-examples">
+            <div class="container">
+                <h2>Exemples de Code - API SMS</h2>
+                <p class="section-subtitle">Envoyez un SMS instantanément</p>
+                
+                <div class="code-tabs">
+                    <button class="tab-button active" data-tab="sms-node">Node.js</button>
+                    <button class="tab-button" data-tab="sms-python">Python</button>
+                    <button class="tab-button" data-tab="sms-php">PHP</button>
+                    <button class="tab-button" data-tab="sms-curl">cURL</button>
+                </div>
+
+                <div class="code-content">
+                    <div class="code-panel active" id="sms-node">
+                        <pre><code>const UniversalTelecom = require('universal-telecom');
+
+const client = new UniversalTelecom({
+  apiKey: 'votre_cle_api',
+  apiSecret: 'votre_secret_api'
+});
+
+// Envoyer un SMS
+client.messages.create({
+  from: '+34900123456',
+  to: '+34612345678',
+  body: 'Bonjour! Votre code de vérification est: 123456'
+})
+.then(message => {
+  console.log('SMS envoyé:', message.sid);
+  console.log('Statut:', message.status);
+})
+.catch(error => {
+  console.error('Erreur:', error.message);
+});</code></pre>
+                    </div>
+
+                    <div class="code-panel" id="sms-python">
+                        <pre><code>from universal_telecom import Client
+
+client = Client(
+    api_key='votre_cle_api',
+    api_secret='votre_secret_api'
+)
+
+# Envoyer un SMS
+message = client.messages.create(
+    from_='+34900123456',
+    to='+34612345678',
+    body='Bonjour! Votre code de vérification est: 123456'
+)
+
+print(f'SMS envoyé: {message.sid}')
+print(f'Statut: {message.status}')</code></pre>
+                    </div>
+
+                    <div class="code-panel" id="sms-php">
+                        <pre><code>&lt;?php
+require_once 'vendor/autoload.php';
+
+use UniversalTelecom\Rest\Client;
+
+$client = new Client(
+    'votre_cle_api',
+    'votre_secret_api'
+);
+
+// Envoyer un SMS
+$message = $client->messages->create(
+    '+34612345678',
+    [
+        'from' => '+34900123456',
+        'body' => 'Bonjour! Votre code de vérification est: 123456'
+    ]
+);
+
+echo "SMS envoyé: " . $message->sid . "\n";
+echo "Statut: " . $message->status . "\n";
+?&gt;</code></pre>
+                    </div>
+
+                    <div class="code-panel" id="sms-curl">
+                        <pre><code>curl -X POST https://api.universaltelecom.com/v1/messages \
+  -u "votre_cle_api:votre_secret_api" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "from": "+34900123456",
+    "to": "+34612345678",
+    "body": "Bonjour! Votre code de vérification est: 123456"
+  }'</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="code-examples">
+            <div class="container">
+                <h2>Exemples de Code - API WhatsApp</h2>
+                <p class="section-subtitle">Envoyez un message WhatsApp avec un template</p>
+                
+                <div class="code-tabs">
+                    <button class="tab-button active" data-tab="whatsapp-node">Node.js</button>
+                    <button class="tab-button" data-tab="whatsapp-python">Python</button>
+                    <button class="tab-button" data-tab="whatsapp-php">PHP</button>
+                    <button class="tab-button" data-tab="whatsapp-curl">cURL</button>
+                </div>
+
+                <div class="code-content">
+                    <div class="code-panel active" id="whatsapp-node">
+                        <pre><code>const UniversalTelecom = require('universal-telecom');
+
+const client = new UniversalTelecom({
+  apiKey: 'votre_cle_api',
+  apiSecret: 'votre_secret_api'
+});
+
+// Envoyer un message WhatsApp
+client.whatsapp.messages.create({
+  from: 'whatsapp:+34900123456',
+  to: 'whatsapp:+34612345678',
+  template: {
+    name: 'order_confirmation',
+    language: 'fr',
+    components: [
+      {
+        type: 'body',
+        parameters: [
+          { type: 'text', text: 'Jean Dupont' },
+          { type: 'text', text: '#ORD-12345' }
+        ]
+      }
+    ]
+  }
+})
+.then(message => {
+  console.log('Message WhatsApp envoyé:', message.sid);
+})
+.catch(error => {
+  console.error('Erreur:', error.message);
+});</code></pre>
+                    </div>
+
+                    <div class="code-panel" id="whatsapp-python">
+                        <pre><code>from universal_telecom import Client
+
+client = Client(
+    api_key='votre_cle_api',
+    api_secret='votre_secret_api'
+)
+
+# Envoyer un message WhatsApp
+message = client.whatsapp.messages.create(
+    from_='whatsapp:+34900123456',
+    to='whatsapp:+34612345678',
+    template={
+        'name': 'order_confirmation',
+        'language': 'fr',
+        'components': [
+            {
+                'type': 'body',
+                'parameters': [
+                    {'type': 'text', 'text': 'Jean Dupont'},
+                    {'type': 'text', 'text': '#ORD-12345'}
+                ]
+            }
+        ]
+    }
+)
+
+print(f'Message WhatsApp envoyé: {message.sid}')</code></pre>
+                    </div>
+
+                    <div class="code-panel" id="whatsapp-php">
+                        <pre><code>&lt;?php
+require_once 'vendor/autoload.php';
+
+use UniversalTelecom\Rest\Client;
+
+$client = new Client(
+    'votre_cle_api',
+    'votre_secret_api'
+);
+
+// Envoyer un message WhatsApp
+$message = $client->whatsapp->messages->create(
+    'whatsapp:+34612345678',
+    [
+        'from' => 'whatsapp:+34900123456',
+        'template' => [
+            'name' => 'order_confirmation',
+            'language' => 'fr',
+            'components' => [
+                [
+                    'type' => 'body',
+                    'parameters' => [
+                        ['type' => 'text', 'text' => 'Jean Dupont'],
+                        ['type' => 'text', 'text' => '#ORD-12345']
+                    ]
+                ]
+            ]
+        ]
+    ]
+);
+
+echo "Message WhatsApp envoyé: " . $message->sid . "\n";
+?&gt;</code></pre>
+                    </div>
+
+                    <div class="code-panel" id="whatsapp-curl">
+                        <pre><code>curl -X POST https://api.universaltelecom.com/v1/whatsapp/messages \
+  -u "votre_cle_api:votre_secret_api" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "from": "whatsapp:+34900123456",
+    "to": "whatsapp:+34612345678",
+    "template": {
+      "name": "order_confirmation",
+      "language": "fr",
+      "components": [
+        {
+          "type": "body",
+          "parameters": [
+            {"type": "text", "text": "Jean Dupont"},
+            {"type": "text", "text": "#ORD-12345"}
+          ]
+        }
+      ]
+    }
+  }'</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="use-cases-section">
+            <div class="container">
+                <h2>Cas d'Usage Réels</h2>
+                <div class="grid grid-2">
+                    <div class="use-case-card">
+                        <h3>🛒 E-commerce</h3>
+                        <p><strong>Défi:</strong> Notifications de commande en temps réel</p>
+                        <p><strong>Solution:</strong> API WhatsApp + API SMS pour les confirmations de commande, mises à jour de livraison et alertes de stock</p>
+                        <div class="metrics">
+                            <div class="metric">
+                                <span class="metric-value">98%</span>
+                                <span class="metric-label">Taux d'ouverture</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">45%</span>
+                                <span class="metric-label">Réduction des appels</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="use-case-card">
+                        <h3>🏥 Santé</h3>
+                        <p><strong>Défi:</strong> Rappels de rendez-vous automatisés</p>
+                        <p><strong>Solution:</strong> API Voix pour appels automatiques + API SMS pour rappels 24h avant</p>
+                        <div class="metrics">
+                            <div class="metric">
+                                <span class="metric-value">35%</span>
+                                <span class="metric-label">Moins d'absences</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">60%</span>
+                                <span class="metric-label">Gain de temps</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="use-case-card">
+                        <h3>💰 Fintech</h3>
+                        <p><strong>Défi:</strong> Authentification à deux facteurs sécurisée</p>
+                        <p><strong>Solution:</strong> API SMS + API Voix pour codes OTP avec fallback automatique</p>
+                        <div class="metrics">
+                            <div class="metric">
+                                <span class="metric-value">99,9%</span>
+                                <span class="metric-label">Taux de livraison</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">&lt;3s</span>
+                                <span class="metric-label">Temps de livraison</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="use-case-card">
+                        <h3>🚗 Transport</h3>
+                        <p><strong>Défi:</strong> Communication conducteur-passager</p>
+                        <p><strong>Solution:</strong> API Voix avec numéros masqués + API SMS pour confirmations</p>
+                        <div class="metrics">
+                            <div class="metric">
+                                <span class="metric-value">100%</span>
+                                <span class="metric-label">Confidentialité</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">50%</span>
+                                <span class="metric-label">Annulations en moins</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing-table">
+            <div class="container">
+                <h2>Tarification Transparente</h2>
+                <p class="section-subtitle">Payez uniquement pour ce que vous utilisez. Pas de frais cachés.</p>
+                
+                <div class="pricing-grid">
+                    <table class="price-table">
+                        <thead>
+                            <tr>
+                                <th>Service</th>
+                                <th>Tarif</th>
+                                <th>Unité</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Appels Sortants (Espagne)</strong></td>
+                                <td>0,015€</td>
+                                <td>par minute</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Appels Entrants (Espagne)</strong></td>
+                                <td>0,010€</td>
+                                <td>par minute</td>
+                            </tr>
+                            <tr>
+                                <td><strong>SMS (Espagne)</strong></td>
+                                <td>0,035€</td>
+                                <td>par message</td>
+                            </tr>
+                            <tr>
+                                <td><strong>WhatsApp (Messages Initiés par l'Entreprise)</strong></td>
+                                <td>0,045€</td>
+                                <td>par conversation</td>
+                            </tr>
+                            <tr>
+                                <td><strong>WhatsApp (Messages Initiés par l'Utilisateur)</strong></td>
+                                <td>Gratuit</td>
+                                <td>24h après le message</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Numéros de Téléphone</strong></td>
+                                <td>5€</td>
+                                <td>par mois</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Enregistrement d'Appels</strong></td>
+                                <td>0,005€</td>
+                                <td>par minute</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Transcription IA</strong></td>
+                                <td>0,015€</td>
+                                <td>par minute</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="pricing-notes">
+                    <p><strong>💡 Remises sur Volume:</strong></p>
+                    <ul>
+                        <li>10 000+ messages/mois: -10%</li>
+                        <li>50 000+ messages/mois: -20%</li>
+                        <li>100 000+ messages/mois: -30%</li>
+                    </ul>
+                    <p><strong>🎁 Inclus gratuitement:</strong></p>
+                    <ul>
+                        <li>100€ de crédits pour nouveaux clients</li>
+                        <li>Support technique 24/7</li>
+                        <li>Webhooks illimités</li>
+                        <li>Accès complet à la documentation</li>
+                        <li>Environnement de test (sandbox)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="documentation-section" id="documentation">
+            <div class="container">
+                <h2>Documentation Complète</h2>
+                <div class="grid grid-3">
+                    <div class="doc-card">
+                        <div class="doc-icon">🚀</div>
+                        <h3>Guide de Démarrage</h3>
+                        <p>Commencez en 5 minutes avec notre guide d'intégration étape par étape</p>
+                        <a href="#" class="btn btn-outline">Lire le Guide</a>
+                    </div>
+                    <div class="doc-card">
+                        <div class="doc-icon">📖</div>
+                        <h3>Référence API</h3>
+                        <p>Documentation complète de tous les endpoints, paramètres et réponses</p>
+                        <a href="#" class="btn btn-outline">Voir la Référence</a>
+                    </div>
+                    <div class="doc-card">
+                        <div class="doc-icon">💻</div>
+                        <h3>SDKs & Bibliothèques</h3>
+                        <p>Téléchargez nos SDKs officiels pour votre langage préféré</p>
+                        <a href="#" class="btn btn-outline">Télécharger les SDKs</a>
+                    </div>
+                    <div class="doc-card">
+                        <div class="doc-icon">🔔</div>
+                        <h3>Webhooks</h3>
+                        <p>Recevez des notifications en temps réel pour tous les événements</p>
+                        <a href="#" class="btn btn-outline">Configurer les Webhooks</a>
+                    </div>
+                    <div class="doc-card">
+                        <div class="doc-icon">🛡️</div>
+                        <h3>Sécurité</h3>
+                        <p>Meilleures pratiques pour sécuriser vos intégrations API</p>
+                        <a href="#" class="btn btn-outline">Guide de Sécurité</a>
+                    </div>
+                    <div class="doc-card">
+                        <div class="doc-icon">❓</div>
+                        <h3>FAQ & Tutoriels</h3>
+                        <p>Réponses aux questions fréquentes et tutoriels vidéo</p>
+                        <a href="#" class="btn btn-outline">Voir les FAQ</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="integration-steps">
+            <div class="container">
+                <h2>Intégration en 3 Étapes Simples</h2>
+                <div class="steps-grid">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Créez un Compte</h3>
+                        <p>Inscrivez-vous gratuitement et obtenez vos clés API instantanément. 100€ de crédits offerts.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>Intégrez l'API</h3>
+                        <p>Utilisez nos SDKs ou appelez directement les endpoints REST. Documentation complète disponible.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>Lancez en Production</h3>
+                        <p>Testez dans notre sandbox, puis basculez en production en un clic.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <h2>Questions Fréquentes</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>Quelle est la disponibilité de vos APIs?</h3>
+                        <p>Nos APIs ont un SLA de 99,95% de disponibilité. Nous avons une infrastructure redondante dans plusieurs régions pour garantir un service ininterrompu.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Y a-t-il des limites de taux?</h3>
+                        <p>Oui, les limites par défaut sont de 100 requêtes par seconde par clé API. Si vous avez besoin de limites plus élevées, contactez notre équipe commerciale.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Puis-je tester les APIs gratuitement?</h3>
+                        <p>Oui! Tous les nouveaux comptes reçoivent 100€ de crédits gratuits. Vous pouvez également utiliser notre environnement sandbox sans frais.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Comment fonctionne la facturation?</h3>
+                        <p>Vous ne payez que pour ce que vous utilisez. La facturation est mensuelle et détaillée. Vous pouvez définir des alertes de budget dans votre tableau de bord.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Offrez-vous un support technique?</h3>
+                        <p>Oui, support 24/7 par chat, email et téléphone. Notre équipe d'ingénieurs répond généralement en moins de 2 heures.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Les APIs sont-elles conformes au RGPD?</h3>
+                        <p>Oui, toutes nos APIs sont 100% conformes au RGPD. Nous sommes certifiés ISO 27001 et SOC 2 Type II.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Puis-je utiliser mon propre numéro de téléphone?</h3>
+                        <p>Oui, vous pouvez porter vos numéros existants ou acheter de nouveaux numéros directement depuis notre plateforme.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Quels langages de programmation supportez-vous?</h3>
+                        <p>Nous avons des SDKs officiels pour Node.js, Python, PHP, Ruby, Java, C# et Go. Les APIs REST peuvent être appelées depuis n'importe quel langage.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>Prêt à Commencer?</h2>
+                <p>Intégrez nos APIs en quelques minutes et commencez à communiquer avec vos clients</p>
+                <div class="cta-buttons">
+                    <a href="essai-gratuit.html" class="btn btn-primary btn-large">Commencer Gratuitement - 100€ Offerts</a>
+                    <a href="demo.html" class="btn btn-secondary btn-large">Demander une Démo</a>
+                </div>
+                <p class="cta-note">Pas de carte bancaire requise · Configuration en 5 minutes</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Produits</h3>
+                    <ul>
+                        <li><a href="standard-virtuel.html">Standard Virtuel</a></li>
+                        <li><a href="whatsapp-business-api.html">API WhatsApp Business</a></li>
+                        <li><a href="agents-ia.html">Agents IA</a></li>
+                        <li><a href="analyse-appels.html">Analyse d'Appels IA</a></li>
+                        <li><a href="numeros-globaux.html">Numéros Globaux</a></li>
+                        <li><a href="apis.html">APIs</a></li>
+                        <li><a href="api-sms.html">API SMS</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Entreprise</h3>
+                    <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">À Propos</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Carrières</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Centre d'Aide</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Status</a></li>
+                        <li><a href="demo.html">Demander une Démo</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Légal</h3>
+                    <ul>
+                        <li><a href="mentions-legales.html">Mentions Légales</a></li>
+                        <li><a href="politique-confidentialite.html">Politique de Confidentialité</a></li>
+                        <li><a href="politique-cookies.html">Politique de Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: info@universaltelecom.com</p>
+                    <p>Téléphone: +34 900 123 456</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                        <a href="#" aria-label="Twitter">Twitter</a>
+                        <a href="#" aria-label="Facebook">Facebook</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Universal Telecom. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+        // Code tabs functionality
+        document.querySelectorAll('.tab-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const tabGroup = button.closest('.code-examples');
+                const tabId = button.getAttribute('data-tab');
+                
+                // Remove active class from all buttons and panels in this group
+                tabGroup.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+                tabGroup.querySelectorAll('.code-panel').forEach(panel => panel.classList.remove('active'));
+                
+                // Add active class to clicked button and corresponding panel
+                button.classList.add('active');
+                tabGroup.querySelector(`#${tabId}`).classList.add('active');
+            });
+        });
+
+        // Track API page view
+        gtag('event', 'page_view', {
+            page_title: 'APIs de Communication',
+            page_location: window.location.href,
+            page_path: '/fr/apis.html'
+        });
+    </script>
+</body>
+</html>

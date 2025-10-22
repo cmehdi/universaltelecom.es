@@ -1,0 +1,1272 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API SMS - Envoyez des SMS dans 190+ Pays | Universal Telecom</title>
+    <meta name="description" content="API SMS puissante pour envoyer et recevoir des messages dans le monde entier. 99,9% de délivrabilité, latence <3s, tarification transparente à partir de 0,035€.">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">
+                <img src="../logo.png" alt="Universal Telecom">
+            </a>
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="#produits">Produits</a>
+                    <div class="dropdown-content">
+                        <a href="standard-virtuel.html">Standard Virtuel</a>
+                        <a href="whatsapp-business-api.html">API WhatsApp Business</a>
+                        <a href="agents-ia.html">Agents IA</a>
+                        <a href="analyse-appels.html">Analyse d'Appels IA</a>
+                        <a href="numeros-globaux.html">Numéros Globaux</a>
+                        <a href="apis.html">APIs</a>
+                        <a href="api-sms.html">API SMS</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="dropdown">
+                    <a href="#langue">FR</a>
+                    <div class="dropdown-content">
+                        <a href="../es/api-sms.html">ES</a>
+                        <a href="../en/sms-api.html">EN</a>
+                        <a href="../fr/api-sms.html">FR</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="nav-buttons">
+                <a href="demo.html" class="btn btn-secondary">Demander une Démo</a>
+                <a href="essai-gratuit.html" class="btn btn-primary">Essai Gratuit</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>API SMS Puissante et Fiable</h1>
+                <p class="subtitle">Envoyez et recevez des SMS dans plus de 190 pays avec notre API RESTful</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-value">99,9%</div>
+                        <div class="stat-label">Taux de Délivrabilité</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">&lt;3s</div>
+                        <div class="stat-label">Vitesse de Livraison</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">190+</div>
+                        <div class="stat-label">Pays Couverts</div>
+                    </div>
+                </div>
+                <div class="cta-buttons">
+                    <a href="essai-gratuit.html" class="btn btn-primary btn-large">Essai Gratuit - 100€ Offerts</a>
+                    <a href="#pricing-calculator" class="btn btn-secondary btn-large">Calculer le Prix</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section">
+            <div class="container">
+                <h2>Fonctionnalités Puissantes</h2>
+                <div class="grid grid-3">
+                    <div class="feature-box">
+                        <div class="feature-icon">🚀</div>
+                        <h3>Livraison Ultra-Rapide</h3>
+                        <p>Livraison moyenne en moins de 3 secondes avec routage intelligent vers les opérateurs optimaux</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">🌍</div>
+                        <h3>Couverture Mondiale</h3>
+                        <p>Connexions directes avec plus de 800 opérateurs dans 190+ pays pour une qualité maximale</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">💬</div>
+                        <h3>SMS Bidirectionnels</h3>
+                        <p>Envoyez et recevez des SMS. Webhooks en temps réel pour toutes les réponses</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">📊</div>
+                        <h3>Rapports en Temps Réel</h3>
+                        <p>Suivez le statut de chaque SMS: envoyé, livré, lu, échoué avec timestamps précis</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">🔢</div>
+                        <h3>Numéros Alphanumériques</h3>
+                        <p>Utilisez votre nom de marque comme expéditeur pour améliorer la reconnaissance (ex: "UnivTel")</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">⚡</div>
+                        <h3>SMS en Masse</h3>
+                        <p>Envoyez jusqu'à 10 000 SMS par seconde avec notre infrastructure haute performance</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="code-examples">
+            <div class="container">
+                <h2>Exemples de Code</h2>
+                <p class="section-subtitle">Envoyez votre premier SMS en quelques lignes de code</p>
+                
+                <h3>Envoyer un SMS Simple</h3>
+                <div class="code-tabs">
+                    <button class="tab-button active" data-tab="simple-node">Node.js</button>
+                    <button class="tab-button" data-tab="simple-python">Python</button>
+                    <button class="tab-button" data-tab="simple-php">PHP</button>
+                    <button class="tab-button" data-tab="simple-curl">cURL</button>
+                </div>
+
+                <div class="code-content">
+                    <div class="code-panel active" id="simple-node">
+                        <pre><code>const UniversalTelecom = require('universal-telecom');
+
+const client = new UniversalTelecom({
+  apiKey: 'votre_cle_api',
+  apiSecret: 'votre_secret_api'
+});
+
+// Envoyer un SMS simple
+client.messages.create({
+  from: '+34900123456',
+  to: '+34612345678',
+  body: 'Bonjour! Votre code de vérification est: 123456. Valable 10 minutes.'
+})
+.then(message => {
+  console.log('SMS envoyé avec succès!');
+  console.log('ID du message:', message.sid);
+  console.log('Statut:', message.status);
+  console.log('Prix:', message.price, message.priceUnit);
+})
+.catch(error => {
+  console.error('Erreur lors de l\'envoi:', error.message);
+});</code></pre>
+                    </div>
+
+                    <div class="code-panel" id="simple-python">
+                        <pre><code>from universal_telecom import Client
+
+client = Client(
+    api_key='votre_cle_api',
+    api_secret='votre_secret_api'
+)
+
+# Envoyer un SMS simple
+message = client.messages.create(
+    from_='+34900123456',
+    to='+34612345678',
+    body='Bonjour! Votre code de vérification est: 123456. Valable 10 minutes.'
+)
+
+print(f'SMS envoyé avec succès!')
+print(f'ID du message: {message.sid}')
+print(f'Statut: {message.status}')
+print(f'Prix: {message.price} {message.price_unit}')</code></pre>
+                    </div>
+
+                    <div class="code-panel" id="simple-php">
+                        <pre><code>&lt;?php
+require_once 'vendor/autoload.php';
+
+use UniversalTelecom\Rest\Client;
+
+$client = new Client(
+    'votre_cle_api',
+    'votre_secret_api'
+);
+
+// Envoyer un SMS simple
+$message = $client->messages->create(
+    '+34612345678',
+    [
+        'from' => '+34900123456',
+        'body' => 'Bonjour! Votre code de vérification est: 123456. Valable 10 minutes.'
+    ]
+);
+
+echo "SMS envoyé avec succès!\n";
+echo "ID du message: " . $message->sid . "\n";
+echo "Statut: " . $message->status . "\n";
+echo "Prix: " . $message->price . " " . $message->priceUnit . "\n";
+?&gt;</code></pre>
+                    </div>
+
+                    <div class="code-panel" id="simple-curl">
+                        <pre><code>curl -X POST https://api.universaltelecom.com/v1/messages \
+  -u "votre_cle_api:votre_secret_api" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "from": "+34900123456",
+    "to": "+34612345678",
+    "body": "Bonjour! Votre code de vérification est: 123456. Valable 10 minutes."
+  }'</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="code-examples">
+            <div class="container">
+                <h3>Envoyer des SMS en Masse</h3>
+                <div class="code-tabs">
+                    <button class="tab-button active" data-tab="bulk-node">Node.js</button>
+                    <button class="tab-button" data-tab="bulk-python">Python</button>
+                    <button class="tab-button" data-tab="bulk-php">PHP</button>
+                    <button class="tab-button" data-tab="bulk-curl">cURL</button>
+                </div>
+
+                <div class="code-content">
+                    <div class="code-panel active" id="bulk-node">
+                        <pre><code>const UniversalTelecom = require('universal-telecom');
+
+const client = new UniversalTelecom({
+  apiKey: 'votre_cle_api',
+  apiSecret: 'votre_secret_api'
+});
+
+// Liste de numéros
+const recipients = [
+  '+34612345678',
+  '+34623456789',
+  '+34634567890'
+];
+
+// Envoyer à tous
+const promises = recipients.map(number => {
+  return client.messages.create({
+    from: '+34900123456',
+    to: number,
+    body: '🎉 Soldes d\'été! -50% sur tous nos produits. Code: ETE50. Offre valable jusqu\'au 31/08.'
+  });
+});
+
+Promise.all(promises)
+  .then(messages => {
+    console.log(`${messages.length} SMS envoyés avec succès!`);
+    messages.forEach((msg, i) => {
+      console.log(`${i + 1}. ${msg.to}: ${msg.status}`);
+    });
+  })
+  .catch(error => {
+    console.error('Erreur:', error.message);
+  });</code></pre>
+                    </div>
+
+                    <div class="code-panel" id="bulk-python">
+                        <pre><code>from universal_telecom import Client
+import concurrent.futures
+
+client = Client(
+    api_key='votre_cle_api',
+    api_secret='votre_secret_api'
+)
+
+# Liste de numéros
+recipients = [
+    '+34612345678',
+    '+34623456789',
+    '+34634567890'
+]
+
+def send_sms(number):
+    return client.messages.create(
+        from_='+34900123456',
+        to=number,
+        body='🎉 Soldes d\'été! -50% sur tous nos produits. Code: ETE50. Offre valable jusqu\'au 31/08.'
+    )
+
+# Envoi parallèle
+with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
+    messages = list(executor.map(send_sms, recipients))
+    
+print(f'{len(messages)} SMS envoyés avec succès!')
+for i, msg in enumerate(messages, 1):
+    print(f'{i}. {msg.to}: {msg.status}')</code></pre>
+                    </div>
+
+                    <div class="code-panel" id="bulk-php">
+                        <pre><code>&lt;?php
+require_once 'vendor/autoload.php';
+
+use UniversalTelecom\Rest\Client;
+
+$client = new Client(
+    'votre_cle_api',
+    'votre_secret_api'
+);
+
+// Liste de numéros
+$recipients = [
+    '+34612345678',
+    '+34623456789',
+    '+34634567890'
+];
+
+$messages = [];
+foreach ($recipients as $number) {
+    $message = $client->messages->create(
+        $number,
+        [
+            'from' => '+34900123456',
+            'body' => '🎉 Soldes d\'été! -50% sur tous nos produits. Code: ETE50. Offre valable jusqu\'au 31/08.'
+        ]
+    );
+    $messages[] = $message;
+}
+
+echo count($messages) . " SMS envoyés avec succès!\n";
+foreach ($messages as $i => $msg) {
+    echo ($i + 1) . ". " . $msg->to . ": " . $msg->status . "\n";
+}
+?&gt;</code></pre>
+                    </div>
+
+                    <div class="code-panel" id="bulk-curl">
+                        <pre><code># Créer un fichier recipients.json avec:
+# [
+#   {"to": "+34612345678"},
+#   {"to": "+34623456789"},
+#   {"to": "+34634567890"}
+# ]
+
+curl -X POST https://api.universaltelecom.com/v1/messages/bulk \
+  -u "votre_cle_api:votre_secret_api" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "from": "+34900123456",
+    "recipients": [
+      {"to": "+34612345678"},
+      {"to": "+34623456789"},
+      {"to": "+34634567890"}
+    ],
+    "body": "🎉 Soldes d'été! -50% sur tous nos produits. Code: ETE50. Offre valable jusqu'au 31/08."
+  }'</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="code-examples">
+            <div class="container">
+                <h3>Programmer un SMS</h3>
+                <div class="code-tabs">
+                    <button class="tab-button active" data-tab="schedule-node">Node.js</button>
+                    <button class="tab-button" data-tab="schedule-python">Python</button>
+                    <button class="tab-button" data-tab="schedule-php">PHP</button>
+                    <button class="tab-button" data-tab="schedule-curl">cURL</button>
+                </div>
+
+                <div class="code-content">
+                    <div class="code-panel active" id="schedule-node">
+                        <pre><code>const UniversalTelecom = require('universal-telecom');
+
+const client = new UniversalTelecom({
+  apiKey: 'votre_cle_api',
+  apiSecret: 'votre_secret_api'
+});
+
+// Programmer un SMS pour demain à 9h
+const tomorrow = new Date();
+tomorrow.setDate(tomorrow.getDate() + 1);
+tomorrow.setHours(9, 0, 0, 0);
+
+client.messages.create({
+  from: '+34900123456',
+  to: '+34612345678',
+  body: '📅 Rappel: Votre rendez-vous est prévu pour demain à 10h00. Confirmez en répondant OUI.',
+  scheduleTime: tomorrow.toISOString()
+})
+.then(message => {
+  console.log('SMS programmé avec succès!');
+  console.log('ID:', message.sid);
+  console.log('Envoi prévu:', message.scheduleTime);
+  console.log('Statut:', message.status);
+})
+.catch(error => {
+  console.error('Erreur:', error.message);
+});</code></pre>
+                    </div>
+
+                    <div class="code-panel" id="schedule-python">
+                        <pre><code>from universal_telecom import Client
+from datetime import datetime, timedelta
+
+client = Client(
+    api_key='votre_cle_api',
+    api_secret='votre_secret_api'
+)
+
+# Programmer un SMS pour demain à 9h
+tomorrow = datetime.now() + timedelta(days=1)
+tomorrow = tomorrow.replace(hour=9, minute=0, second=0, microsecond=0)
+
+message = client.messages.create(
+    from_='+34900123456',
+    to='+34612345678',
+    body='📅 Rappel: Votre rendez-vous est prévu pour demain à 10h00. Confirmez en répondant OUI.',
+    schedule_time=tomorrow.isoformat()
+)
+
+print('SMS programmé avec succès!')
+print(f'ID: {message.sid}')
+print(f'Envoi prévu: {message.schedule_time}')
+print(f'Statut: {message.status}')</code></pre>
+                    </div>
+
+                    <div class="code-panel" id="schedule-php">
+                        <pre><code>&lt;?php
+require_once 'vendor/autoload.php';
+
+use UniversalTelecom\Rest\Client;
+
+$client = new Client(
+    'votre_cle_api',
+    'votre_secret_api'
+);
+
+// Programmer un SMS pour demain à 9h
+$tomorrow = new DateTime('tomorrow 9:00:00');
+
+$message = $client->messages->create(
+    '+34612345678',
+    [
+        'from' => '+34900123456',
+        'body' => '📅 Rappel: Votre rendez-vous est prévu pour demain à 10h00. Confirmez en répondant OUI.',
+        'scheduleTime' => $tomorrow->format(DateTime::ISO8601)
+    ]
+);
+
+echo "SMS programmé avec succès!\n";
+echo "ID: " . $message->sid . "\n";
+echo "Envoi prévu: " . $message->scheduleTime . "\n";
+echo "Statut: " . $message->status . "\n";
+?&gt;</code></pre>
+                    </div>
+
+                    <div class="code-panel" id="schedule-curl">
+                        <pre><code>curl -X POST https://api.universaltelecom.com/v1/messages \
+  -u "votre_cle_api:votre_secret_api" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "from": "+34900123456",
+    "to": "+34612345678",
+    "body": "📅 Rappel: Votre rendez-vous est prévu pour demain à 10h00. Confirmez en répondant OUI.",
+    "scheduleTime": "2024-12-25T09:00:00Z"
+  }'</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="code-examples">
+            <div class="container">
+                <h3>Recevoir des SMS avec Webhooks</h3>
+                <div class="code-tabs">
+                    <button class="tab-button active" data-tab="webhook-node">Node.js</button>
+                    <button class="tab-button" data-tab="webhook-python">Python</button>
+                    <button class="tab-button" data-tab="webhook-php">PHP</button>
+                </div>
+
+                <div class="code-content">
+                    <div class="code-panel active" id="webhook-node">
+                        <pre><code>const express = require('express');
+const bodyParser = require('body-parser');
+
+const app = express();
+app.use(bodyParser.json());
+
+// Endpoint pour recevoir les webhooks
+app.post('/sms/received', (req, res) => {
+  const incomingSMS = req.body;
+  
+  console.log('SMS reçu!');
+  console.log('De:', incomingSMS.from);
+  console.log('À:', incomingSMS.to);
+  console.log('Message:', incomingSMS.body);
+  console.log('Date:', incomingSMS.dateReceived);
+  
+  // Traiter le SMS (ex: réponse automatique)
+  if (incomingSMS.body.toUpperCase() === 'OUI') {
+    console.log('Confirmation reçue du client');
+    // Envoyer une réponse automatique
+    client.messages.create({
+      from: incomingSMS.to,
+      to: incomingSMS.from,
+      body: 'Parfait! Votre rendez-vous est confirmé. À bientôt!'
+    });
+  }
+  
+  // Répondre au webhook
+  res.status(200).json({ received: true });
+});
+
+app.listen(3000, () => {
+  console.log('Serveur webhook démarré sur le port 3000');
+  console.log('URL: http://votre-serveur.com:3000/sms/received');
+});</code></pre>
+                    </div>
+
+                    <div class="code-panel" id="webhook-python">
+                        <pre><code>from flask import Flask, request, jsonify
+from universal_telecom import Client
+
+app = Flask(__name__)
+
+client = Client(
+    api_key='votre_cle_api',
+    api_secret='votre_secret_api'
+)
+
+@app.route('/sms/received', methods=['POST'])
+def receive_sms():
+    incoming_sms = request.get_json()
+    
+    print('SMS reçu!')
+    print(f'De: {incoming_sms["from"]}')
+    print(f'À: {incoming_sms["to"]}')
+    print(f'Message: {incoming_sms["body"]}')
+    print(f'Date: {incoming_sms["dateReceived"]}')
+    
+    # Traiter le SMS (ex: réponse automatique)
+    if incoming_sms['body'].upper() == 'OUI':
+        print('Confirmation reçue du client')
+        # Envoyer une réponse automatique
+        client.messages.create(
+            from_=incoming_sms['to'],
+            to=incoming_sms['from'],
+            body='Parfait! Votre rendez-vous est confirmé. À bientôt!'
+        )
+    
+    # Répondre au webhook
+    return jsonify({'received': True}), 200
+
+if __name__ == '__main__':
+    app.run(port=3000)
+    print('Serveur webhook démarré sur le port 3000')
+    print('URL: http://votre-serveur.com:3000/sms/received')</code></pre>
+                    </div>
+
+                    <div class="code-panel" id="webhook-php">
+                        <pre><code>&lt;?php
+// webhook.php
+require_once 'vendor/autoload.php';
+
+use UniversalTelecom\Rest\Client;
+
+$client = new Client(
+    'votre_cle_api',
+    'votre_secret_api'
+);
+
+// Récupérer les données du webhook
+$incomingSMS = json_decode(file_get_contents('php://input'), true);
+
+error_log('SMS reçu!');
+error_log('De: ' . $incomingSMS['from']);
+error_log('À: ' . $incomingSMS['to']);
+error_log('Message: ' . $incomingSMS['body']);
+error_log('Date: ' . $incomingSMS['dateReceived']);
+
+// Traiter le SMS (ex: réponse automatique)
+if (strtoupper($incomingSMS['body']) === 'OUI') {
+    error_log('Confirmation reçue du client');
+    // Envoyer une réponse automatique
+    $client->messages->create(
+        $incomingSMS['from'],
+        [
+            'from' => $incomingSMS['to'],
+            'body' => 'Parfait! Votre rendez-vous est confirmé. À bientôt!'
+        ]
+    );
+}
+
+// Répondre au webhook
+header('Content-Type: application/json');
+echo json_encode(['received' => true]);
+?&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="code-examples">
+            <div class="container">
+                <h3>Utiliser des Templates SMS</h3>
+                <div class="code-tabs">
+                    <button class="tab-button active" data-tab="template-node">Node.js</button>
+                    <button class="tab-button" data-tab="template-python">Python</button>
+                    <button class="tab-button" data-tab="template-php">PHP</button>
+                </div>
+
+                <div class="code-content">
+                    <div class="code-panel active" id="template-node">
+                        <pre><code>const UniversalTelecom = require('universal-telecom');
+
+const client = new UniversalTelecom({
+  apiKey: 'votre_cle_api',
+  apiSecret: 'votre_secret_api'
+});
+
+// Définir un template
+const templates = {
+  welcomeMessage: (name) => 
+    `Bienvenue ${name}! Merci de vous être inscrit(e). Votre compte est maintenant actif. 🎉`,
+  
+  orderConfirmation: (orderId, amount) => 
+    `Commande #${orderId} confirmée! Montant: ${amount}€. Livraison estimée: 2-3 jours. 📦`,
+  
+  passwordReset: (code) => 
+    `Votre code de réinitialisation: ${code}. Valable 15 minutes. Ne le partagez jamais. 🔐`
+};
+
+// Utiliser les templates
+async function sendWelcome(phoneNumber, customerName) {
+  return client.messages.create({
+    from: '+34900123456',
+    to: phoneNumber,
+    body: templates.welcomeMessage(customerName)
+  });
+}
+
+async function sendOrderConfirmation(phoneNumber, orderId, amount) {
+  return client.messages.create({
+    from: '+34900123456',
+    to: phoneNumber,
+    body: templates.orderConfirmation(orderId, amount)
+  });
+}
+
+// Exemples d'utilisation
+sendWelcome('+34612345678', 'Marie');
+sendOrderConfirmation('+34612345678', 'ORD-12345', '49.99');</code></pre>
+                    </div>
+
+                    <div class="code-panel" id="template-python">
+                        <pre><code>from universal_telecom import Client
+
+client = Client(
+    api_key='votre_cle_api',
+    api_secret='votre_secret_api'
+)
+
+# Définir des templates
+class SMSTemplates:
+    @staticmethod
+    def welcome_message(name):
+        return f'Bienvenue {name}! Merci de vous être inscrit(e). Votre compte est maintenant actif. 🎉'
+    
+    @staticmethod
+    def order_confirmation(order_id, amount):
+        return f'Commande #{order_id} confirmée! Montant: {amount}€. Livraison estimée: 2-3 jours. 📦'
+    
+    @staticmethod
+    def password_reset(code):
+        return f'Votre code de réinitialisation: {code}. Valable 15 minutes. Ne le partagez jamais. 🔐'
+
+# Utiliser les templates
+def send_welcome(phone_number, customer_name):
+    return client.messages.create(
+        from_='+34900123456',
+        to=phone_number,
+        body=SMSTemplates.welcome_message(customer_name)
+    )
+
+def send_order_confirmation(phone_number, order_id, amount):
+    return client.messages.create(
+        from_='+34900123456',
+        to=phone_number,
+        body=SMSTemplates.order_confirmation(order_id, amount)
+    )
+
+# Exemples d'utilisation
+send_welcome('+34612345678', 'Marie')
+send_order_confirmation('+34612345678', 'ORD-12345', '49.99')</code></pre>
+                    </div>
+
+                    <div class="code-panel" id="template-php">
+                        <pre><code>&lt;?php
+require_once 'vendor/autoload.php';
+
+use UniversalTelecom\Rest\Client;
+
+$client = new Client(
+    'votre_cle_api',
+    'votre_secret_api'
+);
+
+// Classe pour les templates
+class SMSTemplates {
+    public static function welcomeMessage($name) {
+        return "Bienvenue {$name}! Merci de vous être inscrit(e). Votre compte est maintenant actif. 🎉";
+    }
+    
+    public static function orderConfirmation($orderId, $amount) {
+        return "Commande #{$orderId} confirmée! Montant: {$amount}€. Livraison estimée: 2-3 jours. 📦";
+    }
+    
+    public static function passwordReset($code) {
+        return "Votre code de réinitialisation: {$code}. Valable 15 minutes. Ne le partagez jamais. 🔐";
+    }
+}
+
+// Fonctions d'envoi
+function sendWelcome($phoneNumber, $customerName) {
+    global $client;
+    return $client->messages->create(
+        $phoneNumber,
+        [
+            'from' => '+34900123456',
+            'body' => SMSTemplates::welcomeMessage($customerName)
+        ]
+    );
+}
+
+function sendOrderConfirmation($phoneNumber, $orderId, $amount) {
+    global $client;
+    return $client->messages->create(
+        $phoneNumber,
+        [
+            'from' => '+34900123456',
+            'body' => SMSTemplates::orderConfirmation($orderId, $amount)
+        ]
+    );
+}
+
+// Exemples d'utilisation
+sendWelcome('+34612345678', 'Marie');
+sendOrderConfirmation('+34612345678', 'ORD-12345', '49.99');
+?&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing-calculator" id="pricing-calculator">
+            <div class="container">
+                <h2>Calculateur de Prix SMS</h2>
+                <p class="section-subtitle">Calculez le coût de vos envois SMS</p>
+                
+                <div class="calculator-card">
+                    <div class="calculator-inputs">
+                        <div class="input-group">
+                            <label for="message-count">Nombre de SMS par mois</label>
+                            <input type="number" id="message-count" value="1000" min="1" max="10000000">
+                        </div>
+                        <div class="input-group">
+                            <label for="destination">Destination</label>
+                            <select id="destination">
+                                <option value="0.035" selected>Espagne (0,035€)</option>
+                                <option value="0.045">France (0,045€)</option>
+                                <option value="0.040">Royaume-Uni (0,040€)</option>
+                                <option value="0.050">Allemagne (0,050€)</option>
+                                <option value="0.055">Italie (0,055€)</option>
+                                <option value="0.048">Portugal (0,048€)</option>
+                                <option value="0.060">États-Unis (0,060€)</option>
+                                <option value="0.080">Mexique (0,080€)</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="calculator-results">
+                        <div class="result-item">
+                            <span class="result-label">Coût par SMS:</span>
+                            <span class="result-value" id="cost-per-sms">0,035€</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-label">Remise sur volume:</span>
+                            <span class="result-value" id="volume-discount">0%</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-label">Coût mensuel:</span>
+                            <span class="result-value total" id="monthly-cost">35,00€</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-label">Coût annuel:</span>
+                            <span class="result-value" id="yearly-cost">420,00€</span>
+                        </div>
+                    </div>
+                    
+                    <div class="calculator-savings">
+                        <p>💡 <strong>Économisez jusqu'à 30%</strong> avec nos remises sur volume</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing-table">
+            <div class="container">
+                <h2>Tarification par Pays</h2>
+                <p class="section-subtitle">Prix par SMS. Aucun frais caché.</p>
+                
+                <table class="price-table">
+                    <thead>
+                        <tr>
+                            <th>Pays</th>
+                            <th>Prix par SMS</th>
+                            <th>Couverture</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>🇪🇸 Espagne</td>
+                            <td>0,035€</td>
+                            <td>99,9%</td>
+                        </tr>
+                        <tr>
+                            <td>🇫🇷 France</td>
+                            <td>0,045€</td>
+                            <td>99,8%</td>
+                        </tr>
+                        <tr>
+                            <td>🇬🇧 Royaume-Uni</td>
+                            <td>0,040€</td>
+                            <td>99,7%</td>
+                        </tr>
+                        <tr>
+                            <td>🇩🇪 Allemagne</td>
+                            <td>0,050€</td>
+                            <td>99,9%</td>
+                        </tr>
+                        <tr>
+                            <td>🇮🇹 Italie</td>
+                            <td>0,055€</td>
+                            <td>99,6%</td>
+                        </tr>
+                        <tr>
+                            <td>🇵🇹 Portugal</td>
+                            <td>0,048€</td>
+                            <td>99,8%</td>
+                        </tr>
+                        <tr>
+                            <td>🇺🇸 États-Unis</td>
+                            <td>0,060€</td>
+                            <td>99,5%</td>
+                        </tr>
+                        <tr>
+                            <td>🇲🇽 Mexique</td>
+                            <td>0,080€</td>
+                            <td>98,9%</td>
+                        </tr>
+                        <tr>
+                            <td>🇧🇷 Brésil</td>
+                            <td>0,070€</td>
+                            <td>99,2%</td>
+                        </tr>
+                        <tr>
+                            <td>🇦🇷 Argentine</td>
+                            <td>0,075€</td>
+                            <td>98,5%</td>
+                        </tr>
+                        <tr>
+                            <td>🇨🇱 Chili</td>
+                            <td>0,068€</td>
+                            <td>99,1%</td>
+                        </tr>
+                        <tr>
+                            <td>🇨🇴 Colombie</td>
+                            <td>0,072€</td>
+                            <td>98,8%</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="pricing-notes">
+                    <p><strong>📊 Remises sur Volume:</strong></p>
+                    <ul>
+                        <li>1 000 - 10 000 SMS/mois: Prix standard</li>
+                        <li>10 000 - 50 000 SMS/mois: <strong>-10%</strong></li>
+                        <li>50 000 - 100 000 SMS/mois: <strong>-20%</strong></li>
+                        <li>Plus de 100 000 SMS/mois: <strong>-30%</strong></li>
+                    </ul>
+                    <p><strong>✨ Inclus gratuitement:</strong></p>
+                    <ul>
+                        <li>100€ de crédits pour les nouveaux clients</li>
+                        <li>Webhooks et rapports en temps réel</li>
+                        <li>Support technique 24/7</li>
+                        <li>Accès API sans frais supplémentaires</li>
+                        <li>Environnement de test (sandbox)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="comparison-table">
+            <div class="container">
+                <h2>Pourquoi Choisir Notre API SMS?</h2>
+                <table class="comparison">
+                    <thead>
+                        <tr>
+                            <th>Fonctionnalité</th>
+                            <th>Universal Telecom</th>
+                            <th>Concurrent A</th>
+                            <th>Concurrent B</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Taux de délivrabilité</td>
+                            <td>✅ 99,9%</td>
+                            <td>⚠️ 97%</td>
+                            <td>⚠️ 96%</td>
+                        </tr>
+                        <tr>
+                            <td>Vitesse de livraison</td>
+                            <td>✅ &lt;3 secondes</td>
+                            <td>⚠️ &lt;10 secondes</td>
+                            <td>⚠️ &lt;15 secondes</td>
+                        </tr>
+                        <tr>
+                            <td>Couverture mondiale</td>
+                            <td>✅ 190+ pays</td>
+                            <td>⚠️ 150 pays</td>
+                            <td>⚠️ 120 pays</td>
+                        </tr>
+                        <tr>
+                            <td>SMS bidirectionnels</td>
+                            <td>✅ Inclus</td>
+                            <td>⚠️ Coût supplémentaire</td>
+                            <td>❌ Non disponible</td>
+                        </tr>
+                        <tr>
+                            <td>Webhooks temps réel</td>
+                            <td>✅ Gratuits</td>
+                            <td>⚠️ Limités</td>
+                            <td>⚠️ Coût supplémentaire</td>
+                        </tr>
+                        <tr>
+                            <td>Support technique</td>
+                            <td>✅ 24/7</td>
+                            <td>⚠️ Heures ouvrables</td>
+                            <td>⚠️ Email uniquement</td>
+                        </tr>
+                        <tr>
+                            <td>Prix (Espagne)</td>
+                            <td>✅ 0,035€</td>
+                            <td>⚠️ 0,045€</td>
+                            <td>⚠️ 0,055€</td>
+                        </tr>
+                        <tr>
+                            <td>Environnement de test</td>
+                            <td>✅ Gratuit illimité</td>
+                            <td>⚠️ Limité</td>
+                            <td>❌ Payant</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="use-cases-section">
+            <div class="container">
+                <h2>Cas d'Usage Réels</h2>
+                <div class="grid grid-2">
+                    <div class="use-case-card">
+                        <h3>🔐 Authentification à Deux Facteurs (2FA)</h3>
+                        <p><strong>Défi:</strong> Sécuriser les comptes utilisateur avec une vérification par SMS</p>
+                        <p><strong>Solution:</strong> API SMS avec livraison en &lt;3 secondes pour codes OTP</p>
+                        <div class="metrics">
+                            <div class="metric">
+                                <span class="metric-value">99,9%</span>
+                                <span class="metric-label">Taux de livraison</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">&lt;3s</span>
+                                <span class="metric-label">Temps de livraison</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="use-case-card">
+                        <h3>📢 Campagnes Marketing</h3>
+                        <p><strong>Défi:</strong> Envoyer des promotions à des milliers de clients simultanément</p>
+                        <p><strong>Solution:</strong> API SMS en masse avec personnalisation et programmation</p>
+                        <div class="metrics">
+                            <div class="metric">
+                                <span class="metric-value">98%</span>
+                                <span class="metric-label">Taux d'ouverture</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">10 000/s</span>
+                                <span class="metric-label">SMS par seconde</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="use-case-card">
+                        <h3>🔔 Notifications Transactionnelles</h3>
+                        <p><strong>Défi:</strong> Alerter les clients sur l'état de leurs commandes en temps réel</p>
+                        <p><strong>Solution:</strong> Webhooks pour déclenchement automatique de SMS</p>
+                        <div class="metrics">
+                            <div class="metric">
+                                <span class="metric-value">100%</span>
+                                <span class="metric-label">Automatisation</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">-60%</span>
+                                <span class="metric-label">Appels support</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="use-case-card">
+                        <h3>📅 Rappels de Rendez-vous</h3>
+                        <p><strong>Défi:</strong> Réduire les absences et no-shows dans les cliniques</p>
+                        <p><strong>Solution:</strong> SMS programmés 24h avant avec confirmation bidirectionnelle</p>
+                        <div class="metrics">
+                            <div class="metric">
+                                <span class="metric-value">-35%</span>
+                                <span class="metric-label">Absences</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">85%</span>
+                                <span class="metric-label">Taux de réponse</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section">
+            <div class="container">
+                <h2>Fonctionnalités Avancées</h2>
+                <div class="grid grid-3">
+                    <div class="feature-box">
+                        <div class="feature-icon">📱</div>
+                        <h3>Numéros Courts et Longs</h3>
+                        <p>Utilisez des numéros courts pour les campagnes marketing ou des numéros longs pour les conversations bidirectionnelles</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">🔤</div>
+                        <h3>Expéditeur Alphanumérique</h3>
+                        <p>Affichez le nom de votre marque comme expéditeur (ex: "UnivTel") au lieu d'un numéro</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">⏰</div>
+                        <h3>Programmation Intelligente</h3>
+                        <p>Programmez des SMS avec gestion des fuseaux horaires et optimisation des heures d'envoi</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">🔄</div>
+                        <h3>Réessais Automatiques</h3>
+                        <p>Système de fallback automatique vers d'autres opérateurs en cas d'échec de livraison</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">📊</div>
+                        <h3>Analytique Détaillée</h3>
+                        <p>Rapports complets sur les envois, livraisons, clics et conversions avec export CSV/Excel</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">🔗</div>
+                        <h3>Raccourcissement d'URL</h3>
+                        <p>Service intégré de raccourcissement d'URL avec tracking des clics</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">🌐</div>
+                        <h3>Support Unicode</h3>
+                        <p>Envoyez des SMS en arabe, chinois, émojis et tous les alphabets Unicode</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">⚖️</div>
+                        <h3>Répartition de Charge</h3>
+                        <p>Distribution intelligente sur plusieurs opérateurs pour optimiser coût et vitesse</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">🛡️</div>
+                        <h3>Validation de Numéros</h3>
+                        <p>Vérification en temps réel de la validité des numéros avant l'envoi</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <h2>Questions Fréquentes</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>Quel est le taux de délivrabilité?</h3>
+                        <p>Notre taux de délivrabilité est de 99,9% grâce à nos connexions directes avec plus de 800 opérateurs dans le monde. En cas d'échec, nous basculons automatiquement vers un opérateur alternatif.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Quelle est la vitesse de livraison?</h3>
+                        <p>La vitesse moyenne de livraison est de moins de 3 secondes. Les SMS prioritaires (comme les codes 2FA) peuvent être livrés en moins d'1 seconde.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Puis-je envoyer des SMS en masse?</h3>
+                        <p>Oui! Notre infrastructure supporte jusqu'à 10 000 SMS par seconde. Idéal pour les campagnes marketing à grande échelle.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Comment fonctionne la facturation?</h3>
+                        <p>Vous ne payez que pour les SMS effectivement livrés. Pas de frais mensuels, pas de minimum, pas de frais cachés. Facturation mensuelle avec remises sur volume automatiques.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Puis-je recevoir des SMS?</h3>
+                        <p>Oui! Les SMS bidirectionnels sont inclus gratuitement. Configurez un webhook pour recevoir les réponses de vos clients en temps réel.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Y a-t-il des limites d'envoi?</h3>
+                        <p>Les nouveaux comptes ont une limite de 100 SMS/heure les premières 24h pour prévenir les abus. Cette limite est automatiquement levée après vérification.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Puis-je utiliser mon propre numéro?</h3>
+                        <p>Oui, vous pouvez porter vos numéros existants ou acheter de nouveaux numéros depuis notre plateforme. Activation en moins de 24h.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Comment programmer un SMS?</h3>
+                        <p>Utilisez le paramètre "scheduleTime" dans votre requête API. Vous pouvez programmer jusqu'à 30 jours à l'avance avec gestion automatique des fuseaux horaires.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Puis-je personnaliser l'expéditeur?</h3>
+                        <p>Oui! Utilisez un nom alphanumérique (ex: "UnivTel") ou un numéro dédié. Les noms alphanumériques ne permettent pas de recevoir des réponses.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Y a-t-il un environnement de test?</h3>
+                        <p>Oui, notre sandbox est 100% gratuit et illimité. Testez toutes les fonctionnalités sans frais avant de passer en production.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Comment suivre les SMS envoyés?</h3>
+                        <p>Chaque SMS reçoit un ID unique. Utilisez notre API de statut ou configurez des webhooks pour recevoir des mises à jour en temps réel (envoyé, livré, lu, échoué).</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Respectez-vous le RGPD?</h3>
+                        <p>Oui, nous sommes 100% conformes au RGPD. Toutes les données sont hébergées en Europe et chiffrées. Certifications ISO 27001 et SOC 2 Type II.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>Prêt à Envoyer Votre Premier SMS?</h2>
+                <p>Commencez gratuitement avec 100€ de crédits offerts. Sans carte bancaire.</p>
+                <div class="cta-buttons">
+                    <a href="essai-gratuit.html" class="btn btn-primary btn-large">Commencer Gratuitement</a>
+                    <a href="demo.html" class="btn btn-secondary btn-large">Demander une Démo</a>
+                </div>
+                <p class="cta-note">⚡ Configuration en 5 minutes · 📚 Documentation complète · 🆘 Support 24/7</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Produits</h3>
+                    <ul>
+                        <li><a href="standard-virtuel.html">Standard Virtuel</a></li>
+                        <li><a href="whatsapp-business-api.html">API WhatsApp Business</a></li>
+                        <li><a href="agents-ia.html">Agents IA</a></li>
+                        <li><a href="analyse-appels.html">Analyse d'Appels IA</a></li>
+                        <li><a href="numeros-globaux.html">Numéros Globaux</a></li>
+                        <li><a href="apis.html">APIs</a></li>
+                        <li><a href="api-sms.html">API SMS</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Entreprise</h3>
+                    <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">À Propos</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Carrières</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Centre d'Aide</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Status</a></li>
+                        <li><a href="demo.html">Demander une Démo</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Légal</h3>
+                    <ul>
+                        <li><a href="mentions-legales.html">Mentions Légales</a></li>
+                        <li><a href="politique-confidentialite.html">Politique de Confidentialité</a></li>
+                        <li><a href="politique-cookies.html">Politique de Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: info@universaltelecom.com</p>
+                    <p>Téléphone: +34 900 123 456</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                        <a href="#" aria-label="Twitter">Twitter</a>
+                        <a href="#" aria-label="Facebook">Facebook</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Universal Telecom. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+        // Code tabs functionality
+        document.querySelectorAll('.tab-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const tabGroup = button.closest('.code-examples');
+                const tabId = button.getAttribute('data-tab');
+                
+                tabGroup.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+                tabGroup.querySelectorAll('.code-panel').forEach(panel => panel.classList.remove('active'));
+                
+                button.classList.add('active');
+                tabGroup.querySelector(`#${tabId}`).classList.add('active');
+            });
+        });
+
+        // SMS Price Calculator
+        const messageCountInput = document.getElementById('message-count');
+        const destinationSelect = document.getElementById('destination');
+        
+        function calculatePrice() {
+            const count = parseInt(messageCountInput.value) || 0;
+            const pricePerSMS = parseFloat(destinationSelect.value);
+            
+            // Calculate volume discount
+            let discount = 0;
+            if (count >= 100000) discount = 0.30;
+            else if (count >= 50000) discount = 0.20;
+            else if (count >= 10000) discount = 0.10;
+            
+            const effectivePrice = pricePerSMS * (1 - discount);
+            const monthlyCost = count * effectivePrice;
+            const yearlyCost = monthlyCost * 12;
+            
+            // Update UI
+            document.getElementById('cost-per-sms').textContent = pricePerSMS.toFixed(3) + '€';
+            document.getElementById('volume-discount').textContent = (discount * 100) + '%';
+            document.getElementById('monthly-cost').textContent = monthlyCost.toFixed(2) + '€';
+            document.getElementById('yearly-cost').textContent = yearlyCost.toFixed(2) + '€';
+        }
+        
+        messageCountInput.addEventListener('input', calculatePrice);
+        destinationSelect.addEventListener('change', calculatePrice);
+        
+        // Initial calculation
+        calculatePrice();
+
+        // Track page view
+        gtag('event', 'page_view', {
+            page_title: 'API SMS',
+            page_location: window.location.href,
+            page_path: '/fr/api-sms.html'
+        });
+    </script>
+</body>
+</html>
