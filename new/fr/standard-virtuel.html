@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Standard Téléphonique Virtuel Cloud | Universal Telecom</title>
+    <meta name="description" content="Standard virtuel professionnel dès 45€/mois. Téléphonie cloud avec SVI, enregistrement, applications mobiles et intégrations CRM. Configuration en 5 minutes.">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <span>📧 sales@universaltelecom.eu</span>
+                <span>🕒 Lun-Jeu: 09:30-19:00 | Ven: 09:30-18:00</span>
+                <a href="tel:+33948458102" class="phone-link">📞 +33 948 458 102</a>
+            </div>
+            <div class="top-bar-right">
+                <select onchange="changeLanguage(this.value)">
+                    <option value="es">🇪🇸 Español</option>
+                    <option value="en">🇬🇧 English</option>
+                    <option value="fr" selected>🇫🇷 Français</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <a href="index.html"><img src="../images/logo.png" alt="Universal Telecom" class="logo"></a>
+            <ul class="nav-links">
+                <li><a href="standard-virtuel.html">Standard Virtuel</a></li>
+                <li><a href="whatsapp-business-api.html">WhatsApp API</a></li>
+                <li><a href="agents-ia.html">Agents IA</a></li>
+                <li><a href="analyse-appels.html">Analyse d'Appels</a></li>
+                <li><a href="numeros-globaux.html">Numéros Globaux</a></li>
+                <li><a href="apis.html">APIs</a></li>
+                <li><a href="api-sms.html">API SMS</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="demo.html" class="btn btn-outline">Demander une Démo</a>
+                <a href="essai-gratuit.html" class="btn btn-primary">Essai Gratuit 14 Jours</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div>
+                    <span class="badge">Standard Téléphonique Cloud</span>
+                    <h1>Téléphonie Professionnelle <span class="highlight">Nouvelle Génération</span></h1>
+                    <p class="text-lg">Standard virtuel complet avec SVI intelligent, enregistrement, applications mobiles et intégrations CRM. Opérationnel en 5 minutes sans installations complexes.</p>
+                    
+                    <div class="grid-2 mb-2">
+                        <div class="stat-box">
+                            <div class="stat-number">45€</div>
+                            <div class="stat-label">Par mois - 6 utilisateurs inclus</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-number">5 min</div>
+                            <div class="stat-label">Configuration et activation</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-number">99.9%</div>
+                            <div class="stat-label">Disponibilité garantie</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">Support technique expert</div>
+                        </div>
+                    </div>
+
+                    <div class="hero-cta">
+                        <a href="essai-gratuit.html" class="btn btn-primary btn-lg">Commencer l'Essai Gratuit →</a>
+                        <a href="demo.html" class="btn btn-outline btn-lg">Demander une Démo</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="../images/dashboard-inicio.png" alt="Tableau de bord Universal Telecom" class="hero-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Tout ce dont votre entreprise a besoin</h2>
+                <p class="section-subtitle">Fonctionnalités professionnelles pour optimiser vos communications</p>
+            </div>
+
+            <div class="grid-3">
+                <div class="card">
+                    <div class="card-icon bg-orange-100">
+                        <span style="font-size: 2rem;">📞</span>
+                    </div>
+                    <h3 class="card-title">Routage Intelligent</h3>
+                    <p class="card-description">Distribuez les appels automatiquement selon vos règles personnalisées : par horaire, département, disponibilité ou priorité. Réduisez le temps d'attente et améliorez l'expérience client.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon bg-blue-100">
+                        <span style="font-size: 2rem;">🎙️</span>
+                    </div>
+                    <h3 class="card-title">Enregistrement d'Appels</h3>
+                    <p class="card-description">Enregistrez tous vos appels automatiquement avec stockage illimité dans le cloud. Accédez, téléchargez et partagez les enregistrements depuis n'importe où. Idéal pour la formation et le contrôle qualité.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon bg-green-100">
+                        <span style="font-size: 2rem;">🎯</span>
+                    </div>
+                    <h3 class="card-title">SVI Personnalisable</h3>
+                    <p class="card-description">Créez des menus vocaux interactifs professionnels sans programmation. Messages personnalisés, options multiples et routage intelligent pour guider vos appelants efficacement.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon bg-purple-100">
+                        <span style="font-size: 2rem;">📱</span>
+                    </div>
+                    <h3 class="card-title">Applications Mobiles</h3>
+                    <p class="card-description">iOS et Android natives. Recevez et passez des appels depuis votre numéro professionnel partout dans le monde. Synchronisation complète avec le bureau, messagerie vocale et historique des appels.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon bg-red-100">
+                        <span style="font-size: 2rem;">🔗</span>
+                    </div>
+                    <h3 class="card-title">Intégrations CRM</h3>
+                    <p class="card-description">Connexion directe avec Salesforce, HubSpot, Zoho, Pipedrive et plus. Synchronisation automatique des appels, identification de l'appelant et création de fiches automatique. Click-to-call depuis votre CRM.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon bg-indigo-100">
+                        <span style="font-size: 2rem;">📊</span>
+                    </div>
+                    <h3 class="card-title">Analyses en Temps Réel</h3>
+                    <p class="card-description">Tableaux de bord complets avec métriques d'appels, temps d'attente, taux de décroché et performance par agent. Rapports personnalisables exportables en PDF et Excel. Alertes automatiques.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="bg-gray">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Plans Tarifaires Flexibles</h2>
+                <p class="section-subtitle">Choisissez le plan qui correspond à vos besoins</p>
+            </div>
+
+            <div class="grid-3">
+                <div class="card">
+                    <div class="mb-1">
+                        <h3 class="text-xl font-semibold">Starter</h3>
+                        <div class="text-gray" style="font-size: 0.875rem;">Parfait pour les petites équipes</div>
+                    </div>
+                    <div class="mb-2">
+                        <span class="text-orange" style="font-size: 3rem; font-weight: bold;">45€</span>
+                        <span class="text-gray">/mois</span>
+                    </div>
+                    <ul style="list-style: none; margin-bottom: 1.5rem;">
+                        <li class="mb-1"><span class="text-green">✓</span> 6 utilisateurs inclus</li>
+                        <li class="mb-1"><span class="text-green">✓</span> 1 numéro local</li>
+                        <li class="mb-1"><span class="text-green">✓</span> SVI basique</li>
+                        <li class="mb-1"><span class="text-green">✓</span> Enregistrement 30 jours</li>
+                        <li class="mb-1"><span class="text-green">✓</span> Applications mobiles</li>
+                        <li class="mb-1"><span class="text-green">✓</span> Rapports basiques</li>
+                        <li class="mb-1"><span class="text-green">✓</span> Support email</li>
+                    </ul>
+                    <a href="essai-gratuit.html" class="btn btn-outline" style="width: 100%;">Commencer l'Essai</a>
+                </div>
+
+                <div class="card" style="border: 2px solid #f97316; position: relative;">
+                    <span class="badge" style="position: absolute; top: -12px; right: 20px;">Le Plus Populaire</span>
+                    <div class="mb-1">
+                        <h3 class="text-xl font-semibold">Professional</h3>
+                        <div class="text-gray" style="font-size: 0.875rem;">Pour entreprises en croissance</div>
+                    </div>
+                    <div class="mb-2">
+                        <span class="text-orange" style="font-size: 3rem; font-weight: bold;">95€</span>
+                        <span class="text-gray">/mois</span>
+                    </div>
+                    <ul style="list-style: none; margin-bottom: 1.5rem;">
+                        <li class="mb-1"><span class="text-green">✓</span> 15 utilisateurs inclus</li>
+                        <li class="mb-1"><span class="text-green">✓</span> 3 numéros (locaux/nationaux)</li>
+                        <li class="mb-1"><span class="text-green">✓</span> SVI avancé multiniveau</li>
+                        <li class="mb-1"><span class="text-green">✓</span> Enregistrement illimité</li>
+                        <li class="mb-1"><span class="text-green">✓</span> Intégrations CRM</li>
+                        <li class="mb-1"><span class="text-green">✓</span> Analyses avancées</li>
+                        <li class="mb-1"><span class="text-green">✓</span> Support prioritaire 24/7</li>
+                        <li class="mb-1"><span class="text-green">✓</span> Click-to-call</li>
+                    </ul>
+                    <a href="essai-gratuit.html" class="btn btn-primary" style="width: 100%;">Commencer l'Essai</a>
+                </div>
+
+                <div class="card">
+                    <div class="mb-1">
+                        <h3 class="text-xl font-semibold">Enterprise</h3>
+                        <div class="text-gray" style="font-size: 0.875rem;">Solution personnalisée</div>
+                    </div>
+                    <div class="mb-2">
+                        <span class="text-orange" style="font-size: 3rem; font-weight: bold;">Sur Mesure</span>
+                    </div>
+                    <ul style="list-style: none; margin-bottom: 1.5rem;">
+                        <li class="mb-1"><span class="text-green">✓</span> Utilisateurs illimités</li>
+                        <li class="mb-1"><span class="text-green">✓</span> Numéros illimités</li>
+                        <li class="mb-1"><span class="text-green">✓</span> SVI personnalisé sur mesure</li>
+                        <li class="mb-1"><span class="text-green">✓</span> Tout Professional +</li>
+                        <li class="mb-1"><span class="text-green">✓</span> SLA garanti 99.99%</li>
+                        <li class="mb-1"><span class="text-green">✓</span> Account Manager dédié</li>
+                        <li class="mb-1"><span class="text-green">✓</span> Intégrations personnalisées</li>
+                        <li class="mb-1"><span class="text-green">✓</span> Formation sur site</li>
+                    </ul>
+                    <a href="demo.html" class="btn btn-outline" style="width: 100%;">Parler avec un Expert</a>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 2rem;">
+                <p class="text-gray" style="font-size: 0.875rem;">* Prix sans TVA. Appels sortants facturés séparément selon destination.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Cas d'Usage Réels</h2>
+                <p class="section-subtitle">Comment nos clients utilisent notre standard virtuel</p>
+            </div>
+
+            <div class="grid-2">
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-1">Services Professionnels</h3>
+                    <p class="text-gray mb-1">Un cabinet d'avocats avec 12 employés a centralisé toutes ses communications. Le SVI route automatiquement les appels par département et les enregistrements servent pour révision des cas.</p>
+                    <div class="grid-3" style="margin-top: 1rem;">
+                        <div>
+                            <div class="text-orange text-xl font-bold">40%</div>
+                            <div class="text-gray" style="font-size: 0.875rem;">Réduction temps d'attente</div>
+                        </div>
+                        <div>
+                            <div class="text-orange text-xl font-bold">100%</div>
+                            <div class="text-gray" style="font-size: 0.875rem;">Appels enregistrés</div>
+                        </div>
+                        <div>
+                            <div class="text-orange text-xl font-bold">30%</div>
+                            <div class="text-gray" style="font-size: 0.875rem;">Économies de coûts</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-1">E-commerce</h3>
+                    <p class="text-gray mb-1">Une boutique en ligne avec 8 agents de support utilise l'intégration CRM pour voir l'historique client lors de chaque appel. Click-to-call depuis Shopify réduit les temps de traitement.</p>
+                    <div class="grid-3" style="margin-top: 1rem;">
+                        <div>
+                            <div class="text-orange text-xl font-bold">50%</div>
+                            <div class="text-gray" style="font-size: 0.875rem;">Temps de traitement réduit</div>
+                        </div>
+                        <div>
+                            <div class="text-orange text-xl font-bold">95%</div>
+                            <div class="text-gray" style="font-size: 0.875rem;">Satisfaction client</div>
+                        </div>
+                        <div>
+                            <div class="text-orange text-xl font-bold">25%</div>
+                            <div class="text-gray" style="font-size: 0.875rem;">Plus de conversions</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-1">Soins de Santé</h3>
+                    <p class="text-gray mb-1">Une clinique médicale gère les rendez-vous par téléphone avec un SVI qui route vers consultation, urgences ou administration. Les enregistrements respectent HIPAA avec cryptage complet.</p>
+                    <div class="grid-3" style="margin-top: 1rem;">
+                        <div>
+                            <div class="text-orange text-xl font-bold">60%</div>
+                            <div class="text-gray" style="font-size: 0.875rem;">Appels auto-résolus</div>
+                        </div>
+                        <div>
+                            <div class="text-orange text-xl font-bold">100%</div>
+                            <div class="text-gray" style="font-size: 0.875rem;">Conformité HIPAA</div>
+                        </div>
+                        <div>
+                            <div class="text-orange text-xl font-bold">45%</div>
+                            <div class="text-gray" style="font-size: 0.875rem;">Économie de temps admin</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-1">Immobilier</h3>
+                    <p class="text-gray mb-1">Une agence immobilière avec 15 agents utilise les applications mobiles pour répondre depuis le terrain. L'intégration avec leur CRM enregistre automatiquement toutes les interactions.</p>
+                    <div class="grid-3" style="margin-top: 1rem;">
+                        <div>
+                            <div class="text-orange text-xl font-bold">70%</div>
+                            <div class="text-gray" style="font-size: 0.875rem;">Appels décrochés</div>
+                        </div>
+                        <div>
+                            <div class="text-orange text-xl font-bold">100%</div>
+                            <div class="text-gray" style="font-size: 0.875rem;">Traçabilité</div>
+                        </div>
+                        <div>
+                            <div class="text-orange text-xl font-bold">35%</div>
+                            <div class="text-gray" style="font-size: 0.875rem;">Plus de transactions</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Setup Process -->
+    <section class="bg-gray">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Configuration Simple en 3 Étapes</h2>
+                <p class="section-subtitle">Opérationnel en moins de 5 minutes</p>
+            </div>
+
+            <div class="grid-3">
+                <div class="text-center">
+                    <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #f97316 0%, #ea580c 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; color: white; font-size: 2rem; font-weight: bold;">1</div>
+                    <h3 class="text-xl font-semibold mb-1">Créer le Compte</h3>
+                    <p class="text-gray">Inscrivez-vous avec votre email. Aucune carte de crédit requise pour l'essai gratuit de 14 jours.</p>
+                </div>
+
+                <div class="text-center">
+                    <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #f97316 0%, #ea580c 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; color: white; font-size: 2rem; font-weight: bold;">2</div>
+                    <h3 class="text-xl font-semibold mb-1">Choisir le Numéro</h3>
+                    <p class="text-gray">Sélectionnez votre numéro local, national ou gratuit parmi plus de 80 pays disponibles.</p>
+                </div>
+
+                <div class="text-center">
+                    <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #f97316 0%, #ea580c 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; color: white; font-size: 2rem; font-weight: bold;">3</div>
+                    <h3 class="text-xl font-semibold mb-1">Commencer à Appeler</h3>
+                    <p class="text-gray">Configurez votre SVI, ajoutez les utilisateurs et téléchargez les applications. Vous êtes prêt !</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Questions Fréquentes</h2>
+            </div>
+
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="card mb-1">
+                    <h3 class="font-semibold mb-05">Puis-je conserver mon numéro actuel ?</h3>
+                    <p class="text-gray">Oui, nous gérons gratuitement le portage de votre numéro existant. Le processus prend généralement 5-7 jours ouvrables et nous nous occupons de toute la coordination avec votre opérateur actuel. Pendant le portage, vous pouvez utiliser un numéro temporaire pour ne pas perdre d'appels.</p>
+                </div>
+
+                <div class="card mb-1">
+                    <h3 class="font-semibold mb-05">Quelle est la qualité audio ?</h3>
+                    <p class="text-gray">Nous utilisons des codecs HD (G.722 et Opus) qui offrent une qualité supérieure à la téléphonie traditionnelle. Notre infrastructure redondante avec serveurs dans plusieurs data centers garantit 99.9% de disponibilité. La latence moyenne est inférieure à 50ms en Europe.</p>
+                </div>
+
+                <div class="card mb-1">
+                    <h3 class="font-semibold mb-05">Puis-je utiliser mes téléphones actuels ?</h3>
+                    <p class="text-gray">Oui, notre standard est compatible avec tout téléphone IP (SIP) du marché. Vous pouvez également utiliser nos applications mobiles iOS et Android, ou l'application de bureau pour Windows et Mac. Nous proposons aussi la location de téléphones IP préconfigurés si vous préférez.</p>
+                </div>
+
+                <div class="card mb-1">
+                    <h3 class="font-semibold mb-05">Comment fonctionne la facturation ?</h3>
+                    <p class="text-gray">Le tarif mensuel inclut le service complet avec les utilisateurs spécifiés. Les appels sortants se facturent séparément selon la destination : 0.01€/min vers fixes en Europe, 0.03€/min vers mobiles. Vous recevez une facture détaillée mensuelle avec tous les appels. Sans surprise ni coûts cachés.</p>
+                </div>
+
+                <div class="card mb-1">
+                    <h3 class="font-semibold mb-05">Le service inclut-il un support technique ?</h3>
+                    <p class="text-gray">Oui, tous les plans incluent un support technique par email. Les plans Professional et Enterprise incluent un support prioritaire 24/7 par téléphone et chat. Nous offrons également une formation initiale gratuite et une documentation complète en ligne avec vidéos tutorielles.</p>
+                </div>
+
+                <div class="card">
+                    <h3 class="font-semibold mb-05">Puis-je changer de plan à tout moment ?</h3>
+                    <p class="text-gray">Oui, vous pouvez améliorer ou réduire votre plan à tout moment depuis le panneau de contrôle. Les changements prennent effet immédiatement et nous ajustons automatiquement la facturation au prorata. Il n'y a pas de pénalités ni de frais de changement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section style="background: linear-gradient(to right, #f97316, #ea580c); color: white;">
+        <div class="container text-center">
+            <h2 class="section-title" style="color: white;">Prêt à Moderniser votre Téléphonie ?</h2>
+            <p class="section-subtitle" style="color: rgba(255,255,255,0.9); margin-bottom: 2rem;">
+                Essayez gratuitement pendant 14 jours. Aucune carte de crédit requise.
+            </p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="essai-gratuit.html" class="btn btn-lg" style="background: white; color: #f97316;">Commencer l'Essai Gratuit →</a>
+                <a href="demo.html" class="btn btn-outline btn-lg" style="border-color: white; color: white;">Parler à un Expert</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Universal Telecom</h3>
+                    <p style="color: #d1d5db; font-size: 0.875rem;">Solutions de communication d'entreprise de nouvelle génération.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Produits</h3>
+                    <ul>
+                        <li><a href="standard-virtuel.html">Standard Virtuel</a></li>
+                        <li><a href="whatsapp-business-api.html">WhatsApp Business API</a></li>
+                        <li><a href="agents-ia.html">Agents IA</a></li>
+                        <li><a href="analyse-appels.html">Analyse d'Appels</a></li>
+                        <li><a href="numeros-globaux.html">Numéros Globaux</a></li>
+                        <li><a href="apis.html">APIs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Entreprise</h3>
+                    <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="demo.html">Demander une Démo</a></li>
+                        <li><a href="essai-gratuit.html">Essai Gratuit</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Légal</h3>
+                    <ul>
+                        <li><a href="mentions-legales.html">Mentions Légales</a></li>
+                        <li><a href="politique-confidentialite.html">Politique de Confidentialité</a></li>
+                        <li><a href="politique-cookies.html">Politique de Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Universal Telecom. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+        if (typeof gtag !== 'undefined') {
+            gtag('event', 'page_view', {
+                'page_title': 'Standard Virtuel',
+                'page_location': window.location.href,
+                'page_path': '/fr/standard-virtuel.html'
+            });
+        }
+    </script>
+</body>
+</html>

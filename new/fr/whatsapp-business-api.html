@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Business API Officielle | Universal Telecom</title>
+    <meta name="description" content="API WhatsApp Business officielle dès 25€/mois. Multi-agents, chatbots IA, intégration CRM et badge vert vérifié. Activation en 48h.">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <span>📧 sales@universaltelecom.eu</span>
+                <span>🕒 Lun-Jeu: 09:30-19:00 | Ven: 09:30-18:00</span>
+                <a href="tel:+33948458102" class="phone-link">📞 +33 948 458 102</a>
+            </div>
+            <div class="top-bar-right">
+                <select onchange="changeLanguage(this.value)">
+                    <option value="es">🇪🇸 Español</option>
+                    <option value="en">🇬🇧 English</option>
+                    <option value="fr" selected>🇫🇷 Français</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <a href="index.html"><img src="../images/logo.png" alt="Universal Telecom" class="logo"></a>
+            <ul class="nav-links">
+                <li><a href="standard-virtuel.html">Standard Virtuel</a></li>
+                <li><a href="whatsapp-business-api.html">WhatsApp API</a></li>
+                <li><a href="agents-ia.html">Agents IA</a></li>
+                <li><a href="analyse-appels.html">Analyse d'Appels</a></li>
+                <li><a href="numeros-globaux.html">Numéros Globaux</a></li>
+                <li><a href="apis.html">APIs</a></li>
+                <li><a href="api-sms.html">API SMS</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="demo.html" class="btn btn-outline">Demander une Démo</a>
+                <a href="essai-gratuit.html" class="btn btn-primary">Essai Gratuit 14 Jours</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div>
+                    <span class="badge">API Officielle WhatsApp Business</span>
+                    <h1>Transformez WhatsApp en votre <span class="highlight">Canal Professionnel</span></h1>
+                    <p class="text-lg">API officielle WhatsApp Business avec interface multi-agents, chatbots IA, intégration CRM et badge vert vérifié. Connectez-vous avec 2 milliards d'utilisateurs mondiaux.</p>
+                    
+                    <div class="grid-2 mb-2">
+                        <div class="stat-box">
+                            <div class="stat-number">98%</div>
+                            <div class="stat-label">Taux d'ouverture des messages</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-number">&lt;2 min</div>
+                            <div class="stat-label">Temps de réponse moyen</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-number">180+</div>
+                            <div class="stat-label">Pays couverts</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-number">2B+</div>
+                            <div class="stat-label">Utilisateurs actifs</div>
+                        </div>
+                    </div>
+
+                    <div class="hero-cta">
+                        <a href="essai-gratuit.html" class="btn btn-primary btn-lg">Commencer l'Essai Gratuit →</a>
+                        <a href="demo.html" class="btn btn-outline btn-lg">Voir une Démo</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="../images/dashboard-inicio.png" alt="Interface WhatsApp Business API" class="hero-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Fonctionnalités Puissantes</h2>
+                <p class="section-subtitle">Tout ce dont vous avez besoin pour gérer WhatsApp professionnellement</p>
+            </div>
+
+            <div class="grid-3">
+                <div class="card">
+                    <div class="card-icon bg-green-100">
+                        <span style="font-size: 2rem;">👥</span>
+                    </div>
+                    <h3 class="card-title">Interface Multi-Agents</h3>
+                    <p class="card-description">Plusieurs agents peuvent gérer les conversations simultanément depuis une interface unifiée. Assignation automatique, transfert entre agents et historique complet partagé. Jamais perdre le contexte d'une conversation.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon bg-blue-100">
+                        <span style="font-size: 2rem;">🤖</span>
+                    </div>
+                    <h3 class="card-title">Chatbots avec IA</h3>
+                    <p class="card-description">Créez des chatbots intelligents qui comprennent le langage naturel. Répondez aux questions fréquentes, qualifiez les leads et redirigez vers les agents humains quand c'est nécessaire. Formation simple par drag & drop.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon bg-purple-100">
+                        <span style="font-size: 2rem;">📊</span>
+                    </div>
+                    <h3 class="card-title">Analyses Avancées</h3>
+                    <p class="card-description">Métriques en temps réel : messages envoyés/reçus, temps de réponse, satisfaction client, taux de conversion. Tableaux de bord personnalisables et rapports exportables. Identifiez des opportunités d'amélioration.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon bg-orange-100">
+                        <span style="font-size: 2rem;">🔗</span>
+                    </div>
+                    <h3 class="card-title">Intégration CRM</h3>
+                    <p class="card-description">Connexion directe avec Salesforce, HubSpot, Zoho, Pipedrive. Synchronisation bidirectionnelle automatique. Visualisez l'historique WhatsApp dans votre CRM et créez automatiquement des contacts et des opportunités.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon bg-red-100">
+                        <span style="font-size: 2rem;">📢</span>
+                    </div>
+                    <h3 class="card-title">Diffusions Massives</h3>
+                    <p class="card-description">Envoyez des messages promotionnels à des milliers de contacts avec templates approuvés. Segmentation avancée, programmation, personnalisation de variables et suivi des résultats en temps réel. Conformité RGPD garantie.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon bg-green-100">
+                        <span style="font-size: 2rem;">✅</span>
+                    </div>
+                    <h3 class="card-title">Badge Vert Vérifié</h3>
+                    <p class="card-description">Obtenez la coche verte officielle de WhatsApp qui augmente la crédibilité de votre entreprise. Processus de vérification géré par nous, généralement approuvé en 7-14 jours. Améliore significativement les taux de réponse.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="bg-gray">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Plans Tarifaires Transparents</h2>
+                <p class="section-subtitle">Payez seulement pour ce dont vous avez besoin</p>
+            </div>
+
+            <div class="grid-3">
+                <div class="card">
+                    <div class="mb-1">
+                        <h3 class="text-xl font-semibold">Starter</h3>
+                        <div class="text-gray" style="font-size: 0.875rem;">Idéal pour commencer</div>
+                    </div>
+                    <div class="mb-2">
+                        <span class="text-orange" style="font-size: 3rem; font-weight: bold;">25€</span>
+                        <span class="text-gray">/mois</span>
+                    </div>
+                    <ul style="list-style: none; margin-bottom: 1.5rem;">
+                        <li class="mb-1"><span class="text-green">✓</span> 1 numéro WhatsApp</li>
+                        <li class="mb-1"><span class="text-green">✓</span> 3 agents inclus</li>
+                        <li class="mb-1"><span class="text-green">✓</span> 1,000 conversations/mois</li>
+                        <li class="mb-1"><span class="text-green">✓</span> Chatbot basique</li>
+                        <li class="mb-1"><span class="text-green">✓</span> Analyses basiques</li>
+                        <li class="mb-1"><span class="text-green">✓</span> Templates WhatsApp</li>
+                        <li class="mb-1"><span class="text-green">✓</span> Support email</li>
+                    </ul>
+                    <a href="essai-gratuit.html" class="btn btn-outline" style="width: 100%;">Commencer l'Essai</a>
+                </div>
+
+                <div class="card" style="border: 2px solid #f97316; position: relative;">
+                    <span class="badge" style="position: absolute; top: -12px; right: 20px;">Le Plus Populaire</span>
+                    <div class="mb-1">
+                        <h3 class="text-xl font-semibold">Professional</h3>
+                        <div class="text-gray" style="font-size: 0.875rem;">Pour entreprises en croissance</div>
+                    </div>
+                    <div class="mb-2">
+                        <span class="text-orange" style="font-size: 3rem; font-weight: bold;">95€</span>
+                        <span class="text-gray">/mois</span>
+                    </div>
+                    <ul style="list-style: none; margin-bottom: 1.5rem;">
+                        <li class="mb-1"><span class="text-green">✓</span> Jusqu'à 3 numéros</li>
+                        <li class="mb-1"><span class="text-green">✓</span> 10 agents inclus</li>
+                        <li class="mb-1"><span class="text-green">✓</span> 5,000 conversations/mois</li>
+                        <li class="mb-1"><span class="text-green">✓</span> Chatbots IA avancés</li>
+                        <li class="mb-1"><span class="text-green">✓</span> Intégrations CRM</li>
+                        <li class="mb-1"><span class="text-green">✓</span> Analyses avancées</li>
+                        <li class="mb-1"><span class="text-green">✓</span> Badge vert vérifié</li>
+                        <li class="mb-1"><span class="text-green">✓</span> Diffusions massives</li>
+                        <li class="mb-1"><span class="text-green">✓</span> Support prioritaire 24/7</li>
+                    </ul>
+                    <a href="essai-gratuit.html" class="btn btn-primary" style="width: 100%;">Commencer l'Essai</a>
+                </div>
+
+                <div class="card">
+                    <div class="mb-1">
+                        <h3 class="text-xl font-semibold">Enterprise</h3>
+                        <div class="text-gray" style="font-size: 0.875rem;">Solution sur mesure</div>
+                    </div>
+                    <div class="mb-2">
+                        <span class="text-orange" style="font-size: 3rem; font-weight: bold;">Personnalisé</span>
+                    </div>
+                    <ul style="list-style: none; margin-bottom: 1.5rem;">
+                        <li class="mb-1"><span class="text-green">✓</span> Numéros illimités</li>
+                        <li class="mb-1"><span class="text-green">✓</span> Agents illimités</li>
+                        <li class="mb-1"><span class="text-green">✓</span> Conversations illimitées</li>
+                        <li class="mb-1"><span class="text-green">✓</span> Tout Professional +</li>
+                        <li class="mb-1"><span class="text-green">✓</span> IA personnalisée</li>
+                        <li class="mb-1"><span class="text-green">✓</span> SLA garanti 99.99%</li>
+                        <li class="mb-1"><span class="text-green">✓</span> Account Manager dédié</li>
+                        <li class="mb-1"><span class="text-green">✓</span> Intégrations sur mesure</li>
+                        <li class="mb-1"><span class="text-green">✓</span> Formation personnalisée</li>
+                    </ul>
+                    <a href="demo.html" class="btn btn-outline" style="width: 100%;">Parler avec un Expert</a>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 2rem;">
+                <p class="text-gray" style="font-size: 0.875rem;">* Prix sans TVA. Conversations additionnelles : 0.005€ par conversation initiée par l'entreprise.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Cas d'Usage Réels</h2>
+                <p class="section-subtitle">Comment les entreprises utilisent WhatsApp Business API</p>
+            </div>
+
+            <div class="grid-2">
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-1">E-commerce</h3>
+                    <p class="text-gray mb-1">Une boutique en ligne envoie des confirmations de commande, des updates de livraison et du support client par WhatsApp. Chatbot répond aux questions fréquentes 24/7 et les agents gèrent les cas complexes.</p>
+                    <div class="grid-3" style="margin-top: 1rem;">
+                        <div>
+                            <div class="text-orange text-xl font-bold">45%</div>
+                            <div class="text-gray" style="font-size: 0.875rem;">Plus d'engagement</div>
+                        </div>
+                        <div>
+                            <div class="text-orange text-xl font-bold">65%</div>
+                            <div class="text-gray" style="font-size: 0.875rem;">Réduction tickets support</div>
+                        </div>
+                        <div>
+                            <div class="text-orange text-xl font-bold">30%</div>
+                            <div class="text-gray" style="font-size: 0.875rem;">Augmentation des ventes</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-1">Soins de Santé</h3>
+                    <p class="text-gray mb-1">Une clinique envoie des rappels de rendez-vous automatiques, des résultats de tests et des prescriptions par WhatsApp. Les patients peuvent confirmer ou reprogrammer directement depuis le chat.</p>
+                    <div class="grid-3" style="margin-top: 1rem;">
+                        <div>
+                            <div class="text-orange text-xl font-bold">80%</div>
+                            <div class="text-gray" style="font-size: 0.875rem;">Réduction absences</div>
+                        </div>
+                        <div>
+                            <div class="text-orange text-xl font-bold">95%</div>
+                            <div class="text-gray" style="font-size: 0.875rem;">Satisfaction patients</div>
+                        </div>
+                        <div>
+                            <div class="text-orange text-xl font-bold">50%</div>
+                            <div class="text-gray" style="font-size: 0.875rem;">Réduction appels</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-1">Immobilier</h3>
+                    <p class="text-gray mb-1">Une agence envoie des nouvelles propriétés aux clients intéressés avec photos et détails. Les chatbots qualifient les leads et programment des visites automatiquement avec les agents disponibles.</p>
+                    <div class="grid-3" style="margin-top: 1rem;">
+                        <div>
+                            <div class="text-orange text-xl font-bold">70%</div>
+                            <div class="text-gray" style="font-size: 0.875rem;">Plus de leads qualifiés</div>
+                        </div>
+                        <div>
+                            <div class="text-orange text-xl font-bold">40%</div>
+                            <div class="text-gray" style="font-size: 0.875rem;">Plus de visites</div>
+                        </div>
+                        <div>
+                            <div class="text-orange text-xl font-bold">25%</div>
+                            <div class="text-gray" style="font-size: 0.875rem;">Plus de transactions</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-1">Éducation</h3>
+                    <p class="text-gray mb-1">Une école communique avec les parents par WhatsApp : absences, devoirs, événements et urgences. Les parents peuvent signaler les absences et communiquer avec les professeurs de façon sécurisée.</p>
+                    <div class="grid-3" style="margin-top: 1rem;">
+                        <div>
+                            <div class="text-orange text-xl font-bold">90%</div>
+                            <div class="text-gray" style="font-size: 0.875rem;">Messages lus</div>
+                        </div>
+                        <div>
+                            <div class="text-orange text-xl font-bold">60%</div>
+                            <div class="text-gray" style="font-size: 0.875rem;">Réduction emails</div>
+                        </div>
+                        <div>
+                            <div class="text-orange text-xl font-bold">85%</div>
+                            <div class="text-gray" style="font-size: 0.875rem;">Satisfaction parents</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Setup Process -->
+    <section class="bg-gray">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Configuration Simple en 3 Étapes</h2>
+                <p class="section-subtitle">Commencez à utiliser WhatsApp Business en 48 heures</p>
+            </div>
+
+            <div class="grid-3">
+                <div class="text-center">
+                    <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #25D366 0%, #128C7E 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; color: white; font-size: 2rem; font-weight: bold;">1</div>
+                    <h3 class="text-xl font-semibold mb-1">Vérifier l'Entreprise</h3>
+                    <p class="text-gray">Envoyez-nous les informations de votre entreprise. Nous gérons le processus de vérification avec Meta (Facebook).</p>
+                </div>
+
+                <div class="text-center">
+                    <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #25D366 0%, #128C7E 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; color: white; font-size: 2rem; font-weight: bold;">2</div>
+                    <h3 class="text-xl font-semibold mb-1">Configurer le Compte</h3>
+                    <p class="text-gray">Créez vos templates de messages, configurez votre chatbot et ajoutez vos agents à l'interface.</p>
+                </div>
+
+                <div class="text-center">
+                    <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #25D366 0%, #128C7E 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; color: white; font-size: 2rem; font-weight: bold;">3</div>
+                    <h3 class="text-xl font-semibold mb-1">Commencer à Communiquer</h3>
+                    <p class="text-gray">Importez vos contacts (avec leur consentement) et commencez à envoyer des messages. C'est prêt !</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Questions Fréquentes</h2>
+            </div>
+
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="card mb-1">
+                    <h3 class="font-semibold mb-05">Quelle est la différence avec WhatsApp Business (app) ?</h3>
+                    <p class="text-gray">WhatsApp Business (l'application gratuite) est limitée à un seul appareil et utilisateur. L'API WhatsApp Business permet plusieurs agents simultanés, intégrations CRM, chatbots IA, analyses avancées et diffusions massives. C'est la solution professionnelle pour les entreprises avec volume élevé de messages.</p>
+                </div>
+
+                <div class="card mb-1">
+                    <h3 class="font-semibold mb-05">Puis-je migrer mon numéro WhatsApp Business existant ?</h3>
+                    <p class="text-gray">Oui, nous pouvons migrer votre numéro existant vers l'API. Le processus prend 24-48 heures et nous préservons tout votre historique de conversations et contacts. IMPORTANT : une fois migré vers l'API, vous ne pourrez pas revenir à l'app mobile standard.</p>
+                </div>
+
+                <div class="card mb-1">
+                    <h3 class="font-semibold mb-05">Combien de temps prend le processus de vérification ?</h3>
+                    <p class="text-gray">La vérification initiale de l'entreprise avec Meta prend généralement 2-3 jours ouvrables. La vérification pour le badge vert (optionnel) prend 7-14 jours additionnels. Nous gérons tout le processus et vous tenons informé à chaque étape.</p>
+                </div>
+
+                <div class="card mb-1">
+                    <h3 class="font-semibold mb-05">Qu'est-ce qu'une "conversation" dans WhatsApp ?</h3>
+                    <p class="text-gray">Une conversation est une fenêtre de 24 heures depuis le dernier message. Pendant ces 24 heures, vous pouvez envoyer des messages illimités sans coût additionnel. Après 24 heures, une nouvelle conversation commence. Les conversations initiées par le client sont gratuites.</p>
+                </div>
+
+                <div class="card mb-1">
+                    <h3 class="font-semibold mb-05">Puis-je envoyer des messages marketing ou promotionnels ?</h3>
+                    <p class="text-gray">Oui, mais uniquement avec des templates pré-approuvés par WhatsApp et aux contacts qui ont consenti. Les messages marketing doivent inclure une option claire de désinscription. Nous vous aidons à créer et approuver vos templates. La conformité RGPD est obligatoire.</p>
+                </div>
+
+                <div class="card">
+                    <h3 class="font-semibold mb-05">Quelles intégrations CRM supportez-vous ?</h3>
+                    <p class="text-gray">Nous offrons des intégrations natives avec Salesforce, HubSpot, Zoho CRM, Pipedrive, Microsoft Dynamics et Freshsales. Pour d'autres CRM, nous offrons des webhooks et une API RESTful qui permettent l'intégration personnalisée. Notre équipe peut vous aider avec l'implémentation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section style="background: linear-gradient(to right, #25D366, #128C7E); color: white;">
+        <div class="container text-center">
+            <h2 class="section-title" style="color: white;">Prêt à Transformer WhatsApp en Canal Professionnel ?</h2>
+            <p class="section-subtitle" style="color: rgba(255,255,255,0.9); margin-bottom: 2rem;">
+                Essayez gratuitement pendant 14 jours. Badge vert inclus.
+            </p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="essai-gratuit.html" class="btn btn-lg" style="background: white; color: #128C7E;">Commencer l'Essai Gratuit →</a>
+                <a href="demo.html" class="btn btn-outline btn-lg" style="border-color: white; color: white;">Voir une Démo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Universal Telecom</h3>
+                    <p style="color: #d1d5db; font-size: 0.875rem;">Solutions de communication d'entreprise de nouvelle génération.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Produits</h3>
+                    <ul>
+                        <li><a href="standard-virtuel.html">Standard Virtuel</a></li>
+                        <li><a href="whatsapp-business-api.html">WhatsApp Business API</a></li>
+                        <li><a href="agents-ia.html">Agents IA</a></li>
+                        <li><a href="analyse-appels.html">Analyse d'Appels</a></li>
+                        <li><a href="numeros-globaux.html">Numéros Globaux</a></li>
+                        <li><a href="apis.html">APIs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Entreprise</h3>
+                    <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="demo.html">Demander une Démo</a></li>
+                        <li><a href="essai-gratuit.html">Essai Gratuit</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Légal</h3>
+                    <ul>
+                        <li><a href="mentions-legales.html">Mentions Légales</a></li>
+                        <li><a href="politique-confidentialite.html">Politique de Confidentialité</a></li>
+                        <li><a href="politique-cookies.html">Politique de Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Universal Telecom. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+        if (typeof gtag !== 'undefined') {
+            gtag('event', 'page_view', {
+                'page_title': 'WhatsApp Business API',
+                'page_location': window.location.href,
+                'page_path': '/fr/whatsapp-business-api.html'
+            });
+        }
+    </script>
+</body>
+</html>
