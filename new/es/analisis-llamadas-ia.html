@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Análisis de Llamadas con IA - Transcripción automática, análisis de sentimiento y métricas avanzadas para tu call center.">
+    <title>Análisis de Llamadas IA - Universal Telecom</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <span>📧 info@universaltelecom.es</span>
+                <span>📞 Llama ahora: <a href="tel:+34900123456" class="phone-link">+34 900 123 456</a></span>
+            </div>
+            <div class="top-bar-right">
+                <select onchange="changeLanguage(this.value)" style="padding: 0.25rem 0.5rem; border-radius: 0.25rem; border: 1px solid #e5e7eb;">
+                    <option value="es" selected>ES</option>
+                    <option value="en">EN</option>
+                    <option value="fr">FR</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <img src="../images/logo.png" alt="Universal Telecom" class="logo">
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="centralita-virtual.html">Centralita Virtual</a></li>
+                    <li><a href="whatsapp-api.html">WhatsApp API</a></li>
+                    <li><a href="agentes-ia.html">Agentes IA</a></li>
+                    <li><a href="analisis-llamadas-ia.html">Análisis de Llamadas</a></li>
+                    <li><a href="numeracion-global.html">Numeración Global</a></li>
+                    <li><a href="apis.html">APIs</a></li>
+                    <li><a href="fibra-optica.html">Fibra Óptica</a></li>
+                    <li><a href="moviles.html">Móviles</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+                <div class="nav-cta">
+                    <a href="prueba-gratis.html" class="btn btn-outline">Prueba Gratis</a>
+                    <a href="demo.html" class="btn btn-primary">Solicitar Demo</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div>
+                    <h1>Análisis de Llamadas <span class="highlight">con Inteligencia Artificial</span></h1>
+                    <p>Transcribe, analiza y obtén insights automáticos de todas tus llamadas. Mejora el rendimiento de tu equipo comercial con datos en tiempo real.</p>
+                    <ul class="hero-features">
+                        <li><span class="icon">✓</span> Transcripción automática en tiempo real</li>
+                        <li><span class="icon">✓</span> Análisis de sentimiento y emociones</li>
+                        <li><span class="icon">✓</span> Detección de palabras clave y compliance</li>
+                        <li><span class="icon">✓</span> Métricas de rendimiento del equipo</li>
+                    </ul>
+                    <div class="hero-cta">
+                        <a href="prueba-gratis.html" class="btn btn-primary btn-lg">Probar Gratis 14 Días</a>
+                        <a href="demo.html" class="btn btn-outline btn-lg">Ver Demo</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="../images/dashboard-inicio.png" alt="Dashboard Análisis de Llamadas" class="hero-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Funcionalidades Principales</h2>
+                <p class="section-subtitle">Todo lo que necesitas para analizar y mejorar tus llamadas</p>
+            </div>
+            <div class="grid-3">
+                <div class="card">
+                    <div class="card-icon bg-blue-100">
+                        <span style="font-size: 1.5rem;">🎙️</span>
+                    </div>
+                    <h3 class="card-title">Transcripción Automática</h3>
+                    <p class="card-description">Convierte automáticamente todas tus llamadas en texto con una precisión del 95%. Compatible con español, inglés y más idiomas.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon bg-green-100">
+                        <span style="font-size: 1.5rem;">😊</span>
+                    </div>
+                    <h3 class="card-title">Análisis de Sentimiento</h3>
+                    <p class="card-description">Detecta automáticamente el estado emocional del cliente durante la llamada (positivo, neutro, negativo).</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon bg-purple-100">
+                        <span style="font-size: 1.5rem;">🔍</span>
+                    </div>
+                    <h3 class="card-title">Detección de Palabras Clave</h3>
+                    <p class="card-description">Identifica menciones de productos, competencia, objeciones y oportunidades de venta en tiempo real.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon bg-orange-100">
+                        <span style="font-size: 1.5rem;">📊</span>
+                    </div>
+                    <h3 class="card-title">Métricas de Rendimiento</h3>
+                    <p class="card-description">Analiza duración, tiempo de respuesta, interrupciones y otros KPIs importantes de tu equipo.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon bg-blue-100">
+                        <span style="font-size: 1.5rem;">✅</span>
+                    </div>
+                    <h3 class="card-title">Compliance y Calidad</h3>
+                    <p class="card-description">Verifica automáticamente el cumplimiento de scripts, RGPD y protocolos de calidad establecidos.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon bg-green-100">
+                        <span style="font-size: 1.5rem;">💡</span>
+                    </div>
+                    <h3 class="card-title">Recomendaciones IA</h3>
+                    <p class="card-description">Recibe sugerencias automáticas para mejorar el rendimiento basadas en análisis de miles de llamadas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="bg-gray">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Beneficios para tu Negocio</h2>
+            </div>
+            <div class="grid-2">
+                <div class="card">
+                    <h3 class="card-title">Para Equipos Comerciales</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 0.75rem; display: flex; align-items: start; gap: 0.5rem;">
+                            <span style="color: var(--green-500);">✓</span>
+                            <span>Identifica las mejores técnicas de venta analizando llamadas exitosas</span>
+                        </li>
+                        <li style="margin-bottom: 0.75rem; display: flex; align-items: start; gap: 0.5rem;">
+                            <span style="color: var(--green-500);">✓</span>
+                            <span>Detecta objeciones comunes y prepara mejores respuestas</span>
+                        </li>
+                        <li style="margin-bottom: 0.75rem; display: flex; align-items: start; gap: 0.5rem;">
+                            <span style="color: var(--green-500);">✓</span>
+                            <span>Mejora el onboarding con ejemplos reales de llamadas</span>
+                        </li>
+                        <li style="margin-bottom: 0.75rem; display: flex; align-items: start; gap: 0.5rem;">
+                            <span style="color: var(--green-500);">✓</span>
+                            <span>Aumenta la tasa de conversión hasta un 30%</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title">Para Atención al Cliente</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 0.75rem; display: flex; align-items: start; gap: 0.5rem;">
+                            <span style="color: var(--green-500);">✓</span>
+                            <span>Mejora la satisfacción del cliente con insights accionables</span>
+                        </li>
+                        <li style="margin-bottom: 0.75rem; display: flex; align-items: start; gap: 0.5rem;">
+                            <span style="color: var(--green-500);">✓</span>
+                            <span>Detecta clientes insatisfechos antes de que se vayan</span>
+                        </li>
+                        <li style="margin-bottom: 0.75rem; display: flex; align-items: start; gap: 0.5rem;">
+                            <span style="color: var(--green-500);">✓</span>
+                            <span>Identifica problemas recurrentes y mejora procesos</span>
+                        </li>
+                        <li style="margin-bottom: 0.75rem; display: flex; align-items: start; gap: 0.5rem;">
+                            <span style="color: var(--green-500);">✓</span>
+                            <span>Reduce el tiempo medio de gestión en un 25%</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Planes y Precios</h2>
+                <p class="section-subtitle">Elige el plan que mejor se adapte a tu volumen de llamadas</p>
+            </div>
+            <div class="grid-3">
+                <div class="pricing-card">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Básico</h3>
+                    <p style="color: var(--gray-600); font-size: 0.875rem;">Para equipos pequeños</p>
+                    <div class="pricing-price">49€<span class="pricing-period">/mes</span></div>
+                    <ul class="pricing-features">
+                        <li><span style="color: var(--green-500);">✓</span> Hasta 500 minutos/mes</li>
+                        <li><span style="color: var(--green-500);">✓</span> Transcripción automática</li>
+                        <li><span style="color: var(--green-500);">✓</span> Análisis de sentimiento</li>
+                        <li><span style="color: var(--green-500);">✓</span> 3 usuarios incluidos</li>
+                        <li><span style="color: var(--green-500);">✓</span> Dashboard básico</li>
+                    </ul>
+                    <a href="prueba-gratis.html" class="btn btn-outline" style="width: 100%; text-align: center;">Empezar Prueba</a>
+                </div>
+
+                <div class="pricing-card featured">
+                    <span class="pricing-badge">MÁS POPULAR</span>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Profesional</h3>
+                    <p style="color: var(--gray-600); font-size: 0.875rem;">Para equipos en crecimiento</p>
+                    <div class="pricing-price">149€<span class="pricing-period">/mes</span></div>
+                    <ul class="pricing-features">
+                        <li><span style="color: var(--green-500);">✓</span> Hasta 2000 minutos/mes</li>
+                        <li><span style="color: var(--green-500);">✓</span> Todo lo del plan Básico</li>
+                        <li><span style="color: var(--green-500);">✓</span> Detección de palabras clave</li>
+                        <li><span style="color: var(--green-500);">✓</span> 10 usuarios incluidos</li>
+                        <li><span style="color: var(--green-500);">✓</span> Informes avanzados</li>
+                        <li><span style="color: var(--green-500);">✓</span> API de integración</li>
+                    </ul>
+                    <a href="prueba-gratis.html" class="btn btn-primary" style="width: 100%; text-align: center;">Empezar Prueba</a>
+                </div>
+
+                <div class="pricing-card">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Enterprise</h3>
+                    <p style="color: var(--gray-600); font-size: 0.875rem;">Para grandes equipos</p>
+                    <div class="pricing-price">Personalizado</div>
+                    <ul class="pricing-features">
+                        <li><span style="color: var(--green-500);">✓</span> Minutos ilimitados</li>
+                        <li><span style="color: var(--green-500);">✓</span> Todo lo del plan Profesional</li>
+                        <li><span style="color: var(--green-500);">✓</span> Análisis de compliance</li>
+                        <li><span style="color: var(--green-500);">✓</span> Usuarios ilimitados</li>
+                        <li><span style="color: var(--green-500);">✓</span> Soporte prioritario</li>
+                        <li><span style="color: var(--green-500);">✓</span> Gestor de cuenta dedicado</li>
+                    </ul>
+                    <a href="contacto.html" class="btn btn-outline" style="width: 100%; text-align: center;">Contactar</a>
+                </div>
+            </div>
+            <p class="text-center text-gray mt-4">* Todos los precios no incluyen IVA. Minutos adicionales: 0.10€/min</p>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-gray">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">Empieza a Analizar tus Llamadas Hoy</h2>
+                <p class="section-subtitle mb-4">Prueba gratis durante 14 días. Sin tarjeta de crédito.</p>
+                <div style="display: flex; gap: 1rem; justify-content: center;">
+                    <a href="prueba-gratis.html" class="btn btn-primary btn-lg">Empezar Prueba Gratis</a>
+                    <a href="demo.html" class="btn btn-outline btn-lg">Solicitar Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Productos</h3>
+                    <ul>
+                        <li><a href="centralita-virtual.html">Centralita Virtual</a></li>
+                        <li><a href="whatsapp-api.html">WhatsApp Business API</a></li>
+                        <li><a href="agentes-ia.html">Agentes IA</a></li>
+                        <li><a href="analisis-llamadas-ia.html">Análisis de Llamadas</a></li>
+                        <li><a href="numeracion-global.html">Numeración Global</a></li>
+                        <li><a href="apis.html">APIs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Conectividad</h3>
+                    <ul>
+                        <li><a href="fibra-optica.html">Fibra Óptica</a></li>
+                        <li><a href="moviles.html">Móviles Empresa</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Empresa</h3>
+                    <ul>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="demo.html">Solicitar Demo</a></li>
+                        <li><a href="prueba-gratis.html">Prueba Gratis</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="aviso-legal.html">Aviso Legal</a></li>
+                        <li><a href="politica-privacidad.html">Política de Privacidad</a></li>
+                        <li><a href="politica-cookies.html">Política de Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Universal Telecom. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
