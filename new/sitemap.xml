@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- Main Language Selector -->
+  <url>
+    <loc>https://universaltelecom.es/</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.es/es/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.es/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.es/fr/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://universaltelecom.es/"/>
+  </url>
+
+  <!-- Spanish Homepage -->
+  <url>
+    <loc>https://universaltelecom.es/es/index.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.es/es/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.es/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.es/fr/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://universaltelecom.es/es/index.html"/>
+  </url>
+
+  <!-- English Homepage -->
+  <url>
+    <loc>https://universaltelecom.es/en/index.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.es/es/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.es/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.es/fr/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://universaltelecom.es/es/index.html"/>
+  </url>
+
+  <!-- French Homepage -->
+  <url>
+    <loc>https://universaltelecom.es/fr/index.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.es/es/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.es/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.es/fr/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://universaltelecom.es/es/index.html"/>
+  </url>
+
+  <!-- Virtual PBX / Centralita Virtual / Standard Virtuel -->
+  <url>
+    <loc>https://universaltelecom.es/es/centralita-virtual.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.es/es/centralita-virtual.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.es/en/virtual-pbx.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.es/fr/standard-virtuel.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://universaltelecom.es/es/centralita-virtual.html"/>
+  </url>
+
+  <url>
+    <loc>https://universaltelecom.es/en/virtual-pbx.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.es/es/centralita-virtual.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.es/en/virtual-pbx.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.es/fr/standard-virtuel.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://universaltelecom.es/es/centralita-virtual.html"/>
+  </url>
+
+  <url>
+    <loc>https://universaltelecom.es/fr/standard-virtuel.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.es/es/centralita-virtual.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.es/en/virtual-pbx.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.es/fr/standard-virtuel.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://universaltelecom.es/es/centralita-virtual.html"/>
+  </url>
+
+  <!-- WhatsApp Business API -->
+  <url>
+    <loc>https://universaltelecom.es/es/whatsapp-api.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.es/es/whatsapp-api.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.es/en/whatsapp-business-api.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.es/fr/whatsapp-business-api.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://universaltelecom.es/es/whatsapp-api.html"/>
+  </url>
+
+  <url>
+    <loc>https://universaltelecom.es/en/whatsapp-business-api.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.es/es/whatsapp-api.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.es/en/whatsapp-business-api.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.es/fr/whatsapp-business-api.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://universaltelecom.es/es/whatsapp-api.html"/>
+  </url>
+
+  <url>
+    <loc>https://universaltelecom.es/fr/whatsapp-business-api.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.es/es/whatsapp-api.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.es/en/whatsapp-business-api.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.es/fr/whatsapp-business-api.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://universaltelecom.es/es/whatsapp-api.html"/>
+  </url>
+
+  <!-- AI Agents / Agentes IA / Agents IA -->
+  <url>
+    <loc>https://universaltelecom.es/es/agentes-ia.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.es/es/agentes-ia.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.es/en/ai-agents.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.es/fr/agents-ia.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://universaltelecom.es/es/agentes-ia.html"/>
+  </url>
+
+  <url>
+    <loc>https://universaltelecom.es/en/ai-agents.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.es/es/agentes-ia.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.es/en/ai-agents.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.es/fr/agents-ia.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://universaltelecom.es/es/agentes-ia.html"/>
+  </url>
+
+  <url>
+    <loc>https://universaltelecom.es/fr/agents-ia.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.es/es/agentes-ia.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.es/en/ai-agents.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.es/fr/agents-ia.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://universaltelecom.es/es/agentes-ia.html"/>
+  </url>
+
+  <!-- Call Analytics / Análisis de Llamadas IA / Analyse d'Appels -->
+  <url>
+    <loc>https://universaltelecom.es/es/analisis-llamadas-ia.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.es/es/analisis-llamadas-ia.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.es/en/call-analytics.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.es/fr/analyse-appels.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://universaltelecom.es/es/analisis-llamadas-ia.html"/>
+  </url>
+
+  <url>
+    <loc>https://universaltelecom.es/en/call-analytics.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.es/es/analisis-llamadas-ia.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.es/en/call-analytics.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.es/fr/analyse-appels.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://universaltelecom.es/es/analisis-llamadas-ia.html"/>
+  </url>
+
+  <url>
+    <loc>https://universaltelecom.es/fr/analyse-appels.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.es/es/analisis-llamadas-ia.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.es/en/call-analytics.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.es/fr/analyse-appels.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://universaltelecom.es/es/analisis-llamadas-ia.html"/>
+  </url>
+
+  <!-- Global Numbers / Numeración Global / Numéros Globaux -->
+  <url>
+    <loc>https://universaltelecom.es/es/numeracion-global.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.es/es/numeracion-global.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.es/en/global-numbers.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.es/fr/numeros-globaux.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://universaltelecom.es/es/numeracion-global.html"/>
+  </url>
+
+  <url>
+    <loc>https://universaltelecom.es/en/global-numbers.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.es/es/numeracion-global.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.es/en/global-numbers.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.es/fr/numeros-globaux.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://universaltelecom.es/es/numeracion-global.html"/>
+  </url>
+
+  <url>
+    <loc>https://universaltelecom.es/fr/numeros-globaux.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.es/es/numeracion-global.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.es/en/global-numbers.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.es/fr/numeros-globaux.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://universaltelecom.es/es/numeracion-global.html"/>
+  </url>
+
+  <!-- Fiber Optic / Fibra Óptica (Spanish only) -->
+  <url>
+    <loc>https://universaltelecom.es/es/fibra-optica.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Mobile Plans / Móviles (Spanish only) -->
+  <url>
+    <loc>https://universaltelecom.es/es/moviles.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- APIs -->
+  <url>
+    <loc>https://universaltelecom.es/es/apis.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.es/es/apis.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.es/en/apis.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.es/fr/apis.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://universaltelecom.es/es/apis.html"/>
+  </url>
+
+  <url>
+    <loc>https://universaltelecom.es/en/apis.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.es/es/apis.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.es/en/apis.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.es/fr/apis.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://universaltelecom.es/es/apis.html"/>
+  </url>
+
+  <url>
+    <loc>https://universaltelecom.es/fr/apis.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.es/es/apis.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.es/en/apis.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.es/fr/apis.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://universaltelecom.es/es/apis.html"/>
+  </url>
+
+  <!-- SMS API -->
+  <url>
+    <loc>https://universaltelecom.es/es/api-sms.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.es/es/api-sms.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.es/en/sms-api.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.es/fr/api-sms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://universaltelecom.es/es/api-sms.html"/>
+  </url>
+
+  <url>
+    <loc>https://universaltelecom.es/en/sms-api.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.es/es/api-sms.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.es/en/sms-api.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.es/fr/api-sms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://universaltelecom.es/es/api-sms.html"/>
+  </url>
+
+  <url>
+    <loc>https://universaltelecom.es/fr/api-sms.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.es/es/api-sms.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.es/en/sms-api.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.es/fr/api-sms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://universaltelecom.es/es/api-sms.html"/>
+  </url>
+
+  <!-- Contact / Contacto / Contact -->
+  <url>
+    <loc>https://universaltelecom.es/es/contacto.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.es/es/contacto.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.es/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.es/fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://universaltelecom.es/es/contacto.html"/>
+  </url>
+
+  <url>
+    <loc>https://universaltelecom.es/en/contact.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.es/es/contacto.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.es/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.es/fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://universaltelecom.es/es/contacto.html"/>
+  </url>
+
+  <url>
+    <loc>https://universaltelecom.es/fr/contact.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.es/es/contacto.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.es/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.es/fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://universaltelecom.es/es/contacto.html"/>
+  </url>
+
+  <!-- Demo -->
+  <url>
+    <loc>https://universaltelecom.es/es/demo.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.es/es/demo.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.es/en/demo.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.es/fr/demo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://universaltelecom.es/es/demo.html"/>
+  </url>
+
+  <url>
+    <loc>https://universaltelecom.es/en/demo.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.es/es/demo.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.es/en/demo.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.es/fr/demo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://universaltelecom.es/es/demo.html"/>
+  </url>
+
+  <url>
+    <loc>https://universaltelecom.es/fr/demo.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.es/es/demo.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.es/en/demo.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.es/fr/demo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://universaltelecom.es/es/demo.html"/>
+  </url>
+
+  <!-- Free Trial / Prueba Gratis / Essai Gratuit -->
+  <url>
+    <loc>https://universaltelecom.es/es/prueba-gratis.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.es/es/prueba-gratis.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.es/en/free-trial.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.es/fr/essai-gratuit.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://universaltelecom.es/es/prueba-gratis.html"/>
+  </url>
+
+  <url>
+    <loc>https://universaltelecom.es/en/free-trial.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.es/es/prueba-gratis.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.es/en/free-trial.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.es/fr/essai-gratuit.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://universaltelecom.es/es/prueba-gratis.html"/>
+  </url>
+
+  <url>
+    <loc>https://universaltelecom.es/fr/essai-gratuit.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.es/es/prueba-gratis.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.es/en/free-trial.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.es/fr/essai-gratuit.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://universaltelecom.es/es/prueba-gratis.html"/>
+  </url>
+
+  <!-- Legal Notice / Aviso Legal / Mentions Légales -->
+  <url>
+    <loc>https://universaltelecom.es/es/aviso-legal.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.es/es/aviso-legal.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.es/en/legal-notice.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.es/fr/mentions-legales.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://universaltelecom.es/es/aviso-legal.html"/>
+  </url>
+
+  <url>
+    <loc>https://universaltelecom.es/en/legal-notice.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.es/es/aviso-legal.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.es/en/legal-notice.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.es/fr/mentions-legales.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://universaltelecom.es/es/aviso-legal.html"/>
+  </url>
+
+  <url>
+    <loc>https://universaltelecom.es/fr/mentions-legales.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.es/es/aviso-legal.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.es/en/legal-notice.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.es/fr/mentions-legales.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://universaltelecom.es/es/aviso-legal.html"/>
+  </url>
+
+  <!-- Privacy Policy / Política de Privacidad / Politique de Confidentialité -->
+  <url>
+    <loc>https://universaltelecom.es/es/politica-privacidad.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.es/es/politica-privacidad.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.es/en/privacy-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.es/fr/politique-confidentialite.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://universaltelecom.es/es/politica-privacidad.html"/>
+  </url>
+
+  <url>
+    <loc>https://universaltelecom.es/en/privacy-policy.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.es/es/politica-privacidad.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.es/en/privacy-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.es/fr/politique-confidentialite.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://universaltelecom.es/es/politica-privacidad.html"/>
+  </url>
+
+  <url>
+    <loc>https://universaltelecom.es/fr/politique-confidentialite.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.es/es/politica-privacidad.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.es/en/privacy-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.es/fr/politique-confidentialite.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://universaltelecom.es/es/politica-privacidad.html"/>
+  </url>
+
+  <!-- Cookie Policy / Política de Cookies / Politique de Cookies -->
+  <url>
+    <loc>https://universaltelecom.es/es/politica-cookies.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.es/es/politica-cookies.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.es/en/cookie-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.es/fr/politique-cookies.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://universaltelecom.es/es/politica-cookies.html"/>
+  </url>
+
+  <url>
+    <loc>https://universaltelecom.es/en/cookie-policy.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.es/es/politica-cookies.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.es/en/cookie-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.es/fr/politique-cookies.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://universaltelecom.es/es/politica-cookies.html"/>
+  </url>
+
+  <url>
+    <loc>https://universaltelecom.es/fr/politique-cookies.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://universaltelecom.es/es/politica-cookies.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://universaltelecom.es/en/cookie-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://universaltelecom.es/fr/politique-cookies.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://universaltelecom.es/es/politica-cookies.html"/>
+  </url>
+
+</urlset>
