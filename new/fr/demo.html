@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demander une Démo - Universal Telecom</title>
+    <meta name="description" content="Demandez une démonstration personnalisée de nos solutions de télécommunications. Découvrez comment Universal Telecom peut transformer votre entreprise.">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    <img src="../images/logo.png" alt="Universal Telecom Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <span style="display:none; font-weight: bold; font-size: 1.5rem; color: #ff6b35;">Universal Telecom</span>
+                </a>
+                
+                <button class="mobile-menu-toggle" aria-label="Menu mobile">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav-links">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Produits <span class="arrow">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="standard-virtuel.html">Standard Virtuel</a></li>
+                            <li><a href="whatsapp-business-api.html">WhatsApp Business API</a></li>
+                            <li><a href="agents-ia.html">Agents IA</a></li>
+                            <li><a href="analyse-appels.html">Analyse des Appels IA</a></li>
+                            <li><a href="numeros-globaux.html">Numéros Globaux</a></li>
+                            <li><a href="apis.html">APIs</a></li>
+                            <li><a href="api-sms.html">API SMS</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">FR <span class="arrow">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../es/demo.html">ES</a></li>
+                            <li><a href="../en/demo.html">EN</a></li>
+                            <li><a href="demo.html">FR</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="nav-cta">
+                    <a href="demo.html" class="btn-secondary active">Demander une Démo</a>
+                    <a href="essai-gratuit.html" class="btn-primary">Essai Gratuit</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Demandez une Démonstration Personnalisée</h1>
+            <p class="hero-subtitle">Découvrez comment nos solutions peuvent transformer vos communications professionnelles</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">30-45 min</div>
+                    <div class="stat-label">Durée de la Démo</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Personnalisée</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">0€</div>
+                    <div class="stat-label">Totalement Gratuit</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="demo-section">
+        <div class="container">
+            <div class="demo-grid">
+                <div class="demo-form-wrapper">
+                    <div class="form-header">
+                        <span class="form-badge">🎯 Démo Personnalisée</span>
+                        <h2>Réservez Votre Démonstration</h2>
+                        <p>Remplissez le formulaire et notre équipe vous contactera pour planifier une démonstration adaptée à vos besoins spécifiques.</p>
+                    </div>
+                    
+                    <form id="demoForm" class="demo-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">Prénom *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Nom *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Professionnel *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Téléphone *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">Entreprise *</label>
+                            <input type="text" id="company" name="company" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="companySize">Taille de l'Entreprise *</label>
+                            <select id="companySize" name="companySize" required>
+                                <option value="">Sélectionnez la taille</option>
+                                <option value="1-10">1-10 employés</option>
+                                <option value="11-50">11-50 employés</option>
+                                <option value="51-200">51-200 employés</option>
+                                <option value="201-500">201-500 employés</option>
+                                <option value="500+">Plus de 500 employés</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Produits qui vous intéressent *</label>
+                            <div class="checkbox-grid">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="products" value="virtual-pbx">
+                                    <span>Standard Virtuel</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="products" value="whatsapp">
+                                    <span>WhatsApp Business API</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="products" value="ai-agents">
+                                    <span>Agents IA</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="products" value="call-analytics">
+                                    <span>Analyse des Appels IA</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="products" value="global-numbers">
+                                    <span>Numéros Globaux</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="products" value="apis">
+                                    <span>APIs</span>
+                                </label>
+                            </div>
+                            <span class="form-error" id="productsError" style="display: none;">Veuillez sélectionner au moins un produit</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="preferredTime">Horaire Préféré *</label>
+                            <select id="preferredTime" name="preferredTime" required>
+                                <option value="">Sélectionnez un horaire</option>
+                                <option value="morning">Matin (9h-12h)</option>
+                                <option value="afternoon">Après-midi (14h-17h)</option>
+                                <option value="evening">Soirée (17h-19h)</option>
+                                <option value="flexible">Flexible</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Questions ou Besoins Spécifiques</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Décrivez vos besoins ou questions pour la démo..."></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="privacy" required>
+                                <span>J'accepte la <a href="politique-confidentialite.html" target="_blank">politique de confidentialité</a> *</span>
+                            </label>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="newsletter">
+                                <span>Je souhaite recevoir des actualités et offres de Universal Telecom</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn-primary btn-large">
+                            <span class="btn-text">Demander une Démo</span>
+                            <span class="btn-loading" style="display: none;">Envoi en cours...</span>
+                        </button>
+
+                        <div id="formSuccess" class="form-message success" style="display: none;">
+                            ✓ Merci ! Votre demande a été reçue. Notre équipe vous contactera sous 24h pour planifier votre démonstration.
+                        </div>
+                        <div id="formError" class="form-message error" style="display: none;">
+                            ✗ Une erreur s'est produite. Veuillez réessayer ou nous contacter au +33 1 76 34 00 00.
+                        </div>
+                    </form>
+                </div>
+
+                <div class="demo-info-wrapper">
+                    <div class="info-card highlight">
+                        <h3>📋 Ce que Vous Verrez</h3>
+                        <ul class="check-list">
+                            <li>✓ Démonstration en direct de nos solutions</li>
+                            <li>✓ Configuration personnalisée pour votre entreprise</li>
+                            <li>✓ Cas d'usage spécifiques à votre secteur</li>
+                            <li>✓ Intégrations avec vos outils existants</li>
+                            <li>✓ Tarification transparente et ROI estimé</li>
+                            <li>✓ Réponses à toutes vos questions</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>🎯 Pourquoi Choisir Universal Telecom</h3>
+                        <ul class="benefit-list">
+                            <li>
+                                <strong>Innovation Technologique</strong>
+                                <p>IA avancée et fonctionnalités de pointe</p>
+                            </li>
+                            <li>
+                                <strong>Support 24/7</strong>
+                                <p>Équipe disponible dans votre fuseau horaire</p>
+                            </li>
+                            <li>
+                                <strong>Intégration Rapide</strong>
+                                <p>Mise en service en moins de 48h</p>
+                            </li>
+                            <li>
+                                <strong>Prix Compétitifs</strong>
+                                <p>Meilleur rapport qualité-prix du marché</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="info-card testimonial">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">"La démo nous a convaincus en 30 minutes. L'équipe a parfaitement compris nos besoins et nous a montré exactement comment leur solution pouvait nous aider."</p>
+                        <p class="testimonial-author">
+                            <strong>Marie Dubois</strong><br>
+                            Directrice Opérations, TechCorp France
+                        </p>
+                    </div>
+
+                    <div class="trust-badges">
+                        <div class="badge">
+                            <div class="badge-icon">🔒</div>
+                            <div class="badge-text">
+                                <strong>ISO 27001</strong>
+                                <span>Sécurité Certifiée</span>
+                            </div>
+                        </div>
+                        <div class="badge">
+                            <div class="badge-icon">✓</div>
+                            <div class="badge-text">
+                                <strong>RGPD</strong>
+                                <span>100% Conforme</span>
+                            </div>
+                        </div>
+                        <div class="badge">
+                            <div class="badge-icon">📈</div>
+                            <div class="badge-text">
+                                <strong>99.9%</strong>
+                                <span>Disponibilité</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <h2>Questions Fréquentes</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>Combien de temps dure la démonstration ?</h3>
+                    <p>La démonstration dure généralement entre 30 et 45 minutes, selon vos besoins spécifiques et les questions que vous souhaitez poser.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>La démo est-elle vraiment gratuite ?</h3>
+                    <p>Absolument ! La démonstration est 100% gratuite et sans engagement. Nous voulons simplement vous montrer comment nos solutions peuvent vous aider.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Puis-je inviter d'autres membres de mon équipe ?</h3>
+                    <p>Bien sûr ! Nous encourageons la participation de toutes les parties prenantes. Indiquez-le dans le formulaire et nous enverrons l'invitation à toute votre équipe.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Quand aurai-je ma démonstration ?</h3>
+                    <p>Notre équipe vous contactera dans les 24 heures pour planifier la démonstration à l'horaire qui vous convient le mieux.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>La démo peut-elle être en visioconférence ?</h3>
+                    <p>Oui, la plupart de nos démonstrations se font en visioconférence (Zoom, Teams, Google Meet). Nous pouvons aussi organiser des rencontres en personne si vous êtes à Paris.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Puis-je tester le produit après la démo ?</h3>
+                    <p>Absolument ! Après la démo, nous vous offrons un essai gratuit de 14 jours avec 100€ de crédits pour tester nos solutions dans votre environnement réel.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Universal Telecom</h3>
+                    <p>Solutions de télécommunications professionnelles pour entreprises modernes.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="LinkedIn">in</a>
+                        <a href="#" aria-label="Twitter">𝕏</a>
+                        <a href="#" aria-label="Facebook">f</a>
+                        <a href="#" aria-label="YouTube">▶</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Produits</h4>
+                    <ul>
+                        <li><a href="standard-virtuel.html">Standard Virtuel</a></li>
+                        <li><a href="whatsapp-business-api.html">WhatsApp Business API</a></li>
+                        <li><a href="agents-ia.html">Agents IA</a></li>
+                        <li><a href="analyse-appels.html">Analyse des Appels IA</a></li>
+                        <li><a href="numeros-globaux.html">Numéros Globaux</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Ressources</h4>
+                    <ul>
+                        <li><a href="apis.html">Documentation API</a></li>
+                        <li><a href="#">Centre d'Aide</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Études de Cas</a></li>
+                        <li><a href="#">Webinaires</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Entreprise</h4>
+                    <ul>
+                        <li><a href="#">À Propos</a></li>
+                        <li><a href="#">Carrières</a></li>
+                        <li><a href="#">Partenaires</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Légal</h4>
+                    <ul>
+                        <li><a href="mentions-legales.html">Mentions Légales</a></li>
+                        <li><a href="politique-confidentialite.html">Confidentialité</a></li>
+                        <li><a href="politique-cookies.html">Cookies</a></li>
+                        <li><a href="#">CGV</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Universal Telecom. Tous droits réservés.</p>
+                <p>📞 +33 1 76 34 00 00 | ✉️ contact@universaltelecom.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+        // Form validation
+        document.getElementById('demoForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            // Check if at least one product is selected
+            const productCheckboxes = document.querySelectorAll('input[name="products"]:checked');
+            const productsError = document.getElementById('productsError');
+            
+            if (productCheckboxes.length === 0) {
+                productsError.style.display = 'block';
+                document.querySelector('.checkbox-grid').scrollIntoView({ behavior: 'smooth', block: 'center' });
+                return;
+            } else {
+                productsError.style.display = 'none';
+            }
+            
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const btnText = submitBtn.querySelector('.btn-text');
+            const btnLoading = submitBtn.querySelector('.btn-loading');
+            const successMsg = document.getElementById('formSuccess');
+            const errorMsg = document.getElementById('formError');
+            
+            // Hide previous messages
+            successMsg.style.display = 'none';
+            errorMsg.style.display = 'none';
+            
+            // Show loading state
+            btnText.style.display = 'none';
+            btnLoading.style.display = 'inline';
+            submitBtn.disabled = true;
+            
+            // Get form data
+            const formData = new FormData(this);
+            const data = {};
+            
+            // Process regular fields
+            for (const [key, value] of formData.entries()) {
+                if (key === 'products') {
+                    if (!data.products) data.products = [];
+                    data.products.push(value);
+                } else {
+                    data[key] = value;
+                }
+            }
+            
+            // Track with Google Analytics
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'form_submit', {
+                    'event_category': 'Demo',
+                    'event_label': data.products.join(',')
+                });
+            }
+            
+            // Simulate API call
+            setTimeout(() => {
+                // Reset button
+                btnText.style.display = 'inline';
+                btnLoading.style.display = 'none';
+                submitBtn.disabled = false;
+                
+                // Show success message
+                successMsg.style.display = 'block';
+                this.reset();
+                
+                // Scroll to message
+                successMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                
+                // Track success
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'form_submit_success', {
+                        'event_category': 'Demo'
+                    });
+                }
+            }, 1500);
+        });
+
+        // Real-time product validation
+        document.querySelectorAll('input[name="products"]').forEach(checkbox => {
+            checkbox.addEventListener('change', function() {
+                const productCheckboxes = document.querySelectorAll('input[name="products"]:checked');
+                const productsError = document.getElementById('productsError');
+                
+                if (productCheckboxes.length > 0) {
+                    productsError.style.display = 'none';
+                }
+            });
+        });
+
+        // Phone number formatting
+        document.getElementById('phone').addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.length > 0) {
+                if (value.startsWith('33')) {
+                    value = value.replace(/(\d{2})(\d{1})(\d{2})(\d{2})(\d{2})(\d{2})/, '+$1 $2 $3 $4 $5 $6');
+                } else if (value.startsWith('34')) {
+                    value = value.replace(/(\d{2})(\d{3})(\d{3})(\d{3})/, '+$1 $2 $3 $4');
+                }
+            }
+            e.target.value = value;
+        });
+    </script>
+</body>
+</html>

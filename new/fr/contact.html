@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-nous - Universal Telecom</title>
+    <meta name="description" content="Contactez Universal Telecom pour des solutions de télécommunications professionnelles. Notre équipe est disponible 24/7 pour vous aider.">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    <img src="../images/logo.png" alt="Universal Telecom Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <span style="display:none; font-weight: bold; font-size: 1.5rem; color: #ff6b35;">Universal Telecom</span>
+                </a>
+                
+                <button class="mobile-menu-toggle" aria-label="Menu mobile">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav-links">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Produits <span class="arrow">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="standard-virtuel.html">Standard Virtuel</a></li>
+                            <li><a href="whatsapp-business-api.html">WhatsApp Business API</a></li>
+                            <li><a href="agents-ia.html">Agents IA</a></li>
+                            <li><a href="analyse-appels.html">Analyse des Appels IA</a></li>
+                            <li><a href="numeros-globaux.html">Numéros Globaux</a></li>
+                            <li><a href="apis.html">APIs</a></li>
+                            <li><a href="api-sms.html">API SMS</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">FR <span class="arrow">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../es/contacto.html">ES</a></li>
+                            <li><a href="../en/contact.html">EN</a></li>
+                            <li><a href="contact.html">FR</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="nav-cta">
+                    <a href="demo.html" class="btn-secondary">Demander une Démo</a>
+                    <a href="essai-gratuit.html" class="btn-primary">Essai Gratuit</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Contactez-nous</h1>
+            <p class="hero-subtitle">Notre équipe d'experts est disponible 24/7 pour répondre à toutes vos questions</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">< 2h</div>
+                    <div class="stat-label">Temps de Réponse</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Support Disponible</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Satisfaction Client</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-form-wrapper">
+                    <h2>Envoyez-nous un message</h2>
+                    <p class="form-description">Remplissez le formulaire ci-dessous et notre équipe vous contactera dans les plus brefs délais.</p>
+                    
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">Prénom *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Nom *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Professionnel *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Téléphone *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">Entreprise *</label>
+                            <input type="text" id="company" name="company" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Sujet *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Sélectionnez un sujet</option>
+                                <option value="sales">Ventes & Informations Commerciales</option>
+                                <option value="support">Support Technique</option>
+                                <option value="billing">Facturation & Paiements</option>
+                                <option value="partnership">Partenariats</option>
+                                <option value="other">Autre</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Décrivez votre besoin ou votre question..."></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="privacy" required>
+                                <span>J'accepte la <a href="politique-confidentialite.html" target="_blank">politique de confidentialité</a> et le traitement de mes données personnelles *</span>
+                            </label>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="newsletter">
+                                <span>Je souhaite recevoir des informations sur les produits et offres de Universal Telecom</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn-primary btn-large">
+                            <span class="btn-text">Envoyer le message</span>
+                            <span class="btn-loading" style="display: none;">Envoi en cours...</span>
+                        </button>
+
+                        <div id="formSuccess" class="form-message success" style="display: none;">
+                            ✓ Merci ! Votre message a été envoyé avec succès. Notre équipe vous contactera sous 2 heures.
+                        </div>
+                        <div id="formError" class="form-message error" style="display: none;">
+                            ✗ Une erreur s'est produite. Veuillez réessayer ou nous contacter directement par téléphone.
+                        </div>
+                    </form>
+                </div>
+
+                <div class="contact-info-wrapper">
+                    <h2>Autres moyens de nous contacter</h2>
+                    
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <div class="contact-icon">📞</div>
+                            <h3>Téléphone</h3>
+                            <p><strong>France:</strong> +33 1 76 34 00 00</p>
+                            <p><strong>International:</strong> +34 911 234 567</p>
+                            <p class="contact-note">Disponible 24/7</p>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon">✉️</div>
+                            <h3>Email</h3>
+                            <p><strong>Ventes:</strong> sales@universaltelecom.com</p>
+                            <p><strong>Support:</strong> support@universaltelecom.com</p>
+                            <p class="contact-note">Réponse sous 2h</p>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon">💬</div>
+                            <h3>Chat en Direct</h3>
+                            <p>Discutez avec notre équipe</p>
+                            <button class="btn-secondary btn-small" onclick="openLiveChat()">Démarrer le Chat</button>
+                            <p class="contact-note">Lun-Ven 9h-18h CET</p>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon">📍</div>
+                            <h3>Bureau</h3>
+                            <p>Avenue des Champs-Élysées 123</p>
+                            <p>75008 Paris, France</p>
+                            <p class="contact-note">Visites sur rendez-vous</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <h3>Suivez-nous</h3>
+                        <div class="social-icons">
+                            <a href="#" aria-label="LinkedIn" class="social-icon">in</a>
+                            <a href="#" aria-label="Twitter" class="social-icon">𝕏</a>
+                            <a href="#" aria-label="Facebook" class="social-icon">f</a>
+                            <a href="#" aria-label="YouTube" class="social-icon">▶</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <h2>Questions Fréquentes</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>Quel est le délai de réponse ?</h3>
+                    <p>Notre équipe répond à tous les messages en moins de 2 heures pendant les heures ouvrables (9h-18h CET). Pour les urgences, contactez-nous par téléphone 24/7.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Puis-je demander une démo ?</h3>
+                    <p>Absolument ! Vous pouvez demander une démo personnalisée en <a href="demo.html">remplissant ce formulaire</a>. Nos experts vous montreront comment nos solutions peuvent s'adapter à vos besoins.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Y a-t-il un essai gratuit ?</h3>
+                    <p>Oui ! Nous offrons un essai gratuit de 14 jours avec 100€ de crédits gratuits. <a href="essai-gratuit.html">Inscrivez-vous ici</a> pour commencer.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Comment obtenir un devis personnalisé ?</h3>
+                    <p>Sélectionnez "Ventes & Informations Commerciales" dans le formulaire ci-dessus et décrivez vos besoins. Notre équipe vous contactera avec un devis détaillé sous 24h.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Universal Telecom</h3>
+                    <p>Solutions de télécommunications professionnelles pour entreprises modernes.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="LinkedIn">in</a>
+                        <a href="#" aria-label="Twitter">𝕏</a>
+                        <a href="#" aria-label="Facebook">f</a>
+                        <a href="#" aria-label="YouTube">▶</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Produits</h4>
+                    <ul>
+                        <li><a href="standard-virtuel.html">Standard Virtuel</a></li>
+                        <li><a href="whatsapp-business-api.html">WhatsApp Business API</a></li>
+                        <li><a href="agents-ia.html">Agents IA</a></li>
+                        <li><a href="analyse-appels.html">Analyse des Appels IA</a></li>
+                        <li><a href="numeros-globaux.html">Numéros Globaux</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Ressources</h4>
+                    <ul>
+                        <li><a href="apis.html">Documentation API</a></li>
+                        <li><a href="#">Centre d'Aide</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Études de Cas</a></li>
+                        <li><a href="#">Webinaires</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Entreprise</h4>
+                    <ul>
+                        <li><a href="#">À Propos</a></li>
+                        <li><a href="#">Carrières</a></li>
+                        <li><a href="#">Partenaires</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Légal</h4>
+                    <ul>
+                        <li><a href="mentions-legales.html">Mentions Légales</a></li>
+                        <li><a href="politique-confidentialite.html">Confidentialité</a></li>
+                        <li><a href="politique-cookies.html">Cookies</a></li>
+                        <li><a href="#">CGV</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Universal Telecom. Tous droits réservés.</p>
+                <p>📞 +33 1 76 34 00 00 | ✉️ contact@universaltelecom.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+        // Form submission handling
+        document.getElementById('contactForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const btnText = submitBtn.querySelector('.btn-text');
+            const btnLoading = submitBtn.querySelector('.btn-loading');
+            const successMsg = document.getElementById('formSuccess');
+            const errorMsg = document.getElementById('formError');
+            
+            // Hide previous messages
+            successMsg.style.display = 'none';
+            errorMsg.style.display = 'none';
+            
+            // Show loading state
+            btnText.style.display = 'none';
+            btnLoading.style.display = 'inline';
+            submitBtn.disabled = true;
+            
+            // Get form data
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            // Track with Google Analytics
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'form_submit', {
+                    'event_category': 'Contact',
+                    'event_label': data.subject
+                });
+            }
+            
+            // Simulate API call
+            setTimeout(() => {
+                // Reset button
+                btnText.style.display = 'inline';
+                btnLoading.style.display = 'none';
+                submitBtn.disabled = false;
+                
+                // Show success message
+                successMsg.style.display = 'block';
+                this.reset();
+                
+                // Scroll to message
+                successMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                
+                // Track success
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'form_submit_success', {
+                        'event_category': 'Contact'
+                    });
+                }
+            }, 1500);
+        });
+
+        // Live chat function
+        function openLiveChat() {
+            // This would integrate with your live chat service
+            alert('Le chat en direct sera disponible prochainement. Pour le moment, veuillez nous contacter par téléphone au +33 1 76 34 00 00');
+            
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'live_chat_click', {
+                    'event_category': 'Contact'
+                });
+            }
+        }
+
+        // Phone number formatting
+        document.getElementById('phone').addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.length > 0) {
+                if (value.startsWith('33')) {
+                    // French format
+                    value = value.replace(/(\d{2})(\d{1})(\d{2})(\d{2})(\d{2})(\d{2})/, '+$1 $2 $3 $4 $5 $6');
+                } else if (value.startsWith('34')) {
+                    // Spanish format
+                    value = value.replace(/(\d{2})(\d{3})(\d{3})(\d{3})/, '+$1 $2 $3 $4');
+                }
+            }
+            e.target.value = value;
+        });
+    </script>
+</body>
+</html>
