@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Telecom - Soluciones de Comunicación Empresarial</title>
+    <meta name="description" content="Plataforma de comunicación empresarial en la nube. Centralita Virtual, WhatsApp Business API, Agentes IA y más.">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .language-selector {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+        }
+        .selector-container {
+            background: white;
+            padding: 3rem;
+            border-radius: 1rem;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            text-align: center;
+            max-width: 600px;
+        }
+        .selector-container h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #111827;
+        }
+        .selector-container p {
+            color: #6b7280;
+            margin-bottom: 2rem;
+        }
+        .language-options {
+            display: grid;
+            gap: 1rem;
+        }
+        .lang-option {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            padding: 1.5rem;
+            background: #f9fafb;
+            border: 2px solid #e5e7eb;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            color: #111827;
+            font-size: 1.25rem;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        .lang-option:hover {
+            background: #fff7ed;
+            border-color: #f97316;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(249, 115, 22, 0.3);
+        }
+        .lang-flag {
+            font-size: 2rem;
+        }
+        .auto-redirect {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #e5e7eb;
+            color: #6b7280;
+            font-size: 0.875rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="language-selector">
+        <div class="selector-container">
+            <img src="images/logo.png" alt="Universal Telecom" style="height: 48px; margin-bottom: 2rem;">
+            <h1>Bienvenido / Welcome / Bienvenue</h1>
+            <p>Selecciona tu idioma / Select your language / Sélectionnez votre langue</p>
+            
+            <div class="language-options">
+                <a href="es/index.html" class="lang-option">
+                    <span class="lang-flag">🇪🇸</span>
+                    <span>Español</span>
+                </a>
+                <a href="en/index.html" class="lang-option">
+                    <span class="lang-flag">🇬🇧</span>
+                    <span>English</span>
+                </a>
+                <a href="fr/index.html" class="lang-option">
+                    <span class="lang-flag">🇫🇷</span>
+                    <span>Français</span>
+                </a>
+            </div>
+
+            <div class="auto-redirect">
+                <p>Detectando idioma automáticamente... / Auto-detecting language...</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Auto-detect language and redirect
+        setTimeout(() => {
+            const userLang = navigator.language || navigator.userLanguage;
+            let redirect = 'es/index.html'; // Default Spanish
+            
+            if (userLang.startsWith('en')) {
+                redirect = 'en/index.html';
+            } else if (userLang.startsWith('fr')) {
+                redirect = 'fr/index.html';
+            }
+            
+            window.location.href = redirect;
+        }, 3000);
+    </script>
+</body>
+</html>
